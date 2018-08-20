@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#6391 v0.9 WIP*/
+/* Dark theme for Discord made by TrapStoner#6391 v1.0 WIP*/
 
 
 /* chat box scroller */
@@ -96,6 +96,10 @@
 	background: #0a0909;
 	border-bottom: none !important;
 }
+.theme-dark .colorPickerCustom-2CWBn2 {
+    background: #111113;
+    border-color: #111113;
+}
 
 
 /*settings*/
@@ -121,6 +125,9 @@
 }
 .theme-dark .select-2TCrqx .Select-option.is-focused, .theme-dark .select-2TCrqx .Select-option:hover {
     background: rgba(0, 0, 0, 0.4);
+}
+.theme-dark .searchBar-1MOL6S {
+    background-color: #0a0909;
 }
 
 /*settings dividers*/
@@ -222,7 +229,7 @@
     background-color: #26282b;
 }
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: #191a1b
+    background-color: #050506;
 }
 .theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
     background-color: #0a0909;
@@ -258,9 +265,94 @@
     background-color: #0d0d0e;
 }
 
+/*Friends*/
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: #020202;
+}
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+    background-color: #111113;
+}
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+    color: #000000;
+}
+.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
+    background: #0a0909;
+    border-bottom: 1px solid #111113;
+}
+.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-suggestions-header {
+    border-bottom: 1px solid #111113;
+}
+.theme-dark .wrapper-1cBijl {
+    background-color: #111113;
+    border-color: #111113;
+}
+.inner-2Y6JuD {
+    background-color: #111113;
+    border: 1px solid #111113;
+}
+.theme-dark #friends .friends-table .friends-row:hover {
+    background: #111113;
+    border-color: #111113;
+}
+.theme-dark #friends .friends-table .friends-row+.friends-row {
+    border-top: 1px solid #0a0909;
+}
+.theme-dark #friends .friends-table .friends-table-header {
+    border-bottom: 1px solid #111113;
+}
+.theme-dark #friends .friends-table .friends-table-header .friends-column-separator {
+    background-color: #0a0909;
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: #111113;
+}
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
+    background-color: #111113;
+}
+
 /*dms*/
 .privateChannels-1nO12o .channel-2fhmY8:hover .selectedLink-3dsNZ6, .selectedLink-3dsNZ6 {
     background-color: #111113 !important;
+}
+
+/*calls*/
+.video-1FfuMD {
+    background-color: #111113;
+}
+.theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
+    background-color: #171719;
+    border-color: #171719;
+}
+.theme-dark .footer-2VgWkh {
+    background-color: #0a0909;
+}
+
+/*screen share*/
+.theme-dark .tiles-2aXG_k {
+    background-color: #0a0909;
+    box-shadow: 0 2px 5px #0a0909, 0 0 0 1px #0a0909;
+}
+.theme-dark .item-3T2z1R {
+    border-color: #050506;
+}
+.selectorButtonSelected-1j4DmC {
+    background-color: #020202;
+}
+.imageSelected-4Kl81J {
+	border: 4px solid #020202;
+}
+
+/*Clyde stfu*/
+.theme-dark .isLocalBot-38G0P0 {
+    background: #111113;
+    border-color: #111113;
+    box-shadow: -20px 0 #111113, 20px 0 #111113, -20px -1px 0 0 #111113, -20px 1px 0 #111113, 20px 1px 0 #111113, 20px -1px 0 #111113;
+}
+
+/*bot tag*/
+.botTagRegular-2HEhHi {
+    background: #040405;
+    color: #d0d0d0;
 }
 
 /*invite box*/
@@ -283,7 +375,7 @@
     background-color: #0a0909;
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: #111113;
+    background-color: #0e0e0e;
 }
 .theme-dark .cardPrimaryEditable-3KtE4g {
     background: #0e0e0e;
@@ -444,10 +536,10 @@
 
 /*member wrapper*/
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
-    background-color: #191a1b;
+    background-color: #111113;
 }
 .theme-dark .headerNormal-T_seeN {
-    background-color: #0e0e0e;
+    background-color: #0d0d0e;
 }
 .headerPlaying-j0WQBV {
     background: #040405;
@@ -460,7 +552,7 @@
     border-color: #111113;
 }
 .theme-dark .note-3kmerW textarea:focus {
-    background-color: #191a1b;
+    background-color: #111113;
 }
 
 /*add roles menu (i think xd)*/
