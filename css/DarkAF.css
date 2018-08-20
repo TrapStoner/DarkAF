@@ -33,7 +33,7 @@
 	background-color: #0a0909
 }
 .theme-dark .inner-zqa7da {
-	background-color: #0000ff;
+	background-color: #111113;
 }
 
 /*embed*/
@@ -77,7 +77,7 @@
 
 
 /*background (in general ;p)*/
-.appMount-3VJmYg, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends {
+.appMount-3VJmYg, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends {
 	background: #0a0909 !important;
 }
 .contentHoveredText-2D9B-x, .contentSelectedText-3wUhMi, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM, .contentSelectedVoice-1WDIBM:active, .contentConnectedVoice-qL-YrL:active, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4, .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
@@ -88,6 +88,9 @@
 }
 .tooltip::after {
     visibility: hidden;
+}
+.tooltip {
+    box-shadow: 0 2px 10px 0 rgba(19, 20, 21, 0.02);
 }
 .container-1UB9sr {
 	background: #0a0909;
@@ -111,6 +114,36 @@
 }
 .theme-dark .passthroughSelected-1Eq0Kl {
     background: #191a1b;
+}
+.theme-dark .select-2TCrqx .Select-menu-outer {
+    background: #111113;
+    border-color: #111113;
+}
+.theme-dark .select-2TCrqx .Select-option.is-focused, .theme-dark .select-2TCrqx .Select-option:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*settings dividers*/
+.theme-dark .divider-1que2t {
+    border-color: #111113;
+}
+.theme-dark .item-3eFBNF {
+    box-shadow: inset 0 -1px 0 0 #111113;
+}
+.theme-dark .separator-gCa7yv {
+    background-color: #111113;
+}
+.theme-dark .divider-3573oO {
+    background-color: #111113;
+}
+.theme-dark .cardPrimaryOutline-29Ujqw {
+    border-color: #111113;
+}
+.theme-dark .row-2okwlC {
+    box-shadow: inset 0 -1px 0 #111113;
+}
+.theme-dark .user-settings-games .game {
+    box-shadow: 0 1px 0 0 #111113;
 }
 
 /*game tab*/
@@ -438,9 +471,9 @@
 .theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-header-background {
     background-color: #131415;
 }
-.scrollerWrap-2lJEkd {
+/* .scrollerWrap-2lJEkd {
     background-color: #0e0e0e;
-}
+} */
 .theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-shadow {
     box-shadow: none !important;
 }
