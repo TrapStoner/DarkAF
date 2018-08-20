@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#6391 v 0.9 WIP*/
+/* Dark theme for Discord made by TrapStoner#6391 v0.9 WIP*/
 
 
 /* chat box scroller */
@@ -77,7 +77,7 @@
 
 
 /*background (in general ;p)*/
-.appMount-3VJmYg, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .scrollerWrap-2lJEkd, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends {
+.appMount-3VJmYg, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends {
 	background: #0a0909 !important;
 }
 .contentHoveredText-2D9B-x, .contentSelectedText-3wUhMi, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM, .contentSelectedVoice-1WDIBM:active, .contentConnectedVoice-qL-YrL:active, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4, .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
@@ -105,6 +105,12 @@
 .theme-dark .accountBtnInner-sj5jLs {
     background-color: #111113;
     border-color: #111113;
+}
+.themeDefault-24hCdX {
+    background-color: #191a1b;
+}
+.theme-dark .passthroughSelected-1Eq0Kl {
+    background: #191a1b;
 }
 
 /*game tab*/
@@ -294,11 +300,8 @@
 .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
     background-image: linear-gradient(0deg,transparent,transparent 1px,#525252 0,#0a0909 2px,transparent 0);
 }
-.theme-dark .input-cIJ7To:hover {
+.theme-dark .input-cIJ7To, .theme-dark .input-cIJ7To:hover, .theme-dark .input-cIJ7To:focus {
     border-color: #040405;
-}
-.theme-dark .input-cIJ7To {
-	border-color: #040405;
 }
 
 /*mention search*/
@@ -404,4 +407,46 @@
 .theme-dark .message-2qRu38 {
     background-color: #0e0e0e;
     box-shadow: 0 0 0 1px #0e0e0e, 0 2px 10px 0 #0a0909;
+}
+
+/*member wrapper*/
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background-color: #191a1b;
+}
+.theme-dark .headerNormal-T_seeN {
+    background-color: #0e0e0e;
+}
+.headerPlaying-j0WQBV {
+    background: #040405;
+}
+.userPopout-3XzG_A {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px #0a0909;
+}
+.theme-dark .quickMessage-1yeL4E {
+    background-color: #111113;
+    border-color: #111113;
+}
+.theme-dark .note-3kmerW textarea:focus {
+    background-color: #191a1b;
+}
+
+/*add roles menu (i think xd)*/
+#autocomplete-popout {
+    width: 300px;
+    background-color: #131415;
+}
+.theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-header-background {
+    background-color: #131415;
+}
+.scrollerWrap-2lJEkd {
+    background-color: #0e0e0e;
+}
+.theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-shadow {
+    box-shadow: none !important;
+}
+.theme-dark #autocomplete-popout .row.selected {
+    background: #191a1b;
+}
+.scroller-2FKFPG .autocomplete-scroller::webkit-scrollbar-track, #autocomplete-popout .autocomplete-scroller::webkit-scrollbar-track {
+	background:#ffffff !important;
 }
