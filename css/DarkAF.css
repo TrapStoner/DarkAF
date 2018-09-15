@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#6391 v1.0 WIP*/
+/* Dark theme for Discord made by TrapStoner#6391 v1.2 WIP*/
 
 
 /* chat box scroller */
@@ -124,6 +124,12 @@
 .userHovered-2_fT4Z:active {
     background-color: #111113;
 }
+.topSectionPlaying-1J5E4n {
+    background: #040405;
+}
+.theme-dark .applicationStore-1pNvnv {
+    background-color: #0a0909;
+}
 
 /*settings*/
 .theme-dark .side-8zPYf6 .itemDefault-3Jdr52:hover, .theme-dark .side-8zPYf6 .itemHover-EnbcjT:hover, .side-8zPYf6 .itemSelected-1qLhcL {
@@ -242,6 +248,20 @@
     background-color: #131415;
 }
 
+/*Home*/
+.channel-2QD9_O.selected-1HYmZZ a {
+    background-color: #111113;
+}
+.channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
+    background-color: #111113;
+}
+.search-bar .search-bar-inner {
+    background: #111113;
+}
+.theme-dark .libraryFilterInput-3JzqZD, .theme-dark .browseSearchInput-Jt8kg0 {
+    background-color: #111113;
+}
+
 /*Activity*/
 .theme-dark .activityFeed-28jde9, .theme-dark .headerBar-UHpsPw, .theme-dark .card-7JP0BX {
     background-color: #0a0909;
@@ -342,10 +362,16 @@
 .theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
     background-color: #111113;
 }
+.theme-dark .friendSelected--wQP3f {
+    background-color: #111113;
+}
 
 /*dms*/
 .privateChannels-1nO12o .channel-2fhmY8:hover .selectedLink-3dsNZ6, .selectedLink-3dsNZ6 {
     background-color: #111113 !important;
+}
+.search-bar-tag {
+    background: #0a0909;
 }
 
 /*calls*/
@@ -663,4 +689,24 @@
 }
 .need-help-modal.form.deprecated .header {
     background-color: #020202;
+}
+
+/*add server button*/
+.theme-dark .guildsAdd-21_IdK {
+    background: #0a0909;
+    border-color: #26282b;
+    color: #26282b;
+}
+
+/*RTC Connection menu*/
+.theme-dark .container-2x5lvQ section {
+    background-color: #111113;
+}
+.theme-dark .container-2x5lvQ header {
+    background-color: #0d0d0e;
+}
+
+/*close button*/
+.theme-dark .closeButton-1tv5uR:hover {
+    background-color: #171719;
 }
