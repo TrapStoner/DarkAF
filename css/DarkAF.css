@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#6391 v1.2 WIP*/
+/* Dark theme for Discord made by TrapStoner#6391 v1.2.1 WIP*/
 
 
 /* chat box scroller */
@@ -13,10 +13,16 @@
 
 /* chat box dividers */
 .theme-dark .divider-3gKybi:before, .theme-dark .divider-3gKybi span, .theme-dark .divider-3gKybi:not(.red-1YQ4s7) div {
-	background-color: #0d0d0e;
+	background-color: #0a0909;
+}
+.theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI {
+    color: #525252;
 }
 .theme-dark .dividerEnabled-2TTlcf {
 	border-bottom-color: hsl(0, 5%, 4%);
+}
+.theme-dark .channelTextArea-rNsIhG {
+    border-top: 1px solid #0a0909;
 }
 
 /*chat box @mentions*/
@@ -99,7 +105,7 @@
 
 /*background (in general ;p)*/
 .appMount-3VJmYg, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends {
-	background: #0a0909 !important;
+	background-color: #0a0909 !important;
 }
 .contentHoveredText-2D9B-x, .contentSelectedText-3wUhMi, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM, .contentSelectedVoice-1WDIBM:active, .contentConnectedVoice-qL-YrL:active, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4, .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
 	background-color: #111113 !important;
@@ -298,7 +304,7 @@
     background-color: #111113;
 }
 .lookFilled-1Gx00P.colorGreen-29iAKY {
-    background-color: #191a1b;
+    background-color: #111113;
 }
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
     background-color: #0a0909;
@@ -309,6 +315,33 @@
 .headerButtonColor-G7_f-V {
     background: #111114;
 }
+.theme-dark .guildIconEmptyBackground-14tfYf {
+    background-color: #0a0909;
+}
+.theme-dark .quickswitcher-3JagVE {
+    background-color: #0a0909;
+}
+.quickswitcher-3JagVE {
+    box-shadow: none;
+}
+.theme-dark .input-2VB9rf {
+    background-color: #111113;
+    box-shadow: 0 2px 5px #0a0909, 0 0 0 1px #111113;
+}
+.theme-dark .keybindShortcut-1BD6Z1 span {
+    background-color: #111113;
+    border: 1px solid #131415;
+    box-shadow: inset 0 -4px 0 #171719;
+}
+.theme-dark .resultFocused-3aIoYe {
+    background-color: #111113;
+}
+.news-2GDtLJ {
+    background-color: #111113;
+}
+.theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover {
+    background-color: #000000;
+}
 
 /*Library*/
 .theme-dark .gameLibrary-TTDw4Y {
@@ -316,6 +349,112 @@
 }
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
     background-color: #0d0d0e;
+}
+
+/*Store*/
+.theme-dark .itemBackground-1jfD8p {
+    background-color: #0a0909;
+}
+.theme-dark .itemBackground-1jfD8p:before {
+    background: radial-gradient(ellipse at top,transparent,#0a0909),-webkit-gradient(linear,left top,right top,from(#0a0909),color-stop(40%,transparent),color-stop(60%,transparent),to(#0a0909)),-webkit-gradient(linear,left bottom,left top,from(#0a0909),color-stop(25%,transparent));
+    background: radial-gradient(ellipse at top,transparent,#0a0909),linear-gradient(90deg,#0a0909 0,transparent 40%,transparent 60%,#0a0909),linear-gradient(0deg,#0a0909 0,transparent 25%);
+}
+.wanderingCubesItem-WPXqao {
+    background-color: #2f2f2f;
+}
+.scrollerWrap-2lJEkd .scrollerTrack-1ZIpsv {
+	background: transparent !important;
+}
+.theme-dark .tile-2H4MQG {
+    background-color: #111113;
+    box-shadow: 0 0 0 #171719;
+}
+.theme-dark .tile-2H4MQG:hover {
+    background-color: #171719;
+    box-shadow: 0 6px 18px #131415;
+}
+.blog-2nw4E8 {
+    background: linear-gradient(-270deg,#000000,#000000);
+}
+.theme-dark .mediaDescription-31GsyQ {
+    background: linear-gradient(180deg,transparent,#111113 45%,#0e0e0e);
+}
+.footer-3oZnEF {
+    height: 100px;
+}
+.theme-dark .footer-3oZnEF {
+	background: none;
+}
+.theme-dark .premium-39U29H {
+    background-image: linear-gradient(90deg,#0d0d0e,#191a1b);
+}
+.theme-dark .premium-39U29H:before, .theme-light .premium-39U29H:before {
+    background: #0d0d0e;
+    -webkit-mask: url(/assets/04a2e1509ad72be575b1529b51ea3977.svg);
+}
+.theme-dark .carousel-tQMSVK:before, .theme-light .carousel-tQMSVK:before {
+    background: linear-gradient(90deg,#111113 0,transparent 10%,transparent 90%,#111113);
+}
+.theme-dark .learnMoreButton-1OUyxs, .theme-light .learnMoreButton-1OUyxs {
+    color: #000000;
+}
+.theme-dark .distributionApplicationsActions-3D2_kD, .theme-dark .premiumApplicationsHeader-Zmkm5e {
+    border-color: #111113;
+}
+.theme-dark .searchBox-3Y2Vi7 {
+    background-color: #171719;
+}
+.theme-dark .sortFilterBar-3hePOV {
+    border-color: #111113;
+}
+.theme-dark .popout-2sKjHu {
+    background: #111113;
+    border-color: #111113;
+    box-shadow: 0 1px 5px 0 #111113;
+}
+.theme-dark .optionActive-KkAdqq {
+    background: #171719;
+}
+.theme-dark .optionNormal-12VR9V:hover {
+    background-color: #171719;
+}
+/* .polyline[Attributes Style] { */
+    /* stroke: rgb(0, 0, 0); */
+    /* stroke-width: 2; */
+/* } */
+.checkbox-1ix_J3 .flexCenter-3_1bcw .flex-1O1GKY .justifyCenter-3D2jYp .alignCenter-1dQNNs .box-mmYMsp .checked-3_4uQ9{
+    stroke: rgb(17, 17, 17) !important;
+    stroke-width: 2;
+}
+.theme-dark .arrow-1QsYio, .theme-light .arrow-1QsYio {
+    color: #000000;
+}
+.theme-dark .bubble-1gL_TN, .theme-light .bubble-1gL_TN {
+    background-color: #111113;
+}
+.theme-dark .bubble-1gL_TN:after, .theme-light .bubble-1gL_TN:after {
+    border-top-color: #111113;
+}
+.theme-dark .body-1CAT0-, .theme-light .body-1CAT0- {
+    background-color: #111113;
+}
+.theme-dark .card-NB61oR {
+    background-color: #111113;
+}
+
+/* .headerFancy-1AcCLF:before { */
+	/* background: #ffffff; */
+	/* -webkit-mask: url(/assets/b44da97e40cc628c39b0a0441c356e2d.svg); */
+/* } */
+.headerFancy-1AcCLF:before {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 1;
+    content: "";
+    height: 3%;
+    position: absolute;
+    width: 100%;
 }
 
 /*Friends*/
@@ -364,6 +503,11 @@
 }
 .theme-dark .friendSelected--wQP3f {
     background-color: #111113;
+}
+
+/*Underage warning HAHA*/
+.separator-2IZ9ro {
+    background-color: #0a0909;
 }
 
 /*dms*/
