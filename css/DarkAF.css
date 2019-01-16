@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#0420 v1.2.2 WIP*/
+/* Dark theme for Discord made by TrapStoner#0420 v1.2.3 WIP*/
 
 
 /* chat box scroller */
@@ -35,6 +35,9 @@
 .isMentionedCozy-3isp7y:after {
     background: #0d0d0e;
     border-left: 4px solid #191a1b;
+}
+.theme-dark .wrapper-3WhCwL {
+	border-radius: 10px;
 }
 
 /*chat wrapper*/
@@ -110,7 +113,7 @@
 .appMount-3lHmkl, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i {
 	background-color: #0a0909 !important;
 }
-.contentHoveredText-2D9B-x, .contentSelectedText-3wUhMi, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM, .contentSelectedVoice-1WDIBM:active, .contentConnectedVoice-qL-YrL:active, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4, .theme-dark .member-3W1lQa:hover .content-OzHfo4 {
+.contentHoveredText-2D9B-x, .contentSelectedText-3wUhMi, .contentHoveredVoice-3p_NEO:active, .contentSelectedVoice-1WDIBM, .contentSelectedVoice-1WDIBM:active, .contentConnectedVoice-qL-YrL:active, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
 	background-color: #111113 !important;
 }
 .tooltip.tooltip-black {
@@ -801,6 +804,10 @@
 .theme-dark .note-3kmerW textarea:focus {
     background-color: #111113;
 }
+.theme-dark .member-3W1lQa:hover .content-OzHfo4 {
+	background-color: #111113;
+	border-radius: 30px 20px 20px 30px;
+}
 
 /*add roles menu (i think xd)*/
 #autocomplete-popout {
@@ -886,4 +893,8 @@
 /*close button*/
 .theme-dark .closeButton-1tv5uR:hover {
     background-color: #171719;
+}
+/*reaction*/
+.theme-dark .reaction-1ELvT8 {
+    background: #0f0f10;
 }
