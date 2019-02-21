@@ -1,5 +1,10 @@
-/* Dark theme for Discord made by TrapStoner#0420 v1.2.3 WIP*/
+/* Dark theme for Discord made by TrapStoner#9526 v1.2.4 WIP*/
 
+
+/*body background lol*/
+body {
+	background: #0a0909 !important;
+}
 
 /* chat box scroller */
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
@@ -27,7 +32,7 @@
 .theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:after, .theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:before {
     border-color: #111113;
 }
-}
+
 /*chat box @mentions*/
 .theme-dark .isMentioned-N-h9aa {
     background: #0e0e0e;
