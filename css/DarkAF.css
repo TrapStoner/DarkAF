@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#9526 v1.2.5 WIP*/
+/* Dark theme for Discord made by TrapStoner#9526 v1.2.6 WIP*/
 
 
 /*body background lol*/
@@ -94,15 +94,15 @@ body {
 
 /*search bar*/
 .theme-dark .search-2oPWTC .searchBar-3dMhjb {
-    background-color: #0e0e0e;
+    background-color: #0f0f10;
 }
 
 /*search-popout*/
 .theme-dark .container-3ayLPN {
-    background-color: #0e0e0e;
+    background-color: #0f0f10;
 }
 .theme-dark .elevationBorderHigh-2WYJ09 {
-    box-shadow: 0 0 0 1px #0d0d0e, 0 2px 10px 0 #0d0d0e;
+    box-shadow: 0 0 0 1px #0f0f10, 0 2px 10px 0 #0f0f10;
 }
 .theme-dark .option-96V44q.selected-rZcOL- {
 	background-color: #131415;
@@ -246,6 +246,20 @@ body {
     box-shadow: 0 1px 0 0 #111113;
 }
 
+/*audit log*/
+.theme-dark .auditLog-3jNbM6 {
+    border-color: #111113;
+}
+.theme-dark .headerClickable-2IVFo9, .theme-dark .headerDefault-1wrJcN {
+    background-color: #0f0f10;
+}
+.theme-dark .headerExpanded-CUEwZ5 {
+    background-color: #050506;
+}
+.theme-dark .changeDetails-bk98pu {
+    background-color: #0f0f10;
+}
+
 /*Changelog*/
 .backdrop-1wrmKB + .typeWindows-1za-n7 {
 	background-color: none !important;
@@ -289,7 +303,7 @@ body {
 
 /*server settings popout*/
 .theme-dark .menu-Sp6bN1 {
-    background: #0d0d0e;
+    background: #111113;
 }
 .theme-dark .separator-2zcjq8 {
     border-bottom-color: #131415;
@@ -659,8 +673,8 @@ body {
     background-color: #0e0e0e;
 }
 .theme-dark .cardPrimaryEditable-3KtE4g {
-    background: #0e0e0e;
-    border-color: #0e0e0e;
+    background: #0f0f10;
+    border-color: #0f0f10;
 }
 .theme-dark .cardPrimaryEditable-3KtE4g:selection {
 	border-color: #0a0909;
@@ -715,8 +729,8 @@ body {
     background-image: linear-gradient(0deg,transparent,transparent 1px,#525252 0,#0a0909 2px,transparent 0);
 }
 .theme-dark .input-cIJ7To, .theme-dark .input-cIJ7To:hover, .theme-dark .input-cIJ7To:focus {
-    border-color: #040405;
-	background-color: #0c0c0c;
+    border-color: #020202;
+    background-color: #0f0f10;
 }
 
 /*mention search*/
@@ -769,7 +783,10 @@ body {
     background-color: #171719;
 }
 .theme-dark.contextMenu-HLZMGh {
-    background: #0d0d0e;
+    background: #111113;
+}
+.contextMenu-HLZMGh .contextMenu-HLZMGh .scroller-2PSBSf {
+    background-color: #111113;
 }
 .theme-dark .itemGroup-1tL0uz {
     border-color: #111113;
