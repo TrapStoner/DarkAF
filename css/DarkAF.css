@@ -1,4 +1,4 @@
-/* Dark theme for Discord made by TrapStoner#9526 v1.2.4 WIP*/
+/* Dark theme for Discord made by TrapStoner#9526 v1.2.5 WIP*/
 
 
 /*body background lol*/
@@ -684,15 +684,23 @@ body {
 /*Auth Screen*/
 .authBox-hW6HRx {
     background: #111113;
-    box-shadow: 0 2px 10px 0 #111113;
-    color: #808080;
+    box-shadow: 0 2px 10px 0 #040405;
+    color: #a2a2a2;
 }
-.canvas-3XuBXe {
-    background-color: #0a0909;
+.theme-dark .h5-18_1nd {
+    color: #c7c7c7;
 }
 .typeWindows-1za-n7 {
-    background-color: #0a0909;
 	padding: 4px;
+}
+.wrapper-3Q5DdO {
+	background: #0a0909;
+}
+.image-2jyRAK.loaded-3PtF_J {
+    opacity: 0;
+}
+.canvas-3XuBXe {
+    opacity: 0;
 }
 .wrapper-6URcxg {
     background-color: #0a0909;
@@ -708,6 +716,7 @@ body {
 }
 .theme-dark .input-cIJ7To, .theme-dark .input-cIJ7To:hover, .theme-dark .input-cIJ7To:focus {
     border-color: #040405;
+	background-color: #0c0c0c;
 }
 
 /*mention search*/
