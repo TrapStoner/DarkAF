@@ -1,4 +1,9 @@
-/* Dark theme for Discord made by TrapStoner#9526 v1.3.0 */
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.1 ---
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+IMPORTANT: CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 /*body background lol*/
@@ -243,7 +248,7 @@ body {
     border-color: #111113;
 }
 .barFill-23-gu- {
-    background: #020202;
+    background: #000000;
 }
 .theme-dark .bar-2Qqk5Z {
     background: #191a1b;
@@ -259,22 +264,62 @@ body {
 .theme-dark .tier1Banner-1B_WXY {
     background-color: #0c0c0c;
 }
+.theme-dark .cardPrimaryEditable-3KtE4g[style*="background-color"], .buttonBrandGhost-1-Lmhc {
+    background: #000000 !important;
+    border-color: #000000 !important;
+}
+.theme-dark .input-cIJ7To, .theme-dark .checkbox-1ix_J3 {
+    border: 2px solid #0a0909 !important;
+}
+.theme-dark .checked-3_4uQ9 polyline {
+    stroke: #000000;
+}
+.wrapper-3jrx9n {
+    background-color: #0a0909;
+    border: 3px solid #000000;
+}
+.selected-mKYnfr.option-n0icdO {
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.48);
+}
+.disabled-3I9jyo {
+    color: #171719;
+}
+.option-n0icdO {
+    background-color: #171719;
+}
+.option-n0icdO:hover {
+    background-color: #0e0e0e;
+}
+.theme-dark .installationPath-24giJj {
+    box-shadow: 0 1px 0 0 #111113;
+}
+.theme-dark .background-yZEZik {
+    stroke: #111113;
+}
+.svg-3yO_hc circle{
+	stroke: #000000;
+}
+.theme-dark .closeButton-1tv5uR {
+    border-color: #191a1b;
+}
+.theme-dark .closeButton-1tv5uR:hover {
+    background-color: #191a1b;
+}
+.theme-dark .closeButton-1tv5uR .fill {
+	fill: #ffffffba;
+}
 
 /*settings dividers*/
-.theme-dark .divider-1que2t {
+.theme-dark .divider-1que2t, .theme-dark .cardPrimaryOutline-29Ujqw, .theme-dark .featureBorder-7j4v58 {
     border-color: #111113;
 }
-.theme-dark .item-3eFBNF {
+.theme-dark .item-3eFBNF, .theme-dark .notificationsSound-27jFSh {
     box-shadow: inset 0 -1px 0 0 #111113;
 }
-.theme-dark .separator-gCa7yv {
+.theme-dark .separator-gCa7yv, .theme-dark .divider-3573oO, .theme-dark .divider-38zUJA {
     background-color: #111113;
-}
-.theme-dark .divider-3573oO {
-    background-color: #111113;
-}
-.theme-dark .cardPrimaryOutline-29Ujqw {
-    border-color: #111113;
 }
 .theme-dark .row-2okwlC {
     box-shadow: inset 0 -1px 0 #111113;
@@ -282,9 +327,10 @@ body {
 .theme-dark .user-settings-games .game {
     box-shadow: 0 1px 0 0 #111113;
 }
-.theme-dark .notificationsSound-27jFSh {
-    box-shadow: inset 0 -1px 0 0 #111113;
+.theme-dark .defaultIndicator-2X8Auf {
+    background-color: #171719;
 }
+
 
 /*game activity*/
 .theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s {
@@ -423,7 +469,7 @@ body {
     font-size: 23px;
 }
 .theme-dark .or-3THJsp, .theme-light .or-3THJsp {
-    -webkit-mask: url(/assets/b9cf5548cc5a23a6943f194a0ace88f8.svg);
+    -webkit-mask: url(https://discordapp.com/assets/b9cf5548cc5a23a6943f194a0ace88f8.svg);
     color: #647bcc;
     background: #0a0909;
     -webkit-mask-repeat: no-repeat;
@@ -431,7 +477,7 @@ body {
     -webkit-mask-position: 50%;
 }
 .theme-dark .join-33Tr-7 .actionIcon-2IISM_, .theme-light .join-33Tr-7 .actionIcon-2IISM_ {
-    -webkit-mask: url(/assets/8fb52ec5260dfe6c5b93d211d3b6ecde.png);
+    -webkit-mask: url(https://discordapp.com/assets/8fb52ec5260dfe6c5b93d211d3b6ecde.png);
     background: #3ca374;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 178.5px 78px;
@@ -594,7 +640,7 @@ body {
 }
 .theme-dark .premium-39U29H:before, .theme-light .premium-39U29H:before {
     background: #0d0d0e;
-    -webkit-mask: url(/assets/04a2e1509ad72be575b1529b51ea3977.svg);
+    -webkit-mask: url(https://discordapp.com/assets/04a2e1509ad72be575b1529b51ea3977.svg);
 }
 .theme-dark .carousel-tQMSVK:before, .theme-light .carousel-tQMSVK:before {
     background: linear-gradient(90deg,#111113 0,transparent 10%,transparent 90%,#111113);
@@ -1091,10 +1137,6 @@ body {
     background-color: #0d0d0e;
 }
 
-/*close button*/
-.theme-dark .closeButton-1tv5uR:hover {
-    background-color: #171719;
-}
 /*reaction*/
 .theme-dark .reaction-1ELvT8 {
     background: #0f0f10;
