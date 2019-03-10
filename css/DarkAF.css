@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.1 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.2 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -57,8 +57,14 @@ body {
 .theme-dark .inner-zqa7da {
 	background-color: #111113;
 }
+.theme-dark .innerDisabled-2mc-iF {
+	background-color: #171719;
+}
 .newMessagesBar-mujexs, .newMessagesBar-mujexs:hover {
     background-color: #111113;
+}
+.textAreaDisabled-2_o-kZ::placeholder {
+	color: #ffffffb3 !important;
 }
 
 /*spoiler tag*/
@@ -268,8 +274,14 @@ body {
     background: #000000 !important;
     border-color: #000000 !important;
 }
-.theme-dark .input-cIJ7To, .theme-dark .checkbox-1ix_J3 {
-    border: 2px solid #0a0909 !important;
+.theme-dark .checkbox-1ix_J3 {
+    border: 2px solid #26282b !important;
+}
+.theme-dark .checked-3_4uQ9 {
+    border-color: #fff !important;
+}
+.theme-dark .checked-3_4uQ9[style*="background-color"] {
+	background-color: #fff !important
 }
 .theme-dark .checked-3_4uQ9 polyline {
     stroke: #000000;
@@ -282,6 +294,10 @@ body {
     background-color: #000000;
     border-color: #000000;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.48);
+}
+.selected-mKYnfr.option-n0icdO:hover {
+	background-color: #000000;
+	border-color: #000000;
 }
 .disabled-3I9jyo {
     color: #171719;
@@ -309,6 +325,23 @@ body {
 }
 .theme-dark .closeButton-1tv5uR .fill {
 	fill: #ffffffba;
+}
+.theme-dark .questionMark-CWEQZn {
+    background-color: #040405;
+}
+.theme-dark .questionMark-CWEQZn:hover {
+    background-color: #000000;
+}
+.theme-dark .input-cIJ7To.focused-1mmYsC {
+    border-color: #0a0909;
+}
+.theme-dark .container-1nZlH6 {
+    background-color: #111113;
+    border-color: #111113;
+}
+.lookGhost-2Fn_0-.colorGrey-2DXtkV {
+    background-color: #070707;
+    color: #b3b3b3;
 }
 
 /*settings dividers*/
@@ -440,6 +473,9 @@ body {
     box-shadow: 0 2px 8px #111113;
 }
 .unread-1xRYoj {
+    background-color: #111113;
+}
+.theme-dark .audio-2KA0-x:after, .theme-dark .video-2jNDI4:after {
     background-color: #111113;
 }
 
@@ -862,9 +898,6 @@ body {
 .theme-dark .separator-PE-_y1 {
     background-color: #111113;
 }
-.theme-dark .checkbox-1ix_J3 {
-    border-color: #26282b;
-}
 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
     background-color: #0a0a0a;
 }
@@ -1145,4 +1178,28 @@ body {
 /*GIF picker*/
 .theme-dark .autocomplete-1vrmpx {
     background-color: #111113;
+}
+
+/*Quick Switcher tip*/
+.channelNotices-41mJbj .channelNotice-1-XFjC.quickswitcher-35bYg4 {
+    background: #0a0909 url(https://discordapp.com/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg) no-repeat center 35px;
+}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {
+    background-color: #111113;
+    border: 1px solid #111113;
+}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u:hover {
+    background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
+}
+
+/*Quick Switcher menu*/
+.theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b {
+    border-color: #0a0909;
+}
+.scrollerOuter-3FLELE {
+    padding-top: 20px;
+}
+.theme-dark .keybindShortcutTipsSelect-HDyfe8:last-of-type:before {
+    background-color: #0a0909;
 }
