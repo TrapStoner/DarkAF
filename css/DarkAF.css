@@ -1,7 +1,7 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.4 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.5 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -171,7 +171,7 @@ body {
 }
 
 /*background (in general ;p)*/
-.appMount-3lHmkl, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc {
+.theme-dark .activityFeed-1C0EmJ, .appMount-3lHmkl, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc {
 	background-color: #0a0909 !important;
 }
 .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd:hover .content-3at_AU, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:active .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
@@ -196,6 +196,10 @@ body {
 }
 .theme-dark .applicationStore-1pNvnv {
     background-color: #0a0909;
+}
+/*Server name header*/
+.header-2o-2hj {
+	box-shadow: none;
 }
 
 /*chats and voice groups also # and names*/
@@ -224,6 +228,9 @@ body {
 
 
 /*settings*/
+.theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover, .theme-dark .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover {
+	background-color: #111113;
+}
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
     background-color: #000000;
 }
@@ -346,6 +353,18 @@ body {
     background-color: #070707;
     color: #b3b3b3;
 }
+/*audio subsystem drop-down menu*/
+.css-ua3v5p-menu {
+	background-color: #0f0f10;
+	border-color: #0f0f10;
+}
+.css-12o7ek3-option {
+	background-color: #080808;
+}
+.css-1gnr91b-option {
+	background-color: #080808;
+}
+
 
 /*settings dividers*/
 .theme-dark .divider-1que2t, .theme-dark .cardPrimaryOutline-29Ujqw, .theme-dark .featureBorder-7j4v58 {
@@ -462,6 +481,9 @@ body {
 }
 
 /*guilds wrapper*/
+.wrapper-1Rf91z {
+	width: 70px;
+}
 .theme-dark .guildSeparator-3s64Iy:after {
     background: #111113;
 }
@@ -475,11 +497,19 @@ body {
     background-color: #111113;
 }
 
+/*Speaker badge*/
+.theme-dark .iconBadge-2wi9r4 {
+    background-color: #2f2f2f;
+}
+
 /*add server button*/
 .theme-dark .circleIconButton-jET_ig {
     background: #0a0909;
     border-color: #26282b;
     color: #26282b;
+}
+.circleIconButton-jET_ig.selected-ugP_am {
+    background-color: #111113;
 }
 
 /*joining/creating guild*/
@@ -550,7 +580,7 @@ body {
 /*Activity, Library, Nitro and Friends header*/
 .theme-dark .container-1r6BKw {
     background-color: #0a0909;
-	box-shadow: 0 1px 0 #0f0f10, 0 1.5px 0 #0f0f10, 0 2px 0 #0f0f1000;
+	box-shadow: none;
 }
 
 /*Activity*/
@@ -792,6 +822,9 @@ body {
 }
 .theme-dark .divider-3FBTu8 {
     background: #171719;
+}
+.theme-dark .friendsTable-133bsv .friendsTableHeader-32yE7d .friendsColumnSeparator-3MqtMA {
+    background-color: #0a0909;
 }
 
 /*Underage warning HAHA*/
