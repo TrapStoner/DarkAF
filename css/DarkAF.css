@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.3.6 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.0 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -122,7 +122,7 @@ body {
 }
 
 /*search bar*/
-.theme-dark .search-2oPWTC .searchBar-3dMhjb {
+.theme-dark .search-2oPWTC .searchBar-3dMhjb, .theme-dark .container-cMG81i {
     background-color: #0f0f10;
 }
 
@@ -176,9 +176,10 @@ body {
 }
 
 /*background (in general ;p)*/
-.theme-dark .noChannel-Z1DQK7, .theme-dark .activityFeed-1C0EmJ, .appMount-3lHmkl, .scrollerWrap-2lJEkd, .scroller-2wx7Hm, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .header-2o-2hj, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc {
+.theme-dark .noChannel-Z1DQK7, .theme-dark .activityFeed-1C0EmJ, .appMount-3lHmkl, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .theme-dark .wrapper-1Rf91z, .container-PNkimc, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc, .theme-dark .contentRegion-3nDuYy, .theme-dark .sidebarRegion-VFTUkN {
 	background-color: #080808 !important;
 }
+
 .container-1giJp5 {
     background: #080808;
     border-bottom: none;
@@ -379,15 +380,21 @@ line {
     color: #b3b3b3;
 }
 /*audio subsystem drop-down menu*/
-.css-ua3v5p-menu {
-	background-color: #0f0f10;
-	border-color: #0f0f10;
+.css-15ejc46-control {
+	background-color: #111113;
+}
+.css-181m2lf-menu {
+	background-color: #18191c;
+	border-color: #111113;
+}
+.css-1kj8ui-container {
+	background-color: #18191c;
 }
 .css-12o7ek3-option {
-	background-color: #080808;
+	background-color: #111113;
 }
 .css-1gnr91b-option {
-	background-color: #080808;
+	background-color: #111113;
 }
 
 
@@ -426,6 +433,9 @@ line {
 .theme-dark .button-mM-y8i { 
     background-color: #191a1b;
     box-shadow: 0 0 0 1px #191a1b;
+}
+.theme-dark .addGamePopout-2RY8Ju {
+    background-color: #111113;
 }
 /* [class="addGamePopout-2RY8Ju"] > [class="Select-control"] { */
 	/* border: 1px solid #ffffff !important; */
@@ -522,12 +532,12 @@ line {
     background-color: #111113;
 }
 
-/*Speaker badge*/
+/*Speaker Badge*/
 .theme-dark .iconBadge-2wi9r4 {
     background-color: #2f2f2f;
 }
 
-/*add server button*/
+/*Add A Server Button*/
 .theme-dark .circleIconButton-jET_ig {
     background: #080808;
     border-color: #26282b;
@@ -537,38 +547,45 @@ line {
     background-color: #111113;
 }
 
-/*joining/creating guild*/
+/*Joining/Creating Server Menu*/
 .theme-light .wrapper-2ZbzR9 {
     background: transparent;
 }
-.theme-dark .action-1lSjCi, .theme-light .action-1lSjCi {
+.theme-dark .action-1lSjCi {
     background: #111113;
     border: 1px solid #111113;
     box-shadow: none;
+	border-radius: 10px;
 }
-.action-1lSjCi {
-    border-radius: 10px;
+.theme-dark .slideBody-2nMrnU, .theme-light .slideBody-2nMrnU {
+    background-image: url(https://i.imgur.com/oPC6xIp.png),url(https://i.imgur.com/VMPRguk.png);
 }
-.join-33Tr-7 .actionIcon-2IISM_ {
-    height: 98px;
+.theme-dark .header-3ZP1MY {
+    color: #fff;
 }
-.or-3THJsp {
-    font-size: 23px;
+.theme-dark .create-3jownz .actionHeader-2CT5c7 {
+    color: #b50101;
 }
-.theme-dark .or-3THJsp, .theme-light .or-3THJsp {
+.theme-dark .create-3jownz .actionIcon-2IISM_ {
+    background-image: url(https://i.imgur.com/LPXZziC.png);
+}
+.theme-dark .actionButton-2PeQbJ {
+    background-color: #b50101;
+}
+.theme-dark .create-3jownz:hover .actionButton-2PeQbJ {
+    background-color: #9c0606;
+}
+.theme-dark .or-3THJsp {
     -webkit-mask: url(https://discordapp.com/assets/b9cf5548cc5a23a6943f194a0ace88f8.svg);
-    color: #647bcc;
+    color: #fff;
     background: #080808;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 52px,52px;
     -webkit-mask-position: 50%;
+	font-size: 23px;
 }
-.theme-dark .join-33Tr-7 .actionIcon-2IISM_, .theme-light .join-33Tr-7 .actionIcon-2IISM_ {
-    -webkit-mask: url(https://discordapp.com/assets/8fb52ec5260dfe6c5b93d211d3b6ecde.png);
-    background: #3ca374;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 178.5px 78px;
-    -webkit-mask-position: 50%;
+.theme-dark .join-33Tr-7 .actionIcon-2IISM_ {
+	background-image: url(https://i.imgur.com/m88zqMG.png);
 }
 
 /*Home Button*/
@@ -707,6 +724,14 @@ line {
 }
 .theme-dark .bottomSeparator-3cIFah {
     border-color: #040405;
+}
+.theme-dark .multipleIconWrapper-1PjkRO, .theme-dark .section-2VKIPC {
+    background-color: #262729;
+}
+/*Share Post*/
+.theme-dark .copyButton-gxXBmB {
+	background: linear-gradient(90deg,rgba(42,44,48,0),#080808 40px);
+	right: 2px;
 }
 
 /*Library*/
@@ -1060,7 +1085,7 @@ line {
     box-shadow: 0 0 0 0 #525252, inset 0 0 0 0 #2f2f2f;
 }
 
-/*right click menu*/
+/*Pop-up Menu*/
 .theme-dark .container-3cGP6G {
     background: #111113;
 }
@@ -1082,9 +1107,9 @@ line {
 .theme-dark .bubble-3we2di, .theme-dark .bubble-3we2di:before {
     background-color: #171719;
 }
-.checkbox .checkbox-inner input[type=checkbox]:checked+span {
-    background-color: #020202 !important;
-    border-color: #020202 !important;
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span {
+    background-color: #000000;
+    border-color: #000000;
 }
 .theme-dark .checkbox .checkbox-inner span {
     border-color: #26282b;
@@ -1294,6 +1319,7 @@ line {
 }
 .theme-dark .footer-3rDWdC {
     background-color: #080808;
+	box-shadow: inset 0 1px 0 #111113;
 }
 
 /*Server Folders*/
@@ -1301,13 +1327,16 @@ line {
 	background-color: #171719 !important;
 }
 .folderIconWrapper-226oVY:hover {
-	background-color: #19191b !important;
+	background-color: #18191c !important;
 }
 .theme-dark .expandedFolderBackground-2sPsd- {
-	background-color: #19191b;
+	background-color: #18191c;
 }
 .theme-dark .expandedFolderBackground-2sPsd-.hover-2ji_A7 {
 	background-color: #0f0f10;
+}
+.theme-dark .dragInner-_SHftW, .theme-light .dragInner-_SHftW {
+    background-color: #18191c;
 }
 .expandedFolderIconWrapper-1xLaU- [style*="color: rgb(114, 137, 218)"] {
 	color: #ffffff26 !important;
@@ -1321,5 +1350,97 @@ line {
 .colorPickerSwatch-5GX3Ve.default-cS_caM  {
 	background-color: #ffffff26 !important;
 }
+
+/*News Channel Follow Message*/
+.theme-dark .wrapper-39oAo3 {
+    background-color: #0d0d0e;
+}
+
+/*-------------------------------------*/
+/*Not The Best Solution*/
+/*Channel Banner*/
+.bannerImage-1jOskm  {
+	/* background-image: linear-gradient(rgba(54, 57, 63, 0) 0%, rgb(8, 8, 8) 100%), attr(url()) !important; */
+	/* -webkit-mask: linear-gradient(rgb(255, 255, 255) 0%, #08080800 100%) !important; */
+	-webkit-mask: linear-gradient(#ffffff 0%, #00000000 100%) !important;
+}
+/*-------------------------------------*/
+
+/*Server Discovery*/
+.bg-AYqtMd {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.theme-dark .pageWrapper-1PgVDX {
+    background-color: #080808;
+}
+.css-1wqqa50-container, .css-1rckt42-menu {
+	background-color: #18191c;
+}
+.css-ncjuf0-control:hover {
+	background-color: #131415;
+}
+.theme-dark .searchIcon-1a1-yA {
+    padding-left: 15px;
+}
+.theme-dark .clearIcon-2N9YIn {
+    padding-bottom: 15px;
+}
+.theme-dark .searchBox-3Y2Vi7:hover {
+    background-color: #131415
+}
+.theme-dark .searchIcon-1a1-yA:hover {
+    color: #f6f6f7;
+}
+.theme-dark .sectionSeparator-2OWiNT {
+    border-top: 1px solid #111113;
+}
+.theme-dark .card-3DjzTQ, .theme-dark .cardPlaceholder-1zrbbe {
+    background: #111113;
+}
+.theme-dark .activeButton-1BJAiN, .theme-dark .activeButton-1BJAiN:hover {
+    background-color: #111113;
+}
+.theme-dark .lookFilled-1Gx00P.colorTransparent-1ewNp9 {
+    background-color: #111113;
+}
+.theme-dark .lookFilled-1Gx00P.colorTransparent-1ewNp9:hover {
+    background-color: #0d0d0e;
+}
+
+
+/*Invited to join menu*/
+.theme-dark .contentWrapper-3WC1ID {
+    background: #080808;
+}
+
+
+/*Tooltip*/
+.theme-dark .tooltipBrand-g03Nz8 {
+    background-color: #000000;
+}
+.theme-dark .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK {
+    border-top-color: #000000;
+}
+
+/*EXPERIMENTAL*/
+/*Change + Button Position*/
+/* .scroller-2TZvBN > .listItem-2P_4kh:nth-last-child(2) { */
+    /* position: fixed; */
+    /* bottom: -11px; */
+    /* height: 53px; */
+    /* width: 50px; */
+    /* margin-left: 2px; */
+    /* padding: 10px; */
+    /* background-color: #080808; */
+/* } */
+/* .wrapper-1Rf91z .scrollerWrap-2lJEkd { */
+    /* contain: layout size !important; */
+/* } */
+/* .wrapper-1Rf91z { */
+    /* margin-bottom: 70px; */
+/* } */
+
+
+
 
 
