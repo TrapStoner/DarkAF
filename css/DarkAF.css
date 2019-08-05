@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.0 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.1 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -16,7 +16,7 @@ body {
     background-color: #080808 !important;
 	border-color: #080808 !important;
 }
-.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
+.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background-color: #111113 !important;
 	border-color: #111113 !important;
 }
@@ -176,7 +176,7 @@ body {
 }
 
 /*background (in general ;p)*/
-.theme-dark .noChannel-Z1DQK7, .theme-dark .activityFeed-1C0EmJ, .appMount-3lHmkl, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .theme-dark .wrapper-1Rf91z, .container-PNkimc, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .theme-dark .container-2Thooq, .theme-light .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc, .theme-dark .contentRegion-3nDuYy, .theme-dark .sidebarRegion-VFTUkN {
+.theme-dark .noChannel-Z1DQK7, .theme-dark .activityFeed-1C0EmJ, .appMount-3lHmkl, .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .theme-dark .wrapper-1Rf91z, .container-PNkimc, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .theme-dark .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc, .theme-dark .contentRegion-3nDuYy, .theme-dark .sidebarRegion-VFTUkN {
 	background-color: #080808 !important;
 }
 
@@ -184,7 +184,7 @@ body {
     background: #080808;
     border-bottom: none;
 }
-.theme-dark .container-3baos1, .theme-light .container-3baos1 {
+.theme-dark .container-3baos1 {
     background: #080808;
 }
 .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd:hover .content-3at_AU, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:active .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
@@ -420,7 +420,7 @@ line {
 
 
 /*game activity*/
-.theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s {
+.theme-dark .notDetected-33MY4s {
     background-color: #111113;
 }
 .theme-dark .game-1ipmAa {
@@ -463,13 +463,9 @@ line {
     background-color: #0f0f10;
 }
 
-/*Changelog*/
-/* .backdrop-1wrmKB + .typeWindows-1za-n7 { */
-	/* background-color: none !important; */
-/* } */
 
 /*game tab*/
-/* .theme-dark .user-settings-games .not-detected, .theme-light .user-settings-games .not-detected, .theme-dark .user-settings-games .now-playing, .theme-light .user-settings-games .now-playing { */
+/* .theme-dark .user-settings-games .not-detected, .theme-dark .user-settings-games .now-playing { */
 	/* background-color: #111113; */
 /* } */
 .theme-dark .card-FDVird:before {
@@ -557,7 +553,7 @@ line {
     box-shadow: none;
 	border-radius: 10px;
 }
-.theme-dark .slideBody-2nMrnU, .theme-light .slideBody-2nMrnU {
+.theme-dark .slideBody-2nMrnU {
     background-image: url(https://i.imgur.com/oPC6xIp.png),url(https://i.imgur.com/VMPRguk.png);
 }
 .theme-dark .header-3ZP1MY {
@@ -610,9 +606,6 @@ line {
 .inner-3ErfOT {
     background: #111113;
 }
-/* .theme-dark .libraryFilterInput-3JzqZD, .theme-dark .browseSearchInput-Jt8kg0 { */
-    /* background-color: #111113; */
-/* } */
 .searchBar-6Kv8R2 {
     /* box-shadow: 0 1px 0 #111113, 0 2px 0 #080808; */
 	box-shadow: none;
@@ -665,10 +658,10 @@ line {
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
     background-color: #050506;
 }
-.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
+.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
     background-color: #080808;
 }
-.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
     background-color: #080808;
 }
 .theme-dark .dockItem-2kQDqg:hover {
@@ -713,7 +706,7 @@ line {
 .news-2GDtLJ {
     background-color: #111113;
 }
-.theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover {
+.theme-dark .lookFilled-1Gx00P.hoverGreen-1gjdJc.hasHover-3X1-zV:hover {
     background-color: #000000;
 }
 .theme-dark .paginationItem-2lUq0s:after {
@@ -801,16 +794,16 @@ line {
     /* stroke: rgb(0, 0, 0); */
     /* stroke-width: 2; */
 /* } */
-.theme-dark .arrow-1QsYio, .theme-light .arrow-1QsYio {
+.theme-dark .arrow-1QsYio {
     color: #000000;
 }
-.theme-dark .bubble-1gL_TN, .theme-light .bubble-1gL_TN {
+.theme-dark .bubble-1gL_TN {
     background-color: #111113;
 }
-.theme-dark .bubble-1gL_TN:after, .theme-light .bubble-1gL_TN:after {
+.theme-dark .bubble-1gL_TN:after {
     border-top-color: #111113;
 }
-.theme-dark .body-1CAT0-, .theme-light .body-1CAT0- {
+.theme-dark .body-1CAT0- {
     background-color: #111113;
 }
 .theme-dark .card-NB61oR {
@@ -1138,7 +1131,7 @@ line {
 .emojiPicker-3m1S-j .stickyHeader-1SS0JU {
     background: #080808;
 }
-.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
+.scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
     background-color: #080808;
 }
 .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
@@ -1205,9 +1198,6 @@ line {
 .theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-header-background {
     background-color: #131415;
 }
-/* .scrollerWrap-2lJEkd {
-    background-color: #0e0e0e;
-} */
 .theme-dark #autocomplete-popout .autocomplete-arrow, .theme-dark #autocomplete-popout .autocomplete-shadow {
     box-shadow: none !important;
 }
@@ -1335,7 +1325,7 @@ line {
 .theme-dark .expandedFolderBackground-2sPsd-.hover-2ji_A7 {
 	background-color: #0f0f10;
 }
-.theme-dark .dragInner-_SHftW, .theme-light .dragInner-_SHftW {
+.theme-dark .dragInner-_SHftW {
     background-color: #18191c;
 }
 .expandedFolderIconWrapper-1xLaU- [style*="color: rgb(114, 137, 218)"] {
@@ -1420,6 +1410,12 @@ line {
 }
 .theme-dark .tooltipBrand-g03Nz8 .tooltipPointer-3ZfirK {
     border-top-color: #000000;
+}
+
+
+/*Voice Connected Pop-up*/
+.theme-dark .container-2x5lvQ .header-2C89wJ {
+    background-color: #0c0c0c;
 }
 
 /*EXPERIMENTAL*/
