@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.1 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.2 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -203,9 +203,6 @@ body {
 .theme-dark .colorPickerCustom-2CWBn2 {
     background: #111113;
     border-color: #111113;
-}
-.topSectionPlaying-1J5E4n {
-    background: #040405;
 }
 .theme-dark .applicationStore-1pNvnv {
     background-color: #080808;
@@ -1162,7 +1159,7 @@ line {
     box-shadow: 0 0 0 1px #0e0e0e, 0 2px 10px 0 #080808;
 }
 
-/*member wrapper*/
+/*Members Wrapper*/
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
     background-color: #111113;
 }
@@ -1188,6 +1185,37 @@ line {
 }
 .theme-dark .member-3W1lQa.popout-open, .theme-dark .member-3W1lQa.popout-open:hover {
 	background-color: #111113;
+}
+
+/*Profile Wrapper*/
+.theme-dark .topSectionNormal-2-vo2m {
+    background-color: #0a0a0a;
+}
+.topSectionPlaying-1J5E4n {
+    background: #040405;
+}
+.theme-dark .body-3ND3kc {
+    background-color: #0f0f10;
+}
+.theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx {
+    border-color: #191a1b;
+}
+.tabBarContainer-1s1u-z {
+    border-top: 1px solid #0c0c0c;
+}
+.theme-dark .connectedAccount-36nQx7 {
+    background-color: #18191c;
+	border-color: #0a0a0a;
+	border-radius: 5px;
+}
+.flowerStar-1GeTsn path {
+	fill: #010203
+}
+.connectedAccountName-f8AEe2 {
+    color: #c5c5c5;
+}
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+    color: #000000;
 }
 
 /*add roles menu (i think xd)*/
