@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.3 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.4 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -224,7 +224,7 @@ body {
 }
 
 
-/* Chats and Voice Groups also #'s and Names */
+/* Chats and Voice Channels also #'s and Names */
 .theme-dark .icon-1_QxNX {
     color: #26282b;
 }
@@ -246,18 +246,27 @@ body {
 .theme-dark .icon-22AiRD {
     color: #525252;
 }
+.total-3tKGEB {
+    background-color: #0f0f10;
+}
+.users-i_3-kL {
+    background-color: #18191c;
+}
+.total-3tKGEB:after {
+    border-right-color: #0e0e0e;
+}
 
 
 
 /* Settings */
 .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover, .theme-dark .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover {
-	background-color: #111113;
-}
-.themeDefault-24hCdX.valueChecked-m-4IJZ {
-    background-color: #000000;
+	background-color: #111113 !important;
 }
 .themeDefault-24hCdX:before {
     background-color: #080808;
+}
+.valueChecked-m-4IJZ.value-2hFrkk.themeDefault-24hCdX {
+	background-color:#000000 !important;
 }
 .theme-dark .accountBtnInner-sj5jLs {
     background-color: #111113;
@@ -412,6 +421,9 @@ body {
 }
 .theme-dark .defaultIndicator-2X8Auf {
     background-color: #171719;
+}
+.theme-dark .divider-3wNib3 {
+    border-color: #111113;
 }
 
 
@@ -757,7 +769,7 @@ body {
 
 /* Nitro */
 .wanderingCubesItem-WPXqao {
-    background-color: #2f2f2f;
+    background-color: #18191c;
 }
 .scrollerWrap-2lJEkd .scrollerTrack-1ZIpsv {
 	background: transparent !important;
@@ -1071,7 +1083,7 @@ body {
     background-color: #171719;
 }
 
-/* Old Messages */
+/* Old Messages Bar */
 .theme-dark .jumpToPresentBar-9P20AM, .theme-dark .jumpToPresentBar-9P20AM:hover {
     background-color: #111113;
 }
@@ -1081,6 +1093,9 @@ body {
 }
 .hasMore-3e72_v button {
     color: #dcddde;
+}
+.newMessagesBar-mujexs button:last-child {
+    color: #e5e8f1;
 }
 
 /* Typing... */
@@ -1207,6 +1222,10 @@ body {
 .theme-dark .member-3W1lQa.popout-open, .theme-dark .member-3W1lQa.popout-open:hover {
 	background-color: #111113;
 }
+.mulitplePlaceholderUsername-pogq9I, .placeholderUsername-2B_OA9, .placeholderAvatar-damqh6, .memberGroupsPlaceholder-3mwPub {
+    background: #18191c;
+}
+
 
 /* Profile Wrapper */
 .theme-dark .topSectionNormal-2-vo2m {
@@ -1509,6 +1528,75 @@ body {
 	box-shadow: 0 2px 8px #131415;
 }
 
+/* Server Boost Status Pop-up*/
+.theme-dark .barBackground-2EEiLw {
+    background-color: #111113;
+}
+.theme-dark .barForeground-3KglC8 {
+    background-color: #000000;
+}
+.theme-dark .boostCount-UFqabz {
+    background-color: #111113;
+}
+.theme-dark .tierNoneContainer-3hhK3h {
+    background-color: #111113;
+}
+.theme-dark .tierHeaderLocked-1s2JJz {
+    background-color: #0c0c0c;
+}
+.theme-dark .tierBody-16Chc9 {
+    background-color: #111113;
+}
+.theme-dark .carouselLeftGradientEdge-3P4spl {
+    background-image: linear-gradient(90deg,#080808,rgba(54, 57, 63, 0));
+}
+.theme-dark .carouselRightGradientEdge-2Z3H8D {
+    background-image: linear-gradient(270deg,#080808,rgba(54,57,63,0));
+}
+.theme-dark .tierMarkerBackground-3q29am {
+    background-color: #0c0c0c;
+}
+.theme-dark .selectedTier-1JkO7i .tierMarker-5HkGJ_ {
+	background: linear-gradient(to right, #18191c, #18191c) !important;
+}
+.tierMarkerInProgress-24LMzJ {
+	background: linear-gradient(to right, #131415, #131415) !important;
+}
+.tierMarkerAccomplished-2MiXeg {
+	background: linear-gradient(to right, #000000, #000000) !important;
+}
+.theme-dark .tierHeaderUnlocked-1n-OTI {
+    background-image: linear-gradient(90deg,#0c0c0c,#020202) !important;
+}
+.theme-dark .tierUnlocked-25K6Kv {
+    color: #000000;
+}
+
+/* Server Boost Status */
+.theme-dark .background-3xPPFc {
+    color: #111113;
+}
+.theme-dark .foreground-2EIns2 {
+    color: #000000;
+}
+.theme-dark .tierBody-x9kBBp {
+    background-color: #111113;
+}
+.theme-dark .tierHeaderLocked-1a2opw {
+    background-color: #0c0c0c;
+}
+.theme-dark .tierHeaderUnlockedBackground-MW5XJU, .theme-light .tierHeaderUnlockedBackground-MW5XJU {
+    background-image: linear-gradient(90deg,#0c0c0c,#020202) !important;
+}
+.theme-dark .tierAccomplished-2eXPdI, .theme-dark .tierCurrent-Lw7-4E, .theme-dark .tierDefault-2qaRkD {
+    background-image: linear-gradient(90deg,#111113,#111113);
+}
+.theme-dark .tierInProgress-3mBoXq {
+    background-color: #18191c;
+}
+.theme-dark .tierUnlocked-27DwHo {
+    color: #000000;
+}
 
 
 
