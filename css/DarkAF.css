@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.4 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.5 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -188,7 +188,7 @@ body {
     background: #080808;
 }
 .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd:hover .content-3at_AU, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:active .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
-	background-color: #111113 !important;
+	background-color: #0f0f10 !important;
 }
 .guildSeparator-3s64Iy {
 	background: #111113;
@@ -610,16 +610,16 @@ body {
 
 /* Home */
 .channel-2QD9_O.selected-1HYmZZ a {
-    background-color: #111113;
+    background-color: #0f0f10;
 }
 .channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
-    background-color: #111113;
+    background-color: #0f0f10;
 }
 .searchBar-6Kv8R2 .searchBarComponent-32dTOx input {
-    background: #111113;
+    background: #0f0f10;
 }
 .inner-3ErfOT {
-    background: #111113;
+    background: #0f0f10;
 }
 .searchBar-6Kv8R2 {
     /* box-shadow: 0 1px 0 #111113, 0 2px 0 #080808; */
@@ -967,6 +967,9 @@ body {
 .callAvatarBorder-1D_KaE.video-3GgX2M.speaking-oCqYMI {
     box-shadow: inset 0 0 0 2px #b4b3bb;
 }
+.callAvatarBorder-1D_KaE.video-3GgX2M.soundsharing-102bS9 {
+    box-shadow: inset 0 0 0 2px #b4b3bb;
+}
 
 /* Nitro Gift */
 .theme-dark .option-1l2vXE {
@@ -1009,7 +1012,7 @@ body {
     background-color: #080808;
 }
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: #111113;
+    background-color: #0f0f10;
 }
 .theme-dark .cardPrimaryEditable-3KtE4g {
     background: #0f0f10;
@@ -1585,7 +1588,7 @@ body {
 .theme-dark .tierHeaderLocked-1a2opw {
     background-color: #0c0c0c;
 }
-.theme-dark .tierHeaderUnlockedBackground-MW5XJU, .theme-light .tierHeaderUnlockedBackground-MW5XJU {
+.theme-dark .tierHeaderUnlockedBackground-MW5XJU {
     background-image: linear-gradient(90deg,#0c0c0c,#020202) !important;
 }
 .theme-dark .tierAccomplished-2eXPdI, .theme-dark .tierCurrent-Lw7-4E, .theme-dark .tierDefault-2qaRkD {
@@ -1597,6 +1600,82 @@ body {
 .theme-dark .tierUnlocked-27DwHo {
     color: #000000;
 }
+
+/* Game Streaming Panel */
+.theme-dark .panel-VoWSbJ {
+    background-color: #080808;
+}
+.activityPanel-28dQGo {
+    border-bottom: none;
+}
+
+/* Game Streaming Preview aka watching */
+.theme-dark .tooltipGrey-1hnvTt {
+    background-color: #0f0f10;
+}
+.theme-dark .transparent-2ZlE3R .divider-3FBTu8 {
+    background: #191a1b;
+}
+.theme-dark .popout-1k352f {
+    background-color: #0a0a0a;
+}
+.theme-dark .memberListItem-2QQgFD:not(.popoutDisabled-1sb3_F):hover {
+    background-color: #0f0f10;
+}
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+    background-color: #ffffffd4;
+}
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN, .mediaBarInteractionDragging-2QurIZ .mediaBarGrabber-1FqnbN {
+    background-color: #ffffff;
+}
+.bottomControls-UTyHwG .lookFilled-1Gx00P.colorBrand-3pXr91 {
+	background-color: #0a0a0a !important;
+	border-radius: 12px;
+}
+.bottomControls-UTyHwG .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+	background-color: #050506 !important;
+}
+
+
+/* Hover Preview */
+.theme-dark .streamPreview-2-WUWT {
+    background-color: #0f0f10;
+}
+.theme-dark .previewContainer-12UlHl {
+    background-color: #040405;
+}
+.theme-dark .watchButton-2SbJEo {
+    border-color: #444546;
+}
+
+/* Stream Settings */
+.selectorButtonSelected-336oUc {
+    background-color: #000000 !important;
+	border-color: #000000 !important;
+}
+.theme-dark .selectorButton-wjWyGe:not(.selectorButtonSelected-336oUc):hover {
+    background-color: #111113 !important;
+}
+.selectorNitroIcon-3FDeDE path {
+	fill: #f6f6f9 !important;
+}
+.divider-1sfl31 {
+    border-top: none;
+}
+.reportText-3upFz- {
+    color: #e03e3e;
+}
+
+/* Invite to Stream */
+.theme-dark .content-3CCvMx:before {
+    background-color: #111113;
+}
+.theme-dark .inviteRow-2L02ae:hover {
+    background-color: #0d0d0e;
+}
+
+
+
 
 
 
