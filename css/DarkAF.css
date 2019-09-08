@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.5 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.6 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -17,8 +17,8 @@ body {
 	border-color: #080808 !important;
 }
 .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    background-color: #111113 !important;
-	border-color: #111113 !important;
+    background-color: #0f0f10 !important;
+	border-color: #0f0f10 !important;
 }
 
 /* Chat Box Dividers */
@@ -52,7 +52,7 @@ body {
 	background-color: #080808
 }
 .theme-dark .inner-zqa7da {
-	background-color: #0c0c0c;
+	background-color: #0d0d0e;
 }
 .newMessagesBar-mujexs, .newMessagesBar-mujexs:hover {
     background-color: #111113;
@@ -150,11 +150,14 @@ body {
 .theme-dark .searchHeader-1l-wpR {
     background-color: #111113;
 }
+.theme-dark .searchResultsWrap-2DKFzt {
+    background-color: #080808;
+}
 .theme-dark .channelSeparator-1X1FuH .channelName-1QajIf {
     background-color: #080808;
 }
 .theme-dark .searchResult-3pzFAB:before {
-    background-image: linear-gradient(0deg,#0a0909,#0a0a0a);
+    background-image: linear-gradient(0deg,#080808,#0d0d0e);
 }
 .searchResultMessage-2VxO12, .theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA, .theme-dark .searchResult-3pzFAB .hit-NLlWXA, .theme-dark .searchResult-3pzFAB.expanded-v2Szsz .searchResultMessage-2VxO12.hit-NLlWXA {
 	border: none;
@@ -164,7 +167,7 @@ body {
     background-color: #0f0f10;
 }
 .theme-dark .searchResult-3pzFAB:after {
-    background-image: linear-gradient(180deg,#0a0909,#0a0a0a);
+    background-image: linear-gradient(180deg,#080808,#0d0d0e);
 }
 .theme-dark .jumpButton-Ia2hRJ {
     background-color: #131415;
@@ -1347,7 +1350,10 @@ body {
 
 /* Reaction */
 .theme-dark .reaction-1ELvT8 {
-    background: #0f0f10;
+    background: #0c0c0c;
+}
+.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
+    background: #171719;
 }
 
 /* GIF picker */
@@ -1425,9 +1431,15 @@ body {
 	background-color: #ffffff26 !important;
 }
 
-/* News Channel Follow Message */
+/* Join & Follow Action Message */
 .theme-dark .wrapper-39oAo3 {
     background-color: #0d0d0e;
+}
+.wrapper-39oAo3 .lookFilled-1Gx00P.colorBrand-3pXr91 {
+	background-color: #18191c;
+}
+.wrapper-39oAo3 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+	background-color: #0f0f10;
 }
 
 /*-------------------------------------*/
@@ -1673,6 +1685,45 @@ body {
 .theme-dark .inviteRow-2L02ae:hover {
     background-color: #0d0d0e;
 }
+
+/* Game Info Pop-up*/
+.theme-dark .footer-3J5oP4 {
+    background-color: #0a0a0a;
+}
+.theme-dark .emptyPlayers-dx3qig, .theme-dark .players-1zg2l8 {
+    background-color: #0f0f10;
+}
+.theme-dark .news-2KwXHF {
+    background-color: #0a0a0a;
+}
+.lookFilled-1Gx00P.colorGrey-2DXtkV {
+    background-color: #18191c;
+}
+.lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+    background-color: #0d0d0e;
+}
+.theme-dark .disabledButton-3apIHo {
+    background-color: #0a0a0a;
+}
+.theme-dark .player-3zB-0D:hover {
+    background-color: #191a1b;
+}
+
+/* Incoming Call Pop-up */
+.theme-dark .incomingCallInner-2VmFiR {
+    background: #040405;
+    border-color: #030304;
+}
+.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: #0f0f10;
+	border-radius:20px;
+}
+.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorTransparent-1ewNp9 {
+    background-color: rgba(255, 45, 45, 0.57);
+	border-radius:20px;
+}
+
+
 
 
 
