@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.4.7 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.0 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -12,36 +12,19 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Background (in general ;p) */
-/* .theme-dark .noChannel-Z1DQK7, .theme-dark .activityFeed-1C0EmJ,  .theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A, .theme-dark .wrapper-1Rf91z, .container-PNkimc, .channels-Ie2l6A, .theme-dark .title-3qD0b-, .container-2Rl01u, .theme-dark .container-2Thooq, .container-16j22k, .container-2lgZY8, .theme-dark .messagesWrapper-3lZDfY, .theme-dark .members-1998pB, .theme-dark #friends, .themeDark-3Ap_7i, .theme-dark .container-3gCOGc, .theme-dark .contentRegion-3nDuYy, .theme-dark .sidebarRegion-VFTUkN { */
-	/* background-color: #080808 !important; */
-/* } */
 .theme-dark .container-3gCOGc, .theme-dark .layer-3QrUeG {
 	background-color: var(--background-primary);
 }
-
-/* .theme-dark .wrapper-1ucjTd.modeSelected-1zApJ_ .content-3at_AU, .theme-dark .wrapper-1ucjTd:hover .content-3at_AU, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz:active .content-3xS9Lh, .theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .private-channels .channel:hover a, .theme-dark .member-3W1lQa.popout-open .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 { */
-	/* background-color: #0f0f10 !important; */
-/* } */
-
-/* .theme-dark .children-19S4PO:after { */
-    /* background: #080808; */
-/* } */
-/* .container-1UB9sr { */
-	/* background: #080808; */
-	/* border-bottom: none !important; */
-/* } */
 .theme-dark .colorPickerCustom-2CWBn2 {
     background: #111113;
     border-color: #111113;
 }
-/* .theme-dark .applicationStore-1pNvnv { */
-    /* background-color: #080808; */
-/* } */
 .theme-dark {
 	--interactive-muted: #2f2f2f;
 	--background-primary: #080808;
 	--background-secondary: #080808;
 	--background-tertiary: #080808;
+	--background-floating: #0d0d0e;
 	--background-modifier-hover: #0f0f10;
 	--background-modifier-active: #18191c;
 	--background-modifier-selected: #0f0f10;
@@ -94,12 +77,6 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Chat Wrapper */
-/* .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3 { */
-	/* background-color: #080808 */
-/* } */
-/* .theme-dark .inner-zqa7da { */
-	/* background-color: #0d0d0e; */
-/* } */
 .newMessagesBar-mujexs, .newMessagesBar-mujexs:hover {
     background-color: #111113;
 }
@@ -1124,7 +1101,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     box-shadow: 0 0 0 0 #525252, inset 0 0 0 0 #2f2f2f;
 }
 
-/* Pop-up Menu */
+/* Right-Click Menu */
+.contextMenu-HLZMGh {
+	padding: 3px 4px;
+}
 .theme-dark .container-3cGP6G {
     background: #111113;
 }
@@ -1140,8 +1120,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .itemGroup-1tL0uz {
     border-color: #111113;
 }
-.theme-dark .item-1Yvehc:hover {
-    background: #171719;
+.item-1Yvehc:hover, .selected-BYpGTS {
+    background-color: #131415 !important;
 }
 .theme-dark .bubble-3we2di, .theme-dark .bubble-3we2di:before {
     background-color: #171719;
@@ -1152,6 +1132,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .theme-dark .checkbox .checkbox-inner span {
     border-color: #26282b;
+}
+.itemBase-tz5SeC.danger-2dXSTE:hover {
+    color: #fff;
+    background-color: #f33 !important;
 }
 
 
@@ -1469,15 +1453,14 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background-color: #0f0f10;
 }
 
-/*-------------------------------------*/
-/* Not The Best Solution */
 /* Channel Banner */
-.bannerImage-1jOskm  {
-	/* background-image: linear-gradient(rgba(54, 57, 63, 0) 0%, rgb(8, 8, 8) 100%), attr(url()) !important; */
-	/* -webkit-mask: linear-gradient(rgb(255, 255, 255) 0%, #08080800 100%) !important; */
-	-webkit-mask: linear-gradient(#ffffff 0%, #00000000 100%) !important;
+.bannerImage-1jOskm:after  {
+	content: "";
+	position: absolute;
+	width: 240px;
+	height: 135px;
+	background: linear-gradient(#ffffff00 0%, #080808cc 100%);
 }
-/*-------------------------------------*/
 
 /* Server Discovery */
 .bg-AYqtMd {
@@ -1726,6 +1709,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .news-2KwXHF {
     background-color: #0a0a0a;
 }
+.newsEmpty-3tvLgI {
+	background-image: url(https://i.imgur.com/rWDsy47.png) !important;
+}
 .lookFilled-1Gx00P.colorGrey-2DXtkV {
     background-color: #18191c;
 }
@@ -1779,8 +1765,6 @@ button[aria-label="Send a gift"] {
 .theme-dark .reactionSelected-1pqISm {
     background-color: #18191c;
 }
-
-
 
 
 
