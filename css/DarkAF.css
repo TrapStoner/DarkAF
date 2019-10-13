@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.0 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.1 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -25,11 +25,14 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-secondary: #080808;
 	--background-tertiary: #080808;
 	--background-floating: #0d0d0e;
+	--background-accent: #111113;
+	--background-accent2: #0f0f10;
 	--background-modifier-hover: #0f0f10;
 	--background-modifier-active: #18191c;
 	--background-modifier-selected: #0f0f10;
 	--background-modifier-accent: #111113;
 	--channeltextarea-background: #0d0d0e;
+	--activity-card-background: #0f0f10;
 	--deprecated-panel-background: #080808;
 	--deprecated-store-bg: #080808;
 	--deprecated-text-input-bg: #0f0f10;
@@ -273,8 +276,16 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .themeDefault-24hCdX {
     background-color: #191a1b;
 }
+.theme-dark .denySelected-1mh2mZ {
+    border-color: #f04747 !important;
+    background: #f04747;
+}
 .theme-dark .passthroughSelected-1Eq0Kl {
     background: #191a1b;
+}
+.theme-dark .allowSelected-25S_i5 {
+    border-color: #43b581 !important;
+    background: #43b581;
 }
 .theme-dark .select-2TCrqx .Select-menu-outer {
     background: #111113;
@@ -628,8 +639,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Activity */
-.theme-dark .outer-2IVh5n {
-    background-color: #111113;
+.theme-dark .emptyCard-3CNsz2 {
+    background-color: var(--background-modifier-active);
 }
 .theme-dark .recentlyPlayedContainer-2F3MqS {
     background-color: #111113;
@@ -701,8 +712,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     box-shadow: none;
 }
 .theme-dark .input-2VB9rf {
-    background-color: #111113;
-    box-shadow: 0 2px 5px #080808, 0 0 0 1px #111113;
+    background-color: var(--background-accent2);
+    box-shadow: 0 2px 5px #080808, 0 0 0 1px var(--background-accent2);
 }
 .theme-dark .keybindShortcut-1BD6Z1 span {
     background-color: #111113;
@@ -710,7 +721,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     box-shadow: inset 0 -4px 0 #171719;
 }
 .theme-dark .resultFocused-3aIoYe {
-    background-color: #111113;
+    background-color: var(--background-accent2);
 }
 .news-2GDtLJ {
     background-color: #111113;
@@ -728,7 +739,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     border-color: #040405;
 }
 .theme-dark .multipleIconWrapper-1PjkRO, .theme-dark .section-2VKIPC {
-    background-color: #262729;
+    background-color: var(--background-modifier-active);
 }
 /* Share Post */
 .theme-dark .copyButton-gxXBmB {
@@ -817,6 +828,12 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .theme-dark .card-NB61oR {
     background-color: #111113;
+}
+.theme-dark .categoryHeader-1D7Tqy, .theme-dark .premiumApplicationsHeader-Zmkm5e {
+    border-color: var(--background-accent);
+}
+.theme-dark .tile-QA_yMc {
+    background-color: var(--background-accent2);
 }
 
 /* .headerFancy-1AcCLF:before { */
@@ -1060,17 +1077,15 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Mention Search */
-.autocompleteInner-zh20B_ {
-    background-color: #111113;
-}
 .selector-2IcQBU {
-    background-color: #111113;
+    background-color: var(--background-accent2);
+	border-radius: 10px;
 }
 .theme-dark .divider-23swzi {
     background-color: #111113;
 }
 .theme-dark .selectorSelected-1_M1WV {
-    background-color: #171719;
+    background-color: var(--background-modifier-active);
 }
 
 /* Old Messages Bar */
@@ -1353,7 +1368,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* GIF picker */
 .theme-dark .autocomplete-1vrmpx {
-    background-color: #0f0f10;
+    background-color: var(--background-accent2);
 }
 .theme-dark .container-cMG81i {
     background-color: #0a0a0a;
