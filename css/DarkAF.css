@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.1 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.2 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -16,8 +16,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background-color: var(--background-primary);
 }
 .theme-dark .colorPickerCustom-2CWBn2 {
-    background: #111113;
-    border-color: #111113;
+    background: var(--background-accent);
+    border-color: var(--background-accent);
 }
 .theme-dark {
 	--interactive-muted: #2f2f2f;
@@ -61,7 +61,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     border-top: 1px solid #080808;
 }
 .theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:after, .theme-dark .divider-3gKybi:not(.dividerRed-MKoLlr) .dividerContent-2L12VI:before {
-    border-color: #111113;
+    border-color: var(--background-accent);
 }
 .attachButtonDivider-3Glu60 {
 	background: none;
@@ -81,7 +81,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Chat Wrapper */
 .newMessagesBar-mujexs, .newMessagesBar-mujexs:hover {
-    background-color: #111113;
+    background-color: var(--background-accent);
 }
 .textAreaDisabled-2_o-kZ::placeholder {
 	color: #ffffffb3 !important;
@@ -95,7 +95,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: #0d0d0e;
 }
 .theme-dark .spoilerText-3p6IlD {
-    background-color: #111113;
+    background-color: var(--background-accent);
 }
 
 /* Chat Formating */
@@ -529,6 +529,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .theme-dark .item-1GzJrl:hover {
     background-color: #18191c;
+}
+.theme-dark .item-1GzJrl.leave-1DRJfn:hover {
+    background-color: #f33;
+	color: #ffffff;
 }
 
 /* Guilds Wrapper */
@@ -1212,11 +1216,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Members Wrapper */
-.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
-    background-color: #111113;
+.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6 {
+    background-color: #0f0f10;
 }
 .theme-dark .headerNormal-T_seeN {
-    background-color: #0d0d0e;
+    background-color: #0a0a0a;
 }
 .headerPlaying-j0WQBV {
     background: #040405;
@@ -1225,11 +1229,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px #080808;
 }
 .theme-dark .quickMessage-1yeL4E {
-    background-color: #111113;
-    border-color: #111113;
+    background-color: #0a0a0a;
+    border-color: #0c0c0c;
 }
 .theme-dark .note-3kmerW textarea:focus {
-    background-color: #111113;
+    background-color: #0d0d0e;
 }
 .clickable-1JJAn8:hover .layout-2DM8Md, .selected-aXhQR6 .layout-2DM8Md {
 	background-color: #0f0f10 !important;
