@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.2 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.3 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -12,13 +12,6 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Background (in general ;p) */
-.theme-dark .container-3gCOGc, .theme-dark .layer-3QrUeG {
-	background-color: var(--background-primary);
-}
-.theme-dark .colorPickerCustom-2CWBn2 {
-    background: var(--background-accent);
-    border-color: var(--background-accent);
-}
 .theme-dark {
 	--interactive-muted: #2f2f2f;
 	--background-primary: #080808;
@@ -39,6 +32,14 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--deprecated-text-input-border: #0f0f10;
 	--border-primary: #080808;
 }
+.theme-dark .container-3gCOGc, .theme-dark .layer-3QrUeG {
+	background-color: var(--background-primary);
+}
+.theme-dark .colorPickerCustom-2CWBn2 {
+    background: var(--background-accent);
+    border-color: var(--background-accent);
+}
+
 
 /* Chat Box Scrollbar */
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
@@ -643,6 +644,13 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Activity */
+.wrappedCard-30FR_0: {
+	content: "";
+	position: absolute;
+	background-color:#080808;
+	height: 50px;
+	width: 420px;
+}
 .theme-dark .emptyCard-3CNsz2 {
     background-color: var(--background-modifier-active);
 }
@@ -1575,30 +1583,24 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: #0f0f10;
 }
 
-/* Server Boost Status Pop-up*/
+/* Server Boost */
+.theme-dark .ctaBar-2UsjF2 {
+    background-color: #111113;
+}
+.theme-dark .perk-2WeBWW {
+    background-color: #111113;
+}
 .theme-dark .barBackground-2EEiLw {
     background-color: #111113;
 }
 .theme-dark .barForeground-3KglC8 {
     background-color: #000000;
 }
-.theme-dark .boostCount-UFqabz {
-    background-color: #111113;
-}
-.theme-dark .tierNoneContainer-3hhK3h {
-    background-color: #111113;
-}
 .theme-dark .tierHeaderLocked-1s2JJz {
     background-color: #0c0c0c;
 }
 .theme-dark .tierBody-16Chc9 {
     background-color: #111113;
-}
-.theme-dark .carouselLeftGradientEdge-3P4spl {
-    background-image: linear-gradient(90deg,#080808,rgba(54, 57, 63, 0));
-}
-.theme-dark .carouselRightGradientEdge-2Z3H8D {
-    background-image: linear-gradient(270deg,#080808,rgba(54,57,63,0));
 }
 .theme-dark .tierMarkerBackground-3q29am {
     background-color: #0c0c0c;
@@ -1610,7 +1612,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background: linear-gradient(to right, #131415, #131415) !important;
 }
 .tierMarkerAccomplished-2MiXeg {
-	background: linear-gradient(to right, #000000, #000000) !important;
+	background: linear-gradient(to right, #030304, #030304) !important;
 }
 .theme-dark .tierHeaderUnlocked-1n-OTI {
     background-image: linear-gradient(90deg,#0c0c0c,#020202) !important;
@@ -1646,8 +1648,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Game Streaming Panel */
-.theme-dark .panel-VoWSbJ {
-    background-color: #080808;
+.panel-24C3ux {
+    border-bottom: none;
 }
 .activityPanel-28dQGo, .container-1giJp5 {
     border-bottom: none;
@@ -1785,6 +1787,19 @@ button[aria-label="Send a gift"] {
     background-color: #18191c;
 }
 
+/* Payment Screen */
+.bodyWrapper-3GGwfp .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: #0a0a0a;
+}
+.bodyWrapper-3GGwfp .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: #080808;
+}
+.theme-dark .iconWrapper-3LVgIo {
+    background: #080808;
+}
+.focusLock-Ns3yie .input-cIJ7To {
+    background-color: #0c0c0c;
+}
 
 
 /*EXPERIMENTAL*/
