@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.7 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.8 ---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -16,6 +16,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--interactive-muted: #2f2f2f;
 	--background-primary: #080808;
 	--background-secondary: #080808;
+	--background-secondary-alt: #080808;
 	--background-tertiary: #080808;
 	--background-floating: #0d0d0e;
 	--background-accent: #111113;
@@ -926,6 +927,12 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .container-1D34oG {
     background-color: #080808;
 }
+.theme-dark .inset-3sAvek {
+    background-color: #0d0d0e;
+}
+.theme-dark .separator-XqIyoz {
+    background-color: #111113;
+}
 .theme-dark .friendsTable-133bsv .friendsTableHeader-32yE7d {
     border-bottom: 1px solid #080808;
 }
@@ -1433,10 +1440,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Reaction */
-.theme-dark .reaction-1ELvT8 {
+.reaction-1hd86g {
     background: #0c0c0c;
 }
-.theme-dark .reaction-1ELvT8.reactionMe-23mbRf {
+.reaction-1hd86g.reactionMe-wv5HKu {
     background: #171719;
 }
 
