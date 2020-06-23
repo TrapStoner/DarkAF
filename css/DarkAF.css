@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.5.8 ---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.6.0---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -11,9 +11,20 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background-color: var(--background-tertiary) !important;
 }
 
+
+
+.side-8zPYf6:after {
+	content: "DarkAF v1.6 by TrapStoner#9526";
+	font-size: 16px;
+	color: #61656b;
+	position: relative;
+	padding: 0px 10px;
+	margin-bottom: 25px;
+}
+
 /* Background (in general ;p) */
 .theme-dark {
-	--interactive-muted: #2f2f2f;
+	/* --interactive-muted: #2f2f2f; */
 	--background-primary: #080808;
 	--background-secondary: #080808;
 	--background-secondary-alt: #080808;
@@ -25,6 +36,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-modifier-active: #18191c;
 	--background-modifier-selected: #0f0f10;
 	--background-modifier-accent: #111113;
+	--scrollbar-auto-track: #0f0f10;
 	--channeltextarea-background: #0d0d0e;
 	--activity-card-background: #0f0f10;
 	--deprecated-panel-background: #080808;
@@ -32,6 +44,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--deprecated-text-input-bg: #0f0f10;
 	--deprecated-text-input-border: #0f0f10;
 	--border-primary: #080808;
+	--elevation-megahigh: 0 8px 14px rgba(0, 0, 0, 0.5);
 }
 .theme-dark .container-3gCOGc, .theme-dark .layer-3QrUeG {
 	background-color: var(--background-primary);
@@ -226,15 +239,15 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .wrapper-1ucjTd.modeMuted-3osy7j .icon-1_QxNX {
     color: #111113;
 }
-.wrapper-CU3qI5 {
-	color: #525252
-}
-.theme-dark .wrapper-1ucjTd.modeMuted-3osy7j .name-3_Dsmg {
-    color: #444546;
-}
-.theme-dark .name-3_Dsmg {
-    color: #8a8a8a;
-}
+/* .wrapper-CU3qI5 { */
+	/* color: #525252 */
+/* } */
+/* .theme-dark .wrapper-1ucjTd.modeMuted-3osy7j .name-3_Dsmg { */
+    /* color: #444546; */
+/* } */
+/* .theme-dark .name-3_Dsmg { */
+    /* color: #8a8a8a; */
+/* } */
 .theme-dark .wrapper-1ucjTd:hover .icon-1_QxNX, .theme-dark .wrapper-1ucjTd.modeMuted-3osy7j:hover .icon-1_QxNX {
     color: #525252;
 }
@@ -460,8 +473,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Mic Test */
-.theme-dark .notches-1sAcEM {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='#0a0909'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+.theme-dark .notches-1sAcEM.gray-3_LNYR {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23080808'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
 }
 .theme-dark .progress-1IcQ3A {
     background-color: #111113;
@@ -602,8 +615,22 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     box-shadow: none;
 	border-radius: 10px;
 }
+.create-3jownz .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: #080808;
+}
+.create-3jownz .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: #0e0e0e;
+}
+.join-33Tr-7 .lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: #080808;
+}
+.join-33Tr-7 .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: #0e0e0e;
+}
 .theme-dark .slideBody-2nMrnU {
     background-image: url(https://i.imgur.com/oPC6xIp.png),url(https://i.imgur.com/VMPRguk.png);
+	background-repeat: no-repeat;
+	background-position: left,right;
 }
 .theme-dark .header-3ZP1MY {
     color: #fff;
@@ -734,6 +761,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .paginationItem-3-MBTL:after {
     background: linear-gradient(270deg,transparent 0,#0d0d0e);
 }
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: #050506;
+}
 .article-3kb3qm, .theme-dark .header-1RC2Wb {
     background-color: #ffffff;
 }
@@ -745,9 +775,6 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .theme-dark .sectionLine-JjseS9 {
     background-color: #040405;
-}
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: #050506;
 }
 .theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
     background-color: #080808;
@@ -1204,7 +1231,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .container-3cGP6G {
     background: #111113;
 }
-.theme-dark .item-2J1YMK:active, .theme-dark .item-2J1YMK:hover {
+.colorDefault-2K3EoJ.focused-3afm-j {
     background-color: #171719;
 }
 .theme-dark.conMenu-HLZMGh {
@@ -1229,7 +1256,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .checkbox .checkbox-inner span {
     border-color: #26282b;
 }
-.itemBase-tz5SeC.danger-2dXSTE:hover {
+.colorDanger-2qLCe1.focused-3afm-j {
     color: #fff;
     background-color: #f33 !important;
 }
@@ -1293,7 +1320,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Members Wrapper */
-.theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6 {
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
     background-color: #0f0f10;
 }
 .theme-dark .headerNormal-T_seeN {
@@ -1397,7 +1424,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: #0d0d0e;
 }
 .theme-dark .phoneField-38N1bJ .countryButton-3xq3Ts:hover {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 .theme-dark .elevationBorderLow-2qgTRQ {
     box-shadow: 0 0 0 1px #0d0d0e, 0 1px 5px 0 #0d0d0e;
@@ -1464,8 +1491,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: #050506 !important;
 }
 .theme-dark .searchSuggestion-2K8OBX.searchSuggestion-2K8OBX:hover {
-    background-color: #080808;
-    border-color: #080808;
+    background-color: var(--background-primary);
+    border-color: var(--background-primary);
 }
 
 /* Quick Switcher & Server Boosting tips */
@@ -1493,13 +1520,13 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Quick Switcher Menu */
 .theme-dark .tipsWithoutResults-lGY-De, .theme-dark .tipsWithResults-HhTE9b {
-    border-color: #080808;
+    border-color: var(--background-primary);
 }
 .scrollerOuter-3FLELE {
     padding-top: 20px;
 }
 .theme-dark .keybindShortcutTipsSelect-HDyfe8:last-of-type:before {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 
 /* Pop-up header & footer */
@@ -1569,7 +1596,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 .theme-dark .pageWrapper-1PgVDX {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 .css-1wqqa50-container, .css-1rckt42-menu {
 	background-color: #18191c !important;
@@ -1608,7 +1635,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Invited to join Menu */
 .theme-dark .contentWrapper-3WC1ID {
-    background: #080808;
+    background: var(--background-primary);
 }
 
 
@@ -1647,8 +1674,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .inner-3nWsbo {
     border: 2px dashed #525252;
 }
-.uploadModal-2ifh8j {
-    background-color: #070707 !important;
+.theme-dark .uploadModal-2ifh8j {
+    background-color: #070707;
+	box-shadow: 0 0 0 1px rgba(32, 34, 37, 0.3), 0 2px 10px 0 rgba(0,0,0,.2);
 }
 .uploadModal-2ifh8j .footer-3mqk7D {
     background-color: #070707 !important;
@@ -1666,7 +1694,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Server Boost */
 .theme-dark .perksModal-fSYqOq {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 .theme-dark .ctaBar-2UsjF2 {
     background-color: #111113;
@@ -1746,10 +1774,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Game Streaming Preview aka watching */
 .root-25RxKh {
-    background: #080808;
+    background: var(--background-primary);
 }
 .theme-dark .tooltipGrey-1hnvTt {
-    background-color: #0f0f10;
+    background-color: var(--background-accent2);
 }
 .theme-dark .transparent-2ZlE3R .divider-3FBTu8 {
     background: #191a1b;
@@ -1843,21 +1871,33 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Incoming Call Pop-up */
 .theme-dark .incomingCallInner-2VmFiR {
-    background: #040405;
-    border-color: #030304;
+    /* background: #040405; */
+	background: #0f0f10;
+    /* border-color: #050506; */
+	border-color: #0f0f10;
+	/* box-shadow: var(--elevation-megahigh) */
 }
 .theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorGreen-29iAKY {
-    background-color: #0f0f10;
+    background-color: var(--background-accent2);
 	border-radius:20px;
 }
-.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorTransparent-1ewNp9 {
-    background-color: rgba(255, 45, 45, 0.57);
-	border-radius:20px;
+.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: #18191c;
+	border-radius: 13px;
+}
+.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: #9e1212;
+	/* background-color: rgba(255, 45, 45, 0.57); */
+    border-radius: 20px;
+}
+.theme-dark .incomingCallInner-2VmFiR .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: #9e3535;
+	border-radius: 13px;
 }
 
 /* Error Page Button lol */
 .errorPage-u8SYh4 .lookFilled-1Gx00P.colorBrand-3pXr91 {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 .errorPage-u8SYh4 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
     background-color: #0c0c0c;
@@ -1870,7 +1910,7 @@ button[aria-label="Send a gift"] {
 
 /* Reactions Window */
 .theme-dark .sidebar-1-SQro {
-    background: #080808;
+    background: var(--background-primary);
 }
 .theme-dark .container-1If-HZ, .theme-dark .reactors-Blmlhw {
     background-color: #0d0d0e;
@@ -1887,10 +1927,10 @@ button[aria-label="Send a gift"] {
     background-color: #0a0a0a;
 }
 .bodyWrapper-3GGwfp .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
-    background-color: #080808;
+    background-color: var(--background-primary);
 }
 .theme-dark .iconWrapper-3LVgIo {
-    background: #080808;
+    background: var(--background-primary);
 }
 .focusLock-Ns3yie .input-cIJ7To {
     background-color: #0c0c0c;
@@ -1913,14 +1953,67 @@ button[aria-label="Send a gift"] {
     background-color: #111113;
 }
 
+/* Got background noise? pop-up */
+.content-1DpZYB {
+    background: #0f0f10;
+}
+.pointer-1eHsgh {
+    border-top-color: #18191c;
+}
+.lookFilled-1Gx00P.colorWhite-rEQuAQ {
+    background-color: #18191c;
+}
+.lookFilled-1Gx00P.colorWhite-rEQuAQ:hover {
+    background-color: #0a0a0a;
+}
+.content-1DpZYB .button-2sk-Wq {
+    color: #dedede;
+}
+.content-1DpZYB .button-2sk-Wq:hover {
+    color: #cacaca;
+}
+
+/* Currently lurking pop-up */
+.theme-dark .notice-2X5hT5 {
+    background-color: #131415;
+}
+.theme-dark .notice-2X5hT5 .lookFilled-1Gx00P.colorBrand-3pXr91 {
+	background-color: #050506;
+}
+.theme-dark .notice-2X5hT5 .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+	background-color: #0d0d0e;
+}
+
+ /* Welcome Pop-up */
+.container-2Uhd6d .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: #18191c;
+}
+.container-2Uhd6d .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: #0a0a0a;
+}
 
 
+/* How'd the call go? */
+.theme-dark .footer-2gL1pp {
+    background-color: #0a0a0a;
+    box-shadow: inset 0 1px 0 #0c0c0c;
+}
+/* .focusLock-Ns3yie .theme-dark .root-1gCeng { */
+    /* background-color: #0e0e0e; */
+/* } */
+
+/* Region Select (in call) */
+.theme-dark .quickSelectPopout-X1hvgV {
+    background: #111113;
+}
+
+/* ED Plugins */
 /* PermissionsViewer Plugin */
 #permissions-modal-wrapper #permissions-modal {
-    border: 1px solid #080808 !important;
+    border: 1px solid var(--background-primary); !important;
 }
 #permissions-modal-wrapper .header {
-    background-color: #080808 !important;
+    background-color: var(--background-primary); !important;
 }
 #permissions-modal-wrapper .role-side {
     background: #111113 !important;
