@@ -1,4 +1,4 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.6.0---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.6.1---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
@@ -10,11 +10,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .appMount-3lHmkl, body {
 	background-color: var(--background-tertiary) !important;
 }
-
-
-
 .side-8zPYf6:after {
-	content: "DarkAF v1.6 by TrapStoner#9526";
+	content: "DarkAF v1.6.1 by TrapStoner#9526";
 	font-size: 16px;
 	color: #61656b;
 	position: relative;
@@ -36,7 +33,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-modifier-active: #18191c;
 	--background-modifier-selected: #0f0f10;
 	--background-modifier-accent: #111113;
-	--scrollbar-auto-track: #0f0f10;
+	--scrollbar-auto-track: #08080;
+	--scrollbar-auto-thumb: #0f0f10;
 	--channeltextarea-background: #0d0d0e;
 	--activity-card-background: #0f0f10;
 	--deprecated-panel-background: #080808;
