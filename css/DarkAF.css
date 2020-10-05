@@ -1,22 +1,20 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 v1.6.1---
+/* --- Dark theme for Discord made by TrapStoner#9526 v1.6.2---
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
+/* Theme Info */
+.info-1VyQPT:after {
+	content: "DarkAF v1.6.2 by TrapStoner#9526";
+	font-size: 17px;
+	color: #61656b;
+}
 
 /* Body Background lol */
 .appMount-3lHmkl, body {
 	background-color: var(--background-tertiary) !important;
-}
-.side-8zPYf6:after {
-	content: "DarkAF v1.6.1 by TrapStoner#9526";
-	font-size: 16px;
-	color: #61656b;
-	position: relative;
-	padding: 0px 10px;
-	margin-bottom: 25px;
 }
 
 /* Background (in general ;p) */
@@ -51,7 +49,6 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background: var(--background-accent);
     border-color: var(--background-accent);
 }
-
 
 /* Chat Box Scrollbar */
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
@@ -112,6 +109,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .textAreaDisabled-2_o-kZ::placeholder {
 	color: #ffffffb3 !important;
+}
+.theme-dark .selected-1Tbx07 {
+    background-color: #191a1f;
 }
 
 /* Spoiler Tag */
@@ -338,8 +338,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .theme-dark .checked-3_4uQ9[style*="background-color"] {
 	background-color: #fff !important
 }
-.theme-dark .checked-3_4uQ9 polyline {
-    stroke: #000000;
+.theme-dark .checked-3_4uQ9 path {
+    fill: #000000;
 }
 .wrapper-3jrx9n {
     background-color: #080808;
@@ -395,25 +395,36 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     border-color: #111113;
 }
 .lookGhost-2Fn_0-.colorGrey-2DXtkV {
-    background-color: #070707;
+    background-color: #050506;
     color: #b3b3b3;
 }
-/* Audio Subsystem drop-down Menu */
-.css-15ejc46-control {
-	background-color: #111113;
+.lookGhost-2Fn_0-.colorGrey-2DXtkV:hover {
+    background-color: #0c0c0c;
+    color: #fff;
 }
-.css-181m2lf-menu {
-	background-color: #18191c !important;
+.theme-dark .copyInput-2rOSt7 {
+    background-color: #131415;
+}
+.theme-dark .copyInputDefault-21sXtF {
+    border-color: #171719;
+}
+/* Settings drop-down Menu */
+.css-n57xjs-menu {
+	background-color: #191a1f !important;
 	border-color: #111113 !important;
+	box-shadow: #111113 0px 1px 2px 0px;
 }
-.css-1kj8ui-container {
-	background-color: #18191c;
+.css-1kj8ui-container, .css-1a8reka-control {
+	background-color: #18191f;
 }
 .css-12o7ek3-option {
-	background-color: #111113;
+	background-color: #0e0e0e;
 }
 .css-1gnr91b-option {
-	background-color: #111113;
+	background-color: #0e0e0e;
+}
+.css-1a8reka-control:hover {
+    border-color: #00000000;
 }
 
 
@@ -1194,19 +1205,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: var(--background-modifier-active);
 }
 
-/* Old Messages Bar */
-.theme-dark .jumpToPresentBar-9P20AM, .theme-dark .jumpToPresentBar-9P20AM:hover {
-    background-color: #111113;
-}
-.theme-dark .hasMore-3e72_v button {
-    background: #111113;
-    border: 1px solid #111113;
-}
-.hasMore-3e72_v button {
-    color: #dcddde;
-}
-.newMessagesBar-mujexs button:last-child {
-    color: #e5e8f1;
+/* New Messages Bar */
+.newMessagesBar-265mhP {
+    background-color: #191a1b;
 }
 
 /* Typing... */
@@ -1231,6 +1232,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .colorDefault-2K3EoJ.focused-3afm-j {
     background-color: #171719;
+}
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+    background-color: #131415;
 }
 .theme-dark.conMenu-HLZMGh {
     background: #111113;
@@ -1990,7 +1994,6 @@ button[aria-label="Send a gift"] {
     background-color: #0a0a0a;
 }
 
-
 /* How'd the call go? */
 .theme-dark .footer-2gL1pp {
     background-color: #0a0a0a;
@@ -2003,6 +2006,22 @@ button[aria-label="Send a gift"] {
 /* Region Select (in call) */
 .theme-dark .quickSelectPopout-X1hvgV {
     background: #111113;
+}
+
+/* Selection sub menu */
+.colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS {
+    color: #2f353e;
+}
+.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {
+    color: #000000;
+}
+.colorDefault-2K3EoJ.focused-3afm-j .checkbox-3s5GYZ, .colorDefault-2K3EoJ.focused-3afm-j .radioSelection-1HmrQS, .colorDefault-2K3EoJ.focused-3afm-j .subtext-13Lvrj {
+    color: #fff;
+}
+
+/* Suppresed pop-up */
+.form-26zE04 .footer-2gL1pp {
+   padding: 21px;
 }
 
 /* ED Plugins */
