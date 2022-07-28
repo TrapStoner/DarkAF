@@ -1,10 +1,15 @@
-/* --- Dark theme for Discord made by TrapStoner#9526 --- */
+/**
+ * @name DarkAF
+ * @author TrapStoner#9526
+ * @version 2.0.0
+ * @description A simple really really dark theme for discord. Made with love <3
+ * @source https://github.com/TrapStoner/DarkAF
+ * @website https://github.com/TrapStoner/DarkAF
+*/
 
-@import url(https://rawgit.com/TrapStoner/DarkAF/master/css/DarkAF.css);
-
-//META{"name":"DarkAF","description":"Dark Mode for Discord","author":"TrapStoner#9526","version":"1.0"}*//
+@import url('https://rawgit.com/TrapStoner/DarkAF/master/css/DarkAF.css');
 
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+IMPORTANT: CHANGE DISCORD'S THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
 ---------------------------------------------------------------------------------------------------------------------------------------------
