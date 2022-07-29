@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7 by TrapStoner#9526";
+	content: "DarkAF v1.7.1 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -97,7 +97,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .selected-3veCBZ, .interactive-1vLZ_I:focus-within, .interactive-1vLZ_I:hover, .clickable-28SzVr:hover .layout-1qmrhw, .listRow-2nO1T6:hover, .emptyGuildUpsell-2s9mrR, .interactiveRow-ALfmDn:hover {
 	border-radius: 25px;
 }
-.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0 {
+.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0, .bd-toast {
     border-radius: 15px;
 }
 
@@ -308,8 +308,14 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .input-2g-os5, .searchContainer-u-1vUp .container-2oNtJn, .container-3EtAkD, .container-3EtAkD:hover, .lookFilled-1GseHa.select-1Ia3hD, .popout-1KHNAq, .card-2EUiNF, .search-2KMv1o .input-2m5SfJ, .input-2m5SfJ {
 	background-color: var(--background-26);
 }
-.passthrough--fbdFR.selected-3jieYB {
+.passthrough--fbdFR.selected-3jieYB, .avatarUploaderInnerSquareDisabled-3M9eJS, .lookFilled-yCfaCM.colorBrandNew-2-gGsS {
     background-color: var(--background-2f);
+}
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover {
+    background-color: var(--background-0f);
+}
+.emojiAliasPlaceholder-3oShSx:after, .emojiAliasPlaceholder-3oShSx:before {
+	opacity: 0.7;
 }
 /* Boosting Level Tree */
 .theme-dark .tierBody-1d3UiS, .tier-3CS7-p {
@@ -571,7 +577,7 @@ button[aria-label="Send a gift"] {
 	border-radius:5px;
 }
 
-/* Add Account To Switcher */
+/* Account Switcher */
 .theme-dark .authBox-1HR6Ha {
     background: var(--modal-background);
 }
@@ -581,16 +587,17 @@ button[aria-label="Send a gift"] {
 .theme-dark.authBox-1HR6Ha .inputWrapper-1YNMmM input:only-of-type::placeholder {
 	color: var(--background-e5);
 }
-#popout_47 .menu-1QACrS .layer-2aCOJ3 path:only-of-type {
+.activeIcon-1ykRnF path[fill*="hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
 	fill: var(--background-52);
 }
-#popout_47 .menu-1QACrS .layer-2aCOJ3 .userMenuItem-2pMhk- circle[style*="fill=hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%)"] {
-	fill: var(--background-0f);
+.menu-1QACrS::-webkit-scrollbar-track {
+	background-color: var(--background-ff) !important;
 }
 
 /* Joining/Creating Server Menu (because discord is stupid) */
 .theme-light {
 	--background-primary: var(--background-08);
+	--background-secondary: var(--background-08);
 	--background-modifier-accent: var(--background-0f);
 	--background-modifier-hover: var(--background-2c);
 	--modal-background: var(--background-19f);
@@ -605,7 +612,7 @@ button[aria-label="Send a gift"] {
 	box-shadow: none
 }
 .theme-light .root-g14mjS {
-	box-shadow: 0 0 0 1px var(--background-0f),0 2px 10px 0 var(--background-26);
+	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
 }
 .theme-light .container-x8Y1ix:hover .defaultColor-24IHKz {
     color: var(--background-ff);
@@ -618,6 +625,28 @@ button[aria-label="Send a gift"] {
 }
 .theme-light .createGuild-2m1V10 .input-2g-os5 {
 	background-color: var(--background-3c)
+}
+
+/* Modal and Submenu Scrollbar */
+.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-track {
+    background-color: var(--background-19f);
+    border: 2px solid var(--background-19f);
+}
+.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-thumb {
+    background-color: var(--background-08);
+}
+
+/* Message Right-click Menu */
+.button-1zW0-r:hover, .keyboard-mode .button-1zW0-r.focused-H4w81f {
+    background-color: var(--background-52);
+}
+
+/* Toasts */
+.toast-q3Y4wI {
+    background-color: var(--background-3c);
+}
+.bd-toast {
+    background-color: var(--background-2f);
 }
 
 /** BD Plugins **/
