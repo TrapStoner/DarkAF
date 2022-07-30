@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.2 by TrapStoner#9526";
+	content: "DarkAF v1.7.3 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -639,6 +639,12 @@ button[aria-label="Send a gift"] {
 .button-1zW0-r:hover, .keyboard-mode .button-1zW0-r.focused-H4w81f {
     background-color: var(--background-52);
 }
+.colorDefault-CDqZdO .check-3HZJs4:not(.colorDanger-3n-KnP), .colorDefault-CDqZdO.focused-3qFvc8:not(.colorDanger-3n-KnP), .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_):not(.colorDanger-3n-KnP) {
+    background-color: var(--background-42);
+}
+.colorDefault-CDqZdO .check-3HZJs4, .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+	border-radius:5px;
+}
 
 /* Toasts */
 .toast-q3Y4wI {
@@ -675,6 +681,10 @@ button[aria-label="Send a gift"] {
     background-color: var(--background-3c);
 }
 
+/* Round Spotify Status Image */
+.assetsLargeImageSpotify-17ME3M {
+	border-radius:8px;
+}
 
 /** BD Plugins **/
 /* BetterFormattingRedux */
@@ -756,7 +766,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
 .pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
     animation: spin 0.8s ease;
 }
-/* Remove Wumpus Holidng Country-specific Flag by SmolAlli#2706 */
+/* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {
     display: none;
 }
