@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.1 by TrapStoner#9526";
+	content: "DarkAF v1.7.2 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -94,10 +94,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
  /* Some Border Radiuses */
-.selected-3veCBZ, .interactive-1vLZ_I:focus-within, .interactive-1vLZ_I:hover, .clickable-28SzVr:hover .layout-1qmrhw, .listRow-2nO1T6:hover, .emptyGuildUpsell-2s9mrR, .interactiveRow-ALfmDn:hover {
+.selected-3veCBZ, .interactive-1vLZ_I:focus-within, .interactive-1vLZ_I:hover, .clickable-28SzVr:hover .layout-1qmrhw, .listRow-2nO1T6:hover, .emptyGuildUpsell-2s9mrR, .interactiveRow-ALfmDn:hover, .contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover, .peopleListItem-u6dGxF, .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover, .categoryHeader-OpJ1Ly {
 	border-radius: 25px;
 }
-.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0, .bd-toast {
+.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0, .bd-toast, .contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 
@@ -112,13 +112,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .peopleListItem-u6dGxF {
 	background-color: var(--background-0e);
-	border-radius: 25px;
 	border-top: none;
 	margin: 0 30px 13px 0;
 }
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover {
 	background-color: var(--background-19f);
-	border-radius: 25px;
 	margin: 0 0 13px 20px;
 }
 .listItemContents-2n2Uy9 .actionButton-3-B2x- {
@@ -272,12 +270,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .bd-addon-list .bd-description::-webkit-scrollbar-track {
 	background-color:var(--background-2f);
-	border-radius: 15px;
 }
 .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
 	background-clip:padding-box;
 	border:2px solid transparent;
-	border-radius:15px;
 	background-color:var(--background-0c);
 	min-height:40px
 }
@@ -439,7 +435,6 @@ button[aria-label="Send a gift"] {
     background-color: var(--background-11);
 }
 .categoryHeader-OpJ1Ly {
-	border-radius: 25px;
     background-color: var(--background-0a);
 }
 .wrapper-1NNaWG:after {
@@ -480,13 +475,16 @@ button[aria-label="Send a gift"] {
 
 /* Server Home */
 .theme-dark .background-fkKrXt.title-31SJ6t {
-    background-color: var(--background-2f) !important;
+    background-color: var(--background-0d) !important;
 }
 .theme-dark .background-fkKrXt {
     background-color: var(--background-19f);
 }
 .theme-dark .previewContainer-3BJM_S {
     background-color: var(--background-11);
+}
+.theme-dark .headerBarInner-2pcZSM:after {
+    background: linear-gradient(180deg,rgba(50,52,58,0) 0,var(--background-0d));
 }
 
 /* Server Banner Over Scrollbar fix */
@@ -559,11 +557,12 @@ button[aria-label="Send a gift"] {
 }
 
 /* Top Notice Buttons fix */
-.notice-12Koq- .button-3_1yil:hover {
-	background-color: var(--background-19f);
+.notice-12Koq- .button-3_1yil:hover, .notice-1x8lm- .button-1mXrIh:hover {
+	background-color: var(--background-ca);
 	border-color: var(--background-19f);
+	color: var(--background-00);
 }
-
+ 
 /* Verify Age Pop-up */
 .css-gvi9bl-control {
     background-color: var(--background-0c);
@@ -627,12 +626,12 @@ button[aria-label="Send a gift"] {
 	background-color: var(--background-3c)
 }
 
-/* Modal and Submenu Scrollbar */
-.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-track {
+/* Modal, Server Home and Submenu Scrollbar */
+.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-track, .homeContainer-r4Hvv1.auto-2K3UW5::-webkit-scrollbar-track, .userPopout-2j1gM4 .thin-31rlnD::-webkit-scrollbar-track {
     background-color: var(--background-19f);
     border: 2px solid var(--background-19f);
 }
-.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-thumb {
+.modal-1ocm0B .thin-31rlnD::-webkit-scrollbar-track, .menu-1QACrS .thin-31rlnD::-webkit-scrollbar-thumb, .homeContainer-r4Hvv1.auto-2K3UW5::-webkit-scrollbar-thumb, .userPopout-2j1gM4 .thin-31rlnD::-webkit-scrollbar-thumb {
     background-color: var(--background-08);
 }
 
@@ -649,8 +648,138 @@ button[aria-label="Send a gift"] {
     background-color: var(--background-2f);
 }
 
+/* Invite Pop-up */
+.theme-dark .contentWrapper-3oy4Xo {
+    background: var(--background-19f);
+}
+.contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ {
+    background-color: var(--background-42);
+}
+.contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+    background-color: var(--background-0a);
+}
+
+/* VC Count Badge */
+.users-2JoyGL {
+    background-color: var(--background-3c);
+}
+.total-1c5KCN {
+    background-color: var(--background-26);
+}
+.total-1c5KCN:after {
+    border-right-color: var(--background-26);
+}
+
+/* Unreads Bar */
+.unread-2wipsx {
+    background-color: var(--background-3c);
+}
+
+
 /** BD Plugins **/
 /* BetterFormattingRedux */
 .bf-toolbar::before {
     background: var(--background-17) !important;
+}
+
+/*** QOL From Other People ***/
+/** Hide New Message Stuff When Unfocused by Overimagine#0001 **/
+/* Red New Message Bar */
+html:not(.app-focused) .isUnread-3Lojb- {
+    border-color: transparent
+}
+.isUnread-3Lojb- {
+    transition: .15s
+}
+/* New Message Bar */
+html:not(.app-focused) .newMessagesBar-1hF-9G {
+    opacity: 0
+}
+.newMessagesBar-1hF-9G {
+    transition: .15s
+}
+/* remove sticky nitro button from guild list - fuck you discord by Qb#5942 */
+.fixedBottomList-1yrBla > .listItem-3SmSlK {
+    display: none;
+}
+/* Connection Issue Let Me Be by Disease#3749 and Me */
+.container-2RRFHK {
+    background: transparent;
+    pointer-events: none;
+}
+.container-2RRFHK .anchor-1MIwyf { pointer-events: auto; }
+.container-2RRFHK .content-3AIQZv .text-2bYgPB {
+    display:none;
+}
+.container-2RRFHK .ready-3BZNWT {
+    position: absolute;
+    bottom: 44px;
+    right: 244px;
+    z-index: 1;
+}
+.container-2RRFHK img, .container-2RRFHK video {
+    width: 32px;
+    height: 32px;
+}
+.container-2RRFHK .problems-CvGwpb {
+    padding: 8px 16px;
+    bottom: 75px;
+    left: unset;
+    right: 18px;
+    width:fit-content;
+    height:fit-content;
+    background-color: var(--background-3c);
+    border-radius: 10px;
+    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+    box-shadow: var(--elevation-stroke), var(--elevation-medium);
+}
+.container-2RRFHK .problems-CvGwpb.slideIn-VAD-dp {
+	bottom: 18px;
+}
+/* Hide Plugin Libs by Nyx#8614 */
+div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
+/* Home Button Spins On Click by The Commie Axolotl#0001 */
+@keyframes spin {
+    0% {
+    transform: rotate(0deg);
+    }
+    20% {
+    transform: rotate(-20deg);
+    }
+    70% {
+    transform: rotate(380deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+    animation: spin 0.8s ease;
+}
+/* Remove Wumpus Holidng Country-specific Flag by SmolAlli#2706 */
+[alt="Wumpus holding a country-specific flag"] {
+    display: none;
+}
+/* Pop-out Animations by Lonk#6942 */ 
+.menu-1QACrS, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopout-2j1gM4 {
+    animation: custom-menu-animation 250ms ease;
+    transform-origin: top;
+}
+@keyframes custom-menu-animation {
+    0% {
+    transform: scaleY(0);
+    }
+    100% {
+    transform: scaleY(1);
+    }
+}
+/* Hide User Buttons Until Hover by The Commie Axolotl#0001 */
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+    opacity: 0% !important;
+    width: 0px;
+    transition: all 0.2s ease-in-out;
+}
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+    opacity: 100% !important;
+    width: 32px;
 }
