@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.3 by TrapStoner#9526";
+	content: "DarkAF v1.7.4 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -72,6 +72,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--brand-experiment-600: var(--background-42);
 	--brand-experiment-15a: var(--background-52);
 	--brand-experiment-30a: var(--background-42);
+	--brand-experiment-05a: var(--background-17);
+	--brand-experiment-10a: var(--background-0f);
 	--button-secondary-background-hover: var(--background-19f);
 	--button-secondary-background-active: var(--background-42);
 	--button-secondary-background-disabled: var(--background-2f);
@@ -684,6 +686,22 @@ button[aria-label="Send a gift"] {
 /* Round Spotify Status Image */
 .assetsLargeImageSpotify-17ME3M {
 	border-radius:8px;
+}
+
+/* In VC Guild Badge */
+.iconBadge-32fMme.participating-2Z81oO {
+    background-color: var(--background-52);
+}
+
+/* Screen/Video buttons */
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
+    background-color: var(--background-2f);
+}
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx {
+    background-color: var(--background-3c);
+}
+.button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
+    background-color: var(--background-08);
 }
 
 /** BD Plugins **/
