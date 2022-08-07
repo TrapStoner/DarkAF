@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.4 by TrapStoner#9526";
+	content: "DarkAF v1.7.5 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -38,6 +38,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-07: #070707;
 	--background-00: #000000;
 	--background-6b: #6bab9f;
+	--background-37b: #37b776;
 	--background-primary: var(--background-08);
 	--background-secondary: var(--background-08);
 	--background-secondary-alt: var(--background-08);
@@ -64,11 +65,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--elevation-megahigh: 0 8px 14px rgba(0, 0, 0, 0.5);
 	--interactive-hover: #e0e1e2;
 	--interactive-active: var(--background-ff);
-	--brand-experiment: var(--background-2f);
+	--brand-experiment: var(--background-3c);
 	--brand-experiment-400: var(--background-52);
 	--brand-experiment-500: var(--background-52);
 	--brand-experiment-530: var(--background-2f);
-	--brand-experiment-560: var(--background-19f);
+	--brand-experiment-560: var(--background-00);
 	--brand-experiment-600: var(--background-42);
 	--brand-experiment-15a: var(--background-52);
 	--brand-experiment-30a: var(--background-42);
@@ -77,7 +78,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--button-secondary-background-hover: var(--background-19f);
 	--button-secondary-background-active: var(--background-42);
 	--button-secondary-background-disabled: var(--background-2f);
-	--button-secondary-background: var(--background-2f);
+	--button-secondary-background: var(--background-3c);
 	--button-positive-background: var(--background-52);
 	--button-positive-background-disabled: var(--background-2c);
 	--button-positive-background-active: var(--background-52);
@@ -85,6 +86,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--button-outline-positive-border: var(--background-52);
 	--button-outline-positive-border-active: var(--background-52);
 	--button-outline-positive-background-active: var(--background-52);
+	--button-outline-primary-background-hover: var(--background-52);
 	--button-outline-brand-border: var(--background-42);
 	--button-outline-brand-border-hover: var(--background-42);
 	--button-outline-brand-background-hover: var(--background-42);
@@ -93,6 +95,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--input-background: var(--background-08);
 	--background-mentioned: var(--background-17);
 	--background-mentioned-hover: var(--background-0f);
+	--text-link: var(--background-37b);
+	--control-brand-foreground: var(--background-52)
 }
 
  /* Some Border Radiuses */
@@ -101,6 +105,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0, .bd-toast, .contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
+}
+.mention, .mentioned-Tre-dv {
+    border-radius: 4px;
 }
 
 /* Home Button */
@@ -232,6 +239,21 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .bioTextArea-dDGOeC {
 	background-color: var(--background-19f);
 }
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled), .jumpButton-1ZwI_j:hover {
+	border: 2px solid var(--background-52);
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorPrimary-2AuQVo, .lookFilled-yCfaCM.colorGreen-3y-Z79, .jumpButton-1ZwI_j {
+	border: 2px solid transparent;
+}
+.key-N5VmHNw {
+    background-color: var(--background-3c);
+}
+.selected-18Wszc.option-1QI4c9 {
+	background-color: var(--background-ca);
+}
+.jumpButton-1ZwI_j {
+	background-color: var(--background-2f);
+}
 /* Mic Test */
 .theme-dark .progress-1S-TDF {
     background-color: var(--background-26);
@@ -294,12 +316,12 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	color: var(--status-danger);
 }
 
-/* Pinned Messages */
-.messagesPopoutWrap-3zryHW {
-    background-color: var(--background-2f);
+/* Pinned Messages, Threads */
+.messagesPopoutWrap-3zryHW, .browser-mnQ1T7.container-18GwIk {
+    background-color: var(--background-26);
 }
-.header-1w9Q93 {
-    background-color: var(--background-0f);
+.header-1w9Q93, .header-3_zmOb {
+    background-color: var(--background-18);
 }
 
 /* Server Settings */
@@ -637,7 +659,7 @@ button[aria-label="Send a gift"] {
     background-color: var(--background-08);
 }
 
-/* Message Right-click Menu */
+/* Right-click Submenu */
 .button-1zW0-r:hover, .keyboard-mode .button-1zW0-r.focused-H4w81f {
     background-color: var(--background-52);
 }
@@ -646,6 +668,15 @@ button[aria-label="Send a gift"] {
 }
 .colorDefault-CDqZdO .check-3HZJs4, .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
 	border-radius:5px;
+}
+.slider-1NC-Gf .grabber-2GQyvM {
+	opacity: 0;
+}
+.slider-1NC-Gf:hover .grabber-2GQyvM {
+	opacity: 1;
+}
+.slider-1NC-Gf:hover .barFill-2Bh7CX {
+	background: var(--background-37b);
 }
 
 /* Toasts */
@@ -708,10 +739,14 @@ button[aria-label="Send a gift"] {
 /* BetterFormattingRedux */
 .bf-toolbar::before {
     background: var(--background-17) !important;
+	border-radius: 15px;
+}
+.bf-toolbar .format:hover {
+	border-radius: 8px;
 }
 
 /*** QOL From Other People ***/
-/** Hide New Message Stuff When Unfocused by Overimagine#0001 **/
+/** Hide New Message Stuff When Unfocused by Overimagine#0001 and Me **/
 /* Red New Message Bar */
 html:not(.app-focused) .isUnread-3Lojb- {
     border-color: transparent
@@ -724,6 +759,13 @@ html:not(.app-focused) .newMessagesBar-1hF-9G {
     opacity: 0
 }
 .newMessagesBar-1hF-9G {
+    transition: .15s
+}
+/* New Message Pill In Guilds */
+html:not(.app-focused) .unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsIndicatorTop-2bTgUU {
+    opacity: 0
+}
+.unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsIndicatorTop-2bTgUU {
     transition: .15s
 }
 /* remove sticky nitro button from guild list - fuck you discord by Qb#5942 */
