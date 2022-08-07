@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.5 by TrapStoner#9526";
+	content: "DarkAF v1.7.6 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -240,10 +240,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background-color: var(--background-19f);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled), .jumpButton-1ZwI_j:hover {
-	border: 2px solid var(--background-52);
+	border: 1px solid var(--background-52);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorPrimary-2AuQVo, .lookFilled-yCfaCM.colorGreen-3y-Z79, .jumpButton-1ZwI_j {
-	border: 2px solid transparent;
+	border: 1px solid transparent;
 }
 .key-N5VmHNw {
     background-color: var(--background-3c);
@@ -733,6 +733,32 @@ button[aria-label="Send a gift"] {
 }
 .button-1EGGcP.buttonColor-3bP3fX.buttonActive-Uc1jHx:hover, .button-1EGGcP .buttonColor-3bP3fX.buttonActive-Uc1jHx:hover {
     background-color: var(--background-08);
+}
+
+/* Roles Background */
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+    border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 0.3;
 }
 
 /** BD Plugins **/
