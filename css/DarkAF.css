@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.6 by TrapStoner#9526";
+	content: "DarkAF v1.7.7 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -61,6 +61,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--deprecated-text-input-bg: var(--background-0f);
 	--deprecated-text-input-border: var(--background-0f);
 	--deprecated-card-editable-bg: var(--background-19f);
+	--deprecated-card-bg: var(--background-19f);
 	--border-primary: var(--background-08);
 	--elevation-megahigh: 0 8px 14px rgba(0, 0, 0, 0.5);
 	--interactive-hover: #e0e1e2;
@@ -75,6 +76,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--brand-experiment-30a: var(--background-42);
 	--brand-experiment-05a: var(--background-17);
 	--brand-experiment-10a: var(--background-0f);
+	--brand-experiment-80a: rgb(38 40 43 / 80%);
+	--brand-experiment-95a: rgb(38 40 43 / 95%);
 	--button-secondary-background-hover: var(--background-19f);
 	--button-secondary-background-active: var(--background-42);
 	--button-secondary-background-disabled: var(--background-2f);
@@ -239,13 +242,13 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .bioTextArea-dDGOeC {
 	background-color: var(--background-19f);
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled), .jumpButton-1ZwI_j:hover {
-	border: 1px solid var(--background-52);
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .jumpButton-1ZwI_j:hover {
+	border: 2px ridge var(--background-52);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorPrimary-2AuQVo, .lookFilled-yCfaCM.colorGreen-3y-Z79, .jumpButton-1ZwI_j {
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 }
-.key-N5VmHNw {
+.key-N5VmHN {
     background-color: var(--background-3c);
 }
 .selected-18Wszc.option-1QI4c9 {
@@ -272,6 +275,23 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .ttsPreviewWrapper-1d5bI6 button:only-of-type:hover {
 	background-color: var(--background-26);
+}
+/* Billing */
+.theme-dark .paymentPane-ut5qKZ, .theme-dark .paginator-1eqD2g, .theme-dark .payment-2bOh4k, .theme-dark .codeRedemptionRedirect-2hYMSQ {
+	background-color: var(--background-19f);
+}
+.theme-dark .bottomDivider-ZmTm-j {
+    border-bottom-color: var(--background-0d);
+}
+.theme-dark .expandedInfo-1W31i3 {
+	background-color: var(--background-0e);
+}
+/* Flower Icon */
+#game-activity-tab .flowerStar-2tNFCR path {
+	fill: var(--background-37b);
+}
+.guildIconContainer-3QvE6w .flowerStar-2tNFCR {
+	fill: var(--background-52);
 }
 /* BD Settings */
 .bd-addon-list .bd-addon-header {
@@ -300,6 +320,12 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	border:2px solid transparent;
 	background-color:var(--background-0c);
 	min-height:40px
+}
+.bd-select {
+	background-color: var(--background-18);
+}
+.bd-select .bd-select-options, .bd-select:hover, .bd-select.menu-open {
+    background: var(--background-26);
 }
 
 /* Auth Screen */
@@ -468,7 +494,7 @@ button[aria-label="Send a gift"] {
     background-color: var(--background-2f);
 }
 
-/* GIF picker & Emoji Picker */
+/* GIF, Emoji & Stickers Modal */
 .contentWrapper-3vHNP2 {
     background-color: var(--background-19f);
 }
@@ -477,6 +503,28 @@ button[aria-label="Send a gift"] {
 }
 .emptyGuildUpsell-2s9mrR {
 	margin: 4px;
+}
+.nav-1zWVQw .navButtonActive-1EqC5l, .navButton-1XuvI-:hover {
+    background-color: var(--background-42);
+}
+.navButton-1XuvI-, .navButton-1XuvI-:hover {
+	border-radius: 9px;
+}
+.nav-1zWVQw .navButtonActive-1EqC5l {
+	border-radius: 5px;
+}
+.result-pzZrwj:hover, .result-pzZrwj:hover .gif-2kTiNB {
+	margin: -6px;
+	width: 210px !important;
+	height: 133px !important;
+}
+.theme-dark .result-pzZrwj:hover:after {
+    width: 213px;
+    height: 136px;
+    margin: -6px;
+}
+.theme-dark .categoryFade-3RRG67:hover, .theme-dark .categoryFadeBlurple-1l49_Q:hover {
+    background-color: rgba(0,0,0,.1);
 }
 
 /** Start An Activity Pop-up **/
@@ -760,6 +808,21 @@ button[aria-label="Send a gift"] {
     background: inherit;
     opacity: 0.3;
 }
+
+/* Editing Msg Text Area */
+.messageListItem-ZZ7v6g .scrollableContainer-15eg7h:hover, .messageListItem-ZZ7v6g .scrollableContainer-15eg7h:focus-within {
+    background-color: var(--background-2c);
+}
+
+/* Mentions Auto-Fill Animation */
+.base-2v-uc0 {
+    transition: all 0.5s;
+}
+.base-2v-uc0:hover {
+    transition: all 0s;
+    transform: scale(1.02);
+}
+
 
 /** BD Plugins **/
 /* BetterFormattingRedux */
