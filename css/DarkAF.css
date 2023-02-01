@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.7 by TrapStoner#9526";
+	content: "DarkAF v1.7.8 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -243,6 +243,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	background-color: var(--background-19f);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .jumpButton-1ZwI_j:hover {
+	/* border: 2px ridge var(--background-52); */
+}
+.fieldButton-14lHvK.sizeSmall-wU2dO-.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover, .button-f2h6uQ.sizeSmall-wU2dO-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.applicationInstallButton-taCWKH):not(.button-1EGGcP) {
 	border: 2px ridge var(--background-52);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ, .lookFilled-yCfaCM.colorPrimary-2AuQVo, .lookFilled-yCfaCM.colorGreen-3y-Z79, .jumpButton-1ZwI_j {
@@ -256,6 +259,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 .jumpButton-1ZwI_j {
 	background-color: var(--background-2f);
+}
+div[aria-label="User Settings"] div[class*=textBadge-] {
+	background-color: var(--background-52) !important;
 }
 /* Mic Test */
 .theme-dark .progress-1S-TDF {
@@ -290,7 +296,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 #game-activity-tab .flowerStar-2tNFCR path {
 	fill: var(--background-37b);
 }
-.guildIconContainer-3QvE6w .flowerStar-2tNFCR {
+.guildIconContainer-3QvE6w .flowerStar-2tNFCR path {
 	fill: var(--background-52);
 }
 /* BD Settings */
@@ -455,9 +461,16 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     background-color: var(--background-07);
 }
 /* Live Quality Indicator */
-.liveQualityIndicator-2GyS_e {
+div[class*=liveQualityIndicator-] {
 	background-color: var(--background-3c) !important;
 }
+div[class*=live-] {
+	background-color: hsl(359, calc(1*82.6%),56.4%) !important;
+}
+/* TO-DO ANIMATION */
+/* div[class*=voiceUser-] div[class*=live-] { */
+	/* background-color: var(--background-52) !important; */
+/* } */
 
 /* Invite to Stream Pop-up */
 .theme-dark .footer-1hTRRZ {
@@ -514,14 +527,12 @@ button[aria-label="Send a gift"] {
 	border-radius: 5px;
 }
 .result-pzZrwj:hover, .result-pzZrwj:hover .gif-2kTiNB {
-	margin: -6px;
-	width: 210px !important;
-	height: 133px !important;
+	margin: -3px;
 }
 .theme-dark .result-pzZrwj:hover:after {
-    width: 213px;
-    height: 136px;
-    margin: -6px;
+    /* width: +200px; */
+    /* height: 136px; */
+    margin: -4px;
 }
 .theme-dark .categoryFade-3RRG67:hover, .theme-dark .categoryFadeBlurple-1l49_Q:hover {
     background-color: rgba(0,0,0,.1);
@@ -823,6 +834,53 @@ button[aria-label="Send a gift"] {
     transform: scale(1.02);
 }
 
+/* @everyone WAIT! Pop-up */
+.theme-dark .contentWarningPopout-WKdbDG {
+    background-color: var(--background-19b);
+    box-shadow: 0 2px 10px 0 var(--background-3c);
+}
+.theme-dark .contentWarningPopout-WKdbDG .footer-2aeMle {
+    background-color: var(--background-3c);
+}
+
+/* Stream Wrapper */ 
+div[class*=volumeButtonSlider-] span[class*=mediaBarGrabber-], div[class*=volumeButtonSlider-] div[class*=mediaBarProgress-], div[class*=volumeButtonSlider-] div[class*=mediaBarProgress-]:after, div[class*=volumeButtonSlider-] div[class*=mediaBarProgress-]:before  {
+	background-color: var(--background-e5) !important;
+}
+
+/* Incoming call Pop-up Animation */
+div[class*=wrapper-] div[class*=root-1e2tfc] {
+	overflow: hidden;
+}
+div[class*=wrapper-] div[class*=root-1e2tfc]:before, div[class*=wrapper-] div[class*=root-1e2tfc]:after {
+    content: "";
+	z-index: -100;
+    position: absolute;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vw;
+    background-color: var(--background-3c);
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+div[class*=wrapper-] div[class*=root-1e2tfc]:before {
+    bottom: 19vh;
+	opacity: 0.9;
+    border-radius: 35%;
+    animation-duration: 10s;
+}
+div[class*=wrapper-] div[class*=root-1e2tfc]:after {
+    bottom: 15vh;
+    opacity: .5;
+    border-radius: 37%;
+    animation-duration: 10s;
+}
+@keyframes wave {
+  0% {transform: translate(-50%, 0) rotateZ(0deg);}
+  50% {transform: translate(-50%, -2%) rotateZ(180deg);}
+  100% {transform: translate(-50%, 0%) rotateZ(360deg);}
+}
 
 /** BD Plugins **/
 /* BetterFormattingRedux */
@@ -932,7 +990,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
     transform: scaleY(1);
     }
 }
-/* Hide User Buttons Until Hover by The Commie Axolotl#0001 */
+/* Hide User Buttons Until Hover by The Commie Axolotl#0001 & Me */
 .panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
     opacity: 0% !important;
     width: 0px;
@@ -941,4 +999,12 @@ div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
 .panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
     opacity: 100% !important;
     width: 32px;
+}
+section[aria-label="User area"] div[class*=withTagAsButton-] {
+	flex: 1;
+	min-width: 0;
+}
+
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.wrapper-1gVUIN.normal-qRirv5.video-3n15R6 > div.callContainer-HtHELf.theme-dark > div > div.videoControls-353CsJ > div.topControls-23RE3h.controlSection-1mNixL > div > div.headerWrapper-1ULEPv > section > div.toolbar-3_r2xA > div.streamQualityIndicator-n62BFt {
+	border: 10px 10px 10px 10px dotted #ffffff;
 }
