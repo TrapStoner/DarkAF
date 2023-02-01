@@ -99,7 +99,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-mentioned: var(--background-17);
 	--background-mentioned-hover: var(--background-0f);
 	--text-link: var(--background-37b);
-	--control-brand-foreground: var(--background-52)
+	--control-brand-foreground: var(--background-52);
+	--status-red-500: hsl(359, calc(1*82.6%),56.4%);
+	--button-danger-background: hsl(359, calc(1*82.6%),56.4%);
 }
 
  /* Some Border Radiuses */
@@ -464,13 +466,6 @@ div[aria-label="User Settings"] div[class*=textBadge-] {
 div[class*=liveQualityIndicator-] {
 	background-color: var(--background-3c) !important;
 }
-div[class*=live-] {
-	background-color: hsl(359, calc(1*82.6%),56.4%) !important;
-}
-/* TO-DO ANIMATION */
-/* div[class*=voiceUser-] div[class*=live-] { */
-	/* background-color: var(--background-52) !important; */
-/* } */
 
 /* Invite to Stream Pop-up */
 .theme-dark .footer-1hTRRZ {
