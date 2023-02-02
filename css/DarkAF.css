@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.7.8 by TrapStoner#9526";
+	content: "DarkAF v1.7.9 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -111,13 +111,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 .modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ, .wrapper-NhbLHG:hover .content-1gYQeQ, .listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42, .selected-1-Z6gm .layout-1qmrhw, .side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .premiumTab-39eQzY .selectedBackground-1t6xXq, .listDefault-2F-w65 .clickable-1ctZ-H.selected-1oxcpH .content-1Tgc42, .wrapper-1NNaWG, .activityItem-1Z9CTr, .selected-2aBVty, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0:hover, .clickable-2V8YKY[aria-selected=true]>.base-2v-uc0, .bd-toast, .contentWrapper-3oy4Xo .lookFilled-yCfaCM.colorBrand-I6CyqQ, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
-.mention, .mentioned-Tre-dv {
+span[class*=mention], div[class*=mentioned-], div[class*=attachment-] {
     border-radius: 4px;
 }
-
-/* Home Button */
-#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > nav > ul > div.scroller-3X7KbA.none-2-_0dP.scrollerBase-_bVAAt > div.tutorialContainer-1pL9QS > div > div.listItemWrapper-3d87LP > div > svg > foreignObject > div > div:hover {
-    background-color: var(--background-26);
+div[class*=mentioned-]:before {
+	border-radius: 4px 0px 0px 4px;
 }
 
 /* Friends (or People?) */
@@ -165,8 +163,11 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
  
  /* Speaking Circles */
-.avatarSpeaking-2pCGrZ, .avatarSpeaking-33RRJU {
-    box-shadow: inset 0 0 0 2px var(--background-52), inset 0 0 0 1px var(--background-2f);
+div[class*=avatarSpeaking-]  {
+    box-shadow: inset 0 0 0 2px var(--background-52), inset 0 0 0 3px var(--background-2f);
+}
+div[class*=speaking-] {
+	box-shadow: inset 0 0 0 3px var(--background-52),inset 0 0 0 5px var(--black-500) !important;
 }
 
 /* Screen Share */
@@ -175,7 +176,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* Reactions */
-.reaction-3vwAF2 {
+div[class*=reaction-3vwAF2] {
 	background: var(--background-26);
 }
 
@@ -191,18 +192,19 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
 /* @mentions, Embed, Attachments & Invites */
-.mentioned-Tre-dv:before {
+div[class*=mentioned-]:before {
 	background-color: var(--background-2f);
+	width: 4px;
 }
-.embedFull-1HGV2S {
+article[class*=embedFull-] {
     border-left: 4px solid var(--background-2f) !important;
-    background: var(--background-0f);
+    background: var(--background-11);
 }
-.theme-dark .attachment-33OFj0 {
-	background-color: var(--background-0c);
-	border-color: var(--background-0c);
+div[class*=attachment-] {
+	background-color: var(--background-17);
+	border-color: var(--background-17);
 }
-.wrapper-1HIH0j {
+div[id*=message-accessories]>div[class*=wrapper-] {
     background-color: var(--background-17);
 }
 
@@ -843,11 +845,12 @@ div[class*=volumeButtonSlider-] span[class*=mediaBarGrabber-], div[class*=volume
 	background-color: var(--background-e5) !important;
 }
 
-/* Incoming call Pop-up Animation */
-div[class*=wrapper-] div[class*=root-1e2tfc] {
+/** Incoming call Pop-up **/
+/* Bg Animation */
+div[class*=root-1e2tfc] {
 	overflow: hidden;
 }
-div[class*=wrapper-] div[class*=root-1e2tfc]:before, div[class*=wrapper-] div[class*=root-1e2tfc]:after {
+div[class*=root-1e2tfc]:before, div[class*=root-1e2tfc]:after {
     content: "";
 	z-index: -100;
     position: absolute;
@@ -859,13 +862,13 @@ div[class*=wrapper-] div[class*=root-1e2tfc]:before, div[class*=wrapper-] div[cl
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-div[class*=wrapper-] div[class*=root-1e2tfc]:before {
+div[class*=root-1e2tfc]:before {
     bottom: 19vh;
 	opacity: 0.9;
     border-radius: 35%;
     animation-duration: 10s;
 }
-div[class*=wrapper-] div[class*=root-1e2tfc]:after {
+div[class*=root-1e2tfc]:after {
     bottom: 15vh;
     opacity: .5;
     border-radius: 37%;
@@ -875,6 +878,20 @@ div[class*=wrapper-] div[class*=root-1e2tfc]:after {
   0% {transform: translate(-50%, 0) rotateZ(0deg);}
   50% {transform: translate(-50%, -2%) rotateZ(180deg);}
   100% {transform: translate(-50%, 0%) rotateZ(360deg);}
+}
+/* Buttons */
+div[class*=root-1e2tfc] button[aria-label="Dismiss"], div[class*=root-1e2tfc] button[aria-label="Join Call"] {
+	margin-top: 10px;
+	width: 69px;
+	height: 35px;
+	border-radius: 16px;
+	transition: width 0.2s, height 0.2s, border-radius 0.2s;
+	transition-timing-function: ease-in-out;
+}
+div[class*=root-1e2tfc] button[aria-label="Dismiss"]:hover, div[class*=root-1e2tfc] button[aria-label="Join Call"]:hover {
+	width: 85px;
+	height: 39px;
+	border-radius: 12px;
 }
 
 /** BD Plugins **/
@@ -950,7 +967,7 @@ html:not(.app-focused) .unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsInd
 }
 /* Hide Plugin Libs by Nyx#8614 */
 div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
-/* Home Button Spins On Click by The Commie Axolotl#0001 */
+/* Home Button Spins On Click by The Commie Axolotl#0001 & Me */
 @keyframes spin {
     0% {
     transform: rotate(0deg);
@@ -965,7 +982,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
     transform: rotate(360deg);
     }
 }
-.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
     animation: spin 0.8s ease;
 }
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
