@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.1 by TrapStoner#9526";
+	content: "DarkAF v1.8.2 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -109,7 +109,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, aside[class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
 	border-radius: 25px;
 }
-li[class*=container] div[class*=content-]:not(.content-66wMin), div[class*=containerDefault] div[class*=content-], aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
+ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), div[class*=containerDefault] div[class*=content-], aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 div[class*=base-] div[class*=sidebar-] header[class*=header-] {
@@ -239,7 +239,7 @@ div[class*=textAreaDisabled-] div[class*=placeholder-] {
 	color: var(--background-ff);
 }
 /* Gap Between Text Area and Chat Content */
-div[class*=channelTextArea-] {
+div[class*=channelTextArea-], .wrapper-2SplAX {
     margin-top: 13px;
 }
 
@@ -281,15 +281,18 @@ div[class*=channelTextArea-] {
 .selected-18Wszc.option-1QI4c9 {
 	background-color: var(--background-ca);
 }
-.jumpButton-1ZwI_j {
+.jumpButton-1ZwI_j, #search-results div[class*=button-] {
 	background-color: var(--background-2f);
-	transition: all .2s ease;
+	transition: all .15s ease;
 }
-.jumpButton-1ZwI_j:hover {
+.jumpButton-1ZwI_j:hover, #search-results div[class*=button-]:hover {
 	background-color: var(--background-52);
 }
 div[aria-label="User Settings"] div[class*=textBadge-] {
 	background-color: var(--background-52) !important;
+}
+div[class*=codeRedemptionInput-] input {
+	background-color: var(--background-2c);
 }
 /* Mic Test */
 div[class*=micTest-] div[class*=progress-] {
@@ -309,6 +312,22 @@ div[class*=ttsPreviewWrapper-] button:only-of-type {
 }
 div[class*=ttsPreviewWrapper-] button:only-of-type:hover {
 	background-color: var(--background-26);
+}
+/* Connections */
+#connections-tab div[class*=connection-], div[class*=connectionsContainer] {
+	background-color: var(--background-17);
+}
+#connections-tab div[class*=connectionsContainer] {
+	padding: 14px 0 14px 10px;
+	line-height: 0;
+	border-radius: 5px;
+}
+div[class*=focusLock-] div[class*=connectionsContainer]>div[class*=accountBtn-]>button {
+	height: 60px;
+	width: 60px;
+}
+div[class*=connectionsContainer]>div[class*=wrapper-]:hover>button {
+	background-color: var(--background-42);
 }
 /* Billing */
 div[class*=paymentPane-], div[class*=codeRedemptionRedirect-], div[class*=paymentPane-] div[class*=paginator-], div[class*=paymentPane-] div[class*=payment-] {
@@ -431,7 +450,7 @@ div[class*=paymentPane-] div[class*=payment-]:hover, div[class*=paymentPane-] di
 	opacity: 0.7;
 }
 nav[class*=sidebar-] div[class*=item-][aria-label*=Delete], nav[class*=sidebar-] div[class*=item-][aria-label*="Log Out"] {
-	color: var(--status-red-560);
+	color: var(--status-red-500);
 }
 nav[class*=sidebar-] div[class*=item-][aria-label*=Delete]:hover, nav[class*=sidebar-] div[class*=item-][aria-label*="Log Out"]:hover {
 	color: var(--background-ff);
@@ -572,11 +591,11 @@ div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[c
 .contentWrapper-3vHNP2, #emoji-picker-tab-panel>div[class*=emojiPicker-], #emoji-picker-tab-panel>div[class*=header-] {
     background-color: var(--background-19f);
 }
-.contentWrapper-3vHNP2 div[class*=inspector-] {
+.inspector-DFKXwB {
     background-color: var(--background-0d);
 }
-.contentWrapper-3vHNP2 .wrapper-1NNaWG {
-    background-color: var(--background-3c);
+.wrapper-1NNaWG {
+    background-color: var(--background-00);
 }
 div[class*=diversitySelectorOptions-] {
   background-color: var(--background-3c);
@@ -616,6 +635,11 @@ div[class*=emptyGuildUpsell-] {
 .theme-dark .categoryFade-3RRG67:hover, .theme-dark .categoryFadeBlurple-1l49_Q:hover {
     background-color: rgba(0,0,0,.05);
 }
+div[class*=emojiPicker-] {
+	border-radius: 0;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
 
 /* Focuslock Modals Shadow */
 div[class*=focusLock-]>div[class*=root-] {
@@ -650,6 +674,9 @@ div[class*=quickswitcher-] input {
 /* Join & Follow Action Message */
 .wrapper-2SplAX {
     background-color: var(--background-17);
+}
+.theme-dark .form-3gdLxP:before {
+	background: transparent;
 }
 
 /* Server Home */
@@ -797,15 +824,15 @@ div[class*=focusLock-] div[class*=dotMembers-] {
 }
 
 /* Billing, EGS Picker, Modal, Submenu, Server Home and User Profile Scrollbar */
-div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-track, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-track, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-track, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-track, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-track, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-track {
+div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-track, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-track, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-track, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-track, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-track, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-track, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-track {
     background-color: var(--background-19f);
     border: 2px solid var(--background-19f);
 }
-div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb {
+div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb {
     background-color: var(--background-08);
 	border-radius: 8px;
 }
-.contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar {
+.contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar {
 	width: 11px;
 }
 
@@ -914,6 +941,10 @@ div[class*=userPopoutInner-] div[class*=roles]>div[class*=role-] span[class*=rol
 }
 
 /* Editing Msg Text Area */
+li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-] {
+    animation: custom-menu-animation 200ms ease;
+    transform-origin: top;
+}
 li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-]:hover, li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-]:focus-within {
     background-color: var(--background-2c);
 }
@@ -988,6 +1019,13 @@ div[class*=root-1e2tfc] button[aria-label="Dismiss"]:hover, div[class*=root-1e2t
 	width: 85px;
 	height: 39px;
 	border-radius: 12px;
+}
+
+/* Replying bar */
+div[class*=replyBar-], .threadSuggestionBar-3ExSyc {
+	background-color: var(--background-2c);
+    animation: custom-menu-animation 400ms ease;
+    transform-origin: bottom;
 }
 
 /** BD Plugins **/
