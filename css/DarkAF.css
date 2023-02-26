@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.2 by TrapStoner#9526";
+	content: "DarkAF v1.8.3 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -105,6 +105,36 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--button-danger-background: hsl(359, calc(1*82.6%),56.4%);
 }
 
+/* Animations */
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-20deg);}
+    70% {transform: rotate(380deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes wave {
+	0% {transform: translate(-50%, 0) rotateZ(0deg);}
+	50% {transform: translate(-50%, -2%) rotateZ(180deg);}
+	100% {transform: translate(-50%, 0%) rotateZ(360deg);}
+}
+@keyframes button-popup {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.3);}
+    100% {transform: scale(0.8);}
+}
+@keyframes slideY {
+    0% {transform: scaleY(0);}
+    100% {transform: scaleY(1);}
+}
+@keyframes slideZ {
+    0% {transform: scaleZ(0);}
+    100% {transform: scaleZ(1);}
+}
+@keyframes popout {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
  /* Some Border Radiuses */
 li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, aside[class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
 	border-radius: 25px;
@@ -176,11 +206,17 @@ div[class*=rowWrapperDim-] [class*=bodyCell-] {
     opacity: 0.5;
 }
 
- /* Jump To Present Bar */
+ /* Jump To Present & New Messages Bars */
 div[class*=jumpToPresentBar-] {
 	background-color: var(--background-2f);
+	animation: slideY 600ms ease;
+    transform-origin: bottom;
 }
- 
+div[class*=newMessagesBar-] {
+	animation: slideY 400ms ease;
+    transform-origin: top;
+}
+
  /* Speaking Circles */
 div[class*=avatarSpeaking-]  {
     box-shadow: inset 0 0 0 2px var(--background-52), inset 0 0 0 3px var(--background-2f);
@@ -220,6 +256,41 @@ article[class*=embedFull-] {
 div[class*=attachment-] {
 	background-color: var(--background-17);
 	border-color: var(--background-17);
+}
+div[class*=hoverButtonGroup-] {
+	background-color: transparent;
+	gap: 5px;
+}
+div[class*=hoverButtonGroup-]>* {
+	backdrop-filter: brightness(40%) blur(1px);
+	border-radius: 12px;
+	padding: 6px;
+}
+div[class*=hoverButtonGroup-][class*=nonMediaAttachment-] {
+	background-color: transparent;
+	top: 15px;
+	right: 15px;
+	outline: none;
+}
+div[class*=hoverButtonGroup-][class*=nonMediaAttachment-]>* {
+	backdrop-filter: invert(13%) blur(1px);
+}
+div[class*=hoverButtonGroup-] svg {
+	width:32px;
+	height: 32px;
+	transform: scale(0.8);
+}
+div:hover>div[class*=hoverButtonGroup-] svg {
+	animation: button-popup 0.3s ease-in-out;
+}
+*[class*=hoverButton-]:hover, .keyboard-mode *[class*=hoverButton-]:focus {
+	background-color: transparent;
+}
+a[class*=hoverButton-][aria-label*=Download]:hover>svg, .keyboard-mode a[class*=hoverButton-][aria-label*=Download]:focus>svg {
+	color: var(--background-37b);
+}
+div[class*=removeAttachmentHoverButton-]:hover>svg, .keyboard-mode div[class*=removeAttachmentHoverButton-]:focus>svg {
+	color: var(--status-red-500);
 }
 div[id*=message-accessories]>div[class*=wrapper-] {
     background-color: var(--background-17);
@@ -942,7 +1013,7 @@ div[class*=userPopoutInner-] div[class*=roles]>div[class*=role-] span[class*=rol
 
 /* Editing Msg Text Area */
 li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-] {
-    animation: custom-menu-animation 200ms ease;
+    animation: slideY 200ms ease;
     transform-origin: top;
 }
 li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-]:hover, li[class*=messageListItem-] div[class*=contents-] div[class*=scrollableContainer-]:focus-within {
@@ -1001,11 +1072,6 @@ div[class*=root-1e2tfc]:after {
     border-radius: 37%;
     animation-duration: 10s;
 }
-@keyframes wave {
-  0% {transform: translate(-50%, 0) rotateZ(0deg);}
-  50% {transform: translate(-50%, -2%) rotateZ(180deg);}
-  100% {transform: translate(-50%, 0%) rotateZ(360deg);}
-}
 /* Buttons */
 div[class*=root-1e2tfc] button[aria-label="Dismiss"], div[class*=root-1e2tfc] button[aria-label="Join Call"] {
 	margin-top: 10px;
@@ -1024,7 +1090,7 @@ div[class*=root-1e2tfc] button[aria-label="Dismiss"]:hover, div[class*=root-1e2t
 /* Replying bar */
 div[class*=replyBar-], .threadSuggestionBar-3ExSyc {
 	background-color: var(--background-2c);
-    animation: custom-menu-animation 400ms ease;
+    animation: slideY 250ms ease;
     transform-origin: bottom;
 }
 
@@ -1096,20 +1162,6 @@ html:not(.app-focused) .unreadMentionsIndicatorBottom-3RJMnQ, .unreadMentionsInd
 /* Hide Plugin Libs by Nyx#8614 */
 div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
 /* Home Button Spins On Click by The Commie Axolotl#0001 & Me */
-@keyframes spin {
-    0% {
-    transform: rotate(0deg);
-    }
-    20% {
-    transform: rotate(-20deg);
-    }
-    70% {
-    transform: rotate(380deg);
-    }
-    100% {
-    transform: rotate(360deg);
-    }
-}
 div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
     animation: spin 0.8s ease;
 }
@@ -1117,16 +1169,8 @@ div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 */ 
 .menu-1QACrS, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopout-2j1gM4 {
-    animation: custom-menu-animation 250ms ease;
+    animation: slideY 250ms ease;
     transform-origin: top;
-}
-@keyframes custom-menu-animation {
-    0% {
-    transform: scaleY(0);
-    }
-    100% {
-    transform: scaleY(1);
-    }
 }
 /* Hide User Buttons Until Hover by The Commie Axolotl#0001 & Me */
 .panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
