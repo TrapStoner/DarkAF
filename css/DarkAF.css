@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.3 by TrapStoner#9526";
+	content: "DarkAF v1.8.4 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -17,6 +17,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-ff: #ffffff;
 	--background-e5: #e5e8f1;
 	--background-ca: #cacaca;
+	--background-bd: #bdbdbd;
+	--background-8a: #8a8a8a;
 	--background-52: #525252;
 	--background-42: #424242;
 	--background-3c: #3c3c3c;
@@ -96,13 +98,14 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--button-outline-brand-background-hover: var(--background-42);
 	--modal-background: var(--background-19f);
 	--modal-footer-background: var(--background-0f);
-	--input-background: var(--background-08);
+	--input-background: var(--background-2c);
 	--background-mentioned: var(--background-17);
 	--background-mentioned-hover: var(--background-0f);
 	--text-link: var(--background-37b);
 	--control-brand-foreground: var(--background-52);
 	--status-red-500: hsl(359, calc(1*82.6%),56.4%);
 	--button-danger-background: hsl(359, calc(1*82.6%),56.4%);
+	--playstation-blue: #1e5ddb;
 }
 
 /* Animations */
@@ -136,10 +139,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 }
 
  /* Some Border Radiuses */
-li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, aside[class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
+li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, [class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
 	border-radius: 25px;
 }
-ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), div[class*=containerDefault] div[class*=content-], aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
+div[class*=thin-]>div[class*=categoryItem-]>div, ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), div[class*=containerDefault] div[class*=content-], aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 div[class*=base-] div[class*=sidebar-] header[class*=header-] {
@@ -604,11 +607,19 @@ div[class*=circleIconButton-][class*=selected-] {
 }
 
 /* Profile Wrapper */
-.userPopout-2j1gM4 .textarea-_59yqs {
-	background-color: transparent;
+div[class*=userProfileOuter] div[class*=note-] textarea, div[class*=userProfileOuter] div[class*=messageInputContainer-] input {
+	transition: background-color 0.2s ease;
 }
-.userPopout-2j1gM4 .textarea-_59yqs:focus {
-    background-color: var(--background-08);
+div[class*=userProfileOuter] div[class*=note-] textarea:focus, div[class*=userProfileOuter] div[class*=messageInputContainer-] input:focus {
+    background-color: var(--background-3c);
+}
+div[class*=mutualGuildsList-] ul[class*=connectionList-], div[class*=mutualFriendsList-] ul[class*=connectionList-] {
+	animation: slideY 0.1s ease;
+	transform-origin: top;
+}
+div[class*=connectedAccountContainer-] {
+	background-color: var(--background-2f);
+	border-radius: 8px;
 }
 
 /* Game Streaming Preview */
@@ -714,7 +725,7 @@ div[class*=emojiPicker-] {
 
 /* Focuslock Modals Shadow */
 div[class*=focusLock-]>div[class*=root-] {
-	box-shadow: 0 2px 10px hsl(var(--black-500-hsl)/.2),0 0 0 1px var(--background-11);
+	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
 }
 
 /** Start An Activity Pop-up **/
@@ -872,38 +883,40 @@ div[class*=focusLock-] div[class*=dotMembers-] {
 	--header-primary: var(--background-ff);
 	--header-secondary: var(--background-ca);
 	--text-normal: var(--background-ca);
+	--text-muted: var(--background-ca);
+	--text-link: var(--background-37b);
 	--button-secondary-background: var(--background-2f);
 	--button-secondary-background-hover: var(--background-42);
+	--input-background: var(--background-3c);
+	--input-placeholder-text: var(--background-bd);
+	--interactive-normal: var(--background-8a);
 }
-.theme-light .footerSeparator-VzAYwb {
+.theme-light div[class*=footerSeparator-] {
 	box-shadow: none
 }
-.theme-light .root-g14mjS {
-	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
-}
-.theme-light .container-x8Y1ix:hover .defaultColor-24IHKz {
+.theme-light button[class*=container-]:hover div[class*=defaultColor-] {
     color: var(--background-ff);
 }
-.theme-light .uploadIcon-2wV7s_ svg:only-of-type path{
+.theme-light div[class*=uploadIcon-] svg:only-of-type path{
 	fill: var(--background-ca);
 }
-.theme-light .uploadIcon-2wV7s_ svg:only-of-type circle{
+.theme-light div[class*=uploadIcon-] svg:only-of-type circle{
 	fill: var(--background-52);
 }
-.theme-light .createGuild-2m1V10 .input-2g-os5 {
-	background-color: var(--background-3c)
+div[class*=inputWrapper-][class*=input-] {
+	background-color: transparent;
 }
 
 /* Billing, EGS Picker, Modal, Submenu, Server Home and User Profile Scrollbar */
-div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-track, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-track, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-track, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-track, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-track, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-track, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-track {
+div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-track, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-track, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-track, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-track, .menu-2TXYjN div[class*=thin-]::-webkit-scrollbar-track, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-track, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-track {
     background-color: var(--background-19f);
     border: 2px solid var(--background-19f);
 }
-div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb {
+div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-2TXYjN div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb {
     background-color: var(--background-08);
 	border-radius: 8px;
 }
-.contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar, .menu-1QACrS div[class*=thin-]::-webkit-scrollbar, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar {
+.contentWrapper-3vHNP2 div[class*=thin-]::-webkit-scrollbar, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar, .menu-2TXYjN div[class*=thin-]::-webkit-scrollbar, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar {
 	width: 11px;
 }
 
@@ -912,10 +925,13 @@ div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWra
 .button-1zW0-r:hover, .keyboard-mode .button-1zW0-r.focused-H4w81f {
     background-color: var(--background-52);
 }
-.colorDefault-CDqZdO .check-3HZJs4:not(.colorDanger-3n-KnP), .colorDefault-CDqZdO.focused-3qFvc8:not(.colorDanger-3n-KnP), .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_):not(.colorDanger-3n-KnP) {
+.colorDefault-2_rLdz .check-3HZJs4:not(.colorDanger-3umuSx), .colorDefault-2_rLdz.focused-3LIdPu:not(.colorDanger-3umuSx), .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ):not(.colorDanger-3umuSx) {
     background-color: var(--background-42);
 }
-.colorDefault-CDqZdO .check-3HZJs4, .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+div[class*=colorDefault-][class*=check-][id*=playstation], div[class*=colorDefault-][class*=focused-][id*=playstation], div[class*=colorDefault-]:active:not([class*=hideInteraction-])[id*=playstation] {
+	background-color: #1e5ddb;
+}
+.colorDefault-2_rLdz .check-3HZJs4, .colorDefault-2_rLdz.focused-3LIdPu, .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
 	border-radius:5px;
 }
 .slider-1NC-Gf .grabber-2GQyvM {
@@ -1094,6 +1110,20 @@ div[class*=replyBar-], .threadSuggestionBar-3ExSyc {
     transform-origin: bottom;
 }
 
+/* Connected on PS5 Bar */
+section[aria-label="User area"] div[class*=connecting-] {
+	background-color: var(--playstation-blue);
+}
+section[aria-label="User area"] div[class*=connected-] {
+	background-color: var(--playstation-blue);
+}
+
+/* Transfer Voice to Playstation */
+div [class*=deviceItem-][class*=itemFilled-] {
+	background-color: var(--playstation-blue);
+	border-radius: 30px;
+}
+
 /** BD Plugins **/
 /* BetterFormattingRedux */
 .bf-toolbar::before {
@@ -1167,18 +1197,18 @@ div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
 }
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
-/* Pop-out Animations by Lonk#6942 */ 
-.menu-1QACrS, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopout-2j1gM4 {
+/* Pop-out Animations by Lonk#6942 & Me */ 
+.menu-2TXYjN, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopoutOuter-3AVBmJ, .container-2kTWmC, .container-2McqkF, .popout-3gby1q {
     animation: slideY 250ms ease;
     transform-origin: top;
 }
 /* Hide User Buttons Until Hover by The Commie Axolotl#0001 & Me */
-.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+section[aria-label="User area"] > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
     opacity: 0% !important;
     width: 0px;
     transition: all 0.2s ease-in-out;
 }
-.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+section[aria-label="User area"] > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
     opacity: 100% !important;
     width: 32px;
 }
