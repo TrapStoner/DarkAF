@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.4 by TrapStoner#9526";
+	content: "DarkAF v1.8.5 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -41,6 +41,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-00: #000000;
 	--background-6b: #6bab9f;
 	--background-37b: #37b776;
+	--background-d5: #d53a3a;
 	--background-primary: var(--background-08);
 	--background-secondary: var(--background-08);
 	--background-secondary-alt: var(--background-08);
@@ -70,7 +71,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--interactive-active: var(--background-ff);
 	--brand-experiment: var(--background-3c);
 	--brand-experiment-400: var(--background-52);
-	--brand-experiment-500: var(--background-52);
+	--brand-experiment-500: var(--background-d5);
 	--brand-experiment-530: var(--background-2f);
 	--brand-experiment-560: var(--background-00);
 	--brand-experiment-600: var(--background-42);
@@ -93,11 +94,13 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--button-outline-positive-border-active: var(--background-52);
 	--button-outline-positive-background-active: var(--background-52);
 	--button-outline-primary-background-hover: var(--background-52);
-	--button-outline-brand-border: var(--background-42);
+	--button-outline-brand-border: var(--background-52);
 	--button-outline-brand-border-hover: var(--background-42);
+	--button-outline-brand-border-active: var(--background-42);
 	--button-outline-brand-background-hover: var(--background-42);
+	--button-outline-brand-background-active: var(--background-42);
 	--modal-background: var(--background-19f);
-	--modal-footer-background: var(--background-0f);
+	--modal-footer-background: var(--background-0a);
 	--input-background: var(--background-2c);
 	--background-mentioned: var(--background-17);
 	--background-mentioned-hover: var(--background-0f);
@@ -136,6 +139,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 @keyframes popout {
     0% {transform: scale(0);}
     100% {transform: scale(1);}
+}
+@keyframes marquee {
+	0% {transform: translateX(100%);}
+	100% {transform: translateX(-100%);}
 }
 
  /* Some Border Radiuses */
@@ -324,8 +331,17 @@ div[class*=channelTextArea-], .wrapper-2SplAX {
 }
 
 /* Settings */
-.theme-dark .bar-1Bhnl9, .theme-dark .markDash-yk2kJ- {
-    background: var(--background-0e);
+div[class*=slider-]>div[class*=bar-] {
+    background: var(--background-19f);
+}
+div[class*=menu-] div[class*=slider-]>div[class*=bar-] {
+    background: var(--background-00);
+}
+div[class*=slider-] div[class*=markDash-] {
+	background: var(--background-2f);
+}
+div[class*=barFill-] {
+	background: var(--background-d5);
 }
 .theme-dark .game-2f2vPC {
     box-shadow: 0 1px 0 0 var(--background-2c);
@@ -339,6 +355,9 @@ div[class*=channelTextArea-], .wrapper-2SplAX {
 }
 .bioTextArea-dDGOeC {
 	background-color: var(--background-19f);
+}
+button[class*=lookOutlined-] {
+	border: 2px solid
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover:not(.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover:not(.lookFilled-yCfaCM.colorPrimary-2AuQVo:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .lookFilled-yCfaCM.colorGreen-3y-Z79:hover:not(.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled):not(.sizeMedium-2bFIHr):not(.sizeXlarge-2TyITf):not(.sizeLarge-3mScP9), .jumpButton-1ZwI_j:hover {
 	/* border: 2px ridge var(--background-52); */
@@ -421,6 +440,13 @@ div[class*=paymentPane-] div[class*=pageButton][class*=disabled-] {
 }
 div[class*=paymentPane-] div[class*=payment-]:hover, div[class*=paymentPane-] div[class*=pageButton]:not([class*=disabled-]):hover {
 	background-color: var(--background-42) !important;
+}
+/* Registered Games */
+div[class*=gameNameLastPlayed-]:hover div[class*=hovered-] {
+	overflow: visible;
+	animation: marquee 12s linear infinite;
+	font-size: 16px;
+	color: var(--background-ca);
 }
 /* Flower Icon */
 #game-activity-tab svg[class*=flowerStar-] path {
