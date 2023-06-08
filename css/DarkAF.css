@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.5 by TrapStoner#9526";
+	content: "DarkAF v1.8.6 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -42,6 +42,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-6b: #6bab9f;
 	--background-37b: #37b776;
 	--background-d5: #d53a3a;
+	--background-c9: #c95151;
 	--background-primary: var(--background-08);
 	--background-secondary: var(--background-08);
 	--background-secondary-alt: var(--background-08);
@@ -117,6 +118,13 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
     20% {transform: rotate(-20deg);}
     70% {transform: rotate(380deg);}
     100% {transform: rotate(360deg);}
+}
+@keyframes shake {
+    0% {transform: scale(1) rotate(0deg);}
+    25% {transform: scale(1.15) rotate(-30deg);}
+    50% {transform: scale(1.32) rotate(0deg);}
+    75% {transform: scale(1.1) rotate(30deg);}
+    100% {transform: scale(1) rotate(0deg);}
 }
 @keyframes wave {
 	0% {transform: translate(-50%, 0) rotateZ(0deg);}
@@ -492,6 +500,12 @@ div[class*=gameNameLastPlayed-]:hover div[class*=hovered-] {
 .bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
     background: var(--background-42);
 }
+.bd-changelog-modal div[class*=content-][class*=thin-]>h1 {
+	color: var(--background-c9);
+}
+.bd-changelog-modal {
+	border: 1px solid var(--background-c9);
+}
 
 /* Auth Screen & Account Switcher */
 #app-mount div[class^=app-] > div > svg > path:nth-child(2) {
@@ -753,6 +767,9 @@ div[class*=emojiPicker-] {
 div[class*=focusLock-]>div[class*=root-] {
 	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
 }
+/* div[class*=focusLock-]>div[class*=rootWithShadow-] { */
+	/* box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f); */
+/* } */
 
 /** Start An Activity Pop-up **/
 .scrollTierBackground-BnWR8k {
@@ -865,6 +882,24 @@ div[class*=quickswitcher-] input {
   background: var(--background-2f);
 }
 
+/* Customize your experience */
+.prompt-R8SyL4 {
+	animation: bg 2s ease;
+    /* transition: background-color 0.3s ease; */
+	background-color: transparent;
+    backdrop-filter: brightness(86%) blur(9px);
+}
+@keyframes bg {
+	0% {background-color: var(--modal-background);}
+	100% {background-color: transparent;}
+}
+/* .prompt-R8SyL4:hover { */
+    /* background-color: transparent; */
+/* } */
+.prompt-R8SyL4 > div > div::webkit-scrollbar-track {
+    background-color: red !important;
+}
+
  /* Welcome Modal*/
 div[class*=focusLock-]>div[class*=main-] {
 	background: var(--modal-background);
@@ -875,8 +910,11 @@ div[class*=focusLock-]>div[class*=main-]>div[class*=options-]>div[role=button]:h
 
 /* Server Rules Modal */
 div[class*=focusLock-] div[class*=dotMembers-] {
-	background-color: var(--status-green-600);
+	background-color: var(--green-360);
 }
+/* div[class*=focusLock-] div[class*=modal-], div[class*=focusLock-] div[class*=guildSidebar-], div[class*=focusLock-] div[class*=footer-] { */
+	/* background-color: transparent; */
+/* } */
 
 /* Top Notice Buttons fix */
 .notice-12Koq- .button-3_1yil:hover, .notice-1x8lm- .button-1mXrIh:hover {
@@ -971,12 +1009,15 @@ div[class*=colorDefault-][class*=check-][id*=playstation], div[class*=colorDefau
 }
 
 /* Toasts */
-div[class*=toast-] {
+div:not(.toast)>div[class*=toast-] {
     background-color: var(--background-3c);
 	transform: scale(0.9) !important;
 }
 .bd-toast {
-    background-color: var(--background-2f);
+    background-color: var(--background-3c);
+}
+.toasts > .toast {
+	border-radius: 20px;
 }
 
 /* Invite Pop-up */
@@ -1150,6 +1191,9 @@ div [class*=deviceItem-][class*=itemFilled-] {
 	border-radius: 30px;
 }
 
+/* Update your username pop-up */
+
+
 /** BD Plugins **/
 /* BetterFormattingRedux */
 .bf-toolbar::before {
@@ -1160,7 +1204,7 @@ div [class*=deviceItem-][class*=itemFilled-] {
 	border-radius: 5px;
 }
 
-/*** QOL From Other People ***/
+/*** QOL ***/
 /** Hide New Message Stuff When Unfocused by Overimagine#0001 and Me **/
 /* Red New Message Bar */
 html:not(.app-focused) .isUnread-3Lojb- {
@@ -1241,4 +1285,14 @@ section[aria-label="User area"] > .container-YkUktl:hover .flex-2S1XBF > :not(:l
 section[aria-label="User area"] div[class*=withTagAsButton-] {
 	flex: 1;
 	min-width: 0;
+}
+/* User Buttons Animations by Me */
+section[aria-label="User area"] > .container-YkUktl .flex-2S1XBF > :last-child:hover svg {
+	animation: spin 1s ease-in-out;
+}
+section[aria-label="User area"] > .container-YkUktl .flex-2S1XBF > :not(:last-child):focus svg {
+	animation: shake 0.3s ease-in-out;
+}
+section[aria-label="User area"] > .container-YkUktl .flex-2S1XBF > :last-child:hover div[class*=circleBadge-] {
+	animation: button-popup 1s ease-in-out;
 }
