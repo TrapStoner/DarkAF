@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.6 by TrapStoner#9526";
+	content: "DarkAF v1.8.7 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -157,7 +157,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, [class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
 	border-radius: 25px;
 }
-div[class*=thin-]>div[class*=categoryItem-]>div, ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), div[class*=containerDefault] div[class*=content-], aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
+div[class*=thin-]>div[class*=categoryItem-]>div, ul[aria-label*=Channels] div[class*=iconVisibility-] a, ul[aria-label*=Channels] div[class*=iconVisibility-]>div, ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 div[class*=base-] div[class*=sidebar-] header[class*=header-] {
@@ -1202,6 +1202,10 @@ div [class*=deviceItem-][class*=itemFilled-] {
 }
 .bf-toolbar .format:hover {
 	border-radius: 5px;
+}
+/* Spotify Controls Timeline Fix */
+section[aria-label="User area"] .timeline-UWmgAx:not(:hover) .barFill-Dhkah7 {
+    background: var(--text-normal);
 }
 
 /*** QOL ***/
