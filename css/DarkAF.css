@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.7 by TrapStoner#9526";
+	content: "DarkAF v1.8.8 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -50,8 +50,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--background-floating: var(--background-19f);
 	--background-accent: var(--background-11);
 	--background-modifier-hover: var(--background-26);
-	--background-modifier-active: var(--background-19b);
-	--background-modifier-selected: var(--background-19f);
+	--background-modifier-active: var(--background-18);
+	--background-modifier-selected: var(--background-26);
 	--background-modifier-accent: var(--background-11);
 	--background-mobile-primary: var(--background-11);
 	--scrollbar-auto-track: var(--background-08);
@@ -157,7 +157,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 li[class*=container-], div[class*=peopleListItem-], div[class*=peopleListItem-][class*=active-], div[class*=peopleListItem-]:hover, [class*=membersWrap-] div[class*=layout-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-]:hover, #language-tab div[role=radiogroup]>div[class*=item-] {
 	border-radius: 25px;
 }
-div[class*=thin-]>div[class*=categoryItem-]>div, ul[aria-label*=Channels] div[class*=iconVisibility-] a, ul[aria-label*=Channels] div[class*=iconVisibility-]>div, ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
+div[class*=thin-]>div[class*=categoryItem-]>div, ul[aria-label*=Channels] div[class*=iconVisibility-] a, ul[aria-label*=Channels] div[class*=iconVisibility-]>div, ul[aria-label*=Channels] li[class*=wrapper-]>div, ul[aria-label*=Channels] div[class*=content-], li[class*=container] div[class*=content-]:not(.content-66wMin), aside[class*=membersWrap-] div[class*=selected-] div[class*=layout-], div[class*=side-] div[class*=item-], div[class*=side-] div[class*=selectedBackground-], div[class*=activityItem-], div[class*=wrapper-1NNaWG], div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-], div[role=listbox] div[role=option][class*=friendWrapper-]>div:first-child, div[role=listbox] div[role=option][class*=result-], .contentWrapper-3oy4Xo button[class*=lookFilled-][class*=colorBrand-], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 div[class*=base-] div[class*=sidebar-] header[class*=header-] {
@@ -168,6 +168,18 @@ span[class*=mention], div[class*=mentioned-], div[class*=attachment-], div[class
 }
 div[class*=mentioned-]:before {
 	border-radius: 4px 0px 0px 4px;
+}
+
+/* Home Pill Buttons*/
+div[class*=topPill-] div[class*=item-][class*=themed-][class*=selected-] {
+	background-color: var(--background-3c);
+}
+div[class*=topPill-] div[class*=item-][class*=themed-][class*=addFriend-] {
+	background-color: var(--background-42);
+}
+div[class*=topPill-] div[class*=item-][class*=themed-][class*=addFriend-][class*=selected-] {
+	background-color: var(--status-positive-background);
+    color: var(--status-positive-text);
 }
 
 /* Friends (or People?) */
@@ -350,6 +362,18 @@ div[class*=slider-] div[class*=markDash-] {
 }
 div[class*=barFill-] {
 	background: var(--background-d5);
+}
+div[aria-label="User Settings"] div[role="tab"][class*=selected-][aria-controls*=nitro] div[class*=selectedBackground-] {
+	background-color: transparent;
+}
+div[aria-label="User Settings"] div[role="tab"][class*=selected-][aria-controls*=nitro], div[class*=side-] div[role="tab"][class*=item-][class*=selected-][aria-controls*=guild_premium] {
+	background: linear-gradient(270deg,var(--premium-tier-2-pink-for-gradients),var(--premium-tier-2-pink-for-gradients-2) 33.63%,var(--premium-tier-2-purple-for-gradients)) !important;
+}
+div[aria-label="User Settings"] div[role="tab"][class*=selected-][aria-controls*=streamer] {
+	background-color: #9146FF !important;
+}
+div[aria-label="User Settings"] div[role="tab"][class*=selected-][class*=bd-] {
+	background-color: #3e82e5 !important
 }
 .theme-dark .game-2f2vPC {
     box-shadow: 0 1px 0 0 var(--background-2c);
@@ -571,7 +595,7 @@ nav[class*=sidebar-] div[class*=item-][aria-label*=Delete]:hover, nav[class*=sid
 	background-color: var(--status-danger) !important;
 }
 /* Boosting Level Tree */
-.theme-dark .tierBody-1d3UiS, .tier-3CS7-p {
+.theme-dark .tierBody-1d3UiS {
     background-color: var(--background-2f);
 }
 .theme-dark .tierHeaderLocked-30MLlO, .theme-dark .tierHeaderUnlocked-1OpOLf {
@@ -595,10 +619,20 @@ nav[class*=sidebar-] div[class*=item-][aria-label*=Delete]:hover, nav[class*=sid
     color: var(--background-6b);
     opacity: 1;
 }
+/* Server Subscriptions */
+div[class*=creatorGuildCarousel-] div[class*=guildCard-] {
+	background-color: var(--background-18);
+}
 /* User Management Lists */
 .theme-dark .card-2ART2V:before {
     background-color: var(--background-26);
     border-color: var(--background-26);
+}
+.theme-dark .member-2cj2PI {
+    box-shadow: 0 1px 0 0 hsl(var(--white-500-hsl)/.07);
+}
+div[class*=member-][class*=card-]:not(:hover) div[class*=role-] {
+	background: var(--background-2f);
 }
 
 /* Folder Settings */
@@ -984,28 +1018,41 @@ div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .contentWra
 	width: 11px;
 }
 
-
-/* Right-click Submenu */
-.button-1zW0-r:hover, .keyboard-mode .button-1zW0-r.focused-H4w81f {
+/* Right-Click Submenu */
+div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button-]:hover, .keyboard-mode div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button-][class*=focused-] {
     background-color: var(--background-52);
 }
-.colorDefault-2_rLdz .check-3HZJs4:not(.colorDanger-3umuSx), .colorDefault-2_rLdz.focused-3LIdPu:not(.colorDanger-3umuSx), .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ):not(.colorDanger-3umuSx) {
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-]:not([class*=colorDanger-]) {
     background-color: var(--background-42);
 }
-div[class*=colorDefault-][class*=check-][id*=playstation], div[class*=colorDefault-][class*=focused-][id*=playstation], div[class*=colorDefault-]:active:not([class*=hideInteraction-])[id*=playstation] {
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-][id*=playstation], div[role="menu"] div[role*="menuitem"][class*=colorDefault-][id*=playstation]:active:not([class*=hideInteraction-]) {
 	background-color: #1e5ddb;
 }
-.colorDefault-2_rLdz .check-3HZJs4, .colorDefault-2_rLdz.focused-3LIdPu, .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-], div[role="menu"] div[role*="menuitem"][class*=colorDefault-]:active:not([class*=hideInteraction-]) {
 	border-radius:5px;
 }
-.slider-1NC-Gf .grabber-2GQyvM {
+div[role="menu"] div[role*="menuitem"] div[role="slider"] div[class*=grabber-] {
 	opacity: 0;
+	transition: opacity 0.3s ease-out;
 }
-.slider-1NC-Gf:hover .grabber-2GQyvM {
+div[role="menu"] div[role*="menuitem"]:hover div[role="slider"] div[class*=grabber-] {
 	opacity: 1;
+	transition: opacity 0.2s ease-in;
 }
-.slider-1NC-Gf:hover .barFill-2Bh7CX {
-	background: var(--background-37b);
+div[role="menu"] div[role="separator"] {
+	border-bottom: 1px solid var(--background-3c);
+}
+div[role="menu"] div[role="menuitemradio"][aria-checked=true] path {
+	color: var(--background-d5);
+}
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-][id*=Streamer], div[role="menu"] div[role*="menuitem"][class*=colorDefault-][id*=Streamer]:active:not([class*=hideInteraction-]) {
+	background-color: #9146FF;
+}
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-][id*=BetterDiscord], div[role="menu"] div[role*="menuitem"][class*=colorDefault-][id*=BetterDiscord]:active:not([class*=hideInteraction-]) {
+	background-color: #3e82e5;
+}
+div[role="menu"] div[role*="menuitem"][class*=colorDefault-][class*=focused-][id*=Nitro], div[role="menu"] div[role*="menuitem"][class*=colorDefault-][id*=Nitro]:active:not([class*=hideInteraction-]) {
+	background: linear-gradient(270deg,var(--premium-tier-2-pink-for-gradients),var(--premium-tier-2-pink-for-gradients-2) 33.63%,var(--premium-tier-2-purple-for-gradients));
 }
 
 /* Toasts */
@@ -1193,6 +1240,16 @@ div [class*=deviceItem-][class*=itemFilled-] {
 
 /* Update your username pop-up */
 
+/* App Directory */
+div[class*=directoryContainer-] {
+	background-color: var(--background-19f) !important;
+}
+div[class*=directoryContainer-] div[class*=searchBox-] input {
+	background-color: var(--background-08);
+}
+div[class*=directoryContainer-] div[class*=sidebar-] div[class*=selected-] a {
+	background-color: var(--background-00);
+}
 
 /** BD Plugins **/
 /* BetterFormattingRedux */
@@ -1203,9 +1260,14 @@ div [class*=deviceItem-][class*=itemFilled-] {
 .bf-toolbar .format:hover {
 	border-radius: 5px;
 }
-/* Spotify Controls Timeline Fix */
-section[aria-label="User area"] .timeline-UWmgAx:not(:hover) .barFill-Dhkah7 {
+/** Spotify Controls **/
+/* Timeline Fix */
+section[aria-label="User area"] div[class*=container-][class*=withTimeline-] .timeline-UWmgAx:not(:hover) .barFill-Dhkah7 {
     background: var(--text-normal);
+}
+/* Border Gone */
+section[aria-label="User area"] div[class*=container-][class*=withTimeline-] {
+	border-bottom: none;
 }
 
 /*** QOL ***/
@@ -1272,7 +1334,7 @@ div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
-.menu-2TXYjN, .emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopoutOuter-3AVBmJ, .container-2kTWmC, .container-2McqkF, .popout-3gby1q {
+.menu-2TXYjN, div[class*=emojiPicker-], .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, div[class*=userPopoutOuter-], .container-2kTWmC, .container-2McqkF, .popout-3gby1q, .scroller-18M1mG {
     animation: slideY 250ms ease;
     transform-origin: top;
 }
