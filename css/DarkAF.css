@@ -7,7 +7,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.8.9 by TrapStoner#9526";
+	content: "DarkAF v1.9.0 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -346,10 +346,71 @@ div[id*=message-content-] code {
 	background: var(--background-19f);
 }
 
+/** Modals **/
+/* Focuslock Modals Shadow */
+div[class*=focusLock-]>div[class*=root-] {
+	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
+}
+/* Remove Stupid Line On Some Modals Next To Scroller */
+div[class*=focusLock-]>div[class*=modal-][class*=scrollbarGhostHairline-][class*=scrollbar-] {
+	overflow-y: hidden;
+}
 /* Delete Message Modal*/
 .theme-dark .message-G6O-Wv {
     background-color: var(--background-08);
     box-shadow: 0 0 0 1px var(--background-19f), 0 2px 10px 0 var(--background-00);
+}
+ /* Welcome Modal*/
+div[class*=focusLock-]>div[class*=main-] {
+	background: var(--modal-background);
+}
+div[class*=focusLock-]>div[class*=main-]>div[class*=options-]>div[role=button]:hover {
+	background: var(--background-3c);
+}
+/* Server Rules Modal */
+div[class*=focusLock-]>.container-2E0bff div[class*=dotMembers-] {
+	background-color: var(--background-8a);
+}
+div[class*=focusLock-]>.container-2E0bff div[class*=modal-], div[class*=focusLock-]>.container-2E0bff div[class*=guildSidebar-], div[class*=focusLock-]>.container-2E0bff div[class*=footer-] {
+	background-color: transparent;
+}
+/* Event Info Modal */
+div[class*=focusLock-]>div[class*=root-] div[class*=content-][class*=contentContainer-][class*=scrollerBase-] {
+	background-color: var(--background-0f);
+}
+div[class*=focusLock-]>div[class*=root-] div[class*=content-][class*=contentContainer-][class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-track {
+    background-color: var(--background-0f);
+    border-color: var(--background-0f);
+}
+div[class*=focusLock-]>div[class*=root-] div[class*=content-][class*=contentContainer-][class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb {
+    background-color: var(--background-42);
+}
+/* Active Threads Modal */
+div[class*=focusLock-][aria-label="Threads"]>div[class*=modal-]>div[class*=container-] {
+	background-color: var(--modal-background);
+}
+div[class*=focusLock-][aria-label="Threads"] div[class*=activeThreadsList-] div[class*=container-]:hover {
+	background-color: var(--background-42);
+}
+div[class*=focusLock-][aria-label="Threads"] div[class*=activeThreadsList-] div[class*=container-]:active {
+	background-color: var(--background-2f);
+}
+/* Invite to Stream/Server Modal */
+div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-]>div[class*=header-] div[class*=searchBar-], div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-]>div[class*=header-] div[class*=searchBar-] input {
+	background-color: var(--background-26);
+	transition: background-color 0.3s ease;
+}
+div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-]>div[class*=header-] div[class*=searchBar-]:focus-within, div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-]>div[class*=header-] div[class*=searchBar-]:focus-within input {
+	background-color: var(--background-42);
+	transition: background-color 0.3s ease;
+}
+div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-]>div[class*=footer-] {
+	background-color: var(--background-0d);
+}
+div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-] div[class*=inviteRow-]:hover {
+	background-color: var(--background-2f);
+	border-radius: 10px;
+	margin-right: 0;
 }
 
 /* Disabled Text Area Placeholder */
@@ -727,6 +788,9 @@ div[class*=connectedAccountContainer-] {
 	background-color: var(--background-2f);
 	border-radius: 8px;
 }
+div[class*=userProfileOuter] div[class*=rolePillBorder-] {
+	/* border: none; */
+}
 
 /* Game Streaming Preview */
 .theme-dark .streamPreview-I7itZ6 {
@@ -740,14 +804,6 @@ div[class*=liveQualityIndicator-] {
 	background-color: var(--background-3c) !important;
 }
 
-/* Invite to Stream Pop-up */
-.theme-dark .footer-1hTRRZ {
-	background-color: var(--background-0d);
-}
-.modal-atz_3z .searchBar-20o6Cf.container-2oNtJn {
-    background-color: var(--background-26);
-}
-
 /* Hide Gift Nitro */
 button[aria-label="Send a gift"] {
     display: none;
@@ -759,11 +815,8 @@ button[aria-label="Send a gift"] {
 }
 
 /* Auto Complete & Commands Pop-up */
-.theme-dark .autocomplete-3NRXG8 {
+.theme-dark div[class*=autocomplete-], div[class*=autocomplete-] div[class*=list-][class*=wrapper-] {
     background-color: var(--background-17);
-}
-.wrapper-22rqw6 {
-    background-color: var(--background-11);
 }
 .categoryHeader-OpJ1Ly {
     background-color: var(--background-0a);
@@ -774,16 +827,47 @@ button[aria-label="Send a gift"] {
 div[class*=autocompleteRow-][aria-disabled=false]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected=true]>div[class*=base-] {
     background-color: var(--background-2f);
 }
+div[class*=autocomplete-] div[class*=rail-][class*=wrapper-] {
+	width: 64px;
+}
+div[class*=autocomplete-] div[class*=list-][class*=wrapper-] {
+	width: 56px;
+}
+div[class*=autocompleteInner-]>div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-track {
+	background-color: var(--background-17);
+	border-color: var(--background-17);
+}
+div[class*=autocompleteInner-]>div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb {
+	background-color: var(--background-42);
+	border-radius: 6px;
+}
+div[class*=autocompleteInner-]>div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar {
+	width: 12px;
+}
+div[class*=autocompleteRow-] div[class*=usageWrapper-] div[class*=optionals-] {
+	border-color: transparent;
+}
+div[class*=autocompleteRow-] div[class*=usageWrapper-] div[class*=colorHeaderPrimary-] {
+	background-color: var(--background-0d);
+	border: 1.6px outset var(--background-3c); 
+	border-radius: 5px;
+}
+div[class*=applicationCommand-] span[class*=optionPillKey-] {
+    background-color: var(--background-2f);
+}
 
-/* GIFs, Stickers & Emoji Modal */
+/* GIFs, Stickers & Emoji Wrapper */
 .contentWrapper-3vHNP2, #emoji-picker-tab-panel>div[class*=emojiPicker-], #emoji-picker-tab-panel>div[class*=header-] {
     background-color: var(--background-19f);
 }
-.inspector-DFKXwB {
-    background-color: var(--background-0d);
+.wrapper-1NNaWG, .inspector-DFKXwB {
+    background-color: var(--background-0a);
 }
 .wrapper-1NNaWG {
-    background-color: var(--background-00);
+	margin-bottom: 4px;
+}
+section[aria-label="Expression Picker"] div[class*=contentWrapper-]>div>div[class*=wrapper-][class*=categoryList-] {
+	background-color: var(--background-0f);
 }
 div[class*=diversitySelectorOptions-] {
   background-color: var(--background-3c);
@@ -828,14 +912,9 @@ div[class*=emojiPicker-] {
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 }
-
-/* Focuslock Modals Shadow */
-div[class*=focusLock-]>div[class*=root-] {
-	box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f);
+div[id*="gif-picker"] div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb, div[id*="sticker-picker"] div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb, div[id*="emoji-picker"] div[class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb {
+	background-color: var(--background-42);
 }
-/* div[class*=focusLock-]>div[class*=rootWithShadow-] { */
-	/* box-shadow: 0 0 0 1px var(--background-0d),0 2px 10px 0 var(--background-0f); */
-/* } */
 
 /** Start An Activity Pop-up **/
 .scrollTierBackground-BnWR8k {
@@ -967,22 +1046,6 @@ div[class*=quickswitcher-] input {
 	background: linear-gradient(to top, var(--background-19b), rgba(54, 57, 63, 0)) !important;
 }
 
- /* Welcome Modal*/
-div[class*=focusLock-]>div[class*=main-] {
-	background: var(--modal-background);
-}
-div[class*=focusLock-]>div[class*=main-]>div[class*=options-]>div[role=button]:hover {
-	background: var(--background-3c);
-}
-
-/* Server Rules Modal */
-div[class*=focusLock-] div[class*=dotMembers-] {
-	background-color: var(--background-8a);
-}
-div[class*=focusLock-] div[class*=modal-], div[class*=focusLock-] div[class*=guildSidebar-], div[class*=focusLock-] div[class*=footer-] {
-	background-color: transparent;
-}
-
 /* Top Notice Buttons fix */
 .notice-12Koq- .button-3_1yil:hover, .notice-1x8lm- .button-1mXrIh:hover {
 	background-color: var(--background-ca);
@@ -1036,6 +1099,10 @@ div[class*=focusLock-] div[class*=modal-], div[class*=focusLock-] div[class*=gui
 }
 div[class*=inputWrapper-][class*=input-] {
 	background-color: transparent;
+}
+/* Download Apps (if someone is using the theme in a browser) */
+div[class*=downloadApps-] {
+	background-color: var(--background-00);
 }
 
 /* Billing, EGS Picker, Modal, Submenu, Server Home and User Profile Scrollbar */
@@ -1252,11 +1319,14 @@ div[class*=root-1e2tfc] button[aria-label="Dismiss"]:hover, div[class*=root-1e2t
 	border-radius: 12px;
 }
 
-/* Replying bar */
-div[class*=replyBar-], .threadSuggestionBar-3ExSyc {
+/* Attached Bar Above Text Area */
+div[class*=channelTextArea-]>div[class*=attachedBars-], .threadSuggestionBar-3ExSyc {
 	background-color: var(--background-2c);
     animation: slideY 250ms ease;
     transform-origin: bottom;
+}
+div[class*=replyBar-] {
+	background-color: transparent;
 }
 
 /* Connected on PS5 Bar */
@@ -1351,24 +1421,29 @@ div[class*=optionButtonWrapper-]:hover {
 }
 
 /* Server Guide */
-div[class*=homeContent-] div[class*=row-][role="button"], div[class*=homeContent-] div[class*=sidebarCardWrapper-] {
+div[class*=homeContent-] div[class*=row-][role="button"], div[class*=homeContent-] div[class*=sidebarCardWrapper-], div[class*=homeContent-] div[class*=mainContent-] div[class*=action-] {
 	background-color: var(--background-26);
 }
-div[class*=homeContent-] div[class*=row-][role="button"]:hover {
+div[class*=homeContent-] div[class*=row-][role="button"]:hover, div[class*=homeContent-] div[class*=mainContent-] div[class*=action-]:hover {
 	background-color: var(--background-42);
 }
+div[class*=homeContent-] div[class*=sidebarCardWrapper-] div[class*=resourceChannel-]:hover {
+	background-color: var(--background-42);
+	border-radius: 10px;
+}
+div[class*=homeContainer-][class*=scrollerBase-][class*=auto-]::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-auto-track);
+    border-color: var(--scrollbar-auto-track);
+}
+div[class*=homeContainer-][class*=scrollerBase-][class*=auto-]::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-auto-thumb);
+}
 
-/* Event Info Modal */
-div[class*=focusLock-] div[class*=contentContainer-][class*=scrollerBase-] {
-	background-color: var(--background-0f);;
-}
-div[class*=focusLock-] div[class*=contentContainer-][class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-track {
-    background-color: var(--background-0f);
-    border-color: var(--background-0f);
-}
-div[class*=focusLock-] div[class*=contentContainer-][class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb {
-    background-color: var(--background-42);
-}
+
+
+
+/* Soundboard */
+
 
 /** BD Plugins **/
 /* BetterFormattingRedux */
@@ -1457,9 +1532,25 @@ div[class*=listItemWrapper-][class*=selected-] svg[class*=homeIcon-] {
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
-.menu-2TXYjN, div[class*=emojiPicker-], .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, div[class*=userPopoutOuter-], .container-2kTWmC, .container-2McqkF, .popout-3gby1q, .scroller-18M1mG {
+/* .menu-2TXYjN, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .container-2o3qEW, .container-2ebMPP, div[class*=userPopoutOuter-], .container-2kTWmC, .container-2McqkF, .popout-3gby1q { */
+    /* animation: slideY 250ms ease forwards; */
+    /* transform-origin: top; */
+/* } */
+.menu-2TXYjN, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .container-2o3qEW, .container-2ebMPP, div[class*=userPopoutOuter-], .container-2kTWmC, .container-2McqkF, .popout-3gby1q {
     animation: slideY 250ms ease;
     transform-origin: top;
+}
+section[aria-label="Expression Picker"] div[class*=contentWrapper-], div[class*=menu-][id="channel-attach"] {
+    animation: slideY 250ms ease;
+    transform-origin: bottom;
+}
+
+
+
+
+.scroller-18M1mGdiv, [class*=autocomplete-] {
+    animation: slideY 250ms ease;
+    transform-origin: bottom;
 }
 /* Hide User Buttons Until Hover by The Commie Axolotl#0001 & Me */
 section[aria-label="User area"] > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
