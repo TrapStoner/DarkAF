@@ -28,7 +28,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.9.1 by TrapStoner#9526";
+	content: "DarkAF v1.9.2 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -105,6 +105,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--brand-experiment-80a: rgb(38 40 43 / 80%);
 	--brand-experiment-95a: rgb(38 40 43 / 95%);
 	--brand-500: var(--background-52);
+	--brand-560: var(--background-11);
 	--button-secondary-background-hover: var(--background-19f);
 	--button-secondary-background-active: var(--background-42);
 	--button-secondary-background-disabled: var(--background-2f);
@@ -888,7 +889,7 @@ div[class*=liveQualityIndicator-] {
 }
 
 /* Hide Gift Nitro */
-div[class*=channelTextArea-] div[class*=buttons-]>button {
+div[class*=channelTextArea-] div[class*=buttons-]>button[aria-haspopup="dialog"][class*=colorBrand-] {
     display: none;
 }
 
@@ -1194,7 +1195,7 @@ div[class*=circleIconButton-][class*=selected-] {
 	--text-link: var(--background-37b);
 	--button-secondary-background: var(--background-2f);
 	--button-secondary-background-hover: var(--background-42);
-	--input-background: var(--background-3c);
+	--input-background: var(--background-2c);
 	--input-placeholder-text: var(--background-bd);
 	--interactive-normal: var(--background-8a);
 }
