@@ -28,7 +28,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.9.2 by TrapStoner#9526";
+	content: "DarkAF v1.9.3 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -414,14 +414,14 @@ div[class*=focusLock-]>div[class*=root-] div[class*=content-][class*=contentCont
 div[class*=focusLock-]>div[class*=root-] div[class*=content-][class*=contentContainer-][class*=scrollerBase-][class*=thin-]::-webkit-scrollbar-thumb {
     background-color: var(--background-42);
 }
-/* Active Threads Modal */
-div[class*=focusLock-]>.modal-3fnj3y>div[class*=container-] {
+/* Active Threads Modals */
+div[class*=focusLock-]> :is(.modal-ZdazA8, .modal-3fnj3y)>div[class*=container-] {
 	background-color: var(--modal-background);
 }
-div[class*=focusLock-]>.modal-3fnj3y div[class*=activeThreadsList-] div[class*=container-]:hover {
+div[class*=focusLock-]> :is(.modal-ZdazA8, .modal-3fnj3y) div[class*=list-] div[class*=container-]:hover {
 	background-color: var(--background-42);
 }
-div[class*=focusLock-]>.modal-3fnj3y div[class*=activeThreadsList-] div[class*=container-]:active {
+div[class*=focusLock-]> :is(.modal-ZdazA8, .modal-3fnj3y) div[class*=list-] div[class*=container-]:active {
 	background-color: var(--background-2f);
 }
 /* Invite to Stream/Server Modal */
@@ -523,6 +523,47 @@ div[id="keybinds-tab"] div[class*=defaultKeybind-]:hover div[class*=defaultKeybi
 }
 div[class*=codeRedemptionInput-] input {
 	background-color: var(--background-2c);
+}
+/* Dropdown Lists */
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) {
+	animation: slideY 250ms ease;
+	background: var(--background-2c);
+	transform-origin: top;
+}
+div[class*=popout-][class*=popoutPositionTop-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) {
+	transform-origin: bottom;
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-][aria-selected="true"] {
+	background: var(--background-08) !important;
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-]>svg[class*=selectedIcon-] {
+	color: var(--background-d5);
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-] {
+	border-radius: 20px;
+	border-left: 5px solid var(--background-2c);
+	border-right: 5px solid var(--background-2c);
+	color: var(--background-ca);
+	transition: all 300ms ease;
+}
+div[class*=popout-][class*=scrollerBase-][class*=searchableSelect-] *[class*=option-] {
+	border-right: none;
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-]:hover {
+	background: var(--background-42) !important;
+	color: var(--background-ff);
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-]:focus {
+	background: unset;
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-]:hover>svg[class*=selectedIcon-] {
+	color: var(--background-ff);
+}
+div[class*=popout-][class*=scrollerBase-]:is([role="listbox"], [class*=searchableSelect-]) *[class*=option-]:hover>svg[class*=selectedIcon-]>circle {
+	fill: var(--background-00);
+}
+div[class*=popout-][class*=scrollerBase-][class*=searchableSelect-][class*=auto-]::-webkit-scrollbar-thumb {
+	background-color: var(--darkaf-main);
 }
 /* Mic Test */
 div[class*=micTest-] div[class*=progress-] {
@@ -943,7 +984,7 @@ div[class*=applicationCommand-] span[class*=optionPillKey-] {
 div[class*=autocompleteRow-]>div[class*=base-] {
     transition: all 0.5s;
 }
-div[class*=autocompleteRow-]>div[class*=base-]:hover {
+div[class*=autocompleteRow-]>div[class*=base-]:hover, div[class*=autocompleteRow-][aria-selected="true"]>div[class*=base-] {
     transition: all 0.1s;
     transform: scale(1.02);
 }
@@ -1248,11 +1289,14 @@ div[class*=thin-]::-webkit-scrollbar-thumb {
 	border-radius: 8px;
 }
 /* Billing, EGS Picker, Modal, Submenu, Server Home, Popout, Soundboard and User Profile */
-div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .layer-2BGhQ8 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-2TXYjN div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb {
+div[class*=verticalFit-] div[class*=thin-]::-webkit-scrollbar-thumb, .layer-2BGhQ8 div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar-thumb, .menu-2TXYjN div[class*=thin-]::-webkit-scrollbar-thumb, div[class*=homeContainer-][class*=auto-]::-webkit-scrollbar-thumb, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar-thumb, code[class*=scrollbarGhostHairline-]::-webkit-scrollbar-thumb {
     background-color: var(--background-42);
 }
 div[class*=layer-] :not([class*=menu-])>div[class*=thin-]::-webkit-scrollbar, div[class*=emojiPicker-] div[class*=thin-]::-webkit-scrollbar, div[class*=focusLock-] div[class*=thin-]::-webkit-scrollbar, div[class*=userProfileInner-] div[class*=thin-]::-webkit-scrollbar {
 	width: 11px;
+}
+code[class*=scrollbarGhostHairline-]::-webkit-scrollbar {
+	height: 6px;
 }
 
 /* Right-Click Submenu */
@@ -1712,10 +1756,10 @@ div[class*=base-] section[class*=panels-] > .container-YkUktl .flex-2S1XBF > :la
 	animation: button-popup 1s ease-in-out;
 }
 /* Input Animation By Me */
-input:not([role="combobox"]), div[class*=chat-] .search-2Mwzzq[class*=focused-] div[class*=searchBar-], div[class*=cardInput-], div[class*=select-][class*=searchable-], div[class*=bioTextArea-], div[class*=select-][role="button"], .bd-search-wrapper, .searchBar-2aylmZ, div[class*=addFriendInputWrapper-], .searchBar-3aIzc-, div[class*=layer-] div[class*=header-] div[class*=container-] {
+input:not([role="combobox"], [readonly]), div[class*=chat-] .search-2Mwzzq[class*=focused-] div[class*=searchBar-], div[class*=cardInput-], div[class*=select-][class*=searchable-], div[class*=bioTextArea-], div[class*=select-][role="button"], .bd-search-wrapper, .searchBar-2aylmZ, div[class*=addFriendInputWrapper-], .searchBar-3aIzc-, div[class*=layer-] div[class*=header-] div[class*=container-], .searchContainer-u-1vUp .container-2oNtJn, div[class*=inputWrapper-] textarea {
 	transition: all 250ms ease !important;
 }
-input:not([role="combobox"], [class*=fileUploadInput-], [name="invite"]):focus-within, div[class*=cardInput-][class*=cardInputFocused-], div[class*=select-][class*=searchable-][class*=open-], div[class*=bioTextArea-]:focus-within, div[class*=select-][class*=open-][role="button"], .bd-search-wrapper:focus-within, .searchBar-2aylmZ:focus-within, .searchBar-3aIzc-:focus-within, div[class*=layer-] div[class*=header-] div[class*=container-]:focus-within {
+input:not([role="combobox"], [readonly], [class*=fileUploadInput-], [name="invite"]):focus-within, div[class*=cardInput-][class*=cardInputFocused-], div[class*=select-][class*=searchable-][class*=open-], div[class*=bioTextArea-]:focus-within, div[class*=select-][class*=open-][role="button"], .bd-search-wrapper:focus-within, .searchBar-2aylmZ:focus-within, .searchBar-3aIzc-:focus-within, div[class*=layer-] div[class*=header-] div[class*=container-]:focus-within, .searchContainer-u-1vUp .container-2oNtJn:focus-within, div[class*=inputWrapper-] textarea:focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper-]:focus-within, div[class*=addFriendInputWrapper-]:focus-within input {
@@ -1723,4 +1767,20 @@ div[class*=addFriendInputWrapper-]:focus-within, div[class*=addFriendInputWrappe
 }
 div[class*=chat-] .search-2Mwzzq[class*=focused-] div[class*=searchBar-] {
 	background-color: var(--background-26);
+}
+/* Profile Customization Preview Animation by Me */
+div[class*=customizationSection-]>div[class*=profileCustomizationPreview-] {
+	scale: 1;
+	transition: scale 1s cubic-bezier(.51,.22,.25,1.38);
+	transform-origin: -30px -40px;
+}
+div[class*=customizationSection-]>div[class*=profileCustomizationPreview-]:hover {
+	scale: 1.2;
+}
+div[class*=customizationSection-]>div[class*=profileCustomizationPreview-] div[class*=imageUploaderIcon-] {
+	scale: 1;
+	transition: scale 500ms ease;
+}
+div[class*=customizationSection-]>div[class*=profileCustomizationPreview-]:hover div[class*=imageUploaderIcon-] {
+	scale: 0;
 }
