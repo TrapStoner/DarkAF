@@ -28,7 +28,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info-3pQQBb:after {
-	content: "DarkAF v1.9.3 by TrapStoner#9526";
+	content: "DarkAF 1.9.4 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -446,6 +446,7 @@ div[class*=wrapper-]>div[class*=focusLock-][role="dialog"]>div[class*=modal-] di
 	background-color: var(--darkaf-main);
 }
 
+/** Channel Text Area **/
 /* Disabled Text Area Placeholder */
 div[class*=textAreaDisabled-] div[class*=placeholder-] {
 	color: var(--background-ff);
@@ -453,6 +454,13 @@ div[class*=textAreaDisabled-] div[class*=placeholder-] {
 /* Gap Between Text Area and Chat Content */
 div[class*=channelTextArea-], .wrapper-2SplAX {
     margin-top: 13px;
+}
+/* Send Message Button */
+div[class*=channelTextArea-] div[class*=buttons-]>div[class*=separator-] button[class*=colorBrand-]:not(disabled) div[class*=activeButtonChild-] {
+	color: var(--interactive-normal);
+}
+div[class*=channelTextArea-] div[class*=buttons-]>div[class*=separator-] button[class*=colorBrand-]:not(disabled):hover div[class*=activeButtonChild-] {
+	color: var(--background-d5);
 }
 
 /* Listen Along Invite */
@@ -583,6 +591,10 @@ div[class*=ttsPreviewWrapper-] button:only-of-type {
 }
 div[class*=ttsPreviewWrapper-] button:only-of-type:hover {
 	background-color: var(--background-26);
+}
+/* Devices */
+#sessions-tab div[class*=sessionIcon-] {
+	background: var(--background-d5);
 }
 /* Connections */
 #connections-tab div[class*=connection-] {
@@ -1518,6 +1530,9 @@ div[class*=directoryContainer-] {
 div[class*=directoryContainer-] div[class*=searchBox-] input {
 	background-color: var(--darkaf-main);
 }
+div[class*=directoryContainer-] div[class*=searchBox-]:focus-within, div[class*=directoryContainer-] div[class*=searchBox-]:focus-within input {
+	background-color: var(--background-42) !important;
+}
 div[class*=directoryContainer-] div[class*=sidebar-] div[class*=selected-] a {
 	background-color: var(--background-00);
 }
@@ -1615,6 +1630,7 @@ div[class*=homeContainer-][class*=scrollerBase-][class*=auto-]::-webkit-scrollba
 .bf-toolbar .format:hover {
 	border-radius: 5px;
 }
+div[class*=profileCustomizationSection-] div[class*=channelTextArea-]>#bfredux {display: none;}
 /** Spotify Controls **/
 /* Timeline Fix */
 div[class*=base-] section[class*=panels-] div[class*=container-][class*=withTimeline-] .timeline-UWmgAx:not(:hover) .barFill-Dhkah7 {
@@ -1623,6 +1639,10 @@ div[class*=base-] section[class*=panels-] div[class*=container-][class*=withTime
 /* Border Gone */
 div[class*=base-] section[class*=panels-] div[class*=container-][class*=withTimeline-] {
 	border-bottom: none;
+}
+/* Disable Typing */
+div[class*=channelTextArea-] button[class*=invisible-typing-button]:hover>svg {
+	color: var(--interactive-active);
 }
 
 /* React Component Error */
@@ -1756,7 +1776,7 @@ div[class*=base-] section[class*=panels-] > .container-YkUktl .flex-2S1XBF > :la
 	animation: button-popup 1s ease-in-out;
 }
 /* Input Animation By Me */
-input:not([role="combobox"], [readonly]), div[class*=chat-] .search-2Mwzzq[class*=focused-] div[class*=searchBar-], div[class*=cardInput-], div[class*=select-][class*=searchable-], div[class*=bioTextArea-], div[class*=select-][role="button"], .bd-search-wrapper, .searchBar-2aylmZ, div[class*=addFriendInputWrapper-], .searchBar-3aIzc-, div[class*=layer-] div[class*=header-] div[class*=container-], .searchContainer-u-1vUp .container-2oNtJn, div[class*=inputWrapper-] textarea {
+input:not([role="combobox"], [readonly]), div[class*=chat-] .search-2Mwzzq[class*=focused-] div[class*=searchBar-], div[class*=cardInput-], div[class*=select-][class*=searchable-], div[class*=bioTextArea-], div[class*=select-][role="button"], .bd-search-wrapper, .searchBar-2aylmZ, div[class*=addFriendInputWrapper-], .searchBar-3aIzc-, div[class*=layer-] div[class*=header-] div[class*=container-], .searchContainer-u-1vUp .container-2oNtJn, div[class*=inputWrapper-] textarea, div[class*=directoryContainer-] div[class*=searchBox-] {
 	transition: all 250ms ease !important;
 }
 input:not([role="combobox"], [readonly], [class*=fileUploadInput-], [name="invite"]):focus-within, div[class*=cardInput-][class*=cardInputFocused-], div[class*=select-][class*=searchable-][class*=open-], div[class*=bioTextArea-]:focus-within, div[class*=select-][class*=open-][role="button"], .bd-search-wrapper:focus-within, .searchBar-2aylmZ:focus-within, .searchBar-3aIzc-:focus-within, div[class*=layer-] div[class*=header-] div[class*=container-]:focus-within, .searchContainer-u-1vUp .container-2oNtJn:focus-within, div[class*=inputWrapper-] textarea:focus-within {
