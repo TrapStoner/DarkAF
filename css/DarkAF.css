@@ -25,10 +25,9 @@
 IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 /* Theme Info */
 .info__755e1:after {
-	content: "DarkAF 2.0.0 by TrapStoner#9526";
+	content: "DarkAF 2.0.1 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -139,6 +138,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--home-background: var(--darkaf-main);
 	--search-popout-date-picker-hint-value-background: var(--background-42);
 	--search-popout-date-picker-hint-value-background-hover: var(--background-d5);
+	--libs-toggle: var(--show-libs) flex;
+	--gift-nitro-toggle: var(--show-gift-nitro) flex;
+	--profile-role-pill-border-color: transparent;
 }
 
 /* Animations */
@@ -225,7 +227,7 @@ div[class*=peopleListItem_] {
 	margin: 0 30px 13px 0;
 	transition: margin .15s ease;
 }
-div[class*=peopleListItem-2656jfgy] div[class*=userInfo_]{
+div[class*=peopleListItem_] div[class*=userInfo_]{
 	margin-left: 10px;
 }
 div[class*=peopleListItem_]:hover div[class*=userInfo_], div[class*=peopleListItem_][class*=active_] div[class*=userInfo_] {
@@ -316,8 +318,10 @@ div[class*=checkbox_] {
 	transition: background-color 0.3s ease;
 }
 div[class*=checkbox_][class*=checked_] {
-	border-color: var(--background-d5) !important;
 	transition: background-color 0.2s ease;
+}
+div[class*=checkbox_][class*=checked_]:not([class*=round_]) {
+	border-color: var(--background-d5) !important;
 }
 
 /* @mentions, Embed, Attachments, Invites & Code blocks */
@@ -415,14 +419,17 @@ div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentCont
     background-color: var(--background-42);
 }
 /* Active Threads Modals */
-div[class*=focusLock_]> :is(.modal-ZdazA8, .modal-3fnj3y)>div[class*=container_] {
+div[class*=focusLock_]> :is(.modal_d06ca2, .modal__48b3d)>div[class*=container_] {
 	background-color: var(--modal-background);
 }
-div[class*=focusLock_]> :is(.modal-ZdazA8, .modal-3fnj3y) div[class*=list_] div[class*=container_]:hover {
+div[class*=focusLock_]> :is(.modal_d06ca2, .modal__48b3d) div[class*=list_] div[class*=container_]:hover {
 	background-color: var(--background-42);
 }
-div[class*=focusLock_]> :is(.modal-ZdazA8, .modal-3fnj3y) div[class*=list_] div[class*=container_]:active {
+div[class*=focusLock_]> :is(.modal_d06ca2, .modal__48b3d) div[class*=list_] div[class*=container_]:active {
 	background-color: var(--background-2f);
+}
+.modal__48b3d {
+	background-color: var(--modal-background) !important;
 }
 /* Invite to Stream/Server Modal */
 div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_]>div[class*=header_] div[class*=searchBar_], div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_]>div[class*=header_] div[class*=searchBar_] input {
@@ -445,6 +452,26 @@ div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_] di
 .userContainer_edba03 {
 	background-color: var(--darkaf-main);
 }
+/* Activities Modal */
+div[class*=focusLock_]> .root__9b46d :is(div[class*=modalHeader_], div[class*=scrollTierBackground__]) {
+	background-color: var(--modal-background);
+}
+div[class*=focusLock_]> .root__9b46d div[class*=activityItem__]{
+	transition: all .2s ease;
+}
+div[class*=focusLock_]> .root__9b46d div[class*=activityItem__]:hover {
+	background: var(--background-3c);
+	margin: -8px 0 0 0;
+	padding: 0 0 8px 0;
+}
+/* Set a Channel Status Modal */
+div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_] :is(#bfredux, .invisible-typing-button) {
+	display: none;
+}
+div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_] div[class*=placeholder_] {
+	color: var(--background-bd);
+}
+
 
 /** Channel Text Area **/
 /* Disabled Text Area Placeholder */
@@ -461,12 +488,6 @@ div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[
 }
 div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[class*=colorBrand_]:not(disabled):hover div[class*=activeButtonChild_] {
 	color: var(--background-d5);
-}
-
-/* Listen Along Invite */
-.theme-dark .invite__2a93b {
-    border: none;
-	background-color: var(--background-19f);
 }
 
 /* Settings */
@@ -928,6 +949,32 @@ div[class*=userProfileOuter] div[class*=rolePillBorder_] {
 div[class*=userProfileOuter] button[class*=rolePill_][class*=addButton_] {
 	background-color: var(--darkaf-main);
 }
+div[class*=userProfileOuter] button[class*=rolePill_][class*=addButton_] {
+	border-color: transparent;
+}
+div[class*=userProfileOuter] button[class*=rolePill_][class*=addButton_]:hover {
+	background-color: var(--background-2f);
+	border-color: var(--background-3c);
+}
+.container_d27846 {
+	border-radius: 12px;
+	background-color: var(--background-26);
+}
+.container_d27846 li[class*=item_]:hover {
+	border-radius: 15px;
+	background-color: var(--background-3c);
+}
+.container_d27846:before{
+	position: absolute;
+	border-radius: 12px;
+	margin: -9px 0 0 -9px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0 0 30px var(--background-bd);
+    opacity: .3;
+    pointer-events: none;
+}
 
 /* Game Streaming Preview */
 .theme-dark .streamPreview__1846c {
@@ -942,8 +989,8 @@ div[class*=liveQualityIndicator_] {
 }
 
 /* Hide Gift Nitro */
-div[class*=channelTextArea_] div[class*=buttons_]>button[aria-haspopup="dialog"][class*=colorBrand_] {
-    display: none;
+div[class*=channelTextArea_] div[class*=buttons_]>div[class*=container__] {
+    display: var(--gift-nitro-toggle, none);
 }
 
 /* Update Notice */
@@ -1069,14 +1116,6 @@ div[class*=emojiPicker_] {
 div[class*=searchSuggestions_] button[class*=searchSuggestion_]:hover {
 	background-color: var(--background-42) !important;
 	border-color: var(--background-42) !important;
-}
-
-/* Start An Activity Pop-up */
-.scrollTierBackground-BnWR8k {
-    background-color: var(--background-19f);
-}
-.activityItem-1Z9CTr:hover {
-    background: var(--background-3c);
 }
 
 /* Quick Switcher Menu */
@@ -1394,9 +1433,12 @@ img[class*=assetsLargeImageSpotify_] {
 	border-radius:8px;
 }
 
-/* In VC Guild Badge */
-div[class*=iconBadge_][class*=isCurrentUserConnected_] {
+/* Upper Guild Badge */
+div[class*=upperBadge_]>div[class*=iconBadge_] {
     background-color: var(--background-52);
+}
+div[class*=upperBadge_]>div[class*=iconBadge_][class*=isCurrentUserConnected_] {
+    background-color: var(--background-37b);
 }
 
 /* Screen, Video, Activity buttons */
@@ -1731,7 +1773,7 @@ div[class*=unreadMentionsIndicatorBottom_], div[class*=unreadMentionsIndicatorTo
 	color: var(--background-ff);
 }
 /* Hide Plugin Libs by Nyx#8614 & Me */
-div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
+div#BDFDB-card, div#ZeresPluginLibrary-card {display: var(--libs-toggle, none);}
 div[class*=menu_][aria-activedescendant*="user-settings-cog-BetterDiscord--Plugins"] :is(#user-settings-cog-BetterDiscord--Plugins--BDFDB, #user-settings-cog-BetterDiscord--Plugins--ZeresPluginLibrary) {display: none;}
 /* Home Button Spins On Click by The Commie Axolotl#0001 & Me */
 div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav___home] svg {
@@ -1740,7 +1782,7 @@ div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav_
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
-.menu_dc52c6, .browser_fece63, .messagesPopoutWrap_b3b384, .container_b2ce9c, .container__20de0, div[class*=userPopoutOuter_], .container_d27846, .container_d6dad3, .popout__08442, .picker__6dca7, .contentWrapper_eab878 {
+.menu_dc52c6, .browser_fece63, .messagesPopoutWrap_b3b384, .container_b2ce9c, .container__20de0, div[class*=userPopoutOuter_], .container_d27846, .container_d6dad3, .popout__08442, .picker__6dca7, .contentWrapper_eab878, #emoji-picker-tab-panel {
     animation: slideY 250ms ease;
     transform-origin: top;
 }
@@ -1777,10 +1819,10 @@ div[class*=base_] section[class*=panels_] > .container_ca50b9 .flex_f5fbb7 > :la
 	animation: button-popup 1s ease-in-out;
 }
 /* Input Animation */
-input:not([role="combobox"], [readonly]), div[class*=chat_] .search_ac353c[class*=focused_] div[class*=searchBar_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, .searchBar_ff8800, div[class*=addFriendInputWrapper_], .searchBar__3b162, div[class*=layer_] div[class*=header_] div[class*=container_], .searchContainer_bdd25a .container__7712a, div[class*=inputWrapper_] textarea, div[class*=directoryContainer_] div[class*=searchBox_] {
+input:not([type="checkbox"], [role="combobox"], [readonly]), div[class*=chat_] .search_ac353c[class*=focused_] div[class*=searchBar_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, .searchBar_ff8800, div[class*=addFriendInputWrapper_], .searchBar__3b162, div[class*=layer_] div[class*=header_] div[class*=container_], .searchContainer_bdd25a .container__7712a, div[class*=inputWrapper_] textarea, div[class*=directoryContainer_] div[class*=searchBox_], div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_] {
 	transition: all 250ms ease !important;
 }
-input:not([role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"]):focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, .searchBar_ff8800:focus-within, .searchBar__3b162:focus-within, div[class*=layer_] div[class*=header_] div[class*=container_]:focus-within, .searchContainer_bdd25a .container__7712a:focus-within, div[class*=inputWrapper_] textarea:focus-within {
+input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"]):focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, .searchBar_ff8800:focus-within, .searchBar__3b162:focus-within, div[class*=layer_] div[class*=header_] div[class*=container_]:focus-within, .searchContainer_bdd25a .container__7712a:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrapper_]:focus-within input {

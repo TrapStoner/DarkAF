@@ -1,7 +1,7 @@
 /**
  * @name DarkAF
  * @author TrapStoner#9526
- * @version 3.0.1
+ * @version 3.0.2
  * @description A simple really really dark theme for discord. Made with love <3
  * @source https://github.com/TrapStoner/DarkAF
 */
@@ -9,7 +9,7 @@
 @import url('https://rawgit.com/TrapStoner/DarkAF/master/css/DarkAF.css');
 
 :root {
-	/***  If you want to change these just uncomment them and set a color, to go back to defaul just comment them again ***/
+	/***  If you want to change anything just uncomment a variable, to go back to defaul just comment it again ***/
 	/**  Note: Recommended values for Main Theme Color  **/
 	/*  True Black: #000000, Dark Gray: #060606 or #080808 | Default: #040404  */
 	
@@ -22,6 +22,16 @@
 	
 	/** Links Color **/
 	/* --text-link: #d53a3a;  */
+	
+	
+	/*** Toggles ***/
+	/** Note: DO NOT type anything in the toggle variables! Leave them blank! ONLY comment and uncomment them **/
+	
+	/** Unhide BDFDB & ZeresPluginLibrary **/
+	/* --show-libs: ; */
+	
+	/* Unhide Gift Nitro Button next to Gif Picker */
+	/* --show-gift-nitro: ; */
 }
 
 /*
