@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info__755e1:after {
-	content: "DarkAF 2.0.2 by TrapStoner#9526";
+	content: "DarkAF 2.0.3 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -140,6 +140,9 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--search-popout-date-picker-hint-value-background: var(--background-42);
 	--search-popout-date-picker-hint-value-background-hover: var(--background-d5);
 	--libs-toggle: var(--show-libs) flex;
+	--library-toggle: var(--hide-library) none;
+	--nitro-toggle: var(--hide-nitro) none;
+	--shop-toggle: var(--hide-shop) none;
 	--gift-nitro-toggle: var(--show-gift-nitro) flex;
 	--profile-role-pill-border-color: transparent;
 }
@@ -193,7 +196,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 li[class*=container_], div[class*=peopleListItem_], div[class*=peopleListItem_][class*=active_], div[class*=peopleListItem_]:hover, [class*=membersWrap_] div[class*=layout_], .contentWrapper__85d37 button[class*=lookFilled_][class*=colorBrand_]:hover, #language-tab div[role=radiogroup]>div[class*=item_] {
 	border-radius: 25px;
 }
-div[class*=thin_]>div[class*=categoryItem_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_] a, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] li[class*=wrapper_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=content_], li[class*=container] div[class*=content_]:not(.content_f767b8):not(.content-3cDrTy), aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_], div[class*=side_] div[class*=item_], div[class*=side_] div[class*=selectedBackground_], div[class*=activityItem_], div[class*=wrapper__7a35f], div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_]:hover, div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_], div[role=listbox] div[role=option][class*=friendWrapper_]>div:first-child, div[role=listbox] div[role=option][class*=result_], .contentWrapper__85d37 button[class*=lookFilled_][class*=colorBrand_], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb, div[class*=listRow_][class*=interactiveRow_] {
+div[class*=thin_]>div[class*=categoryItem_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_] a, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] li[class*=wrapper_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=content_], aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_], div[class*=side_] div[class*=item_], div[class*=side_] div[class*=selectedBackground_], div[class*=activityItem_], div[class*=wrapper__7a35f], div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_]:hover, div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_], div[role=listbox] div[role=option][class*=friendWrapper_]>div:first-child, div[role=listbox] div[role=option][class*=result_], .contentWrapper__85d37 button[class*=lookFilled_][class*=colorBrand_], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb, div[class*=listRow_][class*=interactiveRow_] {
     border-radius: 15px;
 }
 div[class*=base_] div[class*=sidebar_] header[class*=header_] {
@@ -275,10 +278,21 @@ div[class*=rowWrapperDim_] [class*=bodyCell_] {
 div[class*=installationPathEditing_][class*=card_] {
     animation: slideY 250ms ease;
 }
+nav[class*=privateChannels_] a[href="/library"] {
+	display: var(--library-toggle, flex);
+}
+
+/* Nitro */
+nav[class*=privateChannels_] a[href="/store"] {
+	display: var(--nitro-toggle, flex);
+}
 
 /* Shop */
 div[class*=shop_] {
 	background-color: initial;
+}
+nav[class*=privateChannels_] a[href="/shop"] {
+	display: var(--shop-toggle, flex);
 }
 
 /* Jump To Present & New Messages Bars */
@@ -331,8 +345,16 @@ div[class*=checkbox_][class*=checked_]:not([class*=round_]) {
 }
 
 /* Dividers */
-:is(.divider_a2339a, .customizationSection__16fec, .session_f56359, .listItem_df7f03, .list__80e1b) {
+:is(.divider_a2339a, .customizationSection__16fec, .session_f56359, .listItem_df7f03, .list__80e1b, div[class*=tableWrapper_] td[class*=tableCell_], div[class*=perkRow_]) {
 	border-color: var(--background-2f);
+}
+
+/* Buttons */
+button[class*=lookLink_][class*=colorBrand_] {
+	color: var(--background-8a);
+}
+button[class*=lookLink_][class*=colorBrand_]:hover div[class*=contents_] {
+	--button--underline-color: var(--background-8a);
 }
 
 /* @mentions, Embed, Attachments, Invites & Code blocks */
@@ -796,7 +818,6 @@ button[class*=endButton_] {
 	border-radius: 8px;
 }
 
-
 /* Auth Screen & Account Switcher */
 #app-mount div[class^=app_] > div > svg > path:nth-child(2) {
 	fill: var(--darkaf-main);
@@ -811,11 +832,20 @@ button[class*=endButton_] {
 #app-mount div[class*=transitionGroup_][class*=qrLogin_] button:hover {
 	font-size: 18px;
 }
-.theme-dark form[class*=authBox_] {
+.theme-dark *[class*=authBox_] {
     background: var(--background-19f);
+	border-radius: 15px;
 }
 .theme-dark div[class*=navRow_] {
     background-color: var(--background-0d);
+}
+.theme-dark section[class*=authBox_] div[class*=listItemContainer_]:hover {
+	background-color: var(--background-3c);
+}
+.separator__0df02 {
+    border-bottom: 2px solid var(--background-2f);
+    margin-left: 0px;
+    width: calc(100% - 20px);
 }
 
 /* Pinned Messages & Threads Pop-up */
@@ -1756,8 +1786,7 @@ html:not(.app-focused) div[class*=unreadMentionsIndicatorBottom_], div[class*=un
 div[class*=unreadMentionsIndicatorBottom_], div[class*=unreadMentionsIndicatorTop_] {
     transition: .15s
 }
-/* remove sticky nitro button from guild list - fuck you discord by Qb#5942 */
-.fixedBottomList-1yrBla > .listItem_fa7b36 {display: none;}
+
 /* Connection Issue Let Me Be */
 .container__4bde3 {
 	padding-top: unset !important;
@@ -1813,7 +1842,7 @@ div[class*=unreadMentionsIndicatorBottom_], div[class*=unreadMentionsIndicatorTo
 }
 /* Hide Plugin Libs by Nyx#8614 & Me */
 div#BDFDB-card, div#ZeresPluginLibrary-card {display: var(--libs-toggle, none);}
-div[class*=menu_][aria-activedescendant*="user-settings-cog-BetterDiscord--Plugins"] :is(#user-settings-cog-BetterDiscord--Plugins--BDFDB, #user-settings-cog-BetterDiscord--Plugins--ZeresPluginLibrary) {display: none;}
+div[class*=menu_][aria-activedescendant*="user-settings-cog-BetterDiscord--Plugins"] :is(#user-settings-cog-BetterDiscord--Plugins--BDFDB, #user-settings-cog-BetterDiscord--Plugins--ZeresPluginLibrary) {display: var(--libs-toggle, none);}
 /* Home Button Spins On Click by The Commie Axolotl#0001 & Me */
 div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav___home] svg {
     animation: spin 0.8s ease;
@@ -1825,7 +1854,7 @@ div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav_
     animation: slideY 250ms ease;
     transform-origin: top;
 }
-div[class*=layerContainer_]>div[class*=layer_]>section[class*=positionContainer_] div[class*=contentWrapper_], div[class*=menu_][id="channel-attach"], .scroller_cc9b9adiv, [class*=autocomplete_], div[class*=layerContainer_]>div[class*=layer_]>div[class*=animatorTop_][class*=didRender_] div[class*=accountProfilePopoutWrapper_] {
+div[class*=layerContainer_]>div[class*=layer_]>section[class*=positionContainer_] div[class*=contentWrapper_], div[class*=menu_][id="channel-attach"], .scroller_cc9b9adiv, [class*=autocomplete_], div[class*=layerContainer_]>div[class*=layer_]>div[class*=animatorTop_][class*=didRender_] div[class*=accountProfilePopoutWrapper_], div[class*=noiseCancellationPopout_], .container__0810b {
     animation: slideY 250ms ease;
     transform-origin: bottom;
 }

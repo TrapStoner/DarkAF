@@ -14,14 +14,14 @@
 	/*  True Black: #000000, Dark Gray: #060606 or #080808 | Default: #040404  */
 	
 	/** Main Theme Color **/
-    /* --darkaf-main: #000000; */
+	/* --darkaf-main: #000000; */
 	
 	/** Speaking Circles **/
 	/* --spcircles1: #525252; */
 	/* --spcircles2: #2f2f2f; */
 	
 	/** Links Color **/
-	/* --text-link: #d53a3a;  */
+	/* --text-link: #d53a3a; */
 	
 	
 	/*** Toggles ***/
@@ -31,7 +31,16 @@
 	/* --show-libs: ; */
 	
 	/* Unhide Gift Nitro Button next to Gif Picker */
-    /* --show-gift-nitro: ; */
+	/* --show-gift-nitro: ; */
+	
+	/* Hide Library Button from Home */
+	/* --hide-library: ; */
+	
+	/* Hide Nitro Button from Home */
+	/* --hide-nitro: ; */
+	
+	/* Hide Shop Button from Home */
+	/* --hide-shop: ; */
 }
 
 /*
