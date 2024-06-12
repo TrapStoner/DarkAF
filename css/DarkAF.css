@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 .info__755e1:after {
-	content: "DarkAF 2.0.5 by TrapStoner#9526";
+	content: "DarkAF 2.0.6 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -86,8 +86,8 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--deprecated-store-bg: var(--darkaf-main);
 	--deprecated-text-input-bg: var(--background-0f);
 	--deprecated-text-input-border: var(--background-0f);
-	--deprecated-card-editable-bg: var(--background-19f);
-	--deprecated-card-bg: var(--background-19f);
+	--deprecated-card-editable-bg: var(--background-secondary);
+	--deprecated-card-bg: var(--background-secondary);
 	--border-primary: var(--darkaf-main);
 	--elevation-megahigh: 0 8px 14px rgba(0, 0, 0, 0.5);
 	--interactive-hover: #e0e1e2;
@@ -104,8 +104,10 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 	--brand-experiment-10a: var(--background-0f);
 	--brand-experiment-80a: rgb(38 40 43 / 80%);
 	--brand-experiment-95a: rgb(38 40 43 / 95%);
+	--brand-400: var(--background-26);
 	--brand-500: var(--background-52);
 	--brand-560: var(--background-11);
+	--brand-600: var(--background-52);
 	--button-secondary-background-hover: var(--background-19f);
 	--button-secondary-background-active: var(--background-42);
 	--button-secondary-background-disabled: var(--background-2f);
@@ -344,8 +346,12 @@ div[class*=checkbox_] {
 div[class*=checkbox_][class*=checked_] {
 	transition: background-color 0.2s ease;
 }
-div[class*=checkbox_][class*=checked_]:not([class*=round_]) {
+div[class*=checkbox_][class*=checked_]:not([class*=round_]), div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
 	border-color: var(--background-d5) !important;
+	background-color: var(--background-d5) !important;
+}
+div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
+	color: var(--background-d5);
 }
 
 /* Dividers */
@@ -707,6 +713,19 @@ div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
 	font-size: 16px;
 	color: var(--background-ca);
 }
+div[class*=addGamePopout_] {
+	background-color: var(--background-19b) !important;
+}
+div[class*=addGamePopout_]:before {
+    position: absolute;
+    margin: -10px 0 0 -10px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0 0 30px var(--background-bd);
+    opacity: .22;
+    pointer-events: none;
+}
 /* Flower Icon */
 #game-activity-tab svg[class*=flowerStar_] path {
 	fill: var(--background-37b);
@@ -751,11 +770,8 @@ div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
 .bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
     background: var(--background-42);
 }
-.bd-changelog-modal div[class*=content_][class*=thin_]>h1 {
-	color: var(--background-c9);
-}
-.bd-changelog-modal {
-	border: 1px solid var(--background-c9);
+.bd-tab-item.selected {
+	background-color: var(--background-42);
 }
 
 /* Chat Search */
@@ -875,7 +891,7 @@ button[class*=endButton_] {
 }
 
 /* Server Settings */
-.input-2g-os5, div[class*=searchContainer_] div[class*=container_], .container__9c57c, .container__9c57c:hover, .lookFilled-1GseHa.select-1Ia3hD, .popout-1KHNAq, .card-2EUiNF, .search-2KMv1o .input__48d49, .input__48d49, :not(nav[class*=privateChannels_])>div[class*=searchBar_] {
+.input-2g-os5, div[class*=searchContainer_] div[class*=container_], .container__9c57c, .container__9c57c:hover, .lookFilled-1GseHa.select-1Ia3hD, .popout-1KHNAq, .card-2EUiNF, .search-2KMv1o .input__48d49, .input__48d49, :not(nav[class*=privateChannels_], div[class*=emojiPicker_]>div, #emoji-picker-tab-panel>div)>div[class*=searchBar_] {
 	background-color: var(--background-26);
 }
 .passthrough__91f95.selected__5faae {
@@ -1029,10 +1045,6 @@ div[class*=userProfileOuter] button[class*=rolePill_][class*=addButton_]:hover {
     box-shadow: 0 0 30px var(--background-bd);
     opacity: .3;
     pointer-events: none;
-}
-.container_cff83e :is(div[class*=container_][class*=medium_], input) {
-	background-color: var(--background-13);
-	border-radius: 4px;
 }
 
 /* Game Streaming Preview */
@@ -1437,7 +1449,7 @@ div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_], d
 div[role="menu"] div[role="separator"] {
 	border-bottom: 1px solid var(--background-3c);
 }
-div[role="menu"] div[role="menuitemradio"][aria-checked=true] path {
+div[role="menu"] div[role="menuitemradio"][aria-checked=true]:not([class*=focused_]) :is(path, circle[class*=radioSelection_]) {
 	color: var(--background-d5);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_][id*=Streamer], div[role="menu"] div[role*="menuitem"][class*=colorDefault_][id*=Streamer]:active:not([class*=hideInteraction_]) {
@@ -1869,7 +1881,7 @@ div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav_
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
-.menu__088f7, .browser_fa9cea, .messagesPopoutWrap__10dd1, .container_f79ab4, .container_eb737e, div[class*=layerContainer_]>div[class*=layer_]>div:not([class*=animatorTop_]) div[class*=userPopoutOuter_], .container_cff83e, .container__84c26, .popout__08442, .picker__6dca7, .contentWrapper_eab878 {
+.menu__088f7, .browser_fa9cea, .messagesPopoutWrap__10dd1, .container_f79ab4, .container_eb737e, div[class*=layerContainer_]>div[class*=layer_]>div:not([class*=animatorTop_]) div[class*=userPopoutOuter_], .container_cff83e, .container__84c26, .popout__08442, .picker__6dca7, .contentWrapper_eab878, div[class*=animatorBottom_], div[class*=animatorRight_], div[class*=animatorLeft_] {
     animation: slideY 250ms ease;
     transform-origin: top;
 }
@@ -1892,17 +1904,21 @@ div[class*=base_] section[class*=panels_] div[class*=withTagAsButton_] {
 	min-width: 0;
 }
 /* Input Animation */
-input:not([type="checkbox"], [role="combobox"], [readonly]), div[class*=chat_] .search_ac353c[class*=focused_] div[class*=searchBar_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=layer_] div[class*=header_] div[class*=container_], div[class*=searchContainer_] div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=directoryContainer_] div[class*=searchBox_], div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_] {
+input:not([type="checkbox"], [role="combobox"], [readonly]), div[class*=chat_] .search_ac353c[class*=focused_] div[class*=searchBar_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=layer_] div[class*=header_] div[class*=container_], div[class*=searchContainer_] div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=directoryContainer_] div[class*=searchBox_], div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], .container_cff83e :is(div[class*=container_][class*=medium_]) {
 	transition: all 250ms ease !important;
 }
-input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"]):focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, :not(nav[class*=privateChannels_])>div[class*=searchBar_]:focus-within, div[class*=layer_] div[class*=header_] div[class*=container_]:focus-within, div[class*=searchContainer_] div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=searchBox_]:focus-within {
+input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"]):focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, :not(nav[class*=privateChannels_])>div[class*=searchBar_]:focus-within, div[class*=layer_] div[class*=header_] div[class*=container_]:focus-within, div[class*=searchContainer_] div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=searchBox_]:focus-within, .container_cff83e :is(div[class*=container_][class*=medium_]:focus-within) {
 	background-color: var(--background-42) !important;
 }
-div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrapper_]:focus-within input, div[class*=searchBox_] {
+div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrapper_]:focus-within input, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_] {
  	background-color: var(--background-26) !important;
 }
 div[class*=chat_] .search_ac353c[class*=focused_] div[class*=searchBar_], nav[class*=privateChannels_]>div[class*=searchBar_]:hover>button {
 	background-color: var(--background-26);
+}
+.container_cff83e :is(div[class*=container_][class*=medium_], input) {
+	background-color: var(--background-13);
+	border-radius: 4px;
 }
 /* Profile Customization Preview Animation */
 div[class*=customizationSection_]>div[class*=profileCustomizationPreview_] {
