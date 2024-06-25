@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.0 by TrapStoner#9526";
+	content: "DarkAF 2.1.1 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -888,6 +888,18 @@ div[class*=app_] [class*=authBox_] div[class*=footer_] button {
     margin-left: 0px;
     width: calc(100% - 20px);
 }
+div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] {
+	background-color: var(--background-0d);
+}
+div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] div[class^="css-"][class$="-option"] {
+	border-radius: 10px;
+}
+div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] div[class^="css-"][class$="-option"]:hover {
+	background-color: var(--background-42);
+}
+div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"]>div[class*=css-]::-webkit-scrollbar-thumb {
+	background-color: var(--background-2c);
+}
 
 /* Pinned Messages & Threads Pop-up */
 div[class*=messagesPopoutWrap_], .browser_f542fc {
@@ -1049,7 +1061,7 @@ div[class*=debugPanelStandalone_feab95] [class*=graphContainer_] {
 }
 
 /* Profile Wrapper */
-:is(div[class*=mutualGuildsList_], div[class*=mutualFriendsList_]) ul[class*=connectionList_] {
+div[class*=userProfileInner_] :is(div[class*=mutualGuildsList_], div[class*=mutualFriendsList_], div[class*=list_]) ul[class*=connectionList_] {
 	animation: slideY 0.1s ease;
 	transform-origin: top;
 }
@@ -1230,16 +1242,16 @@ div[class*=autocompleteRow_]>div[class*=base_]:hover, div[class*=autocompleteRow
 }
 
 /* GIFs, Stickers, Emoji & Soundboard Wrappers */
-div[class*=expressionPickerPositionLayer_] :is(div[class*=contentWrapper_], #gif-picker-tab-panel>div[class*=header_]), #emoji-picker-tab-panel>div[class*=emojiPicker_] {
+div[class*=expressionPickerPositionLayer_] :is(div[class*=contentWrapper_], #gif-picker-tab-panel>div[class*=header_]), #emoji-picker-tab-panel>:is(div[class*=emojiPicker_], div[class*=header_]) {
     background-color: var(--background-19f);
 }
 div[class*=expressionPickerPositionLayer_] div[class*=inspector_] {
     background-color: var(--background-0a);
 }
-div[class*=expressionPickerPositionLayer_] :is(div[class*=wrapper_][class*=packHeader_], #emoji-picker-grid div[class*=wrapper_][class*=header_]) {
+div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeader_], #emoji-picker-grid div[class*=wrapper_][class*=header_] {
 	border-radius: 10px;
 }
-div[class*=expressionPickerPositionLayer_] :is(div[class*=wrapper_][class*=packHeader_], #emoji-picker-grid div[class*=wrapper_][class*=header_]):after {
+div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeader_]:after, #emoji-picker-grid div[class*=wrapper_][class*=header_]:after {
 	background: none;
 }
 #emoji-picker-grid div[class*=wrapper_][class*=header_] {
@@ -1801,9 +1813,10 @@ div[class*=chat_]>div[class*=content_][class*=container_] div[class*=chat_] div[
 div[class*=channelRow_] div[class*=subtitleSeparator_] {
 	background-color: var(--background-d5);
 }
-div[class*=chat_]>div[class*=content_][class*=container_] div[class*=tabBarItem_] div[class*=textBadge_] {
+div[class*=chat_]>div[class*=content_][class*=container_] div[class*=tabBarItem_] div[class*=textBadge_], div[class*=newChannel_][class*=textBadge_] {
 	background-color: var(--background-d5d) !important;
-}
+	color: var(--background-00);
+} 
 /* Customise Tab */
 div[class*=optionButtonWrapper_], div[class*=profileCard_] {
 	background-color: var(--background-26);
@@ -1955,10 +1968,10 @@ div[class*=base_] section[class*=panels_] div[class*=withTagAsButton_] {
 	min-width: 0;
 }
 /* Input Animation */
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], textarea, .bd-search-wrapper, div[class*=addFriendInputWrapper_], :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], .container_ac201b div[class*=container_][class*=medium_] {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_][class*=medium_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], textarea, .bd-search-wrapper, div[class*=addFriendInputWrapper_], :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], .container_ac201b div[class*=container_][class*=medium_] {
 	transition: all 250ms ease !important;
 }
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], textarea:focus-within, .bd-search-wrapper:focus-within, :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, .container_ac201b div[class*=container_][class*=medium_]:focus-within {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_][class*=medium_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], textarea:focus-within, .bd-search-wrapper:focus-within, :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, .container_ac201b div[class*=container_][class*=medium_]:focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrapper_]:focus-within input, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
@@ -1968,18 +1981,11 @@ div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrappe
 	background-color: var(--background-26);
 }
 /* Profile Customization Preview Animation */
-div[class*=customizationSection_]>div[class*=profileCustomizationPreview_] {
+div[class*=customizationSection_]>:is(div[class*=profileCustomizationPreview_], div[class*=userProfileOuter_]) {
 	scale: 1;
 	transition: scale 1s cubic-bezier(.51,.22,.25,1.38);
 	transform-origin: -30px -40px;
 }
-div[class*=customizationSection_]>div[class*=profileCustomizationPreview_]:hover {
+div[class*=customizationSection_]>:is(div[class*=profileCustomizationPreview_], div[class*=userProfileOuter_]):hover {
 	scale: 1.2;
-}
-div[class*=customizationSection_]>div[class*=profileCustomizationPreview_] div[class*=imageUploaderIcon_] {
-	scale: 1;
-	transition: scale 500ms ease;
-}
-div[class*=customizationSection_]>div[class*=profileCustomizationPreview_]:hover div[class*=imageUploaderIcon_] {
-	scale: 0;
 }
