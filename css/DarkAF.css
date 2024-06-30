@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME 
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.1 by TrapStoner#9526";
+	content: "DarkAF 2.1.2 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -412,6 +412,9 @@ div:hover>div[class*=hoverButtonGroup_] svg {
 *[class*=hoverButton_]:hover, .keyboard-mode *[class*=hoverButton_]:focus {
 	background-color: transparent;
 }
+*[class*=hoverButton_][class*=removeMosaicItemHoverButton_]:hover, .keyboard-mode *[class*=hoverButton_][class*=removeMosaicItemHoverButton_]:focus {
+	color: var(--status-danger);
+}
 a[class*=hoverButton_]:hover>svg[class*=downloadHoverButtonIcon_], .keyboard-mode a[class*=hoverButton_]:focus>svg[class*=downloadHoverButtonIcon_]	 {
 	color: var(--background-37b);
 }
@@ -527,7 +530,7 @@ div[class*=textAreaDisabled_] div[class*=placeholder_] {
 	color: var(--background-ff);
 }
 /* Gap Between Text Area and Chat Content */
-div[class*=channelTextArea_], .wrapper__57349 {
+div[class*=channelTextArea_], div[class*=chat_] form[class*=form_]>div[class*=wrapper_] {
     margin-top: 13px;
 }
 /* Send Message Button */
@@ -580,6 +583,12 @@ div[id="keybinds-tab"] div[class*=defaultKeybind_]:hover div[class*=defaultKeybi
 div[class*=accountProfileCard_] {
 	background-color: var(--background-11);
 }
+button[class*=removeButton_]:hover {
+	color: var(--background-d5) !important;
+}
+button[class*=removeButton_]:hover>div[class*=contents_] {
+	--button--underline-color: var(--background-d5) !important;
+}
 /* Dropdown Lists */
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) {
 	animation: slideY 250ms ease;
@@ -596,16 +605,17 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 	color: var(--background-d5);
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_] {
+	margin: 0 5px;
+}
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"] {
 	border-radius: 20px;
-	border-left: 5px solid var(--background-2c);
-	border-right: 5px solid var(--background-2c);
 	color: var(--background-ca);
 	transition: all 300ms ease;
 }
 div[class*=popout_][class*=scrollerBase_][class*=searchableSelect_] *[class*=option_] {
 	border-right: none;
 }
-div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover {
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"]:hover {
 	background: var(--background-42) !important;
 	color: var(--background-ff);
 }
@@ -618,7 +628,7 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover>svg[class*=selectedIcon_]>circle {
 	fill: var(--background-00);
 }
-div[class*=popout_][class*=scrollerBase_][class*=searchableSelect_][class*=auto_]::-webkit-scrollbar-thumb {
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_])::-webkit-scrollbar-thumb {
 	background-color: var(--darkaf-main);
 }
 div[class*=selectFilterPopout_] {
@@ -733,55 +743,6 @@ div[class*=addGamePopout_]:before {
 /* Flower Icon */
 #game-activity-tab svg[class*=flowerStar_] path {
 	fill: var(--background-37b);
-}
-/* BD Settings */
-.bd-addon-list .bd-addon-header {
-	background: var(--background-0a);
-}
-.bd-addon-list .bd-addon-card {
-    background: var(--background-19f);
-}
-.bd-addon-modal-footer .bd-button {
-    background-color: var(--brand-experiment);
-}
-.bd-addon-modal-footer .bd-button:hover {
-	background-color: var(--brand-experiment-560);
-}
-.bd-search-wrapper {
-	background-color: var(--background-26);
-}
-.bd-addon-list .bd-description::-webkit-scrollbar {
-	width: 11px;
-}
-.bd-addon-list .bd-description::-webkit-scrollbar-track {
-	background-color:var(--background-2f);
-}
-.bd-addon-list .bd-description::-webkit-scrollbar-thumb {
-	background-clip:padding-box;
-	border:2px solid transparent;
-	background-color:var(--background-0c);
-	min-height:40px
-}
-.bd-select {
-	background-color: var(--background-18);
-}
-.bd-select .bd-select-options, .bd-select:hover, .bd-select.menu-open {
-    background: var(--background-26);
-}
-.bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
-    background: var(--background-42);
-}
-.bd-modal-root:before {
-	border-radius: inherit;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	content: "";
-	box-shadow: 0 0 30px var(--background-19f);
-	pointer-events: none;
-}
-.bd-tab-item.selected {
-	background-color: var(--background-42);
 }
 
 /* Chat Search */
@@ -937,10 +898,10 @@ div[class*=permissionsForm_] div[class*=passthrough_][class*=selected_] {
 	margin-left: -7px;
 	margin-top: -1px;
 }
-nav[class*=sidebar_] div[class*=side_][role="tablist"] [class*=item_]:last-of-type, nav[class*=sidebar_]>div[class*=side_][role="tablist"] > :is([aria-label="Log ud"], [aria-label="Abmelden"], [aria-label="Log Out"], [aria-label="Cerrar sesión"], [aria-label="Déconnexion"], [aria-label="Odjava"], [aria-label="Esci"], [aria-label="Atsijungti"], [aria-label="Kijelentkezés"], [aria-label="Afmelden"], [aria-label="Logg ut"], [aria-label="Wyloguj"], [aria-label="Sair"], [aria-label="Deconectează-te"], [aria-label="Kirjaudu ulos"], [aria-label="Logga ut"], [aria-label="Đăng Xuất"], [aria-label="Çıkış Yap"], [aria-label="Odhlásit se"], [aria-label="Αποσύνδεση"], [aria-label="Отписване"], [aria-label="Выйти"], [aria-label="Вийти"], [aria-label="लॉग आउट करें"], [aria-label="ออกจากระบบ"], [aria-label="登出"], [aria-label="ログアウト"], [aria-label="로그아웃"]) { 
+nav[class*=sidebar_] div[class*=side_][role="tablist"] [class*=item_]:has(svg):last-of-type, nav[class*=sidebar_]>div[class*=side_][role="tablist"] > :is([aria-label="Log ud"], [aria-label="Abmelden"], [aria-label="Log Out"], [aria-label="Cerrar sesión"], [aria-label="Déconnexion"], [aria-label="Odjava"], [aria-label="Esci"], [aria-label="Atsijungti"], [aria-label="Kijelentkezés"], [aria-label="Afmelden"], [aria-label="Logg ut"], [aria-label="Wyloguj"], [aria-label="Sair"], [aria-label="Deconectează-te"], [aria-label="Kirjaudu ulos"], [aria-label="Logga ut"], [aria-label="Đăng Xuất"], [aria-label="Çıkış Yap"], [aria-label="Odhlásit se"], [aria-label="Αποσύνδεση"], [aria-label="Отписване"], [aria-label="Выйти"], [aria-label="Вийти"], [aria-label="लॉग आउट करें"], [aria-label="ออกจากระบบ"], [aria-label="登出"], [aria-label="ログアウト"], [aria-label="로그아웃"]) { 
 	color: var(--status-red-500);
 }
-nav[class*=sidebar_]>div[class*=side_][role="tablist"]>div[class*=item_]:last-of-type:hover, nav[class*=sidebar_]>div[class*=side_][role="tablist"] > :is([aria-label="Log ud"]:hover, [aria-label="Abmelden"]:hover, [aria-label="Log Out"]:hover, [aria-label="Cerrar sesión"]:hover, [aria-label="Déconnexion"]:hover, [aria-label="Odjava"]:hover, [aria-label="Esci"]:hover, [aria-label="Atsijungti"]:hover, [aria-label="Kijelentkezés"]:hover, [aria-label="Afmelden"]:hover, [aria-label="Logg ut"]:hover, [aria-label="Wyloguj"]:hover, [aria-label="Sair"]:hover, [aria-label="Deconectează-te"]:hover, [aria-label="Kirjaudu ulos"]:hover, [aria-label="Logga ut"]:hover, [aria-label="Đăng Xuất"]:hover, [aria-label="Çıkış Yap"]:hover, [aria-label="Odhlásit se"]:hover, [aria-label="Αποσύνδεση"]:hover, [aria-label="Отписване"]:hover, [aria-label="Выйти"]:hover, [aria-label="Вийти"]:hover, [aria-label="लॉग आउट करें"]:hover, [aria-label="ออกจากระบบ"]:hover, [aria-label="登出"]:hover, [aria-label="ログアウト"]:hover, [aria-label="로그아웃"]:hover) {
+nav[class*=sidebar_]>div[class*=side_][role="tablist"]>div[class*=item_]:has(svg):last-of-type:hover, nav[class*=sidebar_]>div[class*=side_][role="tablist"] > :is([aria-label="Log ud"]:hover, [aria-label="Abmelden"]:hover, [aria-label="Log Out"]:hover, [aria-label="Cerrar sesión"]:hover, [aria-label="Déconnexion"]:hover, [aria-label="Odjava"]:hover, [aria-label="Esci"]:hover, [aria-label="Atsijungti"]:hover, [aria-label="Kijelentkezés"]:hover, [aria-label="Afmelden"]:hover, [aria-label="Logg ut"]:hover, [aria-label="Wyloguj"]:hover, [aria-label="Sair"]:hover, [aria-label="Deconectează-te"]:hover, [aria-label="Kirjaudu ulos"]:hover, [aria-label="Logga ut"]:hover, [aria-label="Đăng Xuất"]:hover, [aria-label="Çıkış Yap"]:hover, [aria-label="Odhlásit se"]:hover, [aria-label="Αποσύνδεση"]:hover, [aria-label="Отписване"]:hover, [aria-label="Выйти"]:hover, [aria-label="Вийти"]:hover, [aria-label="लॉग आउट करें"]:hover, [aria-label="ออกจากระบบ"]:hover, [aria-label="登出"]:hover, [aria-label="ログアウト"]:hover, [aria-label="로그아웃"]:hover) {
 	color: var(--background-ff);
 	background: var(--status-danger);
 }
@@ -1047,12 +1008,12 @@ div[class*=expandedFolderIconWrapper_] svg[style*="color: rgb(88, 101, 242)"] {
 	color: #ffffff26 !important;
 }
 
-/* Verify Phone */
-.theme-dark .popoutList-10IFAa {
-    background: var(--background-0f);
+/* Verify/Enter Phone */
+div[class*=phoneField_] div[class*=phoneFieldPopout_] {
+	background-color: var(--background-0f);
 }
-.theme-dark .input__14d2f {
-    background-color: var(--background-3c);
+div[class*=phoneFieldScroller_]>div:is(:hover, :focus) {
+    background-color: var(--background-3c) !important;
 }
 
 /* Voice Connected Pop-up */
@@ -1184,11 +1145,6 @@ div[class*=liveQualityIndicator_] {
 /* Hide Gift Nitro */
 div[class*=channelTextArea_] div[class*=buttons_]>button[class*=button_] {
     display: var(--gift-nitro-toggle, none);
-}
-
-/* Update Notice */
-.colorInfo__680aa {
-    background-color: var(--background-2f);
 }
 
 /** Auto Complete & Commands Pop-up **/
@@ -1566,8 +1522,8 @@ div[class*=channelInfo_]>div>span[class*=total_]:after {
     border-right-color: var(--background-26);
 }
 
-/* Unreads Bar */
-.unread_c10249 {
+/* New Unreads Bar */
+div[class*=unreadBottom_] div[class*=unreadBar_] {
     background-color: var(--background-3c);
 }
 
@@ -1690,7 +1646,7 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 }
 
 /* Attached Bar Above Text Area */
-div[class*=channelTextArea_]>div[class*=attachedBars_], .threadSuggestionBar_b11c5e, [class*=chatContent_] div[class*=container_] div[class*=banner_] {
+div[class*=channelTextArea_]>div[class*=attachedBars_], [class*=threadSuggestionBar_], [class*=chatContent_] div[class*=container_] div[class*=banner_] {
 	background-color: var(--background-2c);
     animation: slideY 250ms ease;
     transform-origin: bottom;
@@ -1822,11 +1778,68 @@ div[class*=optionButtonWrapper_], div[class*=profileCard_] {
 	background-color: var(--background-26);
 }
 div[class*=optionButtonWrapper_]:hover {
-	background-color: var(--background-52);
+	background-color: var(--background-52) !important;
+}
+div[class*=optionButtonWrapper_][class*=selected_] {
+	background-color: var(--background-primary);
+	border-color: var(--background-26);
 }
 
-
-/** BD Plugins **/
+/** BetterDiscord **/
+/* Update Notice */
+div[class*=app_] div[class*=updateNotice_] {
+    background-color: var(--background-2f);
+}
+/* Settings */
+.bd-addon-list .bd-addon-header {
+	background: var(--background-0a);
+}
+.bd-addon-list .bd-addon-card {
+    background: var(--background-19f);
+}
+.bd-addon-modal-footer .bd-button {
+    background-color: var(--brand-experiment);
+}
+.bd-addon-modal-footer .bd-button:hover {
+	background-color: var(--brand-experiment-560);
+}
+.bd-search-wrapper {
+	background-color: var(--background-26);
+}
+.bd-addon-list .bd-description::-webkit-scrollbar {
+	width: 11px;
+}
+.bd-addon-list .bd-description::-webkit-scrollbar-track {
+	background-color:var(--background-2f);
+}
+.bd-addon-list .bd-description::-webkit-scrollbar-thumb {
+	background-clip:padding-box;
+	border:2px solid transparent;
+	background-color:var(--background-0c);
+	min-height:40px
+}
+.bd-select {
+	background-color: var(--background-18);
+}
+.bd-select .bd-select-options, .bd-select:hover, .bd-select.menu-open {
+    background: var(--background-26);
+}
+.bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
+    background: var(--background-42);
+}
+.bd-modal-root:before {
+	border-radius: inherit;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	box-shadow: 0 0 30px var(--background-19f);
+	pointer-events: none;
+}
+.bd-tab-item.selected {
+	background-color: var(--background-42);
+}
+/** Plugins **/
 /* BetterFormattingRedux */
 .bf-toolbar::before {
     background: var(--background-17) !important;
@@ -1968,10 +1981,10 @@ div[class*=base_] section[class*=panels_] div[class*=withTagAsButton_] {
 	min-width: 0;
 }
 /* Input Animation */
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_][class*=medium_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], textarea, .bd-search-wrapper, div[class*=addFriendInputWrapper_], :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], .container_ac201b div[class*=container_][class*=medium_] {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], textarea, .bd-search-wrapper, div[class*=addFriendInputWrapper_], :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_], div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=container_]:is([class*=medium_], [class*=small_]) {
 	transition: all 250ms ease !important;
 }
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_][class*=medium_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], textarea:focus-within, .bd-search-wrapper:focus-within, :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, .container_ac201b div[class*=container_][class*=medium_]:focus-within {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], textarea:focus-within, .bd-search-wrapper:focus-within, :is(div[class*=layer_] div[class*=header_], div[class*=searchContainer_], #members-table-join-method-menu-members-table-invite-code-search, div[class*=combobox_]) div[class*=container_]:focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, div[class*=addFriendInputWrapper_]:focus-within input, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
