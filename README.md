@@ -8,16 +8,23 @@
 
  
 ## Feature Showcase
-
-![DarkAF Preview](https://i.imgur.com/3thIiid.gif)
-### Connection Issues - before
-
-![CILMB-Before](https://i.imgur.com/TrM4exE.gif)
-
-#### After
-
-![CILMB-After](https://i.imgur.com/Xkalm6b.gif)
-![Autocomplete](https://i.imgur.com/brsOEiL.gif)
-![EditMsg](https://i.imgur.com/8pLhaXp.gif) ![LogoSpin](https://i.imgur.com/IbETaU2.gif)  ![UserButtons](https://i.imgur.com/ErrZjb7.gif)  
-![EmojiWrapper](http://i.imgur.com/j6SsMkeh.gif) 
+### Home
+![LogoSpin](https://i.imgur.com/2vlsdSA.gif)
+![Friends](https://i.imgur.com/AsYE0Vi.gif)
+### Connection Issues Let Me Be
+**Before**
+![CILMB-Before](https://i.imgur.com/X7AHIm9.gif)
+**After**
+![CILMB-After](https://i.imgur.com/VdDdZlR.gif)
+### Autocomplete Animations
+![Autocomplete](https://i.imgur.com/eO742ll.gif)
+![Autocomplete](https://i.imgur.com/XXNM4WN.gif)
+### Edit Message & Reply Animations
+![EditMsg](https://i.imgur.com/e7Pcky8.gif)
+![EditMsg](https://i.imgur.com/fbOuV6l.gif)
+### User Buttons Animation
+![UserButtons](https://i.imgur.com/TRpTyCd.gif)
+### Gif, Sticker & Emoji Picker Animations
+![EmojiWrapper](https://i.imgur.com/JKp52UN.gif)
+### Menu Animation
 ![Submenu](https://i.imgur.com/rIjX9xX.gif)  
