@@ -8,8 +8,10 @@
 
  
 ## Feature Showcase
-### Home Button, User Buttons & Incoming Call 
-![LogoSpin](https://i.imgur.com/2vlsdSA.gif) ![UserButtons](https://i.imgur.com/TRpTyCd.gif) ![IncomingCall](https://i.imgur.com/OwTdV8i.gif)
+### Home Button & User Buttons 
+![LogoSpin](https://i.imgur.com/2vlsdSA.gif) ![UserButtons](https://i.imgur.com/TRpTyCd.gif)
+### Incoming Call
+![IncomingCall](https://i.imgur.com/OwTdV8i.gif)
 ### Friends
 ![Friends](https://i.imgur.com/AsYE0Vi.gif)
 ### Connection Issues Let Me Be
