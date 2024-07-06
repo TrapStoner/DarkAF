@@ -1,6 +1,6 @@
 # DarkAF
 > [!IMPORTANT]
-> Change Discord's theme to dark in appearance settings if you are using *light mode* for this theme to work!
+> Change Discord's theme to *Dark* in Appearance settings if you are using *Light mode*!
 
  **[Download](DarkAF.theme.css)**
  - Place it in `%appdata%/BetterDiscord/Themes`
@@ -8,23 +8,29 @@
 
  
 ## Feature Showcase
-### Home
-![LogoSpin](https://i.imgur.com/2vlsdSA.gif)
+### Home Button, User Buttons & Incoming Call 
+![LogoSpin](https://i.imgur.com/2vlsdSA.gif) ![UserButtons](https://i.imgur.com/TRpTyCd.gif) ![IncomingCall](https://i.imgur.com/OwTdV8i.gif)
+### Friends
 ![Friends](https://i.imgur.com/AsYE0Vi.gif)
 ### Connection Issues Let Me Be
 **Before**
 ![CILMB-Before](https://i.imgur.com/X7AHIm9.gif)
 **After**
 ![CILMB-After](https://i.imgur.com/VdDdZlR.gif)
-### Autocomplete Animations
+### Autocomplete 
 ![Autocomplete](https://i.imgur.com/eO742ll.gif)
 ![Autocomplete](https://i.imgur.com/XXNM4WN.gif)
-### Edit Message & Reply Animations
+### Edit Message & Reply 
 ![EditMsg](https://i.imgur.com/e7Pcky8.gif)
-![EditMsg](https://i.imgur.com/fbOuV6l.gif)
-### User Buttons Animation
-![UserButtons](https://i.imgur.com/TRpTyCd.gif)
-### Gif, Sticker & Emoji Picker Animations
-![EmojiWrapper](https://i.imgur.com/JKp52UN.gif)
-### Menu Animation
-![Submenu](https://i.imgur.com/rIjX9xX.gif)  
+![Reply](https://i.imgur.com/fbOuV6l.gif)
+### Gif, Sticker & Emoji Picker
+![GifPicker](https://i.imgur.com/SaLUvbD.gif) ![EmojiPicker](https://i.imgur.com/SDD0ks3.gif)
+### Pop-up Menu 
+![Submenu](https://i.imgur.com/tqeJfIV.gif)
+
+### And this is just the tip of the iceberg! There are many other features and animations to explore. Also works great with these BD Plugins:
+- BetterFormattingRedux
+- Spotify Controls
+- InvisibleTyping
+- GameActivityToggle
+- BetterRoleColors
