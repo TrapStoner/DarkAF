@@ -22,12 +22,12 @@
          ~~                       \/____/                  \|___|                   \|___|                   \/____/                                  
                                                                                                                                                       
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USING LIGHT MODE!
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.5 by TrapStoner#9526";
+	content: "DarkAF 2.1.6 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -1267,14 +1267,17 @@ nav[class*=nav_] :is([class*=navButton_], [class*=navButton_]:hover) {
 nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActive_]) {
 	border-radius: 5px !important;
 }
+#gif-picker-tab-panel {
+	background-color: transparent;
+}
 #gif-picker-tab-panel div[class*=searchBar_] {
-	background-color: var(--darkaf-main) !important;
+	background-color: var(--darkaf-main);
 }
 #gif-picker-tab-panel div[class*=result_][style*="background-color:"] {
 	background-color: transparent !important;
 }
 #gif-picker-tab-panel div[class*=result_][style*="background-color:"]:after {
-	background-color: var(--background-42);
+	background-color: var(--background-42) !important;
 }
 #gif-picker-tab-panel div[class*=result_]>*, #gif-picker-tab-panel div[class*=result_]:after {
 	transition: margin .2s ease;
@@ -1284,9 +1287,22 @@ nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActiv
 }
 #gif-picker-tab-panel div[class*=result_]:hover:after {
     margin: -6px 2px 2px -6px;
+	background: transparent;
+	border: 2px solid var(--background-52);
+}
+#gif-picker-tab-panel div[class*=categoryFadeBlurple_] {
+    background-color: rgba(66,55,56,.6) !important;
+}
+#gif-picker-tab-panel :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]) {
+	background-color: rgba(0,0,0,.4);
+	backdrop-filter: none;
+	border: none;
 }
 #gif-picker-tab-panel :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]):hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.05) !important;
+}
+#gif-picker-tab-panel div[class*=result_][style*="background-color:"] :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]) {
+	background-color: transparent !important;
 }
 div[class*=emojiPicker_] {
 	border-radius: 0;
@@ -2017,7 +2033,7 @@ div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 div[class*=addFriendInputWrapper_]:focus-within, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
  	background-color: var(--background-26) !important;
 }
-:not(nav[class*=privateChannels_], div[class*=emojiPicker_]>div, #emoji-picker-tab-panel>div, div[class*=permissionsItemContainer_])>div[class*=searchBar_], nav[class*=privateChannels_]>div[class*=searchBar_]:hover>button, div[class*=searchContainer_] div[class*=container_], div[class*=chat_][class*=container_] div[class*=search_] {
+:not(nav[class*=privateChannels_], div[class*=emojiPicker_]>div, [id*=-picker-tab-panel]>div, div[class*=permissionsItemContainer_])>div[class*=searchBar_], nav[class*=privateChannels_]>div[class*=searchBar_]:hover>button, div[class*=searchContainer_] div[class*=container_], div[class*=chat_][class*=container_] div[class*=search_] {
 	background-color: var(--background-26);
 }
 /* Profile Customization Preview Animation */

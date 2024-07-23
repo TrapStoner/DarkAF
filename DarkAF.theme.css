@@ -1,7 +1,7 @@
 /**
  * @name DarkAF
  * @author TrapStoner#9526
- * @version 3.0.2
+ * @version 3
  * @description A simple really really dark theme for discord. Made with love <3
  * @source https://github.com/TrapStoner/DarkAF
 */
@@ -9,7 +9,7 @@
 @import url('https://rawgit.com/TrapStoner/DarkAF/master/css/DarkAF.css');
 
 :root {
-	/***  If you want to change anything just uncomment a variable, to go back to defaul just comment it again ***/
+	/***  If you want to change anything just uncomment a variable, to go back to default just comment it again ***/
 	/**  Note: Recommended values for Main Theme Color  **/
 	/*  True Black: #000000, Dark Gray: #060606 or #080808 | Default: #040404  */
 	
@@ -67,5 +67,5 @@
          ~~                       \/____/                  \|___|                   \|___|                   \/____/                                  
                                                                                                                                                       
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USING LIGHT MODE!
 --------------------------------------------------------------------------------------------------------------------------------------------------------
