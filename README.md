@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > Change Discord's theme to *Dark* in Appearance settings if you are using *Light mode*!
 
- **[Download](DarkAF.theme.css)**
+ **[Download](https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FTrapStoner%2FDarkAF%2Fblob%2Fmaster%2FDarkAF.theme.css)**
  - Place it in `%appdata%/BetterDiscord/Themes`
  - Go to BetterDiscord Settings > Themes and enable *DarkAF*
 
