@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.6 by TrapStoner#9526";
+	content: "DarkAF 2.1.7 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -152,17 +152,17 @@ nav[class*=sidebar_] div[class*=info_]:after {
 
 /* Animations */
 @keyframes spin {
-    0% {transform: rotate(0deg);}
-    20% {transform: rotate(-20deg);}
-    70% {transform: rotate(380deg);}
-    100% {transform: rotate(360deg);}
+	0% {transform: rotate(0deg);}
+	20% {transform: rotate(-20deg);}
+	70% {transform: rotate(380deg);}
+	100% {transform: rotate(360deg);}
 }
 @keyframes shake {
-    0% {transform: scale(1) rotate(0deg);}
-    25% {transform: scale(1.15) rotate(-30deg);}
-    50% {transform: scale(1.32) rotate(0deg);}
-    75% {transform: scale(1.1) rotate(30deg);}
-    100% {transform: scale(1) rotate(0deg);}
+	0% {transform: scale(1) rotate(0deg);}
+	25% {transform: scale(1.15) rotate(-30deg);}
+	50% {transform: scale(1.32) rotate(0deg);}
+	75% {transform: scale(1.1) rotate(30deg);}
+	100% {transform: scale(1) rotate(0deg);}
 }
 @keyframes wave {
 	0% {transform: translate(-50%, 0) rotateZ(0deg);}
@@ -170,21 +170,21 @@ nav[class*=sidebar_] div[class*=info_]:after {
 	100% {transform: translate(-50%, 0%) rotateZ(360deg);}
 }
 @keyframes button-popup {
-    0% {transform: scale(0);}
-    70% {transform: scale(1.3);}
-    100% {transform: scale(0.8);}
+	0% {transform: scale(0);}
+	70% {transform: scale(1.3);}
+	100% {transform: scale(0.8);}
 }
 @keyframes slideY {
-    0% {transform: scaleY(0);}
-    100% {transform: scaleY(1);}
+	0% {transform: scaleY(0);}
+	100% {transform: scaleY(1);}
 }
 @keyframes slideZ {
-    0% {transform: scaleZ(0);}
-    100% {transform: scaleZ(1);}
+	0% {transform: scaleZ(0);}
+	100% {transform: scaleZ(1);}
 }
 @keyframes popout {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
+	0% {transform: scale(0);}
+	100% {transform: scale(1);}
 }
 @keyframes marquee {
 	0% {transform: translateX(100%);}
@@ -204,16 +204,19 @@ li[class*=container_], div[class*=peopleListItem_], div[class*=peopleListItem_][
 	border-radius: 25px;
 }
 div[class*=thin_]>div[class*=categoryItem_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_] a, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] ul div[class*=ChannelRowLink_], div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=content_], aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_], div[class*=side_] div[class*=item_], div[class*=side_] div[class*=selectedBackground_], div[class*=activityItem_], div[class*=wrapper__91b2c], div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_], div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_], div[role=listbox] div[role=option][class*=friendWrapper_]>div:first-child, div[role=listbox] div[role=option][class*=result_], .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb, div[class*=listRow_][class*=interactiveRow_] {
-    border-radius: 15px;
+	border-radius: 15px;
 }
 div[class*=base_] div[class*=sidebar_] header[class*=header_] {
 	border-radius: 8px;
 }
-span[class*=mention], div[class*=mentioned_], div[class*=attachment_], div[class*=paymentPane_] div[class*=payment_] {
-    border-radius: 4px;
+span[class*=mention], div[class*=mentioned_], div[class*=attachment_], div[class*=paymentPane_] div[class*=payment_], div[class*=popout_] div[class*=searchBarComponent_] a[class*=anchor_] {
+	border-radius: 4px;
 }
 div[class*=mentioned_]:before {
 	border-radius: 4px 0px 0px 4px;
+}
+aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_] {
+	transition: border-radius 180ms ease;
 }
 
 /* Home Pill Buttons*/
@@ -225,7 +228,7 @@ div[class*=topPill_] div[class*=item_][class*=themed_][class*=addFriend_] {
 }
 div[class*=topPill_] div[class*=item_][class*=themed_][class*=addFriend_][class*=selected_] {
 	background-color: var(--status-positive-background);
-    color: var(--status-positive-text);
+	color: var(--status-positive-text);
 }
 
 /* Friends */
@@ -253,17 +256,17 @@ div[class*=peopleListItem_][class*=active_] div[class*=listItemContents_], div[c
 	margin: 0 0 0 10px; 
 }
 div[class*=peopleListItem_]:hover:after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  width: 40px;
-  height: inherit;
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 40px;
+	height: inherit;
 }
 div[class*=listItemContents_] div[class*=actionButton_] {
 	background-color: transparent;
 }
 div[class*=scroller__7c25e] {
-    border-left: none;
+	border-left: none;
 }
 div[class*=peopleColumn_] div[class*=searchBar_] {
 	border-radius: 12px;
@@ -271,7 +274,7 @@ div[class*=peopleColumn_] div[class*=searchBar_] {
 }
 div[class*=nowPlayingColumn_] div[class*=itemCard_] {
 	background-color: var(--background-19f);
-    border: none;
+	border: none;
 }
 div[class*=nowPlayingColumn_] div[class*=itemCard_] section {
 	background-color: var(--background-0a);
@@ -285,10 +288,10 @@ div[class*=nowPlayingColumn_] div[class*=scroller_] {
 
 /* Library */
 div[class*=rowWrapperDim_] [class*=bodyCell_] {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 div[class*=installationPathEditing_][class*=card_] {
-    animation: slideY 250ms ease;
+	animation: slideY 250ms ease;
 }
 nav[class*=privateChannels_] a[href="/library"] {
 	display: var(--library-toggle, flex);
@@ -314,16 +317,16 @@ div[class*=shopCard_] div[class*=cardLowOpacity_] {
 div[class*=jumpToPresentBar_] {
 	background-color: var(--background-2f);
 	animation: slideY 600ms ease;
-    transform-origin: bottom;
+	transform-origin: bottom;
 }
 div[class*=newMessagesBar_] {
 	animation: slideY 400ms ease;
-    transform-origin: top;
+	transform-origin: top;
 }
 
 /* Speaking Circles */
 div[class*=avatarSpeaking_]  {
-    box-shadow: inset 0 0 0 2px var(--spcircles1, var(--background-52)), inset 0 0 0 3px var(--spcircles2, var(--background-2f));
+	box-shadow: inset 0 0 0 2px var(--spcircles1, var(--background-52)), inset 0 0 0 3px var(--spcircles2, var(--background-2f));
 }
 div[class*=speaking_] {
 	box-shadow: inset 0 0 0 4px var(--spcircles1, var(--background-42)),inset 0 0 0 5px var(--black-500) !important;
@@ -331,7 +334,7 @@ div[class*=speaking_] {
 
 /* Screen Share */
 div[class*=tile_]:hover div[class*=sourceThumbnail_] {
-    box-shadow: inset 0 0 0 2px #a9a9a9;
+	box-shadow: inset 0 0 0 2px #a9a9a9;
 }
 
 /* Reactions */
@@ -362,6 +365,9 @@ div[class*=checkbox_][class*=checked_]:not([class*=round_]), div[role="menuitemc
 div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
 	color: var(--background-d5);
 }
+div[class*=checkbox_][class*=checked_] path[fill*=--brand-] {
+	fill: var(--background-ff);
+}
 
 /* Dividers */
 :is(.divider__14bb6, .customizationSection__0f57e, .session__201cb, .listItem_b7467d, .list__80e1b, div[class*=tableWrapper_] td[class*=tableCell_], div[class*=perkRow_]) {
@@ -385,8 +391,8 @@ div[class*=mentioned_]:before {
 	width: 4px;
 }
 article[class*=embedFull_] {
-    border-left: 4px solid var(--background-2f) !important;
-    background: var(--background-11);
+	border-left: 4px solid var(--background-2f) !important;
+	background: var(--background-11);
 }
 div[class*=attachment_] {
 	background-color: var(--background-17);
@@ -431,7 +437,7 @@ div[class*=removeAttachmentHoverButton_]:hover>svg, .keyboard-mode div[class*=re
 	color: var(--status-red-500);
 }
 div[id*=message-accessories]>div[class*=wrapper_] {
-    background-color: var(--background-17);
+	background-color: var(--background-17);
 }
 div[id*=message-content-] code {
 	background: var(--background-19f);
@@ -452,7 +458,7 @@ div[class*=layerContainer_] div[class*=flex_][class*=searchBar_] {
 }
 /* Delete Message Modal*/
 .message_ddcc45 {
-    box-shadow: 0 0 0 1px var(--background-13), 0 2px 10px 0 var(--background-00);
+	box-shadow: 0 0 0 1px var(--background-13), 0 2px 10px 0 var(--background-00);
 }
  /* Welcome Modal*/
 div[class*=focusLock_]>div[class*=main_] {
@@ -473,11 +479,11 @@ div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentCont
 	background-color: var(--background-0f);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-track {
-    background-color: var(--background-0f);
-    border-color: var(--background-0f);
+	background-color: var(--background-0f);
+	border-color: var(--background-0f);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 /* Active Threads Modals */
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b)>div[class*=container_] {
@@ -506,8 +512,8 @@ div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_] di
 	background-color: var(--background-2f);
 	border-radius: 10px;
 }
-/* Report Submitted Modal */
-.userContainer__1d5a2 {
+/* Report Message Modal */
+div[class*=focusLock_] :is(div[class*=messagePreviewContainer_], div[class*=userContainer_]) {
 	background-color: var(--darkaf-main);
 }
 /* Activities Modal */
@@ -544,7 +550,7 @@ div[class*=textAreaDisabled_] div[class*=placeholder_] {
 }
 /* Gap Between Text Area and Chat Content */
 div[class*=channelTextArea_], div[class*=chat_] form[class*=form_]>div[class*=wrapper_] {
-    margin-top: 13px;
+	margin-top: 13px;
 }
 /* Send Message Button */
 div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[class*=colorBrand_]:not(disabled) div[class*=activeButtonChild_] {
@@ -560,10 +566,10 @@ div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[
 
 /** Settings **/
 div[class*=slider_]>div[class*=bar_] {
-    background: var(--background-19f);
+	background: var(--background-19f);
 }
 div[class*=menu_] div[class*=slider_]>div[class*=bar_] {
-    background: var(--background-00);
+	background: var(--background-00);
 }
 div[class*=slider_] div[class*=markDash_] {
 	background: var(--background-2f);
@@ -587,10 +593,10 @@ button[class*=lookOutlined_] {
 	border: 2px solid
 }
 div[id="keybinds-tab"] span[class*=key_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 div[id="keybinds-tab"] div[class*=defaultKeybind_]:hover div[class*=defaultKeybindShortcutGroup_] {
-    transform: scale(1.6);
+	transform: scale(1.6);
 	transform-origin: right;
 }
 div[class*=accountProfileCard_] {
@@ -645,8 +651,8 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 	background-color: var(--darkaf-main);
 }
 div[class*=selectFilterPopout_] {
-    background-color: var(--background-26);
-    border: 1px solid var(--background-26);
+	background-color: var(--background-26);
+	border: 1px solid var(--background-26);
 }
 div[class*=selectFilterPopout_] li[class*=item_]{
 	border-radius: 20px;
@@ -655,22 +661,22 @@ div[class*=selectFilterPopout_] li[class*=item_]{
 	background: var(--background-3c);
 }
 div[class*=rolePopout_] {
-    background-color: var(--background-19f);
+	background-color: var(--background-19f);
 }
 :is(div[class*=rolePopout_], .container_cbadbc) li[class*=item_]{
 	border-radius: 13px;
 }
 /* Mic Test */
 div[class*=micTest_] div[class*=progress_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 div[class*=micTest_] svg[class*=notches_][class*=gray_] {
 	color: var(--darkaf-main);
 }
 /* Custom Color Picker */
 div[class*=customColorPicker_] {
-    background: var(--background-26) !important;
-    border-color: var(--background-11) !important;
+	background: var(--background-26) !important;
+	border-color: var(--background-11) !important;
 }
 /* TTS Speed Button */
 div[class*=ttsPreviewWrapper_] button:only-of-type {
@@ -712,7 +718,7 @@ div[class*=paymentPane_], div[class*=codeRedemptionRedirect_], div[class*=paymen
 	background-color: var(--background-19f) !important;
 }
 div[class*=paymentPane_] div[class*=bottomDivider_] {
-    border-bottom-color: var(--background-0d);
+	border-bottom-color: var(--background-0d);
 }
 div[class*=paymentPane_] div[class*=expandedInfo_] {
 	background-color: var(--background-0e);
@@ -728,11 +734,11 @@ div[class*=paymentPane_] div[class*=payment_]:hover, div[class*=paymentPane_] di
 }
 /* Registered Games */
 .theme-dark .game_fd966d {
-    box-shadow: 0 1px 0 0 var(--background-2c);
+	box-shadow: 0 1px 0 0 var(--background-2c);
 }
 .game_fd966d [class*=gameNameInput_]:hover {
-    border-color: var(--background-2c);
-    background-color: var(--background-2f);
+	border-color: var(--background-2c);
+	background-color: var(--background-2f);
 }
 div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
 	overflow: visible;
@@ -786,7 +792,7 @@ div[class*=addGamePopout_]:before {
 	background-color: var(--background-tertiary);
 }
 span[class*=searchAnswer_], span[class*=searchFilter_] {
-    background-color: var(--background-42) !important;
+	background-color: var(--background-42) !important;
 }
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] {
 	background-color: var(--background-26);
@@ -829,7 +835,7 @@ div[class*=queryContainer_] div[class*=queryShortcut_] span[class*=key_] {
 	color: var(--background-ff);
 }
 div[class*=pageControlContainer_] *[class*=pageButton_]:not([disabled]):hover {
-    background-color: var(--background-d5);
+	background-color: var(--background-d5);
 }
 button[class*=endButton_] {
 	border-radius: 8px;
@@ -841,7 +847,7 @@ div[class*=app_] [class*=authBoxExpanded_] {
 	border-radius: 50px;
 }
 div[class*=app_] [class*=authBox_]:not([class*=authBoxExpanded_]) {
-    background: var(--darkaf-main) !important;
+	background: var(--darkaf-main) !important;
 	border-radius: 30px;
 }
 div[class*=app_] [class*=authBox_] div[class*=footer_] {
@@ -858,9 +864,9 @@ div[class*=app_] [class*=authBox_] div[class*=footer_] button {
 	background-color: var(--background-3c) !important;
 }
 .separator_f20a46 {
-    border-bottom: 2px solid var(--background-26);
-    margin-left: 0px;
-    width: calc(100% - 20px);
+	border-bottom: 2px solid var(--background-26);
+	margin-left: 0px;
+	width: calc(100% - 20px);
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] {
 	background-color: var(--background-0d);
@@ -877,13 +883,13 @@ div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$
 
 /* Pinned Messages & Threads Pop-up */
 div[class*=messagesPopoutWrap_], .browser_f542fc {
-    background-color: var(--background-26);
+	background-color: var(--background-26);
 }
 div[class*=messagesPopoutWrap_] div[class*=header_], .browser_f542fc div[class*=header_] {
-    background-color: var(--background-18);
+	background-color: var(--background-18);
 }
 div[class*=messagesPopout_][class*=thin_]::-webkit-scrollbar-thumb, .browser_f542fc div[class*=thin_]::-webkit-scrollbar-thumb {
-    background-color: var(--darkaf-main);
+	background-color: var(--darkaf-main);
 }
 div[class*=messagesPopout_][class*=thin_]::-webkit-scrollbar, .browser_f542fc div[class*=thin_]::-webkit-scrollbar {
 	width: 12px !important;
@@ -912,10 +918,10 @@ div[class*=recentMentionsPopout_] div[class*=messages_], div[class*=recentMentio
 
 /* Server Settings */
 div[class*=permissionsForm_] div[class*=passthrough_][class*=selected_] {
-    background-color: var(--background-52);
+	background-color: var(--background-52);
 }
 #overview-tab div[class*=avatarUploaderInnerSquareDisabled_] {
-    background-color: var(--background-2f);
+	background-color: var(--background-2f);
 }
 #emoji-tab div[class*=emojiAliasPlaceholder_]:before, #emoji-tab div[class*=emojiAliasPlaceholder_]:after {
 	opacity: 0.7;
@@ -947,36 +953,36 @@ div[class*=previewLight_] {
 }
 /* Boosting Level Tree */
 #guild_premium-tab div[class*=tierBody_] {
-    background-color: var(--background-19f);
+	background-color: var(--background-19f);
 }
 #guild_premium-tab div[class*=tierHeaderLocked_] {
-    background-color: var(--background-0a);
+	background-color: var(--background-0a);
 }
 #guild_premium-tab div[class*=tierHeaderUnlocked_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 /* Audit log */
 div[data-list-id="audit-log"] div[class*=auditLog_] {
 	border: none;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=header_] {
-    background-color: var(--background-19f);
+	background-color: var(--background-19f);
 	border-radius: 12px;
 	transition: border-radius 150ms ease;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_]:hover div[class*=header_] {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=headerExpanded_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 	border-radius: 12px 12px 0 0;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=changeDetails_] {
-    background-color: var(--background-19f);
+	background-color: var(--background-19f);
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=discrim_] {
-    color: var(--background-bd);
-    opacity: 1;
+	color: var(--background-bd);
+	opacity: 1;
 }
 /* Bans */
 div[class*=bannedUser_] {
@@ -997,19 +1003,19 @@ div[class*=inviteSettingsInviteRow_] {
 	margin-bottom: 8px;
 }
 div[class*=inviteSettingsInviteRow_]:before {
-    background-color: var(--background-19f);
-    border-color: var(--background-19f);
+	background-color: var(--background-19f);
+	border-color: var(--background-19f);
 	transition: all 100ms ease;
 }
 div[class*=inviteSettingsInviteRow_]:hover:before {
-    background-color: var(--background-42);
-    border-color: var(--background-26);
+	background-color: var(--background-42);
+	border-color: var(--background-26);
 }
 div[class*=settingsContainer_] div[class*=mainTableContainer_] {
-    background-color: var(--background-0c);
+	background-color: var(--background-0c);
 }
 div[class*=settingsContainer_] table {
-    background-color: var(--background-26);
+	background-color: var(--background-26);
 }
 tr[class*=memberRowContainer_]:hover>td {
 	background-color: var(--background-42);
@@ -1020,7 +1026,7 @@ tr[class*=tableHeaderRow_] div[class*=eyebrow_]:hover {
 
 /* Server Folders */
 div[class*=expandedFolderIconWrapper_] {
-    background-color: var(--background-2f);
+	background-color: var(--background-2f);
 }
 span[class*=expandedFolderBackground_] {
 	background-color: var(--background-26);
@@ -1086,12 +1092,12 @@ div[class*=userProfileOuterUnthemed_] div[class*=userProfileModalInner_] div[cla
 	position: absolute;
 	border-radius: 12px;
 	margin: -9px 0 0 -9px;
-    width: 100%;
-    height: 100%;
-    content: "";
-    box-shadow: 0 0 30px var(--background-bd);
-    opacity: .3;
-    pointer-events: none;
+	width: 100%;
+	height: 100%;
+	content: "";
+	box-shadow: 0 0 30px var(--background-bd);
+	opacity: .3;
+	pointer-events: none;
 }
 div[class*=userProfileOuter] div[class*=listScroller_] div[class*=listRow_]:hover {
 	border-radius: 15px;
@@ -1101,33 +1107,33 @@ div[class*=userProfileOuterUnthemed_] div[class*=listScroller_] div[class*=listR
 }
 /* Roles Background */
 div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_], div[class*=permissionItemRoleContainer_]) div[class*=role_] {
-    transform: translate(0);
-    overflow: hidden;
-    border-radius: 5px;
+	transform: translate(0);
+	overflow: hidden;
+	border-radius: 5px;
 }
 div[class*=userProfileInner_] div[class*=root_]>div[class*=role_] svg[class*=roleRemoveIcon_] {
-    margin: 0;
-    left: unset;
-    transform: translate(11%,-50%);
+	margin: 0;
+	left: unset;
+	transform: translate(11%,-50%);
 }
 div[class*=userProfileInner_] div[class*=roles]>div[class*=role_] svg[class*=roleRemoveIcon_] {
-    margin: 0;
-    left: unset;
-    transform: translate(50%,-50%);
+	margin: 0;
+	left: unset;
+	transform: translate(50%,-50%);
 }
 div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_], div[class*=permissionItemRoleContainer_]) div[class*=role_] div[class*=roleRemoveButton_] {
-    position: static;
+	position: static;
 }
 div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_], div[class*=permissionItemRoleContainer_]) div[class*=role_] span[class*=roleCircle_]:before {
-    content: '';
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    opacity: 0.3;
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	opacity: 0.3;
 }
 /* Mod View */
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=bottomRow_] div[class*=bottomRowAction_] div[class*=innerBottomRowAction_] {
@@ -1144,7 +1150,7 @@ div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=container_] div
 	background-color: var(--background-00) !important;
 }
 div[class*=userProfileModalOuter_] div[class*=container_] div[class*=header_]:hover span[class*=key_] {
-    transform: scale(1.3);
+	transform: scale(1.3);
 	transform-origin: right;
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=modInfoAction_]:hover {
@@ -1159,10 +1165,10 @@ div[class*=userProfileModalOuter_] div[class*=permissionChiplet_] {
 
 /** Game Streaming Preview **/
 div[class*=streamPreviewWrapper_] div[class*=streamPreview_] {
-    background-color: var(--background-0f);
+	background-color: var(--background-0f);
 }
 div[class*=streamPreviewWrapper_] div[class*=previewContainer_] {
-    background-color: var(--background-07);
+	background-color: var(--background-07);
 }
 /* Live Quality Indicator */
 div[class*=liveQualityIndicator_] {
@@ -1171,22 +1177,22 @@ div[class*=liveQualityIndicator_] {
 
 /* Hide Gift Nitro */
 div[class*=channelTextArea_] div[class*=buttons_]>button[class*=button_] {
-    display: var(--gift-nitro-toggle, none);
+	display: var(--gift-nitro-toggle, none);
 }
 
 /** Auto Complete & Commands Pop-up **/
 .theme-dark div[class*=autocomplete_], div[class*=autocomplete_] div[class*=list_][class*=wrapper_] {
-    background-color: var(--background-17);
+	background-color: var(--background-17);
 }
 div[class*=autocomplete_] div[class*=categoryHeader_] {
-    background-color: var(--background-07);
+	background-color: var(--background-07);
 	border-radius: 10px;
 }
 div[class*=autocomplete_] div[class*=categoryHeader_]:after {
 	background: none;
 }
 div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_]:hover, div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_] {
-    background-color: var(--background-2f);
+	background-color: var(--background-2f);
 }
 div[class*=autocomplete_] div[class*=rail_][class*=wrapper_] {
 	width: 64px;
@@ -1210,26 +1216,26 @@ div[class*=autocompleteRow_] div[class*=usageWrapper_] div[class*=colorHeaderPri
 	border-radius: 5px;
 }
 div[class*=applicationCommand_] span[class*=optionPillKey_] {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 /* Auto Complete & Commands Animation */
 div[class*=autocompleteRow_] {
-    padding: 0 0 0 11px;
+	padding: 0 0 0 11px;
 }
 div[class*=autocompleteRow_]>div[class*=base_] {
-    transition: all 0.5s;
+	transition: all 0.5s;
 }
 div[class*=autocompleteRow_]>div[class*=base_]:hover, div[class*=autocompleteRow_][aria-selected="true"]>div[class*=base_] {
-    transition: all 0.1s;
-    transform: translate3d(-10px, 0, 0);
+	transition: all 0.1s;
+	transform: translate3d(-10px, 0, 0);
 }
 
 /* GIFs, Stickers, Emoji & Soundboard Wrappers */
 div[class*=expressionPickerPositionLayer_] :is(div[class*=contentWrapper_], #gif-picker-tab-panel>div[class*=header_]), #emoji-picker-tab-panel>:is(div[class*=emojiPicker_], div[class*=header_]) {
-    background-color: var(--background-19f);
+	background-color: var(--background-19f);
 }
 div[class*=expressionPickerPositionLayer_] div[class*=inspector_] {
-    background-color: var(--background-0a);
+	background-color: var(--background-0a);
 }
 div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeader_], #emoji-picker-grid div[class*=wrapper_][class*=header_] {
 	border-radius: 10px;
@@ -1241,8 +1247,8 @@ div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeade
 	margin-left: 8px;
 }
 div[class*=diversitySelectorOptions_] {
-  background-color: var(--background-3c);
-  border: 1px solid var(--background-19f);
+	background-color: var(--background-3c);
+	border: 1px solid var(--background-19f);
 }
 button[class*=emojiItemDisabled_]:not(:hover), div[class*=stickerUnsendable_]:not(:hover) {
 	opacity: 0.4 !important;
@@ -1258,7 +1264,7 @@ div[class*=emptyGuildUpsell_] {
 	margin: 4px;
 }
 nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButton_]:hover) {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 nav[class*=nav_] :is([class*=navButton_], [class*=navButton_]:hover) {
 	border-radius: 9px;
@@ -1283,15 +1289,15 @@ nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActiv
 	transition: margin .2s ease;
 }
 #gif-picker-tab-panel div[class*=result_]:hover>* {
-    margin: -4px 0 0 -4px;
+	margin: -4px 0 0 -4px;
 }
 #gif-picker-tab-panel div[class*=result_]:hover:after {
-    margin: -6px 2px 2px -6px;
+	margin: -6px 2px 2px -6px;
 	background: transparent;
 	border: 2px solid var(--background-52);
 }
 #gif-picker-tab-panel div[class*=categoryFadeBlurple_] {
-    background-color: rgba(66,55,56,.6) !important;
+	background-color: rgba(66,55,56,.6) !important;
 }
 #gif-picker-tab-panel :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]) {
 	background-color: rgba(0,0,0,.4);
@@ -1299,7 +1305,7 @@ nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActiv
 	border: none;
 }
 #gif-picker-tab-panel :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]):hover {
-    background-color: rgba(0,0,0,.05) !important;
+	background-color: rgba(0,0,0,.05) !important;
 }
 #gif-picker-tab-panel div[class*=result_][style*="background-color:"] :is(div[class*=categoryFade_], div[class*=categoryFadeBlurple_]) {
 	background-color: transparent !important;
@@ -1323,12 +1329,12 @@ div[class*=quickswitcher_]:before{
 	position: absolute;
 	border-radius: inherit;
 	margin: -20px 0 0 -20px;
-    width: 100%;
-    height: 100%;
-    content: "";
-    box-shadow: 0 0 50px var(--background-2f);
-    opacity: .7;
-    pointer-events: none;
+	width: 100%;
+	height: 100%;
+	content: "";
+	box-shadow: 0 0 50px var(--background-2f);
+	opacity: .7;
+	pointer-events: none;
 }
 div[class*=quickswitcher_] div[class*=scroller_] {
 	background-color: transparent;
@@ -1344,59 +1350,51 @@ div[class*=quickswitcher_] input:focus-within {
 	background-color: var(--background-26);
 }
 
-/* Join & Follow Action Message */
-.wrapper__57349 {
-    background-color: var(--background-17);
-}
-.theme-dark .form_d8a4a1:before {
-	background: transparent;
-}
-
 /* Server Banner Over Scrollbar */
 nav[class*=container_] div[class*=container_][class*=hasBanner_] {
-    z-index: 2;
+	z-index: 2;
 }
 
 /* Public Server Explorer */
 .theme-dark .pageWrapper_a3a4ce {
-    background-color: var(--darkaf-main);
+	background-color: var(--darkaf-main);
 }
 .pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_], div[class*=iconMask_]) {
-    background-color: var(--background-26);
+	background-color: var(--background-26);
 }
 .pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_]:hover, div[class*=card_]:hover div[class*=iconMask_]) {
-    background-color: var(--background-52);
+	background-color: var(--background-52);
 }
 .pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_], svg[class*=clearIcon_], input) {
-    color: var(--background-ca);
+	color: var(--background-ca);
 }
 .pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_]:hover, svg[class*=clearIcon_]:hover) {
-    color: var(--background-52);
+	color: var(--background-52);
 }
 
 /* Payment Pop-up */
 div[class*=paymentModalContent] div[class*=iconWrapper_] {
-    background: var(--background-42);
+	background: var(--background-42);
 }
 div[class*=paymentModalContent] div[class*=iconWrapper_][class*=disabled_] {
-    background: var(--background-00);
+	background: var(--background-00);
 }
 
-/* TOS Pop-up */
-.theme-dark .modal-2LBig1 {
-  background-color: var(--background-19f);
+/* Guild Pop-up */
+div[class*=guildPopout_] {
+	background-color: var(--background-17);
 }
-.theme-dark .buttonContainer-28osRq {
-  background-color: var(--darkaf-main);
+div[class*=guildPopout_] div[class*=footer_] {
+	background-color: var(--background-0d);
 }
 
 /* In-call Region Selector */
 div[class*=regionSelectPopout_] {
-    background: var(--background-26) !important;
+	background: var(--background-26) !important;
 	border-radius: 7px;
 }
 div[class*=quickSelectPopoutOption_]:hover {
-    background-color: var(--background-0d) !important;
+	background-color: var(--background-0d) !important;
 }
 
 /* Customise your experience on first join */
@@ -1405,11 +1403,11 @@ div[class*=quickSelectPopoutOption_]:hover {
 	background-color: rgb(0 0 0 / 100%);
 }
 .prompt_cd377c div[class*=promptContent_] div[class*=scrollerBase_]::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-color: transparent;
+	background-color: transparent;
+	border-color: transparent;
 }
 .prompt_cd377c div[class*=promptContent_] div[class*=scrollerBase_]::-webkit-scrollbar-thumb {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 .prompt_cd377c div[class*=promptContent_] div[class*=scrollerBase_]::-webkit-scrollbar {
 	width: 11px;
@@ -1428,11 +1426,11 @@ div[class*=base_]>div[class*=notice_] button:hover {
 /** Joining/Creating Server & Download Apps Menus (because discord is stupid) **/
 /* Circle Buttons */
 div[class*=circleIconButton_] {
-    background: var(--background-17);
-    color: var(--background-42);
+	background: var(--background-17);
+	color: var(--background-42);
 }
 div[class*=circleIconButton_][class*=selected_] {
-    background-color: var(--background-2f);
+	background-color: var(--background-2f);
 	color: var(--background-ca);
 }
 /* Joining/Creating Server Menu */
@@ -1440,10 +1438,10 @@ div[class*=focusLock_]>div[class*=root_] div[class*=footerSeparator_] {
 	box-shadow: none
 }
 div[class*=focusLock_]>div[class*=root_] :is(button[class*=container_], div[class*=rowContainer_]):hover {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 div[class*=focusLock_]>div[class*=root_] button[class*=container_]:hover div[class*=defaultColor_] {
-    color: var(--background-ff);
+	color: var(--background-ff);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=uploadIcon_] svg:only-of-type circle{
 	fill: var(--background-52);
@@ -1483,7 +1481,7 @@ div[class*=thin_]::-webkit-scrollbar-thumb {
 }
 /* Billing, EGS Picker, Modal, Submenu, Server Home, Popout, Soundboard and User Profile */
 :is(div[class*=verticalFit_], div[class*=layer_] div[class*=picker_], div[id*=picker-tab-panel], div[class*=focusLock_], div[role="menu"], div[class*=userProfileInner_]) div[class*=thin_]::-webkit-scrollbar-thumb, :is(code[class*=scrollbarGhostHairline_], div[class*=homeContainer_][class*=auto_])::-webkit-scrollbar-thumb {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 :is(div[class*=layer_] :not([class*=menu_])>div[class*=thin_], div[class*=emojiPicker_] div[class*=thin_], div[class*=focusLock_] div[class*=thin_], div[class*=userProfileInner_] div[class*=thin_])::-webkit-scrollbar {
 	width: 11px;
@@ -1494,10 +1492,10 @@ code[class*=scrollbarGhostHairline_]::-webkit-scrollbar {
 
 /* Right-Click Submenu */
 div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button_]:hover, .keyboard-mode div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button_][class*=focused_] {
-    background-color: var(--background-52);
+	background-color: var(--background-52);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_]:not([class*=colorDanger_]) {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_][id*=playstation], div[role="menu"] div[role*="menuitem"][class*=colorDefault_][id*=playstation]:active:not([class*=hideInteraction_]) {
 	background-color: var(--playstation-blue);
@@ -1533,11 +1531,11 @@ div:hover>div[role="slider"] div[class*=grabber_], div[class*=sensitivity_]:hove
 
 /* Toasts */
 div:not(.toast)>div[class*=toast_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 	transform: scale(0.9) !important;
 }
 .bd-toast {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 .toasts > .toast {
 	border-radius: 20px;
@@ -1545,29 +1543,29 @@ div:not(.toast)>div[class*=toast_] {
 
 /* Invite Pop-up */
 .theme-dark .contentWrapper_ed5743 {
-    background: var(--background-19f);
+	background: var(--background-19f);
 }
 .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_] {
-    background-color: var(--background-42);
+	background-color: var(--background-42);
 }
 .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_]:hover {
-    background-color: var(--background-0a);
+	background-color: var(--background-0a);
 }
 
 /* VC Count Badge */
 div[class*=channelInfo_]>div>span[class*=users_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 div[class*=channelInfo_]>div>span[class*=total_] {
-    background-color: var(--background-26);
+	background-color: var(--background-26);
 }
 div[class*=channelInfo_]>div>span[class*=total_]:after {
-    border-right-color: var(--background-26);
+	border-right-color: var(--background-26);
 }
 
 /* New Unreads Bar */
 div[class*=unreadBottom_] div[class*=unreadBar_] {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 
 /* Round Spotify Status Image */
@@ -1577,31 +1575,31 @@ img[class*=assetsLargeImageSpotify_] {
 
 /* Upper Guild Badge */
 div[class*=upperBadge_]>div[class*=iconBadge_] {
-    background-color: var(--background-52);
+	background-color: var(--background-52);
 }
 div[class*=upperBadge_]>div[class*=iconBadge_][class*=isCurrentUserConnected_] {
-    background-color: var(--background-37b);
+	background-color: var(--background-37b);
 }
 
 /* Screen, Video, Activity, Soundboard buttons */
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]) {
-    background-color: var(--background-2c);
+	background-color: var(--background-2c);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]):hover {
-    background-color: var(--background-accent);
+	background-color: var(--background-accent);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]):active {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not(:last-of-type):after {
 	content: '';
-    top: 3px;
-    right: 3px;
-    visibility: hidden;
-    width: 8px;
-    height: 8px;
+	top: 3px;
+	right: 3px;
+	visibility: hidden;
+	width: 8px;
+	height: 8px;
 	border-radius: 50%;
-    position: absolute;
+	position: absolute;
 	animation: live 1.8s ease alternate infinite;
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button[class*=buttonActive_]:after {
@@ -1613,20 +1611,20 @@ div[class*=base_] section[class*=panels_] div[class*=actionButtons_]>button:last
 
 /* Editing Msg Text Area */
 li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer_] {
-    animation: slideY 200ms ease;
-    transform-origin: top;
+	animation: slideY 200ms ease;
+	transform-origin: top;
 }
 li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer_]:hover, li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer_]:focus-within {
-    background-color: var(--background-2c);
+	background-color: var(--background-2c);
 }
 
 /* @everyone WAIT! Pop-up */
 .theme-dark .contentWarningPopout__84e38 {
-    background-color: var(--background-19b);
-    box-shadow: 0 2px 10px 0 var(--background-3c);
+	background-color: var(--background-19b);
+	box-shadow: 0 2px 10px 0 var(--background-3c);
 }
 .theme-dark .contentWarningPopout__84e38 .footer__068c0 {
-    background-color: var(--background-3c);
+	background-color: var(--background-3c);
 }
 
 /* Stream Wrapper */ 
@@ -1640,24 +1638,24 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 	overflow: hidden;
 }
 .root_cbf230:before, .root_cbf230:after {
-    content: "";
+	content: "";
 	z-index: -100;
-    position: absolute;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vw;
-    background-color: var(--background-3c);
-    animation: wave 10s linear infinite;
+	position: absolute;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vw;
+	background-color: var(--background-3c);
+	animation: wave 10s linear infinite;
 }
 .root_cbf230:before {
-    bottom: 19vh;
+	bottom: 19vh;
 	opacity: 0.9;
-    border-radius: 35%;
+	border-radius: 35%;
 }
 .root_cbf230:after {
-    bottom: 15vh;
-    opacity: .5;
-    border-radius: 37%;
+	bottom: 15vh;
+	opacity: .5;
+	border-radius: 37%;
 }
 /* Buttons */
 .root_cbf230 div[class*=actionButton_]>svg {
@@ -1691,8 +1689,8 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 /* Attached Bar Above Text Area */
 div[class*=channelTextArea_]>div[class*=attachedBars_], [class*=threadSuggestionBar_], [class*=chatContent_] div[class*=container_] div[class*=banner_] {
 	background-color: var(--background-2c);
-    animation: slideY 250ms ease;
-    transform-origin: bottom;
+	animation: slideY 250ms ease;
+	transform-origin: bottom;
 }
 div[class*=replyBar_] {
 	background-color: transparent;
@@ -1762,7 +1760,7 @@ div[class*=tagsContainer_] button, div[class*=pill_][class*=tag_][role="button"]
 	background-color: var(--background-3c);
 }
 div[class*=pill_][class*=clickable_]:not([class*=disabled_]):hover, div[class*=tagsContainer_] button:hover {
-    background-color: var(--background-52);
+	background-color: var(--background-52);
 }
 div[class*=pill_][class*=tag_][class*=selected_][role="button"] {
 	background-color: var(--background-52);
@@ -1787,27 +1785,27 @@ div[class*=homeContent_] div[class*=sidebarCardWrapper_] div[class*=resourceChan
 	border-radius: 10px;
 }
 div[class*=homeContainer_][class*=scrollerBase_][class*=auto_]::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-auto-track);
-    border-color: var(--scrollbar-auto-track);
+	background-color: var(--scrollbar-auto-track);
+	border-color: var(--scrollbar-auto-track);
 }
 div[class*=homeContainer_][class*=scrollerBase_][class*=auto_]::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-auto-thumb);
+	background-color: var(--scrollbar-auto-thumb);
 }
 /* Channels & Roles, Browse Channels */
 div[class*=chat_]>section[class*=header_], div[class*=base_] div[class*=chat_]>div[class*=content_][class*=container_] {
-    background-color: var(--background-primary);
+	background-color: var(--background-primary);
 }
 div[class*=chat_]>div[class*=content_][class*=container_] :is(div[class*=chat_], div[class*=emptyPage_]) {
-    background-color: var(--background-primary);
+	background-color: var(--background-primary);
 }
 div[class*=chat_]>div[class*=content_][class*=container_] div[class*=chat_] div[class*=scrollerInner_] :is(div[class*=container_], div[class*=channelRow_]) {
 	background-color: var(--background-26);
 }
 div[class*=chat_]>div[class*=content_][class*=container_] div[class*=chat_] div[class*=scrollerInner_] div[class*=channelRow_]:hover:not([class*=disabled_]) {
-    background-color: var(--background-11);
+	background-color: var(--background-11);
 }
 .theme-dark div[class*=innerHeader_]:after {
-    background: transparent;
+	background: transparent;
 }
 div[class*=channelRow_] div[class*=subtitleSeparator_] {
 	background-color: var(--background-d5);
@@ -1831,17 +1829,17 @@ div[class*=optionButtonWrapper_][class*=selected_] {
 /** BetterDiscord **/
 /* Update Notice */
 div[class*=app_] div[class*=updateNotice_] {
-    background-color: var(--background-2f);
+	background-color: var(--background-2f);
 }
 /* Settings */
 .bd-addon-list .bd-addon-header {
 	background: var(--background-0a);
 }
 .bd-addon-list .bd-addon-card {
-    background: var(--background-19f);
+	background: var(--background-19f);
 }
 .bd-addon-modal-footer .bd-button {
-    background-color: var(--brand-experiment);
+	background-color: var(--brand-experiment);
 }
 .bd-addon-modal-footer .bd-button:hover {
 	background-color: var(--brand-experiment-560);
@@ -1865,10 +1863,10 @@ div[class*=app_] div[class*=updateNotice_] {
 	background-color: var(--background-18);
 }
 .bd-select .bd-select-options, .bd-select:hover, .bd-select.menu-open {
-    background: var(--background-26);
+	background: var(--background-26);
 }
 .bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
-    background: var(--background-42);
+	background: var(--background-42);
 }
 .bd-modal-root:before {
 	border-radius: inherit;
@@ -1889,7 +1887,7 @@ div[class*=channelTextArea_] button[class*=invisible-typing-button]:hover>svg {
 }
 /* BetterFormattingRedux */
 .bf-toolbar::before {
-    background: var(--background-17) !important;
+	background: var(--background-17) !important;
 	border-radius: 8px;
 }
 .bf-toolbar .format:hover {
@@ -1899,7 +1897,7 @@ div[class*=profileCustomizationSection_] div[class*=channelTextArea_]>#bfredux {
 /** Spotify Controls **/
 /* Timeline Fix */
 div[class*=base_] section[class*=panels_] div[class*=container_][class*=withTimeline_] .timeline_UWmgAx:not(:hover) .barFill_Dhkah7 {
-    background: var(--text-normal);
+	background: var(--text-normal);
 }
 /* Border Gone */
 div[class*=base_] section[class*=panels_] div[class*=container_][class*=withTimeline_] {
@@ -1917,24 +1915,24 @@ div[class*=base_] section[class*=panels_]>span[style="background: hsl(228, calc(
 /** Hide New Message Stuff When Unfocused by Overimagine#0001 and Me **/
 /* Red New Message Bar */
 html:not(.app-focused) div[class*=isUnread_] {
-    border-color: transparent
+	border-color: transparent
 }
 div[class*=isUnread_] {
-    transition: .15s
+	transition: .15s
 }
 /* New Message Bar */
 html:not(.app-focused) div[class*=newMessagesBar_] {
-    opacity: 0
+	opacity: 0
 }
 div[class*=newMessagesBar_] {
-    transition: .15s
+	transition: .15s
 }
 /* New Message Pill In Guilds */
 html:not(.app-focused) div[class*=unreadMentionsIndicatorBottom_], div[class*=unreadMentionsIndicatorTop_] {
-    opacity: 0
+	opacity: 0
 }
 div[class*=unreadMentionsIndicatorBottom_], div[class*=unreadMentionsIndicatorTop_] {
-    transition: .15s
+	transition: .15s
 }
 
 /* Connection Issue Let Me Be */
@@ -1944,44 +1942,44 @@ div[class*=app_]>div[class*=container_][class*=fixClipping_] {
 	left: unset;
 	right: 5px;
 	bottom: 5px;
-    background: transparent;
-    pointer-events: none;
-    flex-direction: row;
+	background: transparent;
+	pointer-events: none;
+	flex-direction: row;
 	-webkit-transition: -webkit-transform .2s ease-out 1s;
-    transition: -webkit-transform .2s ease-out 1s;
-    transition: transform .2s ease-out 1s;
-    transition: transform .2s ease-out 1s,-webkit-transform .2s ease-out 1s;
-    -webkit-transform: translate3d(0,60%,0);
-    transform: translate3d(0,60%,0);
+	transition: -webkit-transform .2s ease-out 1s;
+	transition: transform .2s ease-out 1s;
+	transition: transform .2s ease-out 1s,-webkit-transform .2s ease-out 1s;
+	-webkit-transform: translate3d(0,60%,0);
+	transform: translate3d(0,60%,0);
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_]:hover {
-    -webkit-transition: -webkit-transform .2s ease-out;
-    transition: -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out;
-    transition: transform .2s ease-out,-webkit-transform .2s ease-out;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+	-webkit-transition: -webkit-transform .2s ease-out;
+	transition: -webkit-transform .2s ease-out;
+	transition: transform .2s ease-out;
+	transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_] div[class*=content_] div[class*=text_] {display:none;}
 div[class*=app_]>div[class*=container_][class*=fixClipping_]>div[class*=content_] {
 	display: flex;
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_] video[class*=ready_] {
-    position: relative;
-    bottom: 12px;
-    left: 49px;
-    z-index: 1;
+	position: relative;
+	bottom: 12px;
+	left: 49px;
+	z-index: 1;
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_] img, div[class*=app_]>div[class*=container_][class*=fixClipping_] video {
-    width: 60px;
-    height: 60px;
+	width: 60px;
+	height: 60px;
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_] div[class*=problems_] {
 	position: initial;
-    padding: 8px 16px;
-    backdrop-filter: contrast(60%) brightness(90%) blur(1px);
-    border-radius: 10px;
-    box-shadow: var(--elevation-stroke), var(--elevation-medium);
+	padding: 8px 16px;
+	backdrop-filter: contrast(60%) brightness(90%) blur(1px);
+	border-radius: 10px;
+	box-shadow: var(--elevation-stroke), var(--elevation-medium);
 	transform: unset;
 	transition: unset;
 	pointer-events: auto;
@@ -1994,29 +1992,27 @@ div[class*=app_]>div[class*=container_][class*=fixClipping_] div[class*=problems
 div#BDFDB-card, div#ZeresPluginLibrary-card {display: var(--libs-toggle, none);}
 div[class*=menu_][aria-activedescendant*="user-settings-cog-BetterDiscord--Plugins"] :is(#user-settings-cog-BetterDiscord--Plugins--BDFDB, #user-settings-cog-BetterDiscord--Plugins--ZeresPluginLibrary) {display: var(--libs-toggle, none);}
 /* Home Button Spins On Click by The Commie Axolotl#0001 & Me */
-div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav___home] svg {
-    animation: spin 0.8s ease;
-}
+div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav___home] svg {animation: spin 0.8s ease;}
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
 div[role="menu"], div[class*=recentMentionsPopout_], .container_f79ab4, div[class*=layerContainer_]>div[class*=layer_]>div:not([class*=animatorTop_]) div[class*=userPopoutOuter_], .container_ac201b, div[class*=chat_]>div[class*=content_]>div[class*=container_], .popout__08442, .contentWrapper_eab878, div[class*=animatorBottom_], div[class*=animatorRight_], div[class*=animatorLeft_], div[class*=userProfileModalOuter_], div[class*=layerContainer_]>div[class*=layer_] :is(div[class*=picker_], div[class*=browser_], div[class*=container_][role="listbox"]) {
-    animation: slideY 250ms ease;
-    transform-origin: top;
+	animation: slideY 250ms ease;
+	transform-origin: top;
 }
 div[class*=layerContainer_]>div[class*=layer_]>section[class*=positionContainer_] div[class*=contentWrapper_], div[class*=menu_][id="channel-attach"], .scroller__3fc84div, [class*=autocomplete_], div[class*=layerContainer_]>div[class*=layer_]>div[class*=animatorTop_][class*=didRender_] div[class*=accountProfilePopoutWrapper_], div[class*=noiseCancellationPopout_], div[class*=debugPanelStandalone_] {
-    animation: slideY 250ms ease;
-    transform-origin: bottom;
+	animation: slideY 250ms ease;
+	transform-origin: bottom;
 }
 /* Hide User Buttons Until Hover by The Commie Axolotl#0001 & Me */
 div[class*=base_] section[class*=panels_] > div[class*=container_]:not([class*=withTimeline_]) div[class*=flex_] > :not(:last-child) {
-    opacity: 0% !important;
-    width: 0px;
-    transition: all 0.2s ease-in-out;
+	opacity: 0% !important;
+	width: 0px;
+	transition: all 0.2s ease-in-out;
 }
 div[class*=base_] section[class*=panels_] > div[class*=container_]:not([class*=withTimeline_]):hover div[class*=flex_] > :not(:last-child) {
-    opacity: 100% !important;
-    width: 32px;
+	opacity: 100% !important;
+	width: 32px;
 }
 div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 	flex: 1;
