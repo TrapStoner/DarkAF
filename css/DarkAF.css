@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.7 by TrapStoner#9526";
+	content: "DarkAF 2.1.8 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -688,6 +688,10 @@ div[class*=ttsPreviewWrapper_] button:only-of-type:hover {
 /* Privacy & Safety */
 #account_standing-tab :is(div[class*=avatarBackground_], div[class*=health_] :is(div[class*=line_], div[class*=empty_])) {
 	background-color: var(--background-26);
+}
+/* Authorized Apps */
+#authorized-apps-tab div[class*=authedApp_][class*=card_] {
+	background-color: var(--background-11);
 }
 /* Devices */
 #sessions-tab div[class*=sessionIcon_] {
@@ -1824,6 +1828,11 @@ div[class*=optionButtonWrapper_]:hover {
 div[class*=optionButtonWrapper_][class*=selected_] {
 	background-color: var(--background-primary);
 	border-color: var(--background-26);
+}
+
+/* Changelog */
+div[class*=focusLock_] a[class*=anchor_][href]:not([class*=socialLink_]) {
+	color: var(--text-link);
 }
 
 /** BetterDiscord **/
