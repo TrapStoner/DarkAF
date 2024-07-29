@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.1.8 by TrapStoner#9526";
+	content: "DarkAF 2.1.9 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -203,7 +203,7 @@ nav[class*=sidebar_] div[class*=info_]:after {
 li[class*=container_], div[class*=peopleListItem_], div[class*=peopleListItem_][class*=active_], div[class*=peopleListItem_]:hover, [class*=membersWrap_] div[class*=layout_], .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_]:hover, #language-tab div[role=radiogroup]>div[class*=item_] {
 	border-radius: 25px;
 }
-div[class*=thin_]>div[class*=categoryItem_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_] a, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] ul div[class*=ChannelRowLink_], div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=content_], aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_], div[class*=side_] div[class*=item_], div[class*=side_] div[class*=selectedBackground_], div[class*=activityItem_], div[class*=wrapper__91b2c], div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_], div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_], div[role=listbox] div[role=option][class*=friendWrapper_]>div:first-child, div[role=listbox] div[role=option][class*=result_], .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb, div[class*=listRow_][class*=interactiveRow_] {
+div[class*=thin_]>div[class*=categoryItem_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_] a, div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=iconVisibility_]>div, div[class*=sidebar_] div[class*=scroller_][id="channels"] ul div[class*=ChannelRowLink_], div[class*=sidebar_] div[class*=scroller_][id="channels"] div[class*=content_], [class*=membersWrap_] div[class*=selected_] div[class*=layout_], div[class*=side_] div[class*=item_], div[class*=side_] div[class*=selectedBackground_], div[class*=activityItem_], div[class*=wrapper__91b2c], div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_], div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_], div[role=listbox] div[role=option][class*=friendWrapper_]>div:first-child, div[role=listbox] div[role=option][class*=result_], .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_], .bd-toast, .bd-addon-list .bd-description::-webkit-scrollbar-track, .bd-addon-list .bd-description::-webkit-scrollbar-thumb, div[class*=listRow_][class*=interactiveRow_] {
 	border-radius: 15px;
 }
 div[class*=base_] div[class*=sidebar_] header[class*=header_] {
@@ -215,7 +215,7 @@ span[class*=mention], div[class*=mentioned_], div[class*=attachment_], div[class
 div[class*=mentioned_]:before {
 	border-radius: 4px 0px 0px 4px;
 }
-aside[class*=membersWrap_] div[class*=selected_] div[class*=layout_] {
+[class*=membersWrap_] div[class*=selected_] div[class*=layout_] {
 	transition: border-radius 180ms ease;
 }
 
@@ -763,9 +763,12 @@ div[class*=addGamePopout_]:before {
 	opacity: .22;
 	pointer-events: none;
 }
-/* Flower Icon */
+/* Flower/Badge Icons */
 #game-activity-tab svg[class*=flowerStar_] path {
 	fill: var(--background-37b);
+}
+div[class*=focusModeTitle_] div[class*=textBadge_][style="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);"] {
+	background-color: var(--background-d5) !important;
 }
 
 /* Chat Search */
@@ -860,6 +863,9 @@ div[class*=app_] [class*=authBox_] div[class*=footer_] {
 div[class*=app_] [class*=authBox_] div[class*=footer_] button {
 	margin-right: 10px;
 }
+div[class*=app_] [class*=authBox_] button[class*=startOverButton_]:hover {
+	color: var(--background-bd);
+}
 [class*=authBox_] div[class*=listItemContainer_] {
 	background-color: var(--background-26) !important;
 	width: inherit;
@@ -883,6 +889,12 @@ div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"]>div[class*=css-]::-webkit-scrollbar-thumb {
 	background-color: var(--background-2c);
+}
+div[class*=focusLock_] [class*=authBox_] {
+	background: var(--background-11);
+}
+div[class*=focusLock_] [class*=navRow_] {
+	background-color: var(--background-08);
 }
 
 /* Pinned Messages & Threads Pop-up */
@@ -1114,6 +1126,8 @@ div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_],
 	transform: translate(0);
 	overflow: hidden;
 	border-radius: 5px;
+	background: var(--bg-mod-faint);
+	border-color: var(--border-faint);
 }
 div[class*=userProfileInner_] div[class*=root_]>div[class*=role_] svg[class*=roleRemoveIcon_] {
 	margin: 0;
@@ -2005,7 +2019,7 @@ div[class*=listItemWrapper_][class*=selected_] div[data-list-item-id*=guildsnav_
 /* Remove Wumpus Holding Country-specific Flag by SmolAlli#2706 */
 [alt="Wumpus holding a country-specific flag"] {display: none;}
 /* Pop-out Animations by Lonk#6942 & Me */ 
-div[role="menu"], div[class*=recentMentionsPopout_], .container_f79ab4, div[class*=layerContainer_]>div[class*=layer_]>div:not([class*=animatorTop_]) div[class*=userPopoutOuter_], .container_ac201b, div[class*=chat_]>div[class*=content_]>div[class*=container_], .popout__08442, .contentWrapper_eab878, div[class*=animatorBottom_], div[class*=animatorRight_], div[class*=animatorLeft_], div[class*=userProfileModalOuter_], div[class*=layerContainer_]>div[class*=layer_] :is(div[class*=picker_], div[class*=browser_], div[class*=container_][role="listbox"]) {
+div[role="menu"], div[class*=recentMentionsPopout_], [class*=membersWrap_], div[class*=layerContainer_]>div[class*=layer_]>div:not([class*=animatorTop_]) div[class*=userPopoutOuter_], .container_f79ab4, .container_ac201b, .popout__08442, .contentWrapper_eab878, div[class*=animatorBottom_], div[class*=animatorRight_], div[class*=animatorLeft_], div[class*=userProfileModalOuter_], div[class*=layerContainer_]>div[class*=layer_] :is(div[class*=picker_], div[class*=browser_], div[class*=container_][role="listbox"]) {
 	animation: slideY 250ms ease;
 	transform-origin: top;
 }
