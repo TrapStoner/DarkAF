@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.0 by TrapStoner#9526";
+	content: "DarkAF 2.2.1 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -453,6 +453,28 @@ div[id*=message-accessories]>div[class*=wrapper_] {
 div[id*=message-content-] code {
 	background: var(--background-19f);
 }
+/* Voice Message */
+div[class*=nonVisualMediaItemContainer_] div[class*=mosaicItemMediaMosaic_]>div[class*=container_] {
+	background-color: var(--background-26);
+}
+div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_] {
+	background: linear-gradient(151.11deg, var(--background-d5) 16.55%, var(--background-26) 104.36%);
+}
+div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:hover {
+	background: linear-gradient(151.11deg, var(--background-c9) 17.78%, var(--background-d5) 82.22%);
+}
+div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:active:not(:hover) {
+	background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(151.11deg, var(--background-52) 16.55%, var(--background-d5) 104.36%);
+}
+div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:active svg[class*=playIcon_] {
+	color: var(--background-00);
+}
+div[class*=nonVisualMediaItemContainer_] div[class*=container_][class*=playing] div[class*=playButtonContainer_]:active {
+	background-color: var(--background-8a);
+}
+div[class*=mediaBarInteractionVolume_] {
+	background-color: var(--background-26);
+}
 
 /** Modals **/
 /* Focuslock Modals Shadow */
@@ -619,6 +641,18 @@ button[class*=removeButton_]:hover {
 button[class*=removeButton_]:hover>div[class*=contents_] {
 	--button--underline-color: var(--background-d5) !important;
 }
+:not(#language-tab>div)>div[class*=children_] div[role*=radiogroup] div[class*=itemFilled_]:not([aria-checked="true"], :hover) {
+	background-color: var(--background-0a);
+}
+div[class*=recorderContainer_] {
+	background-color: var(--background-2c) !important;
+}
+div[class*=soundButtonSettingContainer_] {
+	background-color: var(--background-13);
+}
+div[class*=cameraWrapper_] {
+	background-color: var(--background-0d);
+}
 /* Dropdown Lists */
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) {
 	animation: slideY 250ms ease;
@@ -751,14 +785,20 @@ div[class*=paymentPane_] div[class*=payment_]:hover, div[class*=paymentPane_] di
 	background-color: var(--background-42) !important;
 }
 /* Registered Games */
-.theme-dark .game_fd966d {
+#game-activity-tab div[class*=activeGame_] {
+	border-radius: 10px;
+}
+#game-activity-tab div[class*=notDetected_] {
+	background-color: var(--background-19f);
+}
+#game-activity-tab div[class*=game_] {
 	box-shadow: 0 1px 0 0 var(--background-2c);
 }
-.game_fd966d [class*=gameNameInput_]:hover {
+#game-activity-tab [class*=gameNameInput_]:hover {
 	border-color: var(--background-2c);
 	background-color: var(--background-2f);
 }
-div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
+#game-activity-tab div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
 	overflow: visible;
 	animation: marquee 12s linear infinite;
 	font-size: 16px;
@@ -785,7 +825,7 @@ div[class*=focusModeTitle_] div[class*=textBadge_][style="background-color: hsl(
 	background-color: var(--background-d5) !important;
 }
 
-/* Chat Search */
+/** Chat Search **/
 #search-results div[class*=button_] {
 	background-color: var(--background-2f);
 	transition: all .15s ease;
@@ -815,6 +855,18 @@ div[class*=focusModeTitle_] div[class*=textBadge_][style="background-color: hsl(
 div[class*=searchAnswer_], div[class*=searchFilter_] {
 	background-color: var(--background-42) !important;
 }
+div[class*=queryContainer_] div[class*=queryShortcut_] span[class*=key_] {
+	background-color: var(--background-d5);
+	opacity: 0.85;
+	color: var(--background-ff);
+}
+div[class*=pageControlContainer_] *[class*=pageButton_]:not([disabled]):hover {
+	background-color: var(--background-d5);
+}
+button[class*=endButton_] {
+	border-radius: 8px;
+}
+/* Date Picker */
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=react-datepicker] {
 	background-color: var(--background-26);
 }
@@ -829,7 +881,7 @@ div[class*=searchAnswer_], div[class*=searchFilter_] {
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__current-month]) {
 	border-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__day--outside-month]):not([class*=react-datepicker__day--disabled]):hover {
+:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__day--outside-month]):not([class*=--disabled]):hover {
 	background-color: var(--background-d5);
 	border-color: var(--background-d5) !important;
 }
@@ -840,7 +892,7 @@ div[class*=searchAnswer_], div[class*=searchFilter_] {
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is([class*=--outside-month][class*=--001], [class*=--outside-month][class*=--002], [class*=--outside-month][class*=--003], [class*=--outside-month][class*=--004], [class*=--outside-month][class*=--005], [class*=--outside-month][class*=--006], [class*=--outside-month][class*=--007]) {
 	border-top-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week]:is(:nth-last-child(2), :nth-last-child(1)) div[class*=react-datepicker__day][class*=--outside-month][class*=--001]:not(:nth-child(1)) {
+:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week]:is(:nth-last-child(2), :nth-last-child(1)) div[class*=react-datepicker__day--outside-month][class*=--001]:not(:nth-child(1)) {
 	border-left-color: var(--background-42) !important;
 }
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]) {
@@ -857,23 +909,11 @@ div[class*=searchAnswer_], div[class*=searchFilter_] {
 	background-color: var(--background-ca);
 	border-radius: 5px;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--keyboard-selected]{
+:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--keyboard-selected] {
 	background-color: transparent;
 }
 :is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__header] div[class*=react-datepicker__day-name]:is(:first-of-type, :last-of-type) {
 	color: var(--background-d5);
-}
-
-div[class*=queryContainer_] div[class*=queryShortcut_] span[class*=key_] {
-	background-color: var(--background-d5);
-	opacity: 0.85;
-	color: var(--background-ff);
-}
-div[class*=pageControlContainer_] *[class*=pageButton_]:not([disabled]):hover {
-	background-color: var(--background-d5);
-}
-button[class*=endButton_] {
-	border-radius: 8px;
 }
 
 /* Auth Screen & Account Switcher */
