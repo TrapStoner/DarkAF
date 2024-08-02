@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.1 by TrapStoner#9526";
+	content: "DarkAF 2.2.2 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -338,19 +338,31 @@ div[class*=tile_]:hover div[class*=sourceThumbnail_] {
 }
 
 /* Reactions */
-div[class*=message_]:not([class*=mentioned_]) div[class*=reaction_] {
+div[class*=reaction_] {
 	background: var(--background-26);
 }
-div[class*=message_][class*=mentioned_] div[class*=reaction_] {
-	background: var(--background-00);
+div[class*=message_][class*=mentioned_] div[class*=reaction_]:not([class*=reactionMe_], :hover) {
+	background: var(--background-3c);
 }
-div[class*=message_] div[class*=reaction_][class*=reactionMe_] {
+div[class*=reaction_][class*=reactionMe_] {
 	background: var(--background-52);
 	border-color: var(--background-52);
 }
-div[class*=message_] div[class*=reaction_]:not([class*=reactionMe_]):hover {
+div[class*=reaction_]:not([class*=reactionMe_]):hover {
 	background: var(--background-00);
 	border-color: var(--background-52);
+}
+div[class*=reaction_][class*=reactionMe_] div[class*=reactionCount_] {
+	color: var(--background-ff);
+}
+div[class*=reaction_][style*=background] {
+	background-image: linear-gradient(hsla(255,100%,100%,.12) 100%,transparent 100%) !important;
+}
+div[class*=reaction_][class*=reactionMe_][style*=background] {
+	background-image: linear-gradient(hsla(255,100%,100%,.2) 100%,transparent 100%) !important;
+}
+div[class*=reaction_] div[class*=burstGlow_] {
+	opacity: 0.75;
 }
 
 /* Switches */
@@ -402,15 +414,23 @@ div[class*=mentioned_]:before {
 	width: 4px;
 }
 article[class*=embedFull_] {
-	border-left: 4px solid var(--background-2f) !important;
 	background: var(--background-11);
+	border-left: 4px solid;
 }
-div[class*=attachment_] {
+article[class*=embedFull_]:is(:not([style*=border-color]), [style="border-color: hsla(227, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 1);"], [style="border-color: hsla(240, calc(var(--saturation-factor, 1) * 2.2%), 8.8%, 1); max-width: 432px;"], [style="border-color: hsla(222, calc(var(--saturation-factor, 1) * 17.9%), 11%, 1); max-width: 432px;"], [style="border-color: hsla(222, calc(var(--saturation-factor, 1) * 17.9%), 11%, 1); max-width: 332px;"]) {
+	border-color: var(--background-2f) !important;
+}
+div[class*=attachment_], code[class*=codeView_] {
 	background-color: var(--background-17);
 	border-color: var(--background-17);
 }
+div[class*=embedWrapper_]:has(code) div[class*=footer_] {
+	background-color: var(--background-0d);
+	border-color: var(--background-0d);
+}
 div[class*=hoverButtonGroup_] {
 	background-color: transparent;
+	outline: none;
 	gap: 5px;
 }
 div[class*=hoverButtonGroup_]>* {
@@ -454,7 +474,7 @@ div[id*=message-content-] code {
 	background: var(--background-19f);
 }
 /* Voice Message */
-div[class*=nonVisualMediaItemContainer_] div[class*=mosaicItemMediaMosaic_]>div[class*=container_] {
+div[class*=nonVisualMediaItemContainer_] div[class*=mosaicItemMediaMosaic_]>div[class*=container_]:has(audio) {
 	background-color: var(--background-26);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_] {
@@ -817,12 +837,17 @@ div[class*=addGamePopout_]:before {
 	opacity: .22;
 	pointer-events: none;
 }
+
 /* Flower/Badge Icons */
 #game-activity-tab svg[class*=flowerStar_] path {
 	fill: var(--background-37b);
 }
 div[class*=focusModeTitle_] div[class*=textBadge_][style="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);"] {
 	background-color: var(--background-d5) !important;
+}
+div[class*=textBadge_]:is([class*=newChannel_], [class*=newBadge_]), [class*=botTagOP_] {
+	background-color: var(--background-d5d) !important;
+	color: var(--background-00);
 }
 
 /** Chat Search **/
@@ -1837,16 +1862,26 @@ div[class*=directoryContainer_] div[class*=section_] div[class*=card_]:hover {
 }
 
 /* Server Forum */
-div[class*=list_][role="list"][data-list-id*="forum"] div[class*=mainCard_], div[role="grid"][aria-labelledby*="forum"] li[class*=mainCard_] {
+:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] {
 	background-color: var(--background-26);
+}
+:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_][class*=isOpen_] {
+	background-color: var(--background-11);
+}
+div[class*=card_][class*=headerRow_][data-list-item-id*=forum] :is(div[class*=matchingPostsRow_], div:not([class])>div[class*=container_]) {
+	background-color: var(--background-26);
+	animation: slideY 250ms ease;
+	transform-origin: top;
 }
 div[role="grid"][aria-labelledby*="forum"] li[class*=mainCard_] div[class*=textContentFooter_] {
 	background: transparent;
 	backdrop-filter: brightness(30%) blur(1.2px);
-	border-radius: 15px;
 }
-div[role="grid"][aria-labelledby*="forum"] li[class*=mainCard_] div[class*=textContentFooter_] div[class*=pill_][class*=small_] {
+div[role="grid"][aria-labelledby*="forum"] li[class*=mainCard_] :is(div[class*=textContentFooter_], div[class*=tagsRow_]) :is(div[class*=pill_][class*=small_], div[class*=pinIcon_]) {
 	margin-bottom: 10px;
+}
+div[class*=tagsContainer_]>div[class*=divider_] {
+	margin: 0 4px;
 }
 div[class*=tagsContainer_] button, div[class*=pill_][class*=tag_][role="button"] {
 	background-color: var(--background-3c);
@@ -1854,15 +1889,36 @@ div[class*=tagsContainer_] button, div[class*=pill_][class*=tag_][role="button"]
 div[class*=pill_][class*=clickable_]:not([class*=disabled_]):hover, div[class*=tagsContainer_] button:hover {
 	background-color: var(--background-52);
 }
+div[class*=pill_][class*=tag_][role="button"] {
+	border: 3px solid transparent;
+}
 div[class*=pill_][class*=tag_][class*=selected_][role="button"] {
-	background-color: var(--background-52);
-	border-color: var(--background-8a);
+	background-color: var(--background-8a);
+	border-color: var(--darkaf-main);
+}
+div[id*=popout] div[class*=pill_][class*=tag_][class*=selected_][role="button"] {
+	border-color: var(--background-floating);
+}
+div[class*=pill_][class*=selected_][role="button"] div[class*=defaultColor_] {
+	color: var(--background-00);
 }
 div[class*=pill_][class*=small_] {
 	background-color: var(--background-42);
 	transform: scale(1.13);
-	margin-left: 8px;
-	margin-right: 7px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_]:focus-within div[class*=pill_][class*=small_]:not(:hover, [class*=selected_]) {
+	background-color: var(--background-primary);
+}
+div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_] div[class*=pill_][class*=small_][class*=selected_] {
+	background-color: var(--background-8a);
+}
+ol[class*=scrollerInner_]>div[class*=container_]>div[class*=buttons_]>button>div[class*=buttonInner_] {
+	background-color: var(--background-3c);
+}
+ol[class*=scrollerInner_]>div[class*=container_]>div[class*=buttons_]>button>div[class*=buttonInner_][class*=active_] {
+	color: var(--background-37b);
 }
 
 /* Server Guide */
@@ -1906,10 +1962,6 @@ div[class*=chat_]>div[class*=content_][class*=container_] div[class*=scrollerInn
 }
 div[class*=channelRow_] div[class*=subtitleSeparator_] {
 	background-color: var(--background-d5);
-}
-div[class*=chat_]>div[class*=content_][class*=container_] div[class*=tabBarItem_] div[class*=textBadge_], div[class*=newChannel_][class*=textBadge_] {
-	background-color: var(--background-d5d) !important;
-	color: var(--background-00);
 }
 /* Customise Tab */
 div[class*=optionButtonWrapper_], div[class*=profileCard_] {
@@ -2122,10 +2174,10 @@ div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 }
 
 /* Input Animation */
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], textarea, .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_] {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), :not(:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] [class*=titleContainer_])>div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_], :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] {
 	transition: all 250ms ease !important;
 }
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], textarea:focus-within, .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] [class*=titleContainer_])>div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_][class*=header_]:focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
