@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.2 by TrapStoner#9526";
+	content: "DarkAF 2.2.3 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -538,6 +538,13 @@ div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentCont
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
 	background-color: var(--background-42);
 }
+/* Create Event Modal */
+div [class*=selectedProgressBar_] {
+	background-color: var(--background-d5);
+}
+div[class*=stepContainer_] div[class*=colorBrand_] {
+	color: var(--background-ff);
+}
 /* Active Threads Modals */
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b)>div[class*=container_] {
 	background-color: var(--modal-background);
@@ -892,52 +899,55 @@ button[class*=endButton_] {
 	border-radius: 8px;
 }
 /* Date Picker */
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=react-datepicker] {
+div[class*=calendarPicker_] div[class*=react-datepicker] {
 	background-color: var(--background-26);
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation] {
+div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation] {
 	background-color: var(--background-52);
 	border-color: var(--background-52);
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation]:hover {
+div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation]:hover {
 	background-color: var(--background-d5);
 	border-color: var(--background-d5);
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__current-month]) {
+div[class*=calendarPicker_] div[class*=react-datepicker] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__current-month]) {
 	border-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__day--outside-month]):not([class*=--disabled]):hover {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__day--outside-month]):not([class*=--disabled]):hover {
 	background-color: var(--background-d5);
 	border-color: var(--background-d5) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day--disabled], div[class*=react-datepicker__day--outside-month]) {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day--disabled], div[class*=react-datepicker__day--outside-month]) {
 	background-color: var(--background-0a);
 	border-color: var(--background-00) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is([class*=--outside-month][class*=--001], [class*=--outside-month][class*=--002], [class*=--outside-month][class*=--003], [class*=--outside-month][class*=--004], [class*=--outside-month][class*=--005], [class*=--outside-month][class*=--006], [class*=--outside-month][class*=--007]) {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:hover {
+	background-color: var(--background-26);
+}
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is([class*=--outside-month][class*=--001], [class*=--outside-month][class*=--002], [class*=--outside-month][class*=--003], [class*=--outside-month][class*=--004], [class*=--outside-month][class*=--005], [class*=--outside-month][class*=--006], [class*=--outside-month][class*=--007]) {
 	border-top-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week]:is(:nth-last-child(2), :nth-last-child(1)) div[class*=react-datepicker__day--outside-month][class*=--001]:not(:nth-child(1)) {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week]:is(:nth-last-child(2), :nth-last-child(1)) div[class*=react-datepicker__day--outside-month][class*=--001]:not(:nth-child(1)) {
 	border-left-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]) {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]) {
 	border-left-color: var(--background-42) !important;
 	border-top-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]):last-of-type {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]):last-of-type {
 	border-right-color: var(--background-42) !important;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today] {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today] {
 	background-color: var(--background-42);
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today]:after {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today]:after {
 	background-color: var(--background-ca);
 	border-radius: 5px;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--keyboard-selected] {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--keyboard-selected] {
 	background-color: transparent;
 }
-:is(div[class*=datePicker_], div[class*=calendarContainer_]) div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__header] div[class*=react-datepicker__day-name]:is(:first-of-type, :last-of-type) {
+div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__header] div[class*=react-datepicker__day-name]:is(:first-of-type, :last-of-type) {
 	color: var(--background-d5);
 }
 
@@ -2034,6 +2044,10 @@ div[class*=app_] div[class*=updateNotice_] {
 .bd-tab-item.selected {
 	background-color: var(--background-42);
 }
+.plugin-input-container div[class*=titleDefault] {
+	color: var(--bd-blue);
+	font-size: 1.5rem;
+}
 /** Plugins **/
 /* InvisibleTyping */
 div[class*=channelTextArea_] button[class*=invisible-typing-button]:hover>svg {
@@ -2174,14 +2188,14 @@ div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 }
 
 /* Input Animation */
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), :not(:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] [class*=titleContainer_])>div[class*=inputWrapper_] textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_], :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_], div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_] {
 	transition: all 250ms ease !important;
 }
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(:is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] [class*=titleContainer_])>div[class*=inputWrapper_] textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_][class*=header_]:focus-within {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_]:focus-within {
 	background-color: var(--background-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
- 	background-color: var(--background-26) !important;
+	background-color: var(--background-26) !important;
 }
 :not(nav[class*=privateChannels_], div[class*=emojiPicker_]>div, [id*=-picker-tab-panel]>div, div[class*=permissionsItemContainer_])>div[class*=searchBar_], nav[class*=privateChannels_]>div[class*=searchBar_]:hover>button, div[class*=searchContainer_] div[class*=container_], div[class*=chat_][class*=container_] div[class*=search_] {
 	background-color: var(--background-26);
