@@ -35,104 +35,104 @@ nav[class*=sidebar_] div[class*=info_]:after {
 /* Some Vars */
 .theme-dark {
 	--darkaf-main: #040404;
-	--background-ff: #ffffff;
-	--background-e5: #e5e8f1;
-	--background-ca: #cacaca;
-	--background-bd: #bdbdbd;
-	--background-8a: #8a8a8a;
-	--background-52: #525252;
-	--background-42: #424242;
-	--background-3c: #3c3c3c;
-	--background-2f: #2f2f2f;
-	--background-2c: #2c2c2c;
-	--background-26: #26282b;
-	--background-19b: #191a1b;
-	--background-19f: #191a1f;
-	--background-18: #18191c;
-	--background-17: #171719;
-	--background-13: #131415;
-	--background-11: #111113;
-	--background-0f: #0f0f10;
-	--background-0e: #0e0e0e;
-	--background-0d: #0d0d0e;
-	--background-0c: #0c0c0c;
-	--background-0a: #0a0a0a;
-	--background-08: #080808;
-	--background-07: #070707;
-	--background-00: #000000;
-	--background-6b: #6bab9f;
-	--background-37b: #37b776;
-	--background-d5: #d53a3a;
-	--background-d5d: #d5d0d3;
-	--background-d58: rgb(213 58 58 / 80%);
-	--background-c9: #c95151;
+	--c-ff: #ffffff;
+	--c-e5: #e5e8f1;
+	--c-ca: #cacaca;
+	--c-bd: #bdbdbd;
+	--c-8a: #8a8a8a;
+	--c-52: #525252;
+	--c-42: #424242;
+	--c-3c: #3c3c3c;
+	--c-2f: #2f2f2f;
+	--c-2c: #2c2c2c;
+	--c-26: #26282b;
+	--c-19b: #191a1b;
+	--c-19f: #191a1f;
+	--c-18: #18191c;
+	--c-17: #171719;
+	--c-13: #131415;
+	--c-11: #111113;
+	--c-0f: #0f0f10;
+	--c-0e: #0e0e0e;
+	--c-0d: #0d0d0e;
+	--c-0c: #0c0c0c;
+	--c-0a: #0a0a0a;
+	--c-08: #080808;
+	--c-07: #070707;
+	--c-00: #000000;
+	--c-6b: #6bab9f;
+	--c-37b: #37b776;
+	--c-d5: #d53a3a;
+	--c-d5d: #d5d0d3;
+	--c-d58: rgb(213 58 58 / 80%);
+	--c-c9: #c95151;
 	--background-primary: var(--darkaf-main);
 	--background-secondary: var(--darkaf-main);
 	--background-secondary-alt: var(--darkaf-main);
 	--background-tertiary: var(--darkaf-main);
-	--background-floating: var(--background-19f);
-	--background-accent: var(--background-11);
-	--background-modifier-hover: var(--background-26);
-	--background-modifier-active: var(--background-18);
-	--background-modifier-selected: var(--background-26);
-	--background-modifier-accent: var(--background-11);
-	--background-mobile-primary: var(--background-11);
+	--background-floating: var(--c-19f);
+	--background-accent: var(--c-11);
+	--background-modifier-hover: var(--c-26);
+	--background-modifier-active: var(--c-18);
+	--background-modifier-selected: var(--c-26);
+	--background-modifier-accent: var(--c-11);
+	--background-mobile-primary: var(--c-11);
 	--scrollbar-auto-track: transparent;
-	--scrollbar-auto-thumb: var(--background-26);
+	--scrollbar-auto-thumb: var(--c-26);
 	--scrollbar-thin-track: transparent;
-	--scrollbar-thin-thumb: var(--background-26);
-	--channeltextarea-background: var(--background-17);
-	--activity-card-background: var(--background-0f);
+	--scrollbar-thin-thumb: var(--c-26);
+	--channeltextarea-background: var(--c-17);
+	--activity-card-background: var(--c-0f);
 	--deprecated-panel-background: var(--darkaf-main);
 	--deprecated-store-bg: var(--darkaf-main);
-	--deprecated-text-input-bg: var(--background-0f);
-	--deprecated-text-input-border: var(--background-0f);
-	--deprecated-card-editable-bg: var(--background-secondary);
-	--deprecated-card-bg: var(--background-secondary);
+	--deprecated-text-input-bg: var(--c-0f);
+	--deprecated-text-input-border: var(--c-0f);
+	--deprecated-card-editable-bg: var(--c-secondary);
+	--deprecated-card-bg: var(--c-secondary);
 	--border-primary: var(--darkaf-main);
 	--elevation-megahigh: 0 8px 14px rgba(0, 0, 0, 0.5);
 	--interactive-hover: #e0e1e2;
-	--interactive-active: var(--background-ff);
-	--brand-experiment: var(--background-3c);
-	--brand-experiment-400: var(--background-52);
-	--brand-experiment-500: var(--background-d5);
-	--brand-experiment-530: var(--background-2f);
-	--brand-experiment-560: var(--background-00);
-	--brand-experiment-600: var(--background-42);
-	--brand-experiment-15a: var(--background-52);
-	--brand-experiment-30a: var(--background-42);
-	--brand-experiment-05a: var(--background-17);
-	--brand-experiment-10a: var(--background-0f);
+	--interactive-active: var(--c-ff);
+	--brand-experiment: var(--c-3c);
+	--brand-experiment-400: var(--c-52);
+	--brand-experiment-500: var(--c-d5);
+	--brand-experiment-530: var(--c-2f);
+	--brand-experiment-560: var(--c-00);
+	--brand-experiment-600: var(--c-42);
+	--brand-experiment-15a: var(--c-52);
+	--brand-experiment-30a: var(--c-42);
+	--brand-experiment-05a: var(--c-17);
+	--brand-experiment-10a: var(--c-0f);
 	--brand-experiment-80a: rgb(38 40 43 / 80%);
 	--brand-experiment-95a: rgb(38 40 43 / 95%);
-	--brand-400: var(--background-26);
-	--brand-500: var(--background-52);
-	--brand-560: var(--background-11);
-	--brand-600: var(--background-52);
-	--button-secondary-background-hover: var(--background-19f);
-	--button-secondary-background-active: var(--background-42);
-	--button-secondary-background-disabled: var(--background-2f);
-	--button-secondary-background: var(--background-3c);
-	--button-positive-background: var(--background-52);
-	--button-positive-background-disabled: var(--background-2c);
-	--button-positive-background-active: var(--background-52);
-	--button-positive-background-hover: var(--background-0d);
-	--button-outline-positive-border: var(--background-52);
-	--button-outline-positive-border-active: var(--background-52);
-	--button-outline-positive-background-active: var(--background-52);
-	--button-outline-primary-background-hover: var(--background-52);
-	--button-outline-brand-border: var(--background-52);
-	--button-outline-brand-border-hover: var(--background-42);
-	--button-outline-brand-border-active: var(--background-42);
-	--button-outline-brand-background-hover: var(--background-42);
-	--button-outline-brand-background-active: var(--background-42);
-	--modal-background: var(--background-19f);
-	--modal-footer-background: var(--background-0a);
-	--input-background: var(--background-2c);
-	--background-mentioned: var(--background-17);
-	--background-mentioned-hover: var(--background-0f);
-	--text-link: var(--background-37b);
-	--control-brand-foreground: var(--background-52);
+	--brand-400: var(--c-26);
+	--brand-500: var(--c-52);
+	--brand-560: var(--c-11);
+	--brand-600: var(--c-52);
+	--button-secondary-background-hover: var(--c-19f);
+	--button-secondary-background-active: var(--c-42);
+	--button-secondary-background-disabled: var(--c-2f);
+	--button-secondary-background: var(--c-3c);
+	--button-positive-background: var(--c-52);
+	--button-positive-background-disabled: var(--c-2c);
+	--button-positive-background-active: var(--c-52);
+	--button-positive-background-hover: var(--c-0d);
+	--button-outline-positive-border: var(--c-52);
+	--button-outline-positive-border-active: var(--c-52);
+	--button-outline-positive-background-active: var(--c-52);
+	--button-outline-primary-background-hover: var(--c-52);
+	--button-outline-brand-border: var(--c-52);
+	--button-outline-brand-border-hover: var(--c-42);
+	--button-outline-brand-border-active: var(--c-42);
+	--button-outline-brand-background-hover: var(--c-42);
+	--button-outline-brand-background-active: var(--c-42);
+	--modal-background: var(--c-19f);
+	--modal-footer-background: var(--c-0a);
+	--input-background: var(--c-2c);
+	--background-mentioned: var(--c-17);
+	--background-mentioned-hover: var(--c-0f);
+	--text-link: var(--c-37b);
+	--control-brand-foreground: var(--c-52);
 	--status-red-500: hsl(359, calc(1*82.6%),56.4%);
 	--button-danger-background: hsl(359, calc(1*82.6%),56.4%);
 	--playstation-blue: #1e5ddb;
@@ -140,8 +140,8 @@ nav[class*=sidebar_] div[class*=info_]:after {
 	--bd-blue: #3e82e5;
 	--nitro-gradient: linear-gradient(270deg,var(--premium-tier-2-pink-for-gradients),var(--premium-tier-2-pink-for-gradients-2) 33.63%,var(--premium-tier-2-purple-for-gradients));
 	--home-background: var(--darkaf-main);
-	--search-popout-date-picker-hint-value-background: var(--background-42);
-	--search-popout-date-picker-hint-value-background-hover: var(--background-d5);
+	--search-popout-date-picker-hint-value-background: var(--c-42);
+	--search-popout-date-picker-hint-value-background-hover: var(--c-d5);
 	--libs-toggle: var(--show-libs) flex;
 	--library-toggle: var(--hide-library) none;
 	--nitro-toggle: var(--hide-nitro) none;
@@ -221,10 +221,10 @@ div[class*=mentioned_]:before {
 
 /* Home Pill Buttons*/
 div[class*=topPill_] div[class*=item_][class*=themed_][class*=selected_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=topPill_] div[class*=item_][class*=themed_][class*=addFriend_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=topPill_] div[class*=item_][class*=themed_][class*=addFriend_][class*=selected_] {
 	background-color: var(--status-positive-background);
@@ -236,7 +236,7 @@ div[class*=peopleColumn_] {
 	padding-left: 10px;
 }
 div[class*=peopleListItem_] {
-	background-color: var(--background-0e);
+	background-color: var(--c-0e);
 	border-top: none;
 	margin: 0 30px 13px 0;
 	transition: margin .15s ease;
@@ -248,7 +248,7 @@ div[class*=peopleListItem_]:hover div[class*=userInfo_], div[class*=peopleListIt
 	margin-left: 0;
 }
 div[class*=peopleListItem_][class*=active_], div[class*=peopleListItem_]:hover {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 	padding: 0;
 	margin: 0 0 13px 20px; 
 }
@@ -273,11 +273,11 @@ div[class*=peopleColumn_] div[class*=searchBar_] {
 	margin: 16px 46px 8px 0px;
 }
 div[class*=nowPlayingColumn_] div[class*=itemCard_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 	border: none;
 }
 div[class*=nowPlayingColumn_] div[class*=itemCard_] section {
-	background-color: var(--background-0a);
+	background-color: var(--c-0a);
 }
 div[class*=nowPlayingColumn_] div[class*=itemCard_] div[class*=body_] {
 	background-color: transparent;
@@ -310,12 +310,12 @@ nav[class*=privateChannels_] a[href="/shop"] {
 	display: var(--shop-toggle, flex);
 }
 div[class*=shopCard_] div[class*=cardLowOpacity_] {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 
 /* Jump To Present & New Messages Bars */
 div[class*=jumpToPresentBar_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	animation: slideY 600ms ease;
 	transform-origin: bottom;
 }
@@ -326,10 +326,10 @@ div[class*=newMessagesBar_] {
 
 /* Speaking Circles */
 div[class*=avatarSpeaking_]  {
-	box-shadow: inset 0 0 0 2px var(--spcircles1, var(--background-52)), inset 0 0 0 3px var(--spcircles2, var(--background-2f));
+	box-shadow: inset 0 0 0 2px var(--spcircles1, var(--c-52)), inset 0 0 0 3px var(--spcircles2, var(--c-2f));
 }
 div[class*=speaking_] {
-	box-shadow: inset 0 0 0 4px var(--spcircles1, var(--background-42)),inset 0 0 0 5px var(--black-500) !important;
+	box-shadow: inset 0 0 0 4px var(--spcircles1, var(--c-42)),inset 0 0 0 5px var(--black-500) !important;
 }
 
 /* Screen Share */
@@ -339,21 +339,21 @@ div[class*=tile_]:hover div[class*=sourceThumbnail_] {
 
 /* Reactions */
 div[class*=reaction_] {
-	background: var(--background-26);
+	background: var(--c-26);
 }
 div[class*=message_][class*=mentioned_] div[class*=reaction_]:not([class*=reactionMe_], :hover) {
-	background: var(--background-3c);
+	background: var(--c-3c);
 }
 div[class*=reaction_][class*=reactionMe_] {
-	background: var(--background-52);
-	border-color: var(--background-52);
+	background: var(--c-52);
+	border-color: var(--c-52);
 }
 div[class*=reaction_]:not([class*=reactionMe_]):hover {
-	background: var(--background-00);
-	border-color: var(--background-52);
+	background: var(--c-00);
+	border-color: var(--c-52);
 }
 div[class*=reaction_][class*=reactionMe_] div[class*=reactionCount_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 div[class*=reaction_][style*=background] {
 	background-image: linear-gradient(hsla(255,100%,100%,.12) 100%,transparent 100%) !important;
@@ -367,7 +367,7 @@ div[class*=reaction_] div[class*=burstGlow_] {
 
 /* Switches */
 div[class*=labelRow_]>div[class*=control_] div[class*=container_], div[class*=settingCard_] div[class*=container_], div[class*=sensitivity_] div[class*=container_], .bd-switch .bd-switch-body {
-	background-color: var(--background-2f) !important;
+	background-color: var(--c-2f) !important;
 	transition: background-color .2s ease-in-out;
 }
 div[class*=labelRow_]>div[class*=control_] div[class*=container_][class*=checked_], div[class*=settingCard_] div[class*=container_][class*=checked_], div[class*=sensitivity_] div[class*=container_][class*=checked_], .bd-switch.bd-switch-checked .bd-switch-body {
@@ -382,51 +382,51 @@ div[class*=checkbox_][class*=checked_] {
 	transition: background-color 0.2s ease;
 }
 div[class*=checkbox_][class*=checked_]:not([class*=round_]), div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
-	border-color: var(--background-d5) !important;
-	background-color: var(--background-d5) !important;
+	border-color: var(--c-d5) !important;
+	background-color: var(--c-d5) !important;
 }
 div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
-	color: var(--background-d5);
+	color: var(--c-d5);
 }
 div[class*=checkbox_][class*=checked_] path[fill*=--brand-] {
-	fill: var(--background-ff);
+	fill: var(--c-ff);
 }
 
 /* Dividers */
 :is(.divider__14bb6, .customizationSection__0f57e, .session__201cb, .listItem_b7467d, .list__80e1b, div[class*=tableWrapper_] td[class*=tableCell_], div[class*=perkRow_]) {
-	border-color: var(--background-2f);
+	border-color: var(--c-2f);
 }
 
 /* Buttons */
 button[class*=lookLink_][class*=colorBrand_] {
-	color: var(--background-8a);
+	color: var(--c-8a);
 }
 button[class*=lookLink_][class*=colorBrand_]:hover div[class*=contents_] {
-	--button--underline-color: var(--background-8a);
+	--button--underline-color: var(--c-8a);
 }
 div[class*=voiceChannelsButton_]:hover {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 
 /* @mentions, Embed, Attachments, Invites & Code blocks */
 div[class*=mentioned_]:before {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	width: 4px;
 }
 article[class*=embedFull_] {
-	background: var(--background-11);
+	background: var(--c-11);
 	border-left: 4px solid;
 }
 article[class*=embedFull_]:is(:not([style*=border-color]), [style="border-color: hsla(227, calc(var(--saturation-factor, 1) * 58.4%), 65.1%, 1);"], [style="border-color: hsla(240, calc(var(--saturation-factor, 1) * 2.2%), 8.8%, 1); max-width: 432px;"], [style="border-color: hsla(222, calc(var(--saturation-factor, 1) * 17.9%), 11%, 1); max-width: 432px;"], [style="border-color: hsla(222, calc(var(--saturation-factor, 1) * 17.9%), 11%, 1); max-width: 332px;"]) {
-	border-color: var(--background-2f) !important;
+	border-color: var(--c-2f) !important;
 }
 div[class*=attachment_], code[class*=codeView_] {
-	background-color: var(--background-17);
-	border-color: var(--background-17);
+	background-color: var(--c-17);
+	border-color: var(--c-17);
 }
 div[class*=embedWrapper_]:has(code) div[class*=footer_] {
-	background-color: var(--background-0d);
-	border-color: var(--background-0d);
+	background-color: var(--c-0d);
+	border-color: var(--c-0d);
 }
 div[class*=hoverButtonGroup_] {
 	background-color: transparent;
@@ -462,44 +462,44 @@ div:hover>div[class*=hoverButtonGroup_] svg {
 	color: var(--status-danger);
 }
 a[class*=hoverButton_]:hover>svg[class*=downloadHoverButtonIcon_], .keyboard-mode a[class*=hoverButton_]:focus>svg[class*=downloadHoverButtonIcon_]	 {
-	color: var(--background-37b);
+	color: var(--c-37b);
 }
 div[class*=removeAttachmentHoverButton_]:hover>svg, .keyboard-mode div[class*=removeAttachmentHoverButton_]:focus>svg {
 	color: var(--status-red-500);
 }
 div[id*=message-accessories]>div[class*=wrapper_] {
-	background-color: var(--background-17);
+	background-color: var(--c-17);
 }
 div[id*=message-content-] code {
-	background: var(--background-19f);
+	background: var(--c-19f);
 }
 /* Voice Message */
 div[class*=nonVisualMediaItemContainer_] div[class*=mosaicItemMediaMosaic_]>div[class*=container_]:has(audio) {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_] {
-	background: linear-gradient(151.11deg, var(--background-d5) 16.55%, var(--background-26) 104.36%);
+	background: linear-gradient(151.11deg, var(--c-d5) 16.55%, var(--c-26) 104.36%);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:hover {
-	background: linear-gradient(151.11deg, var(--background-c9) 17.78%, var(--background-d5) 82.22%);
+	background: linear-gradient(151.11deg, var(--c-c9) 17.78%, var(--c-d5) 82.22%);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:active:not(:hover) {
-	background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(151.11deg, var(--background-52) 16.55%, var(--background-d5) 104.36%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(151.11deg, var(--c-52) 16.55%, var(--c-d5) 104.36%);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_]:not([class*=playing]) div[class*=playButtonContainer_]:active svg[class*=playIcon_] {
-	color: var(--background-00);
+	color: var(--c-00);
 }
 div[class*=nonVisualMediaItemContainer_] div[class*=container_][class*=playing] div[class*=playButtonContainer_]:active {
-	background-color: var(--background-8a);
+	background-color: var(--c-8a);
 }
 div[class*=mediaBarInteractionVolume_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 
 /** Modals **/
 /* Focuslock Modals Shadow */
 div[class*=focusLock_]>div[class*=root_] {
-	box-shadow: 0 0 30px var(--background-19f) !important;
+	box-shadow: 0 0 30px var(--c-19f) !important;
 }
 /* Remove Stupid Line On Some Modals Next To Scroller, And Search Bars */
 div[class*=focusLock_]>div[class*=modal_][class*=scrollbarGhostHairline_][class*=scrollbar_], div[class*=layerContainer_] div[class*=container_][class*=medium_]>div[class*=inner_][class*=scrollerBase_][class*=thin_] {
@@ -511,65 +511,65 @@ div[class*=layerContainer_] div[class*=flex_][class*=searchBar_] {
 }
 /* Delete Message Modal*/
 .message_ddcc45 {
-	box-shadow: 0 0 0 1px var(--background-13), 0 2px 10px 0 var(--background-00);
+	box-shadow: 0 0 0 1px var(--c-13), 0 2px 10px 0 var(--c-00);
 }
  /* Welcome Modal*/
 div[class*=focusLock_]>div[class*=main_] {
 	background: var(--modal-background);
 }
 div[class*=focusLock_]>div[class*=main_]>div[class*=options_]>div[role=button]:hover {
-	background: var(--background-3c);
+	background: var(--c-3c);
 }
 /* Server Rules Modal */
 div[class*=focusLock_]>.container__30a2e div[class*=dotMembers_] {
-	background-color: var(--background-8a);
+	background-color: var(--c-8a);
 }
 div[class*=focusLock_]>.container__30a2e div[class*=modal_], div[class*=focusLock_]>.container__30a2e div[class*=guildSidebar_], div[class*=focusLock_]>.container__30a2e div[class*=footer_] {
 	background-color: transparent;
 }
 /* Event Info Modal */
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_] {
-	background-color: var(--background-0f);
+	background-color: var(--c-0f);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-track {
-	background-color: var(--background-0f);
-	border-color: var(--background-0f);
+	background-color: var(--c-0f);
+	border-color: var(--c-0f);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 /* Create Event Modal */
 div [class*=selectedProgressBar_] {
-	background-color: var(--background-d5);
+	background-color: var(--c-d5);
 }
 div[class*=stepContainer_] div[class*=colorBrand_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 /* Active Threads Modals */
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b)>div[class*=container_] {
 	background-color: var(--modal-background);
 }
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b) div[class*=list_] div[class*=container_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b) div[class*=list_] div[class*=container_]:active {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 div[class*=focusLock_]> :is(.modal_f30e90, .modal_a60b1b) div[class*=list_] div[class*=container_] div[class*=moreUsers_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 .modal_a60b1b {
 	background-color: var(--modal-background) !important;
 }
 /* Invite to Stream/Server Modal */
 div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_] :is(div[class*=footer_], div[class*=temporaryMembershipContainerBackground_]) {
-	background-color: var(--background-0d);
+	background-color: var(--c-0d);
 }
 div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_] div[class*=inviteRow_] {
 	margin-right: 0;
 }
 div[class*=wrapper_]>div[class*=focusLock_][role="dialog"]>div[class*=modal_] div[class*=inviteRow_]:hover {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	border-radius: 10px;
 }
 /* Report Message Modal */
@@ -584,29 +584,29 @@ div[class*=focusLock_]> .root_cd3d24 div[class*=activityItem_]{
 	transition: all .2s ease;
 }
 div[class*=focusLock_]> .root_cd3d24 div[class*=activityItem_]:hover {
-	background: var(--background-3c);
+	background: var(--c-3c);
 	margin: -8px 0 0 0;
 	padding: 0 0 8px 0;
 }
 div[class*=focusLock_]> .root_cd3d24 div[class*=activityItem_] div[class*=activityTag_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 div[class*=focusLock_]> .root_cd3d24 div[class*=activityItem_]:hover div[class*=activityTag_] {
-	background-color: var(--background-00);
+	background-color: var(--c-00);
 }
 /* Set a Channel Status Modal */
 div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_] :is(#bfredux, .invisible-typing-button) {
 	display: none;
 }
 div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_] div[class*=placeholder_] {
-	color: var(--background-bd);
+	color: var(--c-bd);
 }
 
 
 /** Channel Text Area **/
 /* Disabled Text Area Placeholder */
 div[class*=textAreaDisabled_] div[class*=placeholder_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 /* Gap Between Text Area and Chat Content */
 div[class*=channelTextArea_], div[class*=chat_] form[class*=form_]>div[class*=wrapper_] {
@@ -617,25 +617,25 @@ div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[
 	color: var(--interactive-normal);
 }
 div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[class*=colorBrand_]:not(disabled):hover div[class*=activeButtonChild_] {
-	color: var(--background-d5);
+	color: var(--c-d5);
 }
 /* Follow channel */
 [class*=chatContent_] form>div[class*=wrapper_] {
-	background-color: var(--background-0d);
+	background-color: var(--c-0d);
 }
 
 /** Settings **/
 div[class*=slider_]>div[class*=bar_] {
-	background: var(--background-19f);
+	background: var(--c-19f);
 }
 div[class*=menu_] div[class*=slider_]>div[class*=bar_] {
-	background: var(--background-00);
+	background: var(--c-00);
 }
 div[class*=slider_] div[class*=markDash_] {
-	background: var(--background-2f);
+	background: var(--c-2f);
 }
 div[class*=barFill_] {
-	background: var(--background-d5);
+	background: var(--c-d5);
 }
 div[class*=side_] div[role="tab"][class*=selected_][aria-controls*=nitro] div[class*=selectedBackground_] {
 	background-color: transparent;
@@ -653,134 +653,134 @@ button[class*=lookOutlined_] {
 	border: 2px solid
 }
 div[id="keybinds-tab"] span[class*=key_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[id="keybinds-tab"] div[class*=defaultKeybind_]:hover div[class*=defaultKeybindShortcutGroup_] {
 	transform: scale(1.6);
 	transform-origin: right;
 }
 div[class*=accountProfileCard_] {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 button[class*=removeButton_]:hover {
-	color: var(--background-d5) !important;
+	color: var(--c-d5) !important;
 }
 button[class*=removeButton_]:hover>div[class*=contents_] {
-	--button--underline-color: var(--background-d5) !important;
+	--button--underline-color: var(--c-d5) !important;
 }
 :not(#language-tab>div)>div[class*=children_] div[role*=radiogroup] div[class*=itemFilled_]:not([aria-checked="true"], :hover) {
-	background-color: var(--background-0a);
+	background-color: var(--c-0a);
 }
 div[class*=recorderContainer_] {
-	background-color: var(--background-2c) !important;
+	background-color: var(--c-2c) !important;
 }
 div[class*=soundButtonSettingContainer_] {
-	background-color: var(--background-13);
+	background-color: var(--c-13);
 }
 div[class*=cameraWrapper_] {
-	background-color: var(--background-0d);
+	background-color: var(--c-0d);
 }
 /* Dropdown Lists */
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) {
 	animation: slideY 250ms ease;
-	background: var(--background-2c);
+	background: var(--c-2c);
 	transform-origin: top;
 }
 div[class*=popout_][class*=popoutPositionTop_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) {
 	transform-origin: bottom;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][aria-selected="true"] {
-	background: var(--background-08) !important;
+	background: var(--c-08) !important;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]>svg[class*=selectedIcon_] {
-	color: var(--background-d5);
+	color: var(--c-d5);
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_] {
 	margin: 0 5px;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"] {
 	border-radius: 20px;
-	color: var(--background-ca);
+	color: var(--c-ca);
 	transition: all 300ms ease;
 }
 div[class*=popout_][class*=scrollerBase_][class*=searchableSelect_] *[class*=option_] {
 	border-right: none;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"]:hover {
-	background: var(--background-42) !important;
-	color: var(--background-ff);
+	background: var(--c-42) !important;
+	color: var(--c-ff);
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:focus {
 	background: unset;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover>svg[class*=selectedIcon_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover>svg[class*=selectedIcon_]>circle {
-	fill: var(--background-00);
+	fill: var(--c-00);
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_])::-webkit-scrollbar-thumb {
 	background-color: var(--darkaf-main);
 }
 div[class*=selectFilterPopout_] {
-	background-color: var(--background-26);
-	border: 1px solid var(--background-26);
+	background-color: var(--c-26);
+	border: 1px solid var(--c-26);
 }
 div[class*=selectFilterPopout_] li[class*=item_]{
 	border-radius: 20px;
 }
 :is(div[class*=selectFilterPopout_], div[class*=rolePopout_], .container_cbadbc) li[class*=item_]:is(:hover, [class*=selected_]) {
-	background: var(--background-3c);
+	background: var(--c-3c);
 }
 div[class*=rolePopout_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 :is(div[class*=rolePopout_], .container_cbadbc) li[class*=item_]{
 	border-radius: 13px;
 }
 /* Mic Test */
 div[class*=micTest_] div[class*=progress_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=micTest_] svg[class*=notches_][class*=gray_] {
 	color: var(--darkaf-main);
 }
 /* Custom Color Picker */
 div[class*=customColorPicker_] {
-	background: var(--background-26) !important;
-	border-color: var(--background-11) !important;
+	background: var(--c-26) !important;
+	border-color: var(--c-11) !important;
 }
 div[class*=customColorPickerInput_] input {
-	background-color: var(--background-08);
+	background-color: var(--c-08);
 }
 /* TTS Speed Button */
 div[class*=ttsPreviewWrapper_] button:only-of-type {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=ttsPreviewWrapper_] button:only-of-type:hover {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 /* Privacy & Safety */
 #account_standing-tab :is(div[class*=avatarBackground_], div[class*=health_] :is(div[class*=line_], div[class*=empty_])) {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 /* Authorized Apps */
 #authorized-apps-tab div[class*=authedApp_][class*=card_] {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 /* Devices */
 #sessions-tab div[class*=sessionIcon_] {
-	background: var(--background-d5);
+	background: var(--c-d5);
 }
 /* Connections */
 #connections-tab div[class*=connection_] {
-	background-color: var(--background-13);
+	background-color: var(--c-13);
 }
 #connections-tab div[class*=connectionHeader_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 #connections-tab div[class*=connectionsContainer] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 	padding: 14px 0 14px 10px;
 	line-height: 0;
 	border-radius: 5px;
@@ -790,49 +790,49 @@ div[class*=focusLock_] div[class*=connectionsContainer]>div[class*=accountBtn_]>
 	width: 60px;
 }
 div[class*=connectionsContainer]>div:hover>button {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 /* Billing */
 div[class*=paymentPane_], div[class*=codeRedemptionRedirect_], div[class*=paymentPane_] div[class*=paginator_], div[class*=paymentPane_] div[class*=payment_] {
-	background-color: var(--background-19f) !important;
+	background-color: var(--c-19f) !important;
 }
 div[class*=paymentPane_] div[class*=bottomDivider_] {
-	border-bottom-color: var(--background-0d);
+	border-bottom-color: var(--c-0d);
 }
 div[class*=paymentPane_] div[class*=expandedInfo_] {
-	background-color: var(--background-0e);
+	background-color: var(--c-0e);
 }
 div[class*=paymentPane_] div[class*=pageButton], div[class*=paymentPane_] div[class*=pageIndicator_] {
-	border-color: var(--background-42) !important;
+	border-color: var(--c-42) !important;
 }
 div[class*=paymentPane_] div[class*=pageButton][class*=disabled_] {
-	border-color: var(--background-2c) !important;
+	border-color: var(--c-2c) !important;
 }
 div[class*=paymentPane_] div[class*=payment_]:hover, div[class*=paymentPane_] div[class*=pageButton]:not([class*=disabled_]):hover {
-	background-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
 }
 /* Registered Games */
 #game-activity-tab div[class*=activeGame_] {
 	border-radius: 10px;
 }
 #game-activity-tab div[class*=notDetected_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 #game-activity-tab div[class*=game_] {
-	box-shadow: 0 1px 0 0 var(--background-2c);
+	box-shadow: 0 1px 0 0 var(--c-2c);
 }
 #game-activity-tab [class*=gameNameInput_]:hover {
-	border-color: var(--background-2c);
-	background-color: var(--background-2f);
+	border-color: var(--c-2c);
+	background-color: var(--c-2f);
 }
 #game-activity-tab div[class*=gameNameLastPlayed_]:hover div[class*=hovered_] {
 	overflow: visible;
 	animation: marquee 12s linear infinite;
 	font-size: 16px;
-	color: var(--background-ca);
+	color: var(--c-ca);
 }
 div[class*=addGamePopout_] {
-	background-color: var(--background-19b) !important;
+	background-color: var(--c-19b) !important;
 }
 div[class*=addGamePopout_]:before {
 	position: absolute;
@@ -840,26 +840,26 @@ div[class*=addGamePopout_]:before {
 	width: 100%;
 	height: 100%;
 	content: "";
-	box-shadow: 0 0 30px var(--background-bd);
+	box-shadow: 0 0 30px var(--c-bd);
 	opacity: .22;
 	pointer-events: none;
 }
 
 /* Flower/Badge Icons */
 #game-activity-tab svg[class*=flowerStar_] path {
-	fill: var(--background-37b);
+	fill: var(--c-37b);
 }
 div[class*=focusModeTitle_] div[class*=textBadge_][style="background-color: hsl(235, calc(var(--saturation-factor, 1) * 85.6%), 64.7%);"] {
-	background-color: var(--background-d5) !important;
+	background-color: var(--c-d5) !important;
 }
 div[class*=textBadge_]:is([class*=newChannel_], [class*=newBadge_]), [class*=botTagOP_] {
-	background-color: var(--background-d5d) !important;
-	color: var(--background-00);
+	background-color: var(--c-d5d) !important;
+	color: var(--c-00);
 }
 
 /** Chat Search **/
 #search-results div[class*=button_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	transition: all .15s ease;
 	padding: 3px 8px 6px 8px;
 }
@@ -870,85 +870,85 @@ div[class*=textBadge_]:is([class*=newChannel_], [class*=newBadge_]), [class*=bot
 	box-shadow: none;
 }
 #search-results div[class*=button_]:hover {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 [class*=theme-light] #search-results div[class*=button_]:hover {
-	background-color: var(--background-d5d);
+	background-color: var(--c-d5d);
 }
 #search-results div[class*=channelNameContainer_] {
 	height: 3.3vh;
 	padding-left: 10px;
 	border-radius: 10px;
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 [class*=theme-light] #search-results div[class*=channelNameContainer_] {
 	background-color: var(--background-tertiary);
 }
 div[class*=searchAnswer_], div[class*=searchFilter_] {
-	background-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
 }
 div[class*=queryContainer_] div[class*=queryShortcut_] span[class*=key_] {
-	background-color: var(--background-d5);
+	background-color: var(--c-d5);
 	opacity: 0.85;
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 div[class*=pageControlContainer_] *[class*=pageButton_]:not([disabled]):hover {
-	background-color: var(--background-d5);
+	background-color: var(--c-d5);
 }
 button[class*=endButton_] {
 	border-radius: 8px;
 }
 /* Date Picker */
 div[class*=calendarPicker_] div[class*=react-datepicker] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation] {
-	background-color: var(--background-52);
-	border-color: var(--background-52);
+	background-color: var(--c-52);
+	border-color: var(--c-52);
 }
 div[class*=calendarPicker_] div[class*=react-datepicker]>button[class*=react-datepicker__navigation]:hover {
-	background-color: var(--background-d5);
-	border-color: var(--background-d5);
+	background-color: var(--c-d5);
+	border-color: var(--c-d5);
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__current-month]) {
-	border-color: var(--background-42) !important;
+	border-color: var(--c-42) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day], div[class*=react-datepicker__day--outside-month]):not([class*=--disabled]):hover {
-	background-color: var(--background-d5);
-	border-color: var(--background-d5) !important;
+	background-color: var(--c-d5);
+	border-color: var(--c-d5) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is(div[class*=react-datepicker__day--disabled], div[class*=react-datepicker__day--outside-month]) {
-	background-color: var(--background-0a);
-	border-color: var(--background-00) !important;
+	background-color: var(--c-0a);
+	border-color: var(--c-00) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:hover {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] :is([class*=--outside-month][class*=--001], [class*=--outside-month][class*=--002], [class*=--outside-month][class*=--003], [class*=--outside-month][class*=--004], [class*=--outside-month][class*=--005], [class*=--outside-month][class*=--006], [class*=--outside-month][class*=--007]) {
-	border-top-color: var(--background-42) !important;
+	border-top-color: var(--c-42) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week]:is(:nth-last-child(2), :nth-last-child(1)) div[class*=react-datepicker__day--outside-month][class*=--001]:not(:nth-child(1)) {
-	border-left-color: var(--background-42) !important;
+	border-left-color: var(--c-42) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]) {
-	border-left-color: var(--background-42) !important;
-	border-top-color: var(--background-42) !important;
+	border-left-color: var(--c-42) !important;
+	border-top-color: var(--c-42) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__week] div[class*=react-datepicker__day--disabled]:not([class*=--outside-month]):last-of-type {
-	border-right-color: var(--background-42) !important;
+	border-right-color: var(--c-42) !important;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--today]:after {
-	background-color: var(--background-ca);
+	background-color: var(--c-ca);
 	border-radius: 5px;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__day--keyboard-selected] {
 	background-color: transparent;
 }
 div[class*=calendarPicker_] div[class*=react-datepicker] div[class*=react-datepicker__header] div[class*=react-datepicker__day-name]:is(:first-of-type, :last-of-type) {
-	color: var(--background-d5);
+	color: var(--c-d5);
 }
 
 /* Auth Screen & Account Switcher */
@@ -967,25 +967,25 @@ div[class*=app_] [class*=authBox_] div[class*=footer_] button {
 	margin-right: 10px;
 }
 div[class*=app_] [class*=authBox_] button[class*=startOverButton_]:hover {
-	color: var(--background-bd);
+	color: var(--c-bd);
 }
 [class*=authBox_] div[class*=listItemContainer_] {
-	background-color: var(--background-26) !important;
+	background-color: var(--c-26) !important;
 	width: inherit;
 }
 [class*=authBox_] div[class*=listItemContainer_]:hover {
-	background-color: var(--background-3c) !important;
+	background-color: var(--c-3c) !important;
 }
 .separator_f20a46 {
-	border-bottom: 2px solid var(--background-26);
+	border-bottom: 2px solid var(--c-26);
 	margin-left: 0px;
 	width: calc(100% - 20px);
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-control"]:is(:hover, :focus-within) {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] {
-	background-color: var(--background-0d);
+	background-color: var(--c-0d);
 	animation: slideY 250ms ease;
 	transform-origin: bottom;
 }
@@ -993,24 +993,24 @@ div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$
 	border-radius: 10px;
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"] div[class^="css-"][class$="-option"]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=app_] [class*=authBox_] div[class*=inputs_] div[class^="css-"][class$="-menu"]>div[class*=css-]::-webkit-scrollbar-thumb {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 div[class*=focusLock_] [class*=authBox_] {
-	background: var(--background-11);
+	background: var(--c-11);
 }
 div[class*=focusLock_] [class*=navRow_] {
-	background-color: var(--background-08);
+	background-color: var(--c-08);
 }
 
 /* Pinned Messages & Threads Pop-up */
 div[class*=messagesPopoutWrap_], .browser_f542fc {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=messagesPopoutWrap_] div[class*=header_], .browser_f542fc div[class*=header_] {
-	background-color: var(--background-18);
+	background-color: var(--c-18);
 }
 div[class*=messagesPopout_][class*=thin_]::-webkit-scrollbar-thumb, .browser_f542fc div[class*=thin_]::-webkit-scrollbar-thumb {
 	background-color: var(--darkaf-main);
@@ -1019,22 +1019,22 @@ div[class*=messagesPopout_][class*=thin_]::-webkit-scrollbar, .browser_f542fc di
 	width: 12px !important;
 }
 div[class*=jumpButton_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	padding: 3px 8px 6px 8px;
 }
 div[class*=jumpButton_]:hover {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 
 /* Inbox */
 div[class*=recentMentionsPopout_], div[class*=recentMentionsPopout_] div[class*=channelHeader_], div[class*=recentMentionsPopout_]>div[class*=container_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=recentMentionsPopout_] div[class*=header_] {
-	background-color: var(--background-18);
+	background-color: var(--c-18);
 }
 div[class*=recentMentionsPopout_] div[class*=container_] div[class*=row_]:hover {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 	border-radius: 0 10px 10px 0;
 }
 div[class*=recentMentionsPopout_] div[class*=messages_], div[class*=recentMentionsPopout_] div[class*=scroller_][class*=thin_]::-webkit-scrollbar-thumb {
@@ -1043,16 +1043,16 @@ div[class*=recentMentionsPopout_] div[class*=messages_], div[class*=recentMentio
 
 /* Server Settings */
 div[class*=permissionsForm_] div[class*=passthrough_][class*=selected_] {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 #overview-tab div[class*=avatarUploaderInnerSquareDisabled_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 #emoji-tab div[class*=emojiAliasPlaceholder_]:before, #emoji-tab div[class*=emojiAliasPlaceholder_]:after {
 	opacity: 0.7;
 }
 #emoji-tab div[class*=emojiRow_] input {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 	margin-left: -7px;
 	margin-top: -1px;
 }
@@ -1060,104 +1060,104 @@ nav[class*=sidebar_] div[class*=side_][role="tablist"] [class*=item_]:has(svg):l
 	color: var(--status-red-500);
 }
 nav[class*=sidebar_]>div[class*=side_][role="tablist"]>div[class*=item_]:has(svg):last-of-type:hover, nav[class*=sidebar_]>div[class*=side_][role="tablist"] > :is([aria-label="Log ud"]:hover, [aria-label="Abmelden"]:hover, [aria-label="Log Out"]:hover, [aria-label="Cerrar sesión"]:hover, [aria-label="Déconnexion"]:hover, [aria-label="Odjava"]:hover, [aria-label="Esci"]:hover, [aria-label="Atsijungti"]:hover, [aria-label="Kijelentkezés"]:hover, [aria-label="Afmelden"]:hover, [aria-label="Logg ut"]:hover, [aria-label="Wyloguj"]:hover, [aria-label="Sair"]:hover, [aria-label="Deconectează-te"]:hover, [aria-label="Kirjaudu ulos"]:hover, [aria-label="Logga ut"]:hover, [aria-label="Đăng Xuất"]:hover, [aria-label="Çıkış Yap"]:hover, [aria-label="Odhlásit se"]:hover, [aria-label="Αποσύνδεση"]:hover, [aria-label="Отписване"]:hover, [aria-label="Выйти"]:hover, [aria-label="Вийти"]:hover, [aria-label="लॉग आउट करें"]:hover, [aria-label="ออกจากระบบ"]:hover, [aria-label="登出"]:hover, [aria-label="ログアウト"]:hover, [aria-label="로그아웃"]:hover) {
-	color: var(--background-ff);
+	color: var(--c-ff);
 	background: var(--status-danger);
 }
 div[class*=previewDark_] {
 	background: var(--darkaf-main);
 }
 div[class*=previewLight_] {
-	background: var(--background-52);
+	background: var(--c-52);
 }
 :is(div[class*=previewDark_], div[class*=previewLight_]) div[class*=assetWrapper_] {
 	width: 214px !important;
 	height: 214px !important;
 }
 [class*=fileUpload_] {
-	background-color: var(--background-00) !important;
+	background-color: var(--c-00) !important;
 }
 /* Boosting Level Tree */
 #guild_premium-tab div[class*=tierBody_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 #guild_premium-tab div[class*=tierHeaderLocked_] {
-	background-color: var(--background-0a);
+	background-color: var(--c-0a);
 }
 #guild_premium-tab div[class*=tierHeaderUnlocked_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 /* Audit log */
 div[data-list-id="audit-log"] div[class*=auditLog_] {
 	border: none;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=header_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 	border-radius: 12px;
 	transition: border-radius 150ms ease;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_]:hover div[class*=header_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=headerExpanded_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 	border-radius: 12px 12px 0 0;
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=changeDetails_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 div[data-list-id="audit-log"] div[class*=auditLog_] div[class*=discrim_] {
-	color: var(--background-bd);
+	color: var(--c-bd);
 	opacity: 1;
 }
 /* Bans */
 div[class*=bannedUser_] {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 div[class*=bannedUser_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 /* Server Subscriptions */
 :is(div[class*=howItWorksContainer_], div[class*=creatorBenefitCard_], div[class*=creatorGuildCarousel_] div[class*=guildCard_]) {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 div[class*=creatorBenefitCard_] div[class*=verticalConnector_] {
-	border: 1px solid var(--background-42) !important;
+	border: 1px solid var(--c-42) !important;
 }
 /* User Management Lists */
 div[class*=inviteSettingsInviteRow_] {
 	margin-bottom: 8px;
 }
 div[class*=inviteSettingsInviteRow_]:before {
-	background-color: var(--background-19f);
-	border-color: var(--background-19f);
+	background-color: var(--c-19f);
+	border-color: var(--c-19f);
 	transition: all 100ms ease;
 }
 div[class*=inviteSettingsInviteRow_]:hover:before {
-	background-color: var(--background-42);
-	border-color: var(--background-26);
+	background-color: var(--c-42);
+	border-color: var(--c-26);
 }
 div[class*=settingsContainer_] div[class*=mainTableContainer_] {
-	background-color: var(--background-0c);
+	background-color: var(--c-0c);
 }
 div[class*=settingsContainer_] table {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 tr[class*=memberRowContainer_]:hover>td {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 tr[class*=tableHeaderRow_] div[class*=eyebrow_]:hover {
-	color: var(--background-ff) !important;
+	color: var(--c-ff) !important;
 }
 
 /* Server Folders */
 div[class*=expandedFolderIconWrapper_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 span[class*=expandedFolderBackground_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 span[class*=expandedFolderBackground_][class*=hover_] {
-	background-color: var(--background-0f);
+	background-color: var(--c-0f);
 }
 :is(button[class*=colorPickerSwatch_][class*=default_], div[class*=folderIconWrapper_][style*="background-color: rgba(88, 101, 242, 0.4)"]) {
 	background-color: #ffffff26 !important;
@@ -1168,10 +1168,10 @@ div[class*=expandedFolderIconWrapper_] svg[style*="color: rgb(88, 101, 242)"] {
 
 /* Verify/Enter Phone */
 div[class*=phoneField_] div[class*=phoneFieldPopout_] {
-	background-color: var(--background-0f);
+	background-color: var(--c-0f);
 }
 div[class*=phoneFieldScroller_]>div:is(:hover, :focus) {
-	background-color: var(--background-3c) !important;
+	background-color: var(--c-3c) !important;
 }
 
 /* Voice Connected Pop-up */
@@ -1188,30 +1188,30 @@ div[class*=connectedAccountContainer_] {
 	border-radius: 8px;
 }
 div[class*=userProfileOuterUnthemed_] div[class*=connectedAccountContainer_] {
-	background-color: var(--background-07);
+	background-color: var(--c-07);
 }
 div[class*=userProfileOuter] div[class*=rolePillBorder_] {
 	border: none;
 }
 div[class*=userProfileOuterUnthemed_] div[class*=root_] :is(button[class*=rolePill_][class*=addButton_], div>button[class*=button_], div[class*=showMoreButton_]) {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 div[class*=userProfileOuter] div[class*=root_] :is(button[class*=rolePill_][class*=addButton_], div>button[class*=button_], div[class*=showMoreButton_]):hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=userProfileOuter] button[class*=rolePill_][class*=addButton_] {
 	border: 1px solid var(--border-faint);
 }
 div[class*=userProfileOuterUnthemed_] div[class*=userProfileModalInner_] div[class*=root_] div>button[class*=button_] {
-	background-color: var(--background-00);
+	background-color: var(--c-00);
 }
 .container_ac201b {
 	border-radius: 12px;
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 .container_ac201b li[class*=item_]:hover {
 	border-radius: 15px;
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 .container_ac201b:before{
 	position: absolute;
@@ -1220,7 +1220,7 @@ div[class*=userProfileOuterUnthemed_] div[class*=userProfileModalInner_] div[cla
 	width: 100%;
 	height: 100%;
 	content: "";
-	box-shadow: 0 0 30px var(--background-bd);
+	box-shadow: 0 0 30px var(--c-bd);
 	opacity: .3;
 	pointer-events: none;
 }
@@ -1228,7 +1228,7 @@ div[class*=userProfileOuter] div[class*=listScroller_] div[class*=listRow_]:hove
 	border-radius: 15px;
 }
 div[class*=userProfileOuterUnthemed_] div[class*=listScroller_] div[class*=listRow_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 /* Roles Background */
 div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_], div[class*=permissionItemRoleContainer_]) div[class*=role_] {
@@ -1264,27 +1264,27 @@ div[class*=userProfileInner_] :is(div[class*=root_], div[class*=roleContainer_],
 }
 /* Mod View */
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=bottomRow_] div[class*=bottomRowAction_] div[class*=innerBottomRowAction_] {
-	background-color: var(--background-3c) !important;
+	background-color: var(--c-3c) !important;
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=bottomRow_] div[class*=bottomRowAction_]:not([class*=Disabled]):hover div[class*=innerBottomRowAction_] {
-	background-color: var(--background-52) !important;
+	background-color: var(--c-52) !important;
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=bottomRow_] div[class*=bottomRowActionDisabled_] div[class*=innerBottomRowAction_] {
-	background-color: var(--background-00) !important;
+	background-color: var(--c-00) !important;
 	opacity: .43;
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=container_] div[class*=header_] {
-	background-color: var(--background-00) !important;
+	background-color: var(--c-00) !important;
 }
 div[class*=userProfileModalOuter_] div[class*=container_] div[class*=header_]:hover span[class*=key_] {
 	transform: scale(1.3);
 	transform-origin: right;
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=modInfoAction_]:hover {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=userProfileModalOuter_][class*=theme-dark] div[class*=permissionChiplet_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 div[class*=userProfileModalOuter_] div[class*=permissionChiplet_] {
 	border-radius: 10px;
@@ -1292,14 +1292,14 @@ div[class*=userProfileModalOuter_] div[class*=permissionChiplet_] {
 
 /** Game Streaming Preview **/
 div[class*=streamPreviewWrapper_] div[class*=streamPreview_] {
-	background-color: var(--background-0f);
+	background-color: var(--c-0f);
 }
 div[class*=streamPreviewWrapper_] div[class*=previewContainer_] {
-	background-color: var(--background-07);
+	background-color: var(--c-07);
 }
 /* Live Quality Indicator */
 div[class*=liveQualityIndicator_] {
-	background-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
 }
 
 /* Hide Gift Nitro */
@@ -1309,17 +1309,17 @@ div[class*=channelTextArea_] div[class*=buttons_]>button[class*=button_] {
 
 /** Auto Complete & Commands Pop-up **/
 .theme-dark div[class*=autocomplete_], div[class*=autocomplete_] div[class*=list_][class*=wrapper_] {
-	background-color: var(--background-17);
+	background-color: var(--c-17);
 }
 div[class*=autocomplete_] div[class*=categoryHeader_] {
-	background-color: var(--background-07);
+	background-color: var(--c-07);
 	border-radius: 10px;
 }
 div[class*=autocomplete_] div[class*=categoryHeader_]:after {
 	background: none;
 }
 div[class*=autocompleteRow_][aria-disabled=false]>div[class*=base_]:hover, div[class*=autocompleteRow_][aria-selected=true]>div[class*=base_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 div[class*=autocomplete_] div[class*=rail_][class*=wrapper_] {
 	width: 64px;
@@ -1328,22 +1328,22 @@ div[class*=autocomplete_] div[class*=list_][class*=wrapper_] {
 	width: 56px;
 }
 div[class*=autocompleteInner_]>div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-track {
-	background-color: var(--background-17);
-	border-color: var(--background-17);
+	background-color: var(--c-17);
+	border-color: var(--c-17);
 }
 div[class*=autocompleteInner_]>div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=autocompleteRow_] div[class*=usageWrapper_] div[class*=optionals_] {
 	border-color: transparent;
 }
 div[class*=autocompleteRow_] div[class*=usageWrapper_] div[class*=colorHeaderPrimary_] {
-	background-color: var(--background-0d);
-	border: 1.6px outset var(--background-3c); 
+	background-color: var(--c-0d);
+	border: 1.6px outset var(--c-3c); 
 	border-radius: 5px;
 }
 div[class*=applicationCommand_] span[class*=optionPillKey_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 /* Auto Complete & Commands Animation */
 div[class*=autocompleteRow_] {
@@ -1359,10 +1359,10 @@ div[class*=autocompleteRow_]>div[class*=base_]:hover, div[class*=autocompleteRow
 
 /* GIFs, Stickers, Emoji & Soundboard Wrappers */
 div[class*=expressionPickerPositionLayer_] :is(div[class*=contentWrapper_], #gif-picker-tab-panel>div[class*=header_]), #emoji-picker-tab-panel>:is(div[class*=emojiPicker_], div[class*=header_]) {
-	background-color: var(--background-19f);
+	background-color: var(--c-19f);
 }
 div[class*=expressionPickerPositionLayer_] div[class*=inspector_] {
-	background-color: var(--background-0a);
+	background-color: var(--c-0a);
 }
 div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeader_], #emoji-picker-grid div[class*=wrapper_][class*=header_] {
 	border-radius: 10px;
@@ -1374,8 +1374,8 @@ div[class*=expressionPickerPositionLayer_] div[class*=wrapper_][class*=packHeade
 	margin-left: 8px;
 }
 div[class*=diversitySelectorOptions_] {
-	background-color: var(--background-3c);
-	border: 1px solid var(--background-19f);
+	background-color: var(--c-3c);
+	border: 1px solid var(--c-19f);
 }
 button[class*=emojiItemDisabled_]:not(:hover), div[class*=stickerUnsendable_]:not(:hover) {
 	opacity: 0.4 !important;
@@ -1391,7 +1391,7 @@ div[class*=emptyGuildUpsell_] {
 	margin: 4px;
 }
 nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButton_]:hover) {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 nav[class*=nav_] :is([class*=navButton_], [class*=navButton_]:hover) {
 	border-radius: 9px;
@@ -1410,7 +1410,7 @@ nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActiv
 	background-color: transparent !important;
 }
 #gif-picker-tab-panel div[class*=result_][style*="background-color:"]:after {
-	background-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
 }
 #gif-picker-tab-panel div[class*=result_]>*, #gif-picker-tab-panel div[class*=result_]:after {
 	transition: margin .2s ease;
@@ -1421,7 +1421,7 @@ nav[class*=nav_] :is([class*=navButtonActive_], [class*=navButtonSuperReactActiv
 #gif-picker-tab-panel div[class*=result_]:hover:after {
 	margin: -6px 2px 2px -6px;
 	background: transparent;
-	border: 2px solid var(--background-52);
+	border: 2px solid var(--c-52);
 }
 #gif-picker-tab-panel div[class*=categoryFadeBlurple_] {
 	background-color: rgba(66,55,56,.6) !important;
@@ -1443,13 +1443,13 @@ div[class*=emojiPicker_] {
 	border-bottom-right-radius: 8px;
 }
 div[class*=searchSuggestions_] button[class*=searchSuggestion_]:hover {
-	background-color: var(--background-42) !important;
-	border-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
+	border-color: var(--c-42) !important;
 }
 
 /* Quick Switcher Menu */
 div[class*=quickswitcher_] {
-	box-shadow: 0 2px 10px hsl(var(--black-500-hsl)/.2),0 0 0 1px var(--background-11);
+	box-shadow: 0 2px 10px hsl(var(--black-500-hsl)/.2),0 0 0 1px var(--c-11);
 	transform: scale(1.07) !important;
 }
 div[class*=quickswitcher_]:before{
@@ -1459,7 +1459,7 @@ div[class*=quickswitcher_]:before{
 	width: 100%;
 	height: 100%;
 	content: "";
-	box-shadow: 0 0 50px var(--background-2f);
+	box-shadow: 0 0 50px var(--c-2f);
 	opacity: .7;
 	pointer-events: none;
 }
@@ -1467,14 +1467,14 @@ div[class*=quickswitcher_] div[class*=scroller_] {
 	background-color: transparent;
 }
 div[class*=quickswitcher_] input {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 	transition: all 400ms ease;
 	border-radius: inherit;
 	font-size: 20px;
 	height: 50px;
 }
 div[class*=quickswitcher_] input:focus-within {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 
 /* Server Banner Over Scrollbar */
@@ -1487,41 +1487,41 @@ nav[class*=container_] div[class*=container_][class*=hasBanner_] {
 	background-color: var(--darkaf-main);
 }
 .pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_], div[class*=iconMask_]) {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 .pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_]:hover, div[class*=card_]:hover div[class*=iconMask_]) {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 .pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_], svg[class*=clearIcon_], input) {
-	color: var(--background-ca);
+	color: var(--c-ca);
 }
 .pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_]:hover, svg[class*=clearIcon_]:hover) {
-	color: var(--background-52);
+	color: var(--c-52);
 }
 
 /* Payment Pop-up */
 div[class*=paymentModalContent] div[class*=iconWrapper_] {
-	background: var(--background-42);
+	background: var(--c-42);
 }
 div[class*=paymentModalContent] div[class*=iconWrapper_][class*=disabled_] {
-	background: var(--background-00);
+	background: var(--c-00);
 }
 
 /* Guild Pop-up */
 div[class*=guildPopout_] {
-	background-color: var(--background-17);
+	background-color: var(--c-17);
 }
 div[class*=guildPopout_] div[class*=footer_] {
-	background-color: var(--background-0d);
+	background-color: var(--c-0d);
 }
 
 /* In-call Region Selector */
 div[class*=regionSelectPopout_] {
-	background: var(--background-26) !important;
+	background: var(--c-26) !important;
 	border-radius: 7px;
 }
 div[class*=quickSelectPopoutOption_]:hover {
-	background-color: var(--background-0d) !important;
+	background-color: var(--c-0d) !important;
 }
 
 /* Customise your experience on first join */
@@ -1534,72 +1534,72 @@ div[class*=quickSelectPopoutOption_]:hover {
 	border-color: transparent;
 }
 .prompt_cd377c div[class*=promptContent_] div[class*=scrollerBase_]::-webkit-scrollbar-thumb {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 .prompt_cd377c div[class*=promptContent_] div[class*=scrollerBase_]::-webkit-scrollbar {
 	width: 11px;
 }
 .prompt_cd377c div[class*=promptContent_]>div[class*=overlay_] {
-	background: linear-gradient(to top, var(--background-19b), rgba(54, 57, 63, 0)) !important;
+	background: linear-gradient(to top, var(--c-19b), rgba(54, 57, 63, 0)) !important;
 }
 
 /* Top Notice Buttons fix */
 div[class*=base_]>div[class*=notice_] button:hover {
-	background-color: var(--background-ca);
-	border-color: var(--background-ca);
-	color: var(--background-00);
+	background-color: var(--c-ca);
+	border-color: var(--c-ca);
+	color: var(--c-00);
 }
 
 /** Joining/Creating Server & Download Apps Menus (because discord is stupid) **/
 /* Circle Buttons */
 div[class*=circleIconButton_] {
-	background: var(--background-17);
-	color: var(--background-42);
+	background: var(--c-17);
+	color: var(--c-42);
 }
 div[class*=circleIconButton_][class*=selected_] {
-	background-color: var(--background-2f);
-	color: var(--background-ca);
+	background-color: var(--c-2f);
+	color: var(--c-ca);
 }
 /* Joining/Creating Server Menu */
 div[class*=focusLock_]>div[class*=root_] div[class*=footerSeparator_] {
 	box-shadow: none
 }
 div[class*=focusLock_]>div[class*=root_] :is(button[class*=container_], div[class*=rowContainer_]):hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=focusLock_]>div[class*=root_] button[class*=container_]:hover div[class*=defaultColor_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 div[class*=focusLock_]>div[class*=root_] div[class*=uploadIcon_] svg:only-of-type circle{
-	fill: var(--background-52);
+	fill: var(--c-52);
 }
 /* Download Apps Menu (if someone is using the theme in a browser) */
 .theme-light {
-	--text-link: var(--background-37b);
+	--text-link: var(--c-37b);
 }
 div[class*=downloadApps_] {
-	background-color: var(--background-11) !important;
+	background-color: var(--c-11) !important;
 }
 div[class*=downloadApps_] *[class*=defaultColor_] {
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 div[class*=downloadApps_] li[class*=platform_] {
-	border-color: var(--background-42) !important;
+	border-color: var(--c-42) !important;
 }
 div[class*=downloadApps_] li[class*=platform_][class*=active_] {
-	border-color: var(--background-ca) !important;
+	border-color: var(--c-ca) !important;
 }
 div[class*=downloadApps_] li[class*=platform_] a[class*=downloadButton_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=downloadApps_] li[class*=platform_][class*=active_] a[class*=downloadButton_] {
-	background-color: var(--background-8a);
+	background-color: var(--c-8a);
 }
 div[class*=downloadApps_] li[class*=platform_][class*=active_] a[class*=downloadButton_]:hover {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 div[class*=downloadApps_] button[class*=modalCloseButton_]  {
-	color: var(--background-ca);
+	color: var(--c-ca);
 }
 
 /** Scrollbars **/
@@ -1608,7 +1608,7 @@ div[class*=thin_]::-webkit-scrollbar-thumb {
 }
 /* Billing, EGS Picker, Modal, Submenu, Server Home, Popout, Soundboard and User Profile */
 :is(div[class*=verticalFit_], div[class*=layer_] div[class*=picker_], div[id*=picker-tab-panel], div[class*=focusLock_], div[role="menu"], div[class*=userProfileInner_]) div[class*=thin_]::-webkit-scrollbar-thumb, :is(code[class*=scrollbarGhostHairline_], div[class*=homeContainer_][class*=auto_])::-webkit-scrollbar-thumb {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 :is(div[class*=layer_] :not([class*=menu_])>div[class*=thin_], div[class*=emojiPicker_] div[class*=thin_], div[class*=focusLock_] div[class*=thin_], div[class*=userProfileInner_] div[class*=thin_])::-webkit-scrollbar {
 	width: 11px;
@@ -1619,10 +1619,10 @@ code[class*=scrollbarGhostHairline_]::-webkit-scrollbar {
 
 /* Right-Click Submenu */
 div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button_]:hover, .keyboard-mode div[role="menu"] div[role*="menuitem"][id*="quickreact"] div[class*=button_][class*=focused_] {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_]:not([class*=colorDanger_]) {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_][id*=playstation], div[role="menu"] div[role*="menuitem"][class*=colorDefault_][id*=playstation]:active:not([class*=hideInteraction_]) {
 	background-color: var(--playstation-blue);
@@ -1631,10 +1631,10 @@ div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_], d
 	border-radius:5px;
 }
 div[role="menu"] div[role="separator"] {
-	border-bottom: 1px solid var(--background-3c);
+	border-bottom: 1px solid var(--c-3c);
 }
 div[role="menu"] div[role="menuitemradio"][aria-checked=true]:not([class*=focused_]) :is(path, circle[class*=radioSelection_]) {
-	color: var(--background-d5);
+	color: var(--c-d5);
 }
 div[role="menu"] div[role*="menuitem"][class*=colorDefault_][class*=focused_][id*=Streamer], div[role="menu"] div[role*="menuitem"][class*=colorDefault_][id*=Streamer]:active:not([class*=hideInteraction_]) {
 	background-color: var(--twitch-purple);
@@ -1658,11 +1658,11 @@ div:hover>div[role="slider"] div[class*=grabber_], div[class*=sensitivity_]:hove
 
 /* Toasts */
 div:not(.toast)>div[class*=toast_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 	transform: scale(0.9) !important;
 }
 .bd-toast {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 .toasts > .toast {
 	border-radius: 20px;
@@ -1670,29 +1670,29 @@ div:not(.toast)>div[class*=toast_] {
 
 /* Invite Pop-up */
 .theme-dark .contentWrapper_ed5743 {
-	background: var(--background-19f);
+	background: var(--c-19f);
 }
 .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 .contentWrapper_ed5743 button[class*=lookFilled_][class*=colorBrand_]:hover {
-	background-color: var(--background-0a);
+	background-color: var(--c-0a);
 }
 
 /* VC Count Badge */
 div[class*=channelInfo_]>div>span[class*=users_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=channelInfo_]>div>span[class*=total_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=channelInfo_]>div>span[class*=total_]:after {
-	border-right-color: var(--background-26);
+	border-right-color: var(--c-26);
 }
 
 /* New Unreads Bar */
 div[class*=unreadBottom_] div[class*=unreadBar_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 
 /* Round Spotify Status Image */
@@ -1702,21 +1702,21 @@ img[class*=assetsLargeImageSpotify_] {
 
 /* Upper Guild Badge */
 div[class*=upperBadge_]>div[class*=iconBadge_] {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 div[class*=upperBadge_]>div[class*=iconBadge_][class*=isCurrentUserConnected_] {
-	background-color: var(--background-37b);
+	background-color: var(--c-37b);
 }
 
 /* Screen, Video, Activity, Soundboard buttons */
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]) {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]):hover {
 	background-color: var(--background-accent);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not([class*=fauxDisabled_]):active {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button:not(:last-of-type):after {
 	content: '';
@@ -1733,7 +1733,7 @@ div[class*=base_] section[class*=panels_] div[class*=actionButtons_] button[clas
 	visibility: visible;
 }
 div[class*=base_] section[class*=panels_] div[class*=actionButtons_]>button:last-of-type[class*=buttonActive_] {
-	background-color: var(--background-d58);
+	background-color: var(--c-d58);
 }
 
 /* Editing Msg Text Area */
@@ -1742,21 +1742,21 @@ li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer
 	transform-origin: top;
 }
 li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer_]:hover, li[class*=messageListItem_] div[class*=contents_] div[class*=scrollableContainer_]:focus-within {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 
 /* @everyone WAIT! Pop-up */
 .theme-dark .contentWarningPopout__84e38 {
-	background-color: var(--background-19b);
-	box-shadow: 0 2px 10px 0 var(--background-3c);
+	background-color: var(--c-19b);
+	box-shadow: 0 2px 10px 0 var(--c-3c);
 }
 .theme-dark .contentWarningPopout__84e38 .footer__068c0 {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 
 /* Stream Wrapper */ 
 div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volumeButtonSlider_] div[class*=mediaBarProgress_], div[class*=volumeButtonSlider_] div[class*=mediaBarProgress_]:after, div[class*=volumeButtonSlider_] div[class*=mediaBarProgress_]:before  {
-	background-color: var(--background-e5) !important;
+	background-color: var(--c-e5) !important;
 }
 
 /** Incoming call Pop-up **/
@@ -1771,7 +1771,7 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 	left: 0;
 	min-width: 100vw;
 	min-height: 100vw;
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 	animation: wave 10s linear infinite;
 }
 .root_cbf230:before {
@@ -1815,7 +1815,7 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 
 /* Attached Bar Above Text Area */
 div[class*=channelTextArea_]>div[class*=attachedBars_], [class*=threadSuggestionBar_], [class*=chatContent_] div[class*=container_] div[class*=banner_] {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 	animation: slideY 250ms ease;
 	transform-origin: bottom;
 }
@@ -1823,13 +1823,13 @@ div[class*=replyBar_] {
 	background-color: transparent;
 }
 [class*=chatContent_] div[class*=container_] div[class*=banner_] {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 [class*=chatContent_] div[class*=container_] div[class*=banner_]:hover div[class*=iconCircle_] {
-	background-color: var(--background-d5d);
+	background-color: var(--c-d5d);
 }
 [class*=chatContent_] div[class*=container_] div[class*=banner_]:hover div[class*=iconCircle_] svg>path {
-	fill: var(--background-00);
+	fill: var(--c-00);
 }
 
 /** Console **/
@@ -1845,41 +1845,41 @@ div [class*=deviceItem_][class*=itemFilled_] {
 
 /* App Directory */
 div[class*=directoryContainer_] {
-	background-color: var(--background-19f) !important;
+	background-color: var(--c-19f) !important;
 }
 div[class*=directoryContainer_] div[class*=sidebar_] div[class*=selected_] a {
-	background-color: var(--background-00);
+	background-color: var(--c-00);
 }
 div[class*=directoryContainer_] [class*=anchor_]:hover :is([class*=container_][class*=clickable_], div[class*=category_]) {
-	background-color: var(--background-2c);
+	background-color: var(--c-2c);
 }
 div[class*=directoryContainer_] [class*=anchor_] [class*=animatesOnHoverContainer_]:hover {
 	transform: translatey(-2px);
 }
 div[class*=directoryContainer_] div[class*=sidebar_] [class*=anchor_][role="button"] div[class*=category_] {
 	background-color: var(--background-primary);
-	border: 2px solid var(--background-3c);
+	border: 2px solid var(--c-3c);
 	border-radius: 20px;
 }
 div[class*=directoryContainer_] div[class*=sidebar_] [class*=anchor_][role="button"] div[class*=category_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=directoryContainer_] div[class*=commandName_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=directoryContainer_] div[class*=section_] div[class*=card_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 
 /* Server Forum */
 :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 :is(div[class*=list_][data-list-id*="forum"], div[class*=grid_]) [class*=mainCard_][class*=isOpen_] {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 div[class*=card_][class*=headerRow_][data-list-item-id*=forum] :is(div[class*=matchingPostsRow_], div:not([class])>div[class*=container_]) {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 	animation: slideY 250ms ease;
 	transform-origin: top;
 }
@@ -1894,26 +1894,26 @@ div[class*=tagsContainer_]>div[class*=divider_] {
 	margin: 0 4px;
 }
 div[class*=tagsContainer_] button, div[class*=pill_][class*=tag_][role="button"] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 div[class*=pill_][class*=clickable_]:not([class*=disabled_]):hover, div[class*=tagsContainer_] button:hover {
-	background-color: var(--background-52);
+	background-color: var(--c-52);
 }
 div[class*=pill_][class*=tag_][role="button"] {
 	border: 3px solid transparent;
 }
 div[class*=pill_][class*=tag_][class*=selected_][role="button"] {
-	background-color: var(--background-8a);
+	background-color: var(--c-8a);
 	border-color: var(--darkaf-main);
 }
 div[id*=popout] div[class*=pill_][class*=tag_][class*=selected_][role="button"] {
 	border-color: var(--background-floating);
 }
 div[class*=pill_][class*=selected_][role="button"] div[class*=defaultColor_] {
-	color: var(--background-00);
+	color: var(--c-00);
 }
 div[class*=pill_][class*=small_] {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 	transform: scale(1.13);
 	margin-left: 5px;
 	margin-right: 5px;
@@ -1922,24 +1922,24 @@ div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_
 	background-color: var(--background-primary);
 }
 div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_] div[class*=pill_][class*=small_][class*=selected_] {
-	background-color: var(--background-8a);
+	background-color: var(--c-8a);
 }
 ol[class*=scrollerInner_]>div[class*=container_]>div[class*=buttons_]>button>div[class*=buttonInner_] {
-	background-color: var(--background-3c);
+	background-color: var(--c-3c);
 }
 ol[class*=scrollerInner_]>div[class*=container_]>div[class*=buttons_]>button>div[class*=buttonInner_][class*=active_] {
-	color: var(--background-37b);
+	color: var(--c-37b);
 }
 
 /* Server Guide */
 div[class*=homeContent_] div[class*=row_][role="button"], div[class*=homeContent_] div[class*=sidebarCardWrapper_], div[class*=homeContent_] div[class*=mainContent_] div[class*=action_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=homeContent_] div[class*=row_][role="button"]:hover, div[class*=homeContent_] div[class*=mainContent_] div[class*=action_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 div[class*=homeContent_] div[class*=sidebarCardWrapper_] div[class*=resourceChannel_]:hover {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 	border-radius: 10px;
 }
 div[class*=homeContainer_][class*=scrollerBase_][class*=auto_]::-webkit-scrollbar-track {
@@ -1950,8 +1950,8 @@ div[class*=homeContainer_][class*=scrollerBase_][class*=auto_]::-webkit-scrollba
 	background-color: var(--scrollbar-auto-thumb);
 }
 div[class*=homeContainer_] [class*=header_] [class*=headerIcon_] {
-	background-color: var(--background-26);
-	border-color: var(--background-26);
+	background-color: var(--c-26);
+	border-color: var(--c-26);
 }
 
 /* Channels & Roles, Browse Channels */
@@ -1962,27 +1962,27 @@ div[class*=chat_]>div[class*=content_][class*=container_] :is(div[class*=chat_],
 	background-color: var(--background-primary);
 }
 div[class*=chat_]>div[class*=content_][class*=container_] div[class*=scrollerInner_] :is(div[class*=container_], div[class*=channelRow_]) {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=chat_]>div[class*=content_][class*=container_] div[class*=scrollerInner_] div[class*=channelRow_]:hover:not([class*=disabled_]) {
-	background-color: var(--background-11);
+	background-color: var(--c-11);
 }
 .theme-dark div[class*=innerHeader_]:after {
 	background: transparent;
 }
 div[class*=channelRow_] div[class*=subtitleSeparator_] {
-	background-color: var(--background-d5);
+	background-color: var(--c-d5);
 }
 /* Customise Tab */
 div[class*=optionButtonWrapper_], div[class*=profileCard_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 div[class*=optionButtonWrapper_]:hover {
-	background-color: var(--background-52) !important;
+	background-color: var(--c-52) !important;
 }
 div[class*=optionButtonWrapper_][class*=selected_] {
 	background-color: var(--background-primary);
-	border-color: var(--background-26);
+	border-color: var(--c-26);
 }
 
 /* Changelog */
@@ -1993,14 +1993,14 @@ div[class*=focusLock_] a[class*=anchor_][href]:not([class*=socialLink_]) {
 /** BetterDiscord **/
 /* Update Notice */
 div[class*=app_] div[class*=updateNotice_] {
-	background-color: var(--background-2f);
+	background-color: var(--c-2f);
 }
 /* Settings */
 .bd-addon-list .bd-addon-header {
-	background: var(--background-0a);
+	background: var(--c-0a);
 }
 .bd-addon-list .bd-addon-card {
-	background: var(--background-19f);
+	background: var(--c-19f);
 }
 .bd-addon-modal-footer .bd-button {
 	background-color: var(--brand-experiment);
@@ -2009,28 +2009,28 @@ div[class*=app_] div[class*=updateNotice_] {
 	background-color: var(--brand-experiment-560);
 }
 .bd-search-wrapper {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 .bd-addon-list .bd-description::-webkit-scrollbar {
 	width: 11px;
 }
 .bd-addon-list .bd-description::-webkit-scrollbar-track {
-	background-color:var(--background-2f);
+	background-color:var(--c-2f);
 }
 .bd-addon-list .bd-description::-webkit-scrollbar-thumb {
 	background-clip:padding-box;
 	border:2px solid transparent;
-	background-color:var(--background-0c);
+	background-color:var(--c-0c);
 	min-height:40px
 }
 .bd-select {
-	background-color: var(--background-18);
+	background-color: var(--c-18);
 }
 .bd-select .bd-select-options, .bd-select:hover, .bd-select.menu-open {
-	background: var(--background-26);
+	background: var(--c-26);
 }
 .bd-select .bd-select-option.selected, .bd-select .bd-select-option:hover {
-	background: var(--background-42);
+	background: var(--c-42);
 }
 .bd-modal-root:before {
 	border-radius: inherit;
@@ -2038,11 +2038,11 @@ div[class*=app_] div[class*=updateNotice_] {
 	width: 100%;
 	height: 100%;
 	content: "";
-	box-shadow: 0 0 30px var(--background-19f);
+	box-shadow: 0 0 30px var(--c-19f);
 	pointer-events: none;
 }
 .bd-tab-item.selected {
-	background-color: var(--background-42);
+	background-color: var(--c-42);
 }
 .plugin-input-container div[class*=titleDefault] {
 	color: var(--bd-blue);
@@ -2055,7 +2055,7 @@ div[class*=channelTextArea_] button[class*=invisible-typing-button]:hover>svg {
 }
 /* BetterFormattingRedux */
 .bf-toolbar::before {
-	background: var(--background-17) !important;
+	background: var(--c-17) !important;
 	border-radius: 8px;
 }
 .bf-toolbar .format:hover {
@@ -2074,7 +2074,7 @@ div[class*=base_] section[class*=panels_] div[class*=container_][class*=withTime
 
 /* React Component Error */
 div[class*=base_] section[class*=panels_]>span[style="background: hsl(228, calc(var(--saturation-factor, 1) * 6%), 32.5%); border-radius: 5px; color: var(--status-danger); font-size: 12px; font-weight: 600; padding: 6px; text-align: center;"] {
-	background: var(--background-26) !important;
+	background: var(--c-26) !important;
 	font-size: 13px !important;
 	font-weight: 800 !important;
 }
@@ -2154,7 +2154,7 @@ div[class*=app_]>div[class*=container_][class*=fixClipping_] div[class*=problems
 }
 div[class*=app_]>div[class*=container_][class*=fixClipping_] div[class*=problems_] div[class*=problemsText_] {
 	margin-left: 20px;
-	color: var(--background-ff);
+	color: var(--c-ff);
 }
 /* Hide Plugin Libs by Nyx#8614 & Me */
 div#BDFDB-card, div#ZeresPluginLibrary-card {display: var(--libs-toggle, none);}
@@ -2192,13 +2192,13 @@ div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 	transition: all 250ms ease !important;
 }
 *:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_]:focus-within {
-	background-color: var(--background-42) !important;
+	background-color: var(--c-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
-	background-color: var(--background-26) !important;
+	background-color: var(--c-26) !important;
 }
 :not(nav[class*=privateChannels_], div[class*=emojiPicker_]>div, [id*=-picker-tab-panel]>div, div[class*=permissionsItemContainer_])>div[class*=searchBar_], nav[class*=privateChannels_]>div[class*=searchBar_]:hover>button, div[class*=searchContainer_] div[class*=container_], div[class*=chat_][class*=container_] div[class*=search_] {
-	background-color: var(--background-26);
+	background-color: var(--c-26);
 }
 /* Profile Customization Preview Animation */
 div[class*=customizationSection_]>:is(div[class*=profileCustomizationPreview_], div[class*=userProfileOuter_]) {
