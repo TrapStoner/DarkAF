@@ -6,7 +6,9 @@
  - Place it in `%appdata%/BetterDiscord/Themes`
  - Go to BetterDiscord Settings > Themes and enable *DarkAF*
 
- 
+> [!NOTE]
+> *Really like the theme? Best way to support it is to star the github repo!!*
+
 ## Feature Showcase
 ### Home Button & User Buttons
 ![LogoSpin](https://i.imgur.com/2vlsdSA.gif) ![UserButtons](https://i.imgur.com/TRpTyCd.gif) 
@@ -32,6 +34,7 @@
 ### Date Picker
 ![DatePicker](https://i.imgur.com/8VrzGJ6.gif)
 
+ 
 ### And this is just the tip of the iceberg! There are many other features and animations to explore. Also works great with these BD Plugins:
 - BetterFormattingRedux
 - Spotify Controls
