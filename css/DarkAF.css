@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.3 by TrapStoner#9526";
+	content: "DarkAF 2.2.4 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -77,6 +77,8 @@ nav[class*=sidebar_] div[class*=info_]:after {
 	--background-modifier-selected: var(--c-26);
 	--background-modifier-accent: var(--c-11);
 	--background-mobile-primary: var(--c-11);
+	--bg-base-secondary: var(--c-19f);
+	--bg-surface-raised: var(--c-00);
 	--scrollbar-auto-track: transparent;
 	--scrollbar-auto-thumb: var(--c-26);
 	--scrollbar-thin-track: transparent;
@@ -1990,6 +1992,44 @@ div[class*=focusLock_] a[class*=anchor_][href]:not([class*=socialLink_]) {
 	color: var(--text-link);
 }
 
+/* Application Launcher */
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
+	background-color: var(--c-00);
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar {
+	width: 12px !important;
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=frecentList_]>div[class*=container_] {
+	background-color: var(--c-3c);
+	transition: all 100ms ease-out;
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=frecentList_]>div[class*=container_]:hover {
+	background-color: transparent;
+	scale: 1.15;
+	transition: all 200ms cubic-bezier(.51,.22,.25,1.38);
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] :is(div[class*=sectionRowsContentContainer_], div[class*=sectionTwoColumnContentContainer_], div[class*=appGrid_])>div[class*=container_]:hover {
+	background-color: var(--c-42);
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=profileAndVideoContainer_] div[class*=overviewContainer] {
+	background-color: var(--c-17);
+}
+div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=command_] {
+	background-color: var(--c-26);
+}
+
+/* Message Actions Bar */
+div[class*=message_] div[class*=popoverReactionHoverBar_] {
+	background: var(--c-18);
+	border-color: var(--c-13);
+}
+div[class*=message_] div[class*=popoverReactionHoverBar_]:hover {
+	border-color: var(--c-26);
+}
+div[class*=message_] div[class*=popoverReactionHoverBar_] div[class*=hoverBarButton_]:hover {
+	background-color: var(--c-52);
+}
+
 /** BetterDiscord **/
 /* Update Notice */
 div[class*=app_] div[class*=updateNotice_] {
@@ -2048,6 +2088,20 @@ div[class*=app_] div[class*=updateNotice_] {
 	color: var(--bd-blue);
 	font-size: 1.5rem;
 }
+/* React Component Error */
+div[class*=base_] section[class*=panels_]>span[style="background: hsl(228, calc(var(--saturation-factor, 1) * 6%), 32.5%); border-radius: 5px; color: var(--status-danger); font-size: 12px; font-weight: 600; padding: 6px; text-align: center;"] {
+	background: var(--c-26) !important;
+	font-size: 13px !important;
+	font-weight: 800 !important;
+}
+/* Addon Errors Modal */
+.bd-addon-error {
+	background: var(--c-11);
+}
+.bd-addon-error div[class*=codeActions_]>div[role="button"] {
+	color: var(--c-37b);
+}
+
 /** Plugins **/
 /* InvisibleTyping */
 div[class*=channelTextArea_] button[class*=invisible-typing-button]:hover>svg {
@@ -2070,13 +2124,6 @@ div[class*=base_] section[class*=panels_] div[class*=container_][class*=withTime
 /* Border Gone */
 div[class*=base_] section[class*=panels_] div[class*=container_][class*=withTimeline_] {
 	border-bottom: none;
-}
-
-/* React Component Error */
-div[class*=base_] section[class*=panels_]>span[style="background: hsl(228, calc(var(--saturation-factor, 1) * 6%), 32.5%); border-radius: 5px; color: var(--status-danger); font-size: 12px; font-weight: 600; padding: 6px; text-align: center;"] {
-	background: var(--c-26) !important;
-	font-size: 13px !important;
-	font-weight: 800 !important;
 }
 
 /*** QOL ***/
