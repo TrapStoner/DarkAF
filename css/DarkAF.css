@@ -625,6 +625,19 @@ div[class*=channelTextArea_] div[class*=buttons_]>div[class*=separator_] button[
 [class*=chatContent_] form>div[class*=wrapper_] {
 	background-color: var(--c-0d);
 }
+/* Formatting Toolbar */
+#slate-toolbar {
+	background-color: var(--c-17);
+}
+#slate-toolbar:before {
+	border-top: 8px solid var(--c-52);
+}
+#slate-toolbar button:hover {
+	background-color: var(--c-42);
+}
+#slate-toolbar button:active {
+	background-color: var(--c-2f);
+}
 
 /** Settings **/
 div[class*=slider_]>div[class*=bar_] {
@@ -687,6 +700,7 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 	animation: slideY 250ms ease;
 	background: var(--c-2c);
 	transform-origin: top;
+	max-height: calc(30vh + 10px) !important;
 }
 div[class*=popout_][class*=popoutPositionTop_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) {
 	transform-origin: bottom;
@@ -699,8 +713,6 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_] {
 	margin: 0 5px;
-}
-div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"] {
 	border-radius: 20px;
 	color: var(--c-ca);
 	transition: all 300ms ease;
@@ -708,7 +720,7 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 div[class*=popout_][class*=scrollerBase_][class*=searchableSelect_] *[class*=option_] {
 	border-right: none;
 }
-div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_][role="option"]:hover {
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover {
 	background: var(--c-42) !important;
 	color: var(--c-ff);
 }
@@ -720,6 +732,12 @@ div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchabl
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:hover>svg[class*=selectedIcon_]>circle {
 	fill: var(--c-00);
+}
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) *[class*=option_]:first-of-type {
+	margin-top: 5px;
+}
+div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_]) div[class*=option_]:nth-last-of-type(2) {
+	margin-bottom: 5px;
 }
 div[class*=popout_][class*=scrollerBase_]:is([role="listbox"], [class*=searchableSelect_])::-webkit-scrollbar-thumb {
 	background-color: var(--darkaf-main);
@@ -1014,6 +1032,10 @@ div[class*=messagesPopoutWrap_], .browser_f542fc {
 div[class*=messagesPopoutWrap_] div[class*=header_], .browser_f542fc div[class*=header_] {
 	background-color: var(--c-18);
 }
+.browser_f542fc div[class*=list_] div[class*=container_][role="button"]:hover {
+	background-color: var(--c-18);
+	border-color: var(--c-3c);
+}
 div[class*=messagesPopout_][class*=thin_]::-webkit-scrollbar-thumb, .browser_f542fc div[class*=thin_]::-webkit-scrollbar-thumb {
 	background-color: var(--darkaf-main);
 }
@@ -1044,6 +1066,15 @@ div[class*=recentMentionsPopout_] div[class*=messages_], div[class*=recentMentio
 }
 
 /* Server Settings */
+div[class*=permissionsForm_] div[class*=group_] {
+	border: none;
+}
+div[class*=permissionsForm_] div[class*=item_]:not([class*=selected_]) {
+	background-color: var(--c-17);
+}
+div[class*=permissionsForm_] div[class*=item_]:not([class*=selected_]):hover {
+	background-color: var(--c-42);
+}
 div[class*=permissionsForm_] div[class*=passthrough_][class*=selected_] {
 	background-color: var(--c-52);
 }
@@ -1993,28 +2024,28 @@ div[class*=focusLock_] a[class*=anchor_][href]:not([class*=socialLink_]) {
 }
 
 /* Application Launcher */
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
+div[class*=layer_] section[class*=positionContainer_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar-thumb {
 	background-color: var(--c-00);
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar {
+div[class*=layer_] section[class*=positionContainer_] div[class*=scrollerBase_][class*=thin_]::-webkit-scrollbar {
 	width: 12px !important;
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=frecentList_]>div[class*=container_] {
+div[class*=layer_] section[class*=positionContainer_] div[class*=frecentList_]>div[class*=container_] {
 	background-color: var(--c-3c);
 	transition: all 100ms ease-out;
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=frecentList_]>div[class*=container_]:hover {
+div[class*=layer_] section[class*=positionContainer_] div[class*=frecentList_]>div[class*=container_]:hover {
 	background-color: transparent;
 	scale: 1.15;
 	transition: all 200ms cubic-bezier(.51,.22,.25,1.38);
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] :is(div[class*=sectionRowsContentContainer_], div[class*=sectionTwoColumnContentContainer_], div[class*=appGrid_])>div[class*=container_]:hover {
+div[class*=layer_] section[class*=positionContainer_] :is(div[class*=sectionRowsContentContainer_], div[class*=sectionTwoColumnContentContainer_], div[class*=appGrid_])>div[class*=container_]:hover {
 	background-color: var(--c-42);
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=profileAndVideoContainer_] div[class*=overviewContainer] {
+div[class*=layer_] section[class*=positionContainer_] div[class*=profileAndVideoContainer_] div[class*=overviewContainer] {
 	background-color: var(--c-17);
 }
-div[class*=layer_][class*=images-dark] div[class*=contentWrapper_] div[class*=command_] {
+div[class*=layer_] section[class*=positionContainer_] div[class*=command_] {
 	background-color: var(--c-26);
 }
 
@@ -2028,6 +2059,44 @@ div[class*=message_] div[class*=popoverReactionHoverBar_]:hover {
 }
 div[class*=message_] div[class*=popoverReactionHoverBar_] div[class*=hoverBarButton_]:hover {
 	background-color: var(--c-52);
+}
+
+/** Polls **/
+div[class*=pollContainer_] {
+	background-color: var(--c-18);
+}
+span[class*=votePercentageBar_] {
+	background-color: var(--c-d5);
+}
+li[class*=answer_]:is([class*=victorStyles_], [class*=votedStyles_]) {
+	--custom-poll-style-border: var(--c-bd);
+}
+div[class*=answer_][class*=enabled_]:hover div[class*=currentlyVoting_] {
+	background-color: var(--c-11);
+}
+div[class*=answer_][class*=enabled_] div[class*=currentlyVoting_][class*=selected_] {
+	background-color: var(--c-00);
+	outline: 1px solid var(--c-ca);
+
+}div[class*=answer_][class*=enabled_] circle[class*=radioForeground_] {
+	color: var(--c-d5);
+}
+
+/* Votes Modal */
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=header_] {
+	box-shadow: 0 1px 0 0 var(--c-08), 0 1px 2px 0 var(--c-0d);
+}
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div[class*=scroller_][class*=thin_]:has(div[class*=side_]) {
+	background: var(--c-11);
+}
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_] div[class*=votersListContainer_] :is(div[class*=container_], div[class*=voters_]) {
+	background-color: var(--c-19f);
+}
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div[class*=scroller_][class*=thin_]>div[class*=side_] div[class*=voteSelected_] {
+	background-color: var(--c-00);
+}
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div[class*=scroller_][class*=thin_]>div[class*=side_] div[class*=voteDefault_]:hover {
+	background-color: var(--c-2c);
 }
 
 /** BetterDiscord **/
@@ -2112,9 +2181,9 @@ div[class*=channelTextArea_] button[class*=invisible-typing-button]:hover>svg {
 	background: var(--c-17) !important;
 	border-radius: 8px;
 }
-.bf-toolbar .format:hover {
-	border-radius: 5px;
-}
+.bf-toolbar .format {border-radius: 4px;}
+.bf-toolbar .format:hover {background: var(--c-42);}
+.bf-toolbar .format:active {background: var(--c-2f) !important;}
 div[class*=profileCustomizationSection_] div[class*=channelTextArea_]>#bfredux {display: none;}
 /** Spotify Controls **/
 /* Timeline Fix */
