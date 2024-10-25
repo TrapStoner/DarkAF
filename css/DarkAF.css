@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.4 by TrapStoner#9526";
+	content: "DarkAF 2.2.6 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -409,6 +409,12 @@ button[class*=lookLink_][class*=colorBrand_]:hover div[class*=contents_] {
 div[class*=voiceChannelsButton_]:hover {
 	background-color: var(--c-26);
 }
+div[class*=compactButton_] {
+	background-color: var(--c-26);
+}
+div[class*=compactButton_]:hover {
+	background-color: var(--c-11);
+}
 
 /* @mentions, Embed, Attachments, Invites & Code blocks */
 div[class*=mentioned_]:before {
@@ -449,12 +455,12 @@ div[class*=hoverButtonGroup_][class*=nonMediaAttachment_] {
 div[class*=hoverButtonGroup_][class*=nonMediaAttachment_]>* {
 	backdrop-filter: invert(13%) blur(1px);
 }
-div[class*=hoverButtonGroup_] svg {
-	width:32px;
-	height: 32px;
+div[class*=hoverButtonGroup_] :is(svg, [class*=lottieIcon_]) {
+	width:28px !important;
+	height: 28px !important;
 	transform: scale(0.8);
 }
-div:hover>div[class*=hoverButtonGroup_] svg {
+div:hover>div[class*=hoverButtonGroup_] :is(svg, [class*=lottieIcon_]) {
 	animation: button-popup 0.3s ease-in-out;
 }
 *[class*=hoverButton_]:hover, .keyboard-mode *[class*=hoverButton_]:focus {
@@ -1207,9 +1213,9 @@ div[class*=phoneFieldScroller_]>div:is(:hover, :focus) {
 	background-color: var(--c-3c) !important;
 }
 
-/* Voice Connected Pop-up */
-div[class*=debugPanelStandalone_feab95] [class*=graphContainer_] {
-	background: #313338;
+/* Voice Details Pop-up */
+div[id="rtc_debug_panel-tab"] [class*=graphContainer_], div[id="rtc_secure_frames-tab"] [class*=code_] {
+	background-color: #313338;
 }
 
 /* Profile Wrapper */
@@ -1336,7 +1342,7 @@ div[class*=liveQualityIndicator_] {
 }
 
 /* Hide Gift Nitro */
-div[class*=channelTextArea_] div[class*=buttons_]>button[class*=button_] {
+div[class*=channelTextArea_] div[class*=buttons_]>div[class*=container_]>button[class*=button_] {
 	display: var(--gift-nitro-toggle, none);
 }
 
@@ -1515,23 +1521,6 @@ nav[class*=container_] div[class*=container_][class*=hasBanner_] {
 	z-index: 2;
 }
 
-/* Public Server Explorer */
-.theme-dark .pageWrapper_a3a4ce {
-	background-color: var(--darkaf-main);
-}
-.pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_], div[class*=iconMask_]) {
-	background-color: var(--c-26);
-}
-.pageWrapper_a3a4ce div[class*=guildList_] :is(div[class*=card_]:hover, div[class*=card_]:hover div[class*=iconMask_]) {
-	background-color: var(--c-52);
-}
-.pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_], svg[class*=clearIcon_], input) {
-	color: var(--c-ca);
-}
-.pageWrapper_a3a4ce div[class*=searchBox_] :is(svg[class*=closeIcon_]:hover, svg[class*=clearIcon_]:hover) {
-	color: var(--c-52);
-}
-
 /* Payment Pop-up */
 div[class*=paymentModalContent] div[class*=iconWrapper_] {
 	background: var(--c-42);
@@ -1583,7 +1572,7 @@ div[class*=base_]>div[class*=notice_] button:hover {
 	color: var(--c-00);
 }
 
-/** Joining/Creating Server & Download Apps Menus (because discord is stupid) **/
+/*** Joining/Creating Server, Discover & Download Apps Menus (because discord is stupid) ***/
 /* Circle Buttons */
 div[class*=circleIconButton_] {
 	background: var(--c-17);
@@ -1633,6 +1622,21 @@ div[class*=downloadApps_] li[class*=platform_][class*=active_] a[class*=download
 }
 div[class*=downloadApps_] button[class*=modalCloseButton_]  {
 	color: var(--c-ca);
+}
+/** Discover **/
+div[class*=base_]>div[class*=content_]>div[class*=sidebar_]>div[class*=container_]>nav[class*=nav_]>div[class*=navItem_] {
+	border-radius: 10px;
+}
+/* Servers */
+div[class*=container_]>div[class*=base_]>div[class*=content_]>section[class*=container_] div[class*=container_] :is(div[class*=card_], div[class*=iconMask_]) {
+	background-color: var(--c-26);
+}
+div[class*=container_]>div[class*=base_]>div[class*=content_]>section[class*=container_] div[class*=container_] :is(div[class*=card_]:hover, div[class*=card_]:hover div[class*=iconMask_]) {
+	background-color: var(--c-52);
+}
+/* Quests */
+div[class*=questTile_], div[class*=rewardDescriptionContainer_] {
+	background-color: var(--c-11);
 }
 
 /** Scrollbars **/
@@ -2068,6 +2072,10 @@ div[class*=pollContainer_] {
 span[class*=votePercentageBar_] {
 	background-color: var(--c-d5);
 }
+*[class*=answer_] [class*=label_] {
+	/* color: var(--c-00); */
+	font-size: .975rem;
+}
 li[class*=answer_]:is([class*=victorStyles_], [class*=votedStyles_]) {
 	--custom-poll-style-border: var(--c-bd);
 }
@@ -2081,9 +2089,8 @@ div[class*=answer_][class*=enabled_] div[class*=currentlyVoting_][class*=selecte
 }div[class*=answer_][class*=enabled_] circle[class*=radioForeground_] {
 	color: var(--c-d5);
 }
-
 /* Votes Modal */
-div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=header_] {
+div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=header_][class*=separator_] {
 	box-shadow: 0 1px 0 0 var(--c-08), 0 1px 2px 0 var(--c-0d);
 }
 div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div[class*=scroller_][class*=thin_]:has(div[class*=side_]) {
@@ -2097,6 +2104,13 @@ div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div
 }
 div[class*=focusLock_][role="dialog"]>div[class*=root_]>div[class*=content_]>div[class*=scroller_][class*=thin_]>div[class*=side_] div[class*=voteDefault_]:hover {
 	background-color: var(--c-2c);
+}
+/* Create a Poll Modal */
+div[class*=focusLock_] div[class*=container_]:has(fieldset[class*=answerInputsContainer_]) {
+	background-color: var(--modal-background);
+}
+div[class*=focusLock_] div[class*=container_] div[class*=addAnswerButton_]:hover {
+	background-color: var(--c-42);
 }
 
 /** BetterDiscord **/
@@ -2304,10 +2318,10 @@ div[class*=base_] section[class*=panels_] div[class*=avatarWrapper_] {
 }
 
 /* Input Animation */
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_], div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_] {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div, div[class*=answerRow_] [class*=inputWrapper_])>input:not([type="checkbox"], [role="combobox"], [readonly]), :not(nav[class*=privateChannels_])>div[class*=searchBar_], div[class*=searchBox_], div[class*=cardInput_], div[class*=select_][class*=searchable_], div[class*=bioTextArea_], div[class*=select_][role="button"], .bd-search-wrapper, div[class*=addFriendInputWrapper_], div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input), :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_], div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_], div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_], div[class*=answerRow_]>[class*=defaultTextInputWrapper_] {
 	transition: all 250ms ease !important;
 }
-*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div)>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_]:focus-within {
+*:not(div[class*=search_]>div, div[class*=searchBar_]>div, div[class*=searchBox_]>div, div[class*=container_]>div, div[class*=searchWithScrollbar_]>div, div[class*=combobox_]>div>div, div[class*=addFriendInputWrapper_]>div, div[class*=answerRow_] [class*=inputWrapper_])>input:not([type="checkbox"], [role="combobox"], [readonly], [class*=fileUploadInput_], [name="invite"], [role="searchbox"]):focus-within, :not(nav[class*=privateChannels_], div[class*=userProfileModalOuter_][class*=theme-light] div[class*=permissionsItemContainer_])>div[class*=searchBar_]:focus-within, div[class*=searchBox_]:focus-within, div[class*=cardInput_][class*=cardInputFocused_], div[class*=select_][class*=searchable_][class*=open_], div[class*=bioTextArea_]:focus-within, div[class*=select_][class*=open_][role="button"], .bd-search-wrapper:focus-within, div[class*=container_]:is([class*=medium_], [class*=small_]):not([class*=root_]):has(input):focus-within, :not(div[class*=card_][class*=headerRow_][data-list-item-id*=forum] div[class*=inputWrapper_]>div)>textarea:focus-within, div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_]>div[class*=textArea_]:focus-within, div[class*=userProfileOuterUnthemed_] div[class*=channelTextArea_]>div[class*=inner_]:focus-within, div[class*=card_][class*=headerRow_][data-list-item-id*=forum] [class*=mainCard_]:focus-within, div[class*=answerRow_]>[class*=defaultTextInputWrapper_]:focus-within {
 	background-color: var(--c-42) !important;
 }
 div[class*=addFriendInputWrapper_]:focus-within, :not(div[class*=directoryContainer_]>div>div>div)>div[class*=searchBox_]:not(:focus-within) {
