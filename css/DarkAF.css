@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.6 by TrapStoner#9526";
+	content: "DarkAF 2.2.7 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -59,6 +59,7 @@ nav[class*=sidebar_] div[class*=info_]:after {
 	--c-0a: #0a0a0a;
 	--c-08: #080808;
 	--c-07: #070707;
+	--c-04: #040404;
 	--c-00: #000000;
 	--c-6b: #6bab9f;
 	--c-37b: #37b776;
@@ -383,12 +384,19 @@ div[class*=checkbox_] {
 div[class*=checkbox_][class*=checked_] {
 	transition: background-color 0.2s ease;
 }
-div[class*=checkbox_][class*=checked_]:not([class*=round_]), div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
+div[class*=checkbox_][class*=checked_]:not([class*=round_]) {
 	border-color: var(--c-d5) !important;
 	background-color: var(--c-d5) !important;
 }
-div[role="menuitemcheckbox"][aria-checked="true"] path[class*=checkbox_] {
+:is(div[role="menuitemcheckbox"][aria-checked="true"], div[class*=labelContainer_]) path[class*=checkbox_] {
 	color: var(--c-d5);
+}
+:is(div[role="menuitemcheckbox"][aria-checked="true"], div[class*=labelContainer_])[class*=focused_] path[class*=check_] {
+	color: var(--c-bd);
+	fill: var(--c-bd);
+}
+div[class*=labelContainer_][class*=focused_] path[class*=checkbox_] {
+	fill: currentColor;
 }
 div[class*=checkbox_][class*=checked_] path[fill*=--brand-] {
 	fill: var(--c-ff);
@@ -436,15 +444,23 @@ div[class*=embedWrapper_]:has(code) div[class*=footer_] {
 	background-color: var(--c-0d);
 	border-color: var(--c-0d);
 }
+div[class*=embedWrapper_] div[class*=imageWrapperBackground_] {
+	background: var(--c-0a);
+}
 div[class*=hoverButtonGroup_] {
 	background-color: transparent;
 	outline: none;
 	gap: 5px;
 }
-div[class*=hoverButtonGroup_]>* {
+div[class*=hoverButtonGroup_]>*[class*=hoverButton_]:before {
+	content: "";
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	margin: -6px 0 0 -6px;
+	pointer-events: none;
 	backdrop-filter: brightness(40%) blur(1px);
 	border-radius: 12px;
-	padding: 6px;
 }
 div[class*=hoverButtonGroup_][class*=nonMediaAttachment_] {
 	background-color: transparent;
@@ -455,12 +471,12 @@ div[class*=hoverButtonGroup_][class*=nonMediaAttachment_] {
 div[class*=hoverButtonGroup_][class*=nonMediaAttachment_]>* {
 	backdrop-filter: invert(13%) blur(1px);
 }
-div[class*=hoverButtonGroup_] :is(svg, [class*=lottieIcon_]) {
-	width:28px !important;
-	height: 28px !important;
+*[class*=hoverButton_]>* {
+	width:30px !important;
+	height: 30px !important;
 	transform: scale(0.8);
 }
-div:hover>div[class*=hoverButtonGroup_] :is(svg, [class*=lottieIcon_]) {
+div:hover>div[class*=hoverButtonGroup_]>*[class*=hoverButton_]>* {
 	animation: button-popup 0.3s ease-in-out;
 }
 *[class*=hoverButton_]:hover, .keyboard-mode *[class*=hoverButton_]:focus {
@@ -1219,7 +1235,7 @@ div[id="rtc_debug_panel-tab"] [class*=graphContainer_], div[id="rtc_secure_frame
 }
 
 /* Profile Wrapper */
-div[class*=userProfileInner_] :is(div[class*=mutualGuildsList_], div[class*=mutualFriendsList_], div[class*=list_]) ul[class*=connectionList_] {
+div[class*=inner_][class*=panel_] section[class*=section_] ul[class*=list_] {
 	animation: slideY 0.1s ease;
 	transform-origin: top;
 }
@@ -1342,7 +1358,7 @@ div[class*=liveQualityIndicator_] {
 }
 
 /* Hide Gift Nitro */
-div[class*=channelTextArea_] div[class*=buttons_]>div[class*=container_]>button[class*=button_] {
+div[class*=channelTextArea_] div[class*=buttons_]>button[class*=button_] {
 	display: var(--gift-nitro-toggle, none);
 }
 
@@ -1638,6 +1654,9 @@ div[class*=container_]>div[class*=base_]>div[class*=content_]>section[class*=con
 div[class*=questTile_], div[class*=rewardDescriptionContainer_] {
 	background-color: var(--c-11);
 }
+div[class*=focusLock_]>div[class*=modalRoot_]>div[class*=modalBg_] {
+	background-color: var(--c-04);
+}
 
 /** Scrollbars **/
 div[class*=thin_]::-webkit-scrollbar-thumb {
@@ -1851,22 +1870,10 @@ div[class*=volumeButtonSlider_] span[class*=mediaBarGrabber_], div[class*=volume
 }
 
 /* Attached Bar Above Text Area */
-div[class*=channelTextArea_]>div[class*=attachedBars_], [class*=threadSuggestionBar_], [class*=chatContent_] div[class*=container_] div[class*=banner_] {
+div[class*=channelTextArea_]>div[class*=attachedBars_], [class*=threadSuggestionBar_], [class*=replyBar_] {
 	background-color: var(--c-2c);
 	animation: slideY 250ms ease;
 	transform-origin: bottom;
-}
-div[class*=replyBar_] {
-	background-color: transparent;
-}
-[class*=chatContent_] div[class*=container_] div[class*=banner_] {
-	background-color: var(--c-11);
-}
-[class*=chatContent_] div[class*=container_] div[class*=banner_]:hover div[class*=iconCircle_] {
-	background-color: var(--c-d5d);
-}
-[class*=chatContent_] div[class*=container_] div[class*=banner_]:hover div[class*=iconCircle_] svg>path {
-	fill: var(--c-00);
 }
 
 /** Console **/
