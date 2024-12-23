@@ -27,7 +27,7 @@ IMPORTANT: CHANGE DISCORD'S THEME TO DARK IN APPEARANCE SETTINGS IF YOU ARE USIN
 
 /* Theme Info */
 nav[class*=sidebar_] div[class*=info_]:after {
-	content: "DarkAF 2.2.8 by TrapStoner#9526";
+	content: "DarkAF 2.2.9 by TrapStoner#9526";
 	font-size: 16px;
 	color: var(--text-muted);
 }
@@ -289,6 +289,12 @@ div[class*=nowPlayingColumn_] div[class*=itemCard_] div[class*=body_] {
 div[class*=nowPlayingColumn_] div[class*=scroller_] {
 	border-color: transparent;
 }
+div[class*=blockedIgnoredSettingsNotice_] {
+	background-color: var(--c-26);
+	height: 18px;
+	margin: 16px 46px 8px 0px;
+	border-radius: 8px;
+}
 
 /* Library */
 div[class*=rowWrapperDim_] [class*=bodyCell_] {
@@ -448,6 +454,16 @@ div[class*=embedWrapper_]:has(code) div[class*=footer_] {
 div[class*=embedWrapper_] div[class*=imageWrapperBackground_] {
 	background: var(--c-0a);
 }
+div[class*=embedWrapper_][class*=wrapperAudio_] {
+	background-color: var(--c-17);
+	border-color: var(--c-17);
+}
+div[class*=embedWrapper_][class*=wrapperAudio_] div[class*=audioControls_] {
+	background-color: var(--c-00);
+}
+div[class*=embedWrapper_][class*=wrapperAudio_] div[class*=audioControls_] div[class*=mediaBarProgress_], div[class*=embedWrapper_][class*=wrapperAudio_] div[class*=audioControls_] div[class*=mediaBarProgress_]:before, div[class*=embedWrapper_][class*=wrapperAudio_] div[class*=audioControls_] div[class*=mediaBarProgress_]:after {
+	background-color: var(--c-d58);
+}
 div[class*=hoverButtonGroup_] {
 	background-color: transparent;
 	outline: none;
@@ -556,8 +572,11 @@ div[class*=focusLock_]>div[class*=main_]>div[class*=options_]>div[role=button]:h
 div[class*=focusLock_]>.container_a74b6f div[class*=dotMembers_] {
 	background-color: var(--c-8a);
 }
-div[class*=focusLock_]>.container_a74b6f div[class*=modal_], div[class*=focusLock_]>.container_a74b6f div[class*=guildSidebar_], div[class*=focusLock_]>.container_a74b6f div[class*=footer_] {
+div[class*=focusLock_]>.container_a74b6f :is(div[class*=guildSidebar_], div[class*=footer_]) {
 	background-color: transparent;
+}
+div[class*=focusLock_]>.container_a74b6f div[class*=modal_] {
+	background-color: var(--c-0f);
 }
 /* Event Info Modal */
 div[class*=focusLock_]>div[class*=root_] div[class*=content_][class*=contentContainer_][class*=scrollerBase_] {
@@ -633,7 +652,29 @@ div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextAr
 div[class*=focusLock_]>div[class*=root_][class*=small_] div[class*=channelTextArea_] div[class*=placeholder_] {
 	color: var(--c-bd);
 }
-
+/* OAuth2 Modal */
+div[class*=oauth2ModalWrapper_], div[class*=oauth2ModalWrapper_] div[class*=authorize_] {
+	background: var(--c-11);
+}
+#oauth2-authorize-header-id div[class*=ellipse_] {
+	opacity: .46;
+}
+div[class*=oauth2ModalWrapper_] svg[class*=scopeIcon_] {
+	color: var(--c-d58);
+}
+/* Integrations Command Modal */
+div[class*=focusLock_]> .root_f9a4c9 div[class*=modalBody_] {
+	background-color: var(--modal-background);
+}
+div[class*=focusLock_]> .root_f9a4c9 div[class*=modalFooter_] {
+	background-color: var(--c-0a) !important;
+}
+div[class*=focusLock_]> .root_f9a4c9 div[class*=listItems_] div[class*=item_] {
+	border-radius: 6px;
+}
+div[class*=focusLock_]> .root_f9a4c9 div[class*=listItems_] div[class*=item_]:hover {
+	background-color: var(--c-42);
+}
 
 /** Channel Text Area **/
 /* Disabled Text Area Placeholder */
@@ -1139,6 +1180,16 @@ div[class*=previewLight_] {
 [class*=fileUpload_] {
 	background-color: var(--c-00) !important;
 }
+/* Collapsible Group Container */
+div[class*=collapseable_][class*=groupContainer_] div[class*=clickableContainer_] {
+	background-color: var(--c-19f);
+}
+div[class*=collapseable_][class*=groupContainer_] :is(div[class*=groupCollapsedContainer_], div[class*=groupCollapsedContainer_] div[class*=pointer_]) {
+	background-color: var(--c-26);
+}
+div[class*=collapseable_][class*=groupContainer_] div[class*=container_][class*=groupCollapsedRow_]:is(:hover, [class*=selected_]) div[class*=backgroundModifierContainer_]:not([class*=disabled_]):not([class*=noAction_]) {
+	background-color: var(--c-42);
+}
 /* Boosting Level Tree */
 #guild_premium-tab div[class*=tierBody_] {
 	background-color: var(--c-19f);
@@ -1146,8 +1197,12 @@ div[class*=previewLight_] {
 #guild_premium-tab div[class*=tierHeaderLocked_] {
 	background-color: var(--c-0a);
 }
-#guild_premium-tab div[class*=tierHeaderUnlocked_] {
+#guild_premium-tab :is(div[class*=tierHeaderUnlocked_], div[class*=tierInProgress_]) {
 	background-color: var(--c-3c);
+}
+/* AutoMod */
+div[class*=categoryContainer_] div[class*=editCard_] {
+	background-color: var(--c-19f);
 }
 /* Audit log */
 div[data-list-id="audit-log"] div[class*=auditLog_] {
@@ -1211,6 +1266,18 @@ tr[class*=memberRowContainer_]:hover>td {
 tr[class*=tableHeaderRow_] div[class*=eyebrow_]:hover {
 	color: var(--c-ff) !important;
 }
+/* Integrations  */
+#integrations-tab div[class*=card_] {
+	background-color: var(--c-11);
+}
+#integrations-tab div[class*=card_][class*=clickable_]:hover {
+	background-color: var(--c-42);
+}
+#integrations-tab div[class*=card_] div[class*=cardHeader_] {
+	background-color: var(--c-18);
+	border-bottom: 1px outset var(--c-42);
+}
+
 
 /* Server Folders */
 div[class*=expandedFolderIconWrapper_] {
@@ -1583,9 +1650,9 @@ div[class*=quickSelectPopoutOption_]:hover {
 
 /* Top Notice Buttons fix */
 div[class*=base_]>div[class*=notice_] button:hover {
-	background-color: var(--c-ca);
-	border-color: var(--c-ca);
-	color: var(--c-00);
+	background-color: var(--c-ca) !important;
+	border-color: var(--c-ca) !important;
+	color: var(--c-00) !important;
 }
 
 /*** Joining/Creating Server, Discover & Download Apps Menus (because discord is stupid) ***/
@@ -2126,17 +2193,6 @@ div[class*=focusLock_] div[class*=container_] div[class*=addAnswerButton_]:hover
 	background-color: var(--c-42);
 }
 
-/* Invite To Server OAuth2 */
-div[class*=oauth2ModalWrapper_], div[class*=oauth2ModalWrapper_] div[class*=authorize_] {
-	background: var(--c-11);
-}
-#oauth2-authorize-header-id div[class*=ellipse_] {
-	opacity: .46;
-}
-div[class*=oauth2ModalWrapper_] svg[class*=scopeIcon_] {
-	color: var(--c-d58);
-}
-
 /** BetterDiscord **/
 /* Update Notice */
 div[class*=app_] div[class*=updateNotice_] {
@@ -2322,7 +2378,7 @@ div[role="menu"], div[class*=recentMentionsPopout_], [class*=membersWrap_], div[
 	animation: slideY 250ms ease;
 	transform-origin: top;
 }
-div[class*=layerContainer_]>div[class*=layer_]>section[class*=positionContainer_] div[class*=contentWrapper_], div[class*=menu_][id="channel-attach"], .scroller_bea0d0div, [class*=autocomplete_], div[class*=layerContainer_]>div[class*=layer_]>div[class*=animatorTop_][class*=didRender_] div[class*=accountProfilePopoutWrapper_], div[class*=noiseCancellationPopout_], div[class*=debugPanelStandalone_] {
+div[class*=layerContainer_]>div[class*=layer_]>section[class*=positionContainer_] div[class*=contentWrapper_], div[class*=menu_][id="channel-attach"], .scroller_bea0d0div, [class*=autocomplete_], div[class*=layerContainer_]>div[class*=layer_]>div[class*=animatorTop_][class*=didRender_] div[class*=accountProfilePopoutWrapper_], div[class*=noiseCancellationPopout_], div[class*=debugPanelStandalone_], div[class*=menu_][id="manage-streams"] {
 	animation: slideY 250ms ease;
 	transform-origin: bottom;
 }
