@@ -1,4 +1,5 @@
 # DarkAF
+### :warning: Discord is testing a new horrendously ugly GUI!! DarkAF DOES NOT work on it yet! If you were one of the unlucky people to receive it and want to go back to the old GUI and continue using the current version of DarkAF check in Appearance settings if you have a `Enable Desktop Refresh` toggle and turn it off (not everyone has that toggle), if you don't have it you can bring the old GUI back using the `Experiments` settings but you are on your own on this one! :warning:
 > [!IMPORTANT]
 > Change Discord's theme to *Dark* in Appearance settings if you are using *Light mode*!
 
@@ -38,6 +39,6 @@
 ### And this is just the tip of the iceberg! There are many other features and animations to explore. Also works great with these BD Plugins:
 - BetterFormattingRedux
 - Spotify Controls
-- InvisibleTyping
+- MoreRoleColors
 - GameActivityToggle
-- BetterRoleColors
+- InvisibleTyping
